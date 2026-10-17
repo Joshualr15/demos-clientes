@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jumbo Polanco | Salón de Fiestas Infantiles & Playground Exclusivo CDMX</title>
+  <meta name="description" content="Jumbo Polanco en Ampliación Granada (Nuevo Polanco). Salón de fiestas infantiles privadas, playground interactivo, playdates y áreas de juego simbólico y seguro." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            fun: ['"Fredoka"', 'cursive'],
+          },
+          colors: {
+            jumbo: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              400: '#facc15',
+              500: '#eab308',
+              600: '#ca8a04',
+            },
+            coral: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+            },
+            mint: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#22c55e',
+              600: '#16a34a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #FFFFFF;
+      color: #0F172A;
+    }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 35px -12px rgba(249, 115, 22, 0.16);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-coral-100 selection:text-coral-600">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-amber-50/80 border-b border-amber-200/60 text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 text-slate-700 font-medium">
+        <span id="status-badge" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+          Abierto para Playdates & Cotización de Eventos
+        </span>
+        <span class="hidden md:inline text-amber-300">|</span>
+        <span class="hidden md:inline text-slate-600">Eventos 100% privados los fines de semana</span>
+      </div>
+      <div class="flex items-center gap-4 ml-auto sm:ml-0 font-medium">
+        <a href="tel:+525515078369" class="inline-flex items-center gap-1.5 text-slate-700 hover:text-coral-600 font-bold transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-coral-500"></i>
+          55 1507 8369
+        </a>
+        <span class="text-amber-300">|</span>
+        <a href="#ubicacion" class="inline-flex items-center gap-1 text-slate-600 hover:text-coral-600 transition-colors">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-coral-500"></i>
+          <span>Privada Cervantes 19E, Polanco</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-amber-400 to-coral-400 text-white flex items-center justify-center shadow-md shadow-amber-200 group-hover:scale-105 transition-transform">
+          <i data-lucide="smile" class="w-6 h-6 stroke-[2.5]"></i>
+        </div>
+        <div>
+          <span class="font-fun text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 block leading-none">Jumbo <span class="text-coral-500">Polanco</span></span>
+          <span class="text-[11px] uppercase tracking-widest text-slate-400 font-bold block mt-1">Playground & Salón Privado</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#experiencia" class="hover:text-coral-600 transition-colors">Concepto</a>
+        <a href="#paquetes" class="hover:text-coral-600 transition-colors">Eventos & Paquetes</a>
+        <a href="#instalaciones" class="hover:text-coral-600 transition-colors">Instalaciones</a>
+        <a href="#opiniones" class="hover:text-coral-600 transition-colors">Familias Felices</a>
+        <a href="#ubicacion" class="hover:text-coral-600 transition-colors">Ubicación</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/525515078369?text=Hola%20Jumbo%20Polanco,%20me%20gustar%C3%ADa%20cotizar%20un%20evento%20privado%20de%20cumplea%C3%B1os."
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 bg-gradient-to-r from-coral-500 to-amber-500 hover:from-coral-600 hover:to-amber-600 text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Cotizar Fiesta</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-amber-50/50 via-white to-white pt-10 pb-20 lg:pt-16 lg:pb-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        
+        <!-- Left Column -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-amber-200 shadow-sm text-xs font-bold text-slate-700">
+            <span class="flex items-center text-amber-500">
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+            </span>
+            <span>El espacio infantil más exclusivo de Nuevo Polanco & Granada</span>
+          </div>
+
+          <h1 class="font-fun text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight">
+            Fiestas inolvidables y juego libre en un entorno <span class="text-transparent bg-clip-text bg-gradient-to-r from-coral-500 to-amber-500">seguro y hermoso</span>.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl font-normal">
+            En <strong>Jumbo Polanco</strong> diseñamos un espacio cerrado, climatizado y lleno de imaginación donde los niños exploran, socializan y celebran su infancia. Desde <strong>fiestas privadas de cumpleaños</strong> con todo resuelto hasta <strong>playdates interactivos</strong> en Privada Cervantes 19E, junto a Polanco.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
+            <a href="https://wa.me/525515078369?text=Hola%20Jumbo%20Polanco,%20quiero%20conocer%20las%20fechas%20disponibles%20y%20paquetes%20para%20fiesta%20infantil."
+               target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center gap-2.5 bg-coral-500 hover:bg-coral-600 text-white font-bold px-7 py-4 rounded-full shadow-lg shadow-coral-500/20 hover:shadow-xl transition-all text-base">
+              <i data-lucide="party-popper" class="w-5 h-5"></i>
+              Ver Fechas Disponibles por WhatsApp
+            </a>
+            <a href="#paquetes"
+               class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-bold px-6 py-4 rounded-full transition-all text-base">
+              <i data-lucide="sparkles" class="w-5 h-5 text-amber-500"></i>
+              Explorar Paquetes
+            </a>
+          </div>
+
+          <!-- Trust Highlights -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-100 max-w-xl">
+            <div>
+              <div class="font-fun text-2xl sm:text-3xl font-bold text-slate-900">100%</div>
+              <div class="text-xs text-slate-500 mt-0.5">Privado para tu evento</div>
+            </div>
+            <div>
+              <div class="font-fun text-2xl sm:text-3xl font-bold text-coral-500">Sanitizado</div>
+              <div class="text-xs text-slate-500 mt-0.5">Higiene y control estricto</div>
+            </div>
+            <div>
+              <div class="font-fun text-2xl sm:text-3xl font-bold text-slate-900">Polanco</div>
+              <div class="text-xs text-slate-500 mt-0.5">Ubicación céntrica y segura</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column Hero Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 aspect-[4/5]">
+            <img src="img/foto-1.jpg" alt="Instalaciones de juego de Jumbo Polanco" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+            <div class="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-slate-100">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-xl bg-coral-50 text-coral-600 flex items-center justify-center shrink-0 mt-0.5">
+                  <i data-lucide="heart" class="w-5 h-5 fill-coral-500"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-bold uppercase tracking-wider text-coral-600">Lo que dicen las familias</p>
+                  <p class="text-xs text-slate-700 italic mt-0.5">“Un lugar súper agradable, limpio y seguro. Los niños jugaron horas y los papás pudimos convivir muy cómodos.”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Props / Concept -->
+  <section id="experiencia" class="py-20 bg-slate-50 border-y border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-coral-600 bg-coral-50 border border-coral-200/60 px-3.5 py-1.5 rounded-full">La Experiencia Jumbo</span>
+        <h2 class="font-fun text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mt-4">
+          Diseñado para que los niños jueguen y los papás descansen
+        </h2>
+        <p class="text-slate-600 mt-3 text-base sm:text-lg font-normal">
+          Olvídate del estrés de organizar la fiesta en casa. En Jumbo Polanco tienes todo listo en un espacio exclusivo para tu familia.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm card-hover">
+          <div class="w-13 h-13 w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center mb-6">
+            <i data-lucide="shield-check" class="w-6 h-6 stroke-[2.5]"></i>
+          </div>
+          <h3 class="font-fun text-2xl font-bold text-slate-900 mb-3">Entorno 100% Seguro y Controlado</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Instalaciones totalmente cerradas y acolchadas con visibilidad panorámica para supervisar a tus pequeños en todo momento mientras juegas con ellos o charlas con tus invitados.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm card-hover">
+          <div class="w-12 h-12 rounded-2xl bg-coral-50 text-coral-600 flex items-center justify-center mb-6">
+            <i data-lucide="sparkles" class="w-6 h-6 stroke-[2.5]"></i>
+          </div>
+          <h3 class="font-fun text-2xl font-bold text-slate-900 mb-3">Juego Simbólico y Creativo</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Áreas de cocinita, minimarket, carritos, alberca de pelotas y estructuras sensoriales que fomentan la imaginación, motricidad y el juego cooperativo entre niños.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm card-hover">
+          <div class="w-12 h-12 rounded-2xl bg-mint-50 text-mint-600 flex items-center justify-center mb-6">
+            <i data-lucide="coffee" class="w-6 h-6 stroke-[2.5]"></i>
+          </div>
+          <h3 class="font-fun text-2xl font-bold text-slate-900 mb-3">Confort para los Adultos</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Área de cafetería y mesas de convivencia cómodas, aire acondicionado, WiFi y música ambiental para que los adultos disfruten tanto como los pequeños festejados.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages / Services -->
+  <section id="paquetes" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-600 bg-amber-50 px-3.5 py-1.5 rounded-full">Modalidades & Eventos</span>
+        <h2 class="font-fun text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mt-4">
+          Elige la mejor forma de festejar en Jumbo
+        </h2>
+        <p class="text-slate-600 mt-3 text-base sm:text-lg font-normal">
+          Ya sea que busques cerrar el espacio sólo para tu fiesta o venir a pasar una tarde de juegos entre amigos.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Package 1 -->
+        <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 flex flex-col justify-between card-hover">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-white border border-slate-200 text-slate-700 flex items-center justify-center mb-6 shadow-sm">
+              <i data-lucide="users" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Tardes Entre Semana</span>
+            <h3 class="font-fun text-2xl font-bold text-slate-900 mt-1 mb-3">Playdates & Visitas Libres</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Ideal para organizar una tarde de juego con los amiguitos de la escuela o celebrar un logro pequeño en un ambiente limpio, climatizado y lleno de diversión.
+            </p>
+            <ul class="space-y-3 text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Acceso por tiempo definido a todas las áreas</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Cafetería y barra de bebidas para papás</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Aforo controlado para mayor comodidad</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/525515078369?text=Hola%20Jumbo%20Polanco,%20me%20gustar%C3%ADa%20informes%20para%20un%20Playdate." 
+             target="_blank" rel="noopener"
+             class="w-full inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-900 font-bold py-3.5 px-6 rounded-full border border-slate-200 transition-all text-sm">
+            Consultar Disponibilidad de Playdate
+          </a>
+        </div>
+
+        <!-- Package 2 (Featured) -->
+        <div class="bg-gradient-to-b from-amber-50 to-white rounded-3xl p-8 border-2 border-coral-400 shadow-xl flex flex-col justify-between relative card-hover">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-coral-500 to-amber-500 text-white text-xs font-bold uppercase tracking-widest px-4 py-1 rounded-full shadow-sm">
+            ⭐ El Favorito de Polanco
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-coral-500 text-white flex items-center justify-center mb-6 shadow-md shadow-coral-500/20">
+              <i data-lucide="gift" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-coral-600">Eventos Exclusivos</span>
+            <h3 class="font-fun text-2xl font-bold text-slate-900 mt-1 mb-3">Fiesta Privada de Cumpleaños</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              El salón 100% exclusivo para ti y tus invitados. Ninguna persona ajena ingresa durante tu fiesta para garantizar privacidad y tranquilidad absoluta.
+            </p>
+            <ul class="space-y-3 text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-coral-600 font-bold shrink-0"></i>
+                <span class="font-semibold text-slate-900">Uso exclusivo de todas las instalaciones</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-coral-600 font-bold shrink-0"></i>
+                <span>Área de piñata, pastel y banquete</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-coral-600 font-bold shrink-0"></i>
+                <span>Staff de asistencia y limpieza durante el evento</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-coral-600 font-bold shrink-0"></i>
+                <span>Promoción especial para el cumpleañero</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/525515078369?text=Hola%20Jumbo%20Polanco,%20quiero%20cotizar%20una%20Fiesta%20Privada%20de%20Cumplea%C3%B1os." 
+             target="_blank" rel="noopener"
+             class="w-full inline-flex items-center justify-center gap-2 bg-coral-500 hover:bg-coral-600 text-white font-bold py-3.5 px-6 rounded-full shadow-md shadow-coral-500/30 transition-all text-sm">
+            <i data-lucide="party-popper" class="w-4 h-4"></i>
+            Cotizar Mi Fiesta Privada
+          </a>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 flex flex-col justify-between card-hover">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-white border border-slate-200 text-slate-700 flex items-center justify-center mb-6 shadow-sm">
+              <i data-lucide="palette" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Talleres & Eventos Escolares</span>
+            <h3 class="font-fun text-2xl font-bold text-slate-900 mt-1 mb-3">Eventos a la Medida</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Bautizos, primeras comuniones, reuniones de graduación de kínder o talleres sensoriales con decoración personalizada según tus ideas.
+            </p>
+            <ul class="space-y-3 text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Flexibilidad de horarios matutinos y vespertinos</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Opciones de catering y mesa dulce aliadas</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Espacio idóneo para fotos memorables</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/525515078369?text=Hola%20Jumbo%20Polanco,%20me%20gustar%C3%ADa%20cotizar%20un%20evento%20especial%20o%20taller." 
+             target="_blank" rel="noopener"
+             class="w-full inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-900 font-bold py-3.5 px-6 rounded-full border border-slate-200 transition-all text-sm">
+            Armar Paquete Personalizado
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section id="instalaciones" class="py-20 bg-slate-50 border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-coral-600">Conoce Nuestro Espacio</span>
+          <h2 class="font-fun text-3xl sm:text-4xl font-bold text-slate-900 mt-2">Instalaciones pensadas para brillar</h2>
+        </div>
+        <p class="text-slate-600 text-sm max-w-md font-normal">
+          Cada rincón de Jumbo Polanco combina estética, estimulación motriz y máxima seguridad para los más pequeños de la casa.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-1.jpg" alt="Estructuras de juego suave y creativo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Juego Libre y Estructuras Suaves</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-2.jpg" alt="Alberca de pelotas pastel y tobogán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Alberca de Pelotas y Toboganes</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-3.jpg" alt="Área de juego simbólico y casitas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Cocinita & Juego Simbólico</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-4.jpg" alt="Montaje de fiesta de cumpleaños temática" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Montajes de Cumpleaños Hermosos</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-5.jpg" alt="Zona de estimulación sensorial para pequeños" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Espacio para Bebés y Primeros Pasos</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-6.jpg" alt="Mesa de convivencia y cafetería para adultos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Área Cómoda para Papás y Familias</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="opiniones" class="py-20 bg-white border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold mb-3">
+          <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+          La Opinión de Nuestras Familias
+        </div>
+        <h2 class="font-fun text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">
+          Experiencias reales en Jumbo Polanco
+        </h2>
+        <p class="text-slate-600 mt-3 font-normal">
+          Comentarios de papás y mamás que han festejado con nosotros en Ampliación Granada y Polanco.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-7">
+        <!-- Review 1 -->
+        <div class="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              “Celebramos el cumple 3 de mi hija y fue la mejor decisión. El lugar es hermoso, súper limpio y al ser privado nos dio muchísima paz saber que sólo estaba nuestra familia. ¡Todos los niños felices!”
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/70">
+            <div class="w-9 h-9 rounded-full bg-coral-500 text-white font-bold text-xs flex items-center justify-center">S</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Sofía M.</p>
+              <p class="text-[11px] text-slate-500">Mamá de Polanco · Fiesta Privada</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              “Los juegos son de excelente calidad y súper seguros para niños pequeños. La alberca de pelotas y la cocinita les encantaron. Además la atención de las chicas del staff es de 10.”
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/70">
+            <div class="w-9 h-9 rounded-full bg-amber-500 text-white font-bold text-xs flex items-center justify-center">R</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Rodrigo L.</p>
+              <p class="text-[11px] text-slate-500">Papá de Nuevo Polanco · Playdate</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              “La ubicación en Privada Cervantes está súper práctica y el concepto es mucho más bonito y estético que los salones tradicionales. Quedamos encantados con todo el servicio.”
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/70">
+            <div class="w-9 h-9 rounded-full bg-mint-600 text-white font-bold text-xs flex items-center justify-center">V</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Valeria C.</p>
+              <p class="text-[11px] text-slate-500">Familia Visitante · Evento Infantil</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours Section -->
+  <section id="ubicacion" class="py-20 bg-slate-50 border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5 bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-coral-600">Visítanos en Miguel Hidalgo</span>
+            <h2 class="font-fun text-3xl font-bold text-slate-900 mt-1">Ubicación y Contacto</h2>
+          </div>
+
+          <div class="space-y-4 text-sm">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900">Dirección</p>
+                <p class="text-slate-600 mt-0.5">Privada Cervantes 19E, Col. Ampliación Granada (zona Polanco / Nuevo Polanco), Alcaldía Miguel Hidalgo, C.P. 11529, Ciudad de México.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-coral-50 text-coral-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="phone-call" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900">WhatsApp Oficial de Cotizaciones</p>
+                <a href="https://wa.me/525515078369" class="text-coral-600 font-bold hover:underline block mt-0.5 text-base">+52 55 1507 8369</a>
+                <p class="text-xs text-slate-500 mt-0.5">Respondemos cotizaciones y consultas de disponibilidad.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-mint-50 text-mint-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="instagram" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900">Redes Sociales</p>
+                <p class="text-slate-600 mt-0.5">Instagram: <a href="https://instagram.com/juega.jumbo.polanco" target="_blank" rel="noopener" class="text-coral-600 font-semibold hover:underline">@juega.jumbo.polanco</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/525515078369?text=Hola%20Jumbo%20Polanco,%20me%20gustar%C3%ADa%20agendar%20una%20visita%20para%20conocer%20el%20sal%C3%B3n."
+               target="_blank" rel="noopener"
+               class="flex-1 inline-flex items-center justify-center gap-2 bg-coral-500 hover:bg-coral-600 text-white font-bold py-3.5 px-5 rounded-full text-sm shadow-sm transition-all">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              Agendar Visita por WhatsApp
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Privada+Cervantes+19E+Ampliacion+Granada+Miguel+Hidalgo+CDMX"
+               target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-3.5 px-5 rounded-full text-sm transition-all">
+              <i data-lucide="navigation" class="w-4 h-4"></i>
+              Cómo llegar
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 rounded-3xl overflow-hidden shadow-md border border-slate-200 bg-white h-[430px]">
+          <iframe
+            title="Ubicación de Jumbo Polanco"
+            src="https://www.google.com/maps?q=Privada+Cervantes+19E,+Ampliaci%C3%B3n+Granada,+Miguel+Hidalgo,+11529+Ciudad+de+M%C3%A9xico&hl=es&z=16&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-fun font-bold text-base">J</div>
+        <span class="font-bold text-slate-800">Jumbo Polanco</span>
+        <span>· Privada Cervantes 19E, Ampliación Granada, CDMX.</span>
+      </div>
+      <div>
+        © 2026 Jumbo Polanco. Fiestas infantiles privadas & Playdates.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/525515078369?text=Hola%20Jumbo%20Polanco,%20quiero%20conocer%20disponibilidad%20para%20fiesta%20infantil."
+     target="_blank" rel="noopener"
+     aria-label="Cotizar fiesta por WhatsApp"
+     class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2.5 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold px-5 py-3.5 rounded-full shadow-2xl hover:scale-105 transition-all">
+    <i data-lucide="message-circle" class="w-5 h-5 fill-white text-[#25D366]"></i>
+    <span class="text-sm">Cotizar Fiesta en WhatsApp</span>
+  </a>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
