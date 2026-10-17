@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jardín El Real | Renta de Jardín para Eventos y Bodas en Paseos de Churubusco, CDMX</title>
+  <meta name="description" content="Jardín El Real en Paseos de Churubusco, a 5 min de Parque Tezontle. Renta de jardín para bodas, XV años, bautizos y cumpleaños hasta 150 personas. Paquetes desde $15,000." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'serif'],
+          },
+          colors: {
+            botanical: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            },
+            champagne: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #FFFFFF;
+      color: #0F172A;
+    }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 35px -12px rgba(22, 101, 52, 0.16);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-botanical-100 selection:text-botanical-900">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-botanical-50/80 border-b border-botanical-200/70 text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 text-slate-700 font-medium">
+        <span id="status-badge" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+          Agenda Abierta 2026 · Descuentos en Viernes y Domingos
+        </span>
+        <span class="hidden md:inline text-botanical-300">|</span>
+        <span class="hidden md:inline text-slate-600">Capacidad hasta 150 invitados · Eventos 100% privados</span>
+      </div>
+      <div class="flex items-center gap-4 ml-auto sm:ml-0 font-medium">
+        <a href="tel:+525578109798" class="inline-flex items-center gap-1.5 text-slate-700 hover:text-botanical-700 font-bold transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-botanical-600"></i>
+          55 7810 9798
+        </a>
+        <span class="text-botanical-300">|</span>
+        <a href="#ubicacion" class="inline-flex items-center gap-1 text-slate-600 hover:text-botanical-700 transition-colors">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-botanical-600"></i>
+          <span>Río Mezcalapa 55, Paseos de Churubusco</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-2xl bg-botanical-50 border border-botanical-200 text-botanical-800 flex items-center justify-center shadow-sm group-hover:bg-botanical-700 group-hover:text-white transition-all">
+          <i data-lucide="trees" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 block leading-none">Jardín <span class="text-botanical-700">El Real</span></span>
+          <span class="text-[11px] uppercase tracking-widest text-champagne-700 font-semibold block mt-1">Paseos de Churubusco · CDMX</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#el-jardin" class="hover:text-botanical-700 transition-colors">El Jardín</a>
+        <a href="#paquetes" class="hover:text-botanical-700 transition-colors">Paquetes & Precios</a>
+        <a href="#galeria" class="hover:text-botanical-700 transition-colors">Galería</a>
+        <a href="#experiencias" class="hover:text-botanical-700 transition-colors">Opiniones</a>
+        <a href="#ubicacion" class="hover:text-botanical-700 transition-colors">Ubicación</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/525578109798?text=Hola%20Jard%C3%ADn%20El%20Real,%20me%20gustar%C3%ADa%20cotizar%20una%20fecha%20para%20un%20evento."
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 bg-botanical-700 hover:bg-botanical-800 text-white font-semibold text-sm px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Cotizar Fecha</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-botanical-50/60 via-white to-white pt-10 pb-20 lg:pt-16 lg:pb-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        
+        <!-- Left Column -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-botanical-200 shadow-sm text-xs font-semibold text-botanical-800">
+            <span class="flex items-center text-amber-500">
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+            </span>
+            <span>A 5 minutos de Parque Tezontle y Río Churubusco</span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight">
+            El jardín perfecto para celebrar los momentos que <span class="italic text-botanical-700 font-semibold">marcan tu historia</span>.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl font-normal">
+            En <strong>Jardín El Real</strong> transformamos tus bodas, XV años, bautizos, cumpleaños y reuniones familiares en una experiencia mágica al aire libre. Capacidad de hasta <strong>150 invitados</strong>, opción de sólo renta o <strong>paquetes integrales desde $15,000</strong> en Río Mezcalapa 55, Paseos de Churubusco.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
+            <a href="https://wa.me/525578109798?text=Hola%20Jard%C3%ADn%20El%20Real,%20quiero%20conocer%20fechas%20disponibles%20y%20precios%20de%20paquetes."
+               target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center gap-2.5 bg-botanical-700 hover:bg-botanical-800 text-white font-semibold px-7 py-4 rounded-full shadow-md hover:shadow-lg transition-all text-base">
+              <i data-lucide="calendar-heart" class="w-5 h-5"></i>
+              Consultar Disponibilidad en WhatsApp
+            </a>
+            <a href="#paquetes"
+               class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-semibold px-6 py-4 rounded-full transition-all text-base">
+              <i data-lucide="sparkles" class="w-5 h-5 text-champagne-600"></i>
+              Ver Paquetes desde $15,000
+            </a>
+          </div>
+
+          <!-- Trust Highlights -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-200/80 max-w-xl">
+            <div>
+              <div class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">150</div>
+              <div class="text-xs text-slate-500 mt-0.5">Capacidad de invitados</div>
+            </div>
+            <div>
+              <div class="font-serif text-2xl sm:text-3xl font-bold text-botanical-700">100%</div>
+              <div class="text-xs text-slate-500 mt-0.5">Privacidad total para tu día</div>
+            </div>
+            <div>
+              <div class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">$15,000</div>
+              <div class="text-xs text-slate-500 mt-0.5">Paquetes accesibles y completos</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column Hero Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 aspect-[4/5]">
+            <img src="img/foto-1.jpg" alt="Montaje de boda y evento en Jardín El Real" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+            <div class="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-slate-100">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-xl bg-botanical-50 text-botanical-700 flex items-center justify-center shrink-0 mt-0.5">
+                  <i data-lucide="heart" class="w-5 h-5 fill-botanical-600"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-bold uppercase tracking-wider text-botanical-700">Tu Celebración Soñada</p>
+                  <p class="text-xs text-slate-700 italic mt-0.5">“El jardín lució precioso, el banquete riquísimo y la atención del personal fue excelente. ¡Nuestros invitados quedaron fascinados!”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Venue Benefits -->
+  <section id="el-jardin" class="py-20 bg-slate-50 border-y border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-botanical-700 bg-botanical-100/80 px-3.5 py-1.5 rounded-full">Por Qué Elegir Jardín El Real</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mt-4">
+          Todo lo necesario para que tu fiesta sea un éxito
+        </h2>
+        <p class="text-slate-600 mt-3 text-base sm:text-lg">
+          Ubicación estratégica en Paseos de Churubusco, áreas verdes cuidadas y la flexibilidad de contratar solo el espacio o tu evento completamente resuelto.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm card-hover">
+          <div class="w-12 h-12 rounded-2xl bg-botanical-50 text-botanical-700 flex items-center justify-center mb-6">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-slate-900 mb-3">Privacidad y Seguridad 100%</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            El jardín es exclusivo para ti y tus invitados durante las horas de tu evento. Sanitarios equipados, acceso controlado y tranquilidad para chicos y grandes.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm card-hover">
+          <div class="w-12 h-12 rounded-2xl bg-champagne-50 text-champagne-700 flex items-center justify-center mb-6">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-slate-900 mb-3">Carpa Elegante & Montajes</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Protección total contra sol o lluvia con carpas estructuradas, iluminación ambiental nocturna, mesas redondas o tablones, sillas Tiffany y mantelería fina.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm card-hover">
+          <div class="w-12 h-12 rounded-2xl bg-botanical-50 text-botanical-700 flex items-center justify-center mb-6">
+            <i data-lucide="map-pin" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-slate-900 mb-3">Ubicación Inmejorable</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            A solo 5 minutos de Parque Tezontle, fácil acceso por Av. Río Churubusco y Canal de Tezontle, ideal para que tus invitados lleguen rápido y sin complicaciones.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="paquetes" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-champagne-700 bg-champagne-50 px-3.5 py-1.5 rounded-full">Modalidades & Presupuestos</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mt-4">
+          Paquetes flexibles a la medida de tu festejo
+        </h2>
+        <p class="text-slate-600 mt-3 text-base sm:text-lg">
+          Pregunta por nuestros descuentos especiales en eventos celebrados en <strong>viernes y domingos</strong>.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Package 1: Renta de Espacio -->
+        <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 flex flex-col justify-between card-hover">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-white border border-slate-200 text-slate-700 flex items-center justify-center mb-6 shadow-sm">
+              <i data-lucide="key" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Libertad Total</span>
+            <h3 class="font-serif text-2xl font-bold text-slate-900 mt-1 mb-2">Renta Solo Espacio</h3>
+            <p class="text-botanical-700 font-bold text-xl mb-4">Desde $15,000 MXN</p>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Renta las instalaciones del jardín y trae a tus propios proveedores de comida, música y decoración a tu gusto.
+            </p>
+            <ul class="space-y-3 text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>5 horas de evento + tiempo de montaje previo</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Sanitarios para damas y caballeros</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Área de preparación de alimentos</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Personal de limpieza durante el evento</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/525578109798?text=Hola%20Jard%C3%ADn%20El%20Real,%20me%20interesa%20cotizar%20la%20Renta%20de%20Solo%20Espacio." 
+             target="_blank" rel="noopener"
+             class="w-full inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-900 font-semibold py-3.5 px-6 rounded-full border border-slate-200 transition-all text-sm">
+            Cotizar Renta de Espacio
+          </a>
+        </div>
+
+        <!-- Package 2: Paquete Integral (Featured) -->
+        <div class="bg-gradient-to-b from-botanical-50 to-white rounded-3xl p-8 border-2 border-botanical-600 shadow-xl flex flex-col justify-between relative card-hover">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-botanical-700 text-white text-xs font-bold uppercase tracking-widest px-4 py-1 rounded-full shadow-sm">
+            ⭐ El Más Solicitado
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-botanical-700 text-white flex items-center justify-center mb-6 shadow-md">
+              <i data-lucide="utensils" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-botanical-700">Fiesta Equipada</span>
+            <h3 class="font-serif text-2xl font-bold text-slate-900 mt-1 mb-2">Paquete con Mobiliario & Carpa</h3>
+            <p class="text-botanical-800 font-bold text-xl mb-4">Cotización personalizada</p>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              El jardín con montaje completo: carpa estructurada, mesas redondas, sillas Tiffany, mantelería y opción de menú o taquiza tradicional.
+            </p>
+            <ul class="space-y-3 text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-botanical-700 font-bold shrink-0"></i>
+                <span class="font-semibold text-slate-900">Carpa elegante a la medida</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-botanical-700 font-bold shrink-0"></i>
+                <span>Mesas, sillas Tiffany y mantelería de gala</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-botanical-700 font-bold shrink-0"></i>
+                <span>Vajilla, cubertería y cristalería</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-botanical-700 font-bold shrink-0"></i>
+                <span>Opción de carrito de snacks y mesa dulce</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/525578109798?text=Hola%20Jard%C3%ADn%20El%20Real,%20quiero%20cotizar%20el%20Paquete%20con%20Mobiliario%20y%20Carpa." 
+             target="_blank" rel="noopener"
+             class="w-full inline-flex items-center justify-center gap-2 bg-botanical-700 hover:bg-botanical-800 text-white font-semibold py-3.5 px-6 rounded-full shadow-md transition-all text-sm">
+            <i data-lucide="party-popper" class="w-4 h-4"></i>
+            Cotizar Paquete Integral
+          </a>
+        </div>
+
+        <!-- Package 3: Banquete Completo & Música -->
+        <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 flex flex-col justify-between card-hover">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-white border border-slate-200 text-slate-700 flex items-center justify-center mb-6 shadow-sm">
+              <i data-lucide="music" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Todo Resuelto</span>
+            <h3 class="font-serif text-2xl font-bold text-slate-900 mt-1 mb-2">Paquete Todo Incluido VIP</h3>
+            <p class="text-botanical-700 font-bold text-xl mb-4">Para Bodas & XV Años</p>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Tú solo preocúpate por disfrutar. Incluye banquete en tiempos, meseros profesionales, sonido con DJ e iluminación ambiental.
+            </p>
+            <ul class="space-y-3 text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Menú en 2 o 3 tiempos a elegir</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>DJ profesional, audio de alta fidelidad y luces</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Capitán de meseros y servicio de refresco/hielo</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Montaje y decoración temática personalizada</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/525578109798?text=Hola%20Jard%C3%ADn%20El%20Real,%20me%20interesa%20el%20Paquete%20Todo%20Incluido%20VIP." 
+             target="_blank" rel="noopener"
+             class="w-full inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-900 font-semibold py-3.5 px-6 rounded-full border border-slate-200 transition-all text-sm">
+            Cotizar Todo Incluido VIP
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section id="galeria" class="py-20 bg-slate-50 border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-botanical-700">Galería de Eventos</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-2">Momentos reales en Jardín El Real</h2>
+        </div>
+        <p class="text-slate-600 text-sm max-w-md">
+          Cada evento tiene su propia esencia. Así lucen nuestros montajes tanto de día al aire libre como con iluminación nocturna.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-1.jpg" alt="Montaje de boda en jardín" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-semibold text-sm">Bodas Románticas en Jardín</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-2.jpg" alt="Mesa de banquete elegante" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-semibold text-sm">Banquetes y Mesas de Honor</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-3.jpg" alt="Iluminación nocturna y carpa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-semibold text-sm">Iluminación Mágica Nocturna</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-4.jpg" alt="Fiesta de XV años y cumpleaños" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-semibold text-sm">XV Años & Cumpleaños</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-5.jpg" alt="Detalles florales y centros de mesa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-semibold text-sm">Decoración Floral & Detalles</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-6.jpg" alt="Bautizos y reuniones familiares" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-semibold text-sm">Bautizos y Convivencias Familiares</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="experiencias" class="py-20 bg-white border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-champagne-50 border border-champagne-200 text-champagne-800 text-xs font-bold mb-3">
+          <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+          La Opinión de Quienes Han Festejado con Nosotros
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">
+          Experiencias en Paseos de Churubusco
+        </h2>
+        <p class="text-slate-600 mt-3 font-normal">
+          Comentarios de anfitriones que confiaron en Jardín El Real para sus momentos más especiales.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-7">
+        <!-- Review 1 -->
+        <div class="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              “Festejamos el bautizo de mi hijo y todo salió de maravilla. El jardín tiene el tamaño perfecto para que los niños jueguen y los adultos disfruten. La atención y facilidades que nos dieron fueron excelentes.”
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/70">
+            <div class="w-9 h-9 rounded-full bg-botanical-700 text-white font-bold text-xs flex items-center justify-center">L</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Lorena P.</p>
+              <p class="text-[11px] text-slate-500">Evento Familiar · Bautizo</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              “Excelente opción en Paseos de Churubusco. La carpa y la iluminación de noche hacen que el lugar se vea increíble. Los precios son muy accesibles para la calidad de servicio que entregan.”
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/70">
+            <div class="w-9 h-9 rounded-full bg-champagne-600 text-white font-bold text-xs flex items-center justify-center">E</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Eduardo G.</p>
+              <p class="text-[11px] text-slate-500">Cumpleaños 50 Años · Paquete Integral</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              “La ubicación cerca de Parque Tezontle facilitó mucho la llegada de toda la familia. La taquiza estuvo deliciosa y el carrito de snacks fue la sensación de la fiesta. ¡Ampliamente recomendados!”
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/70">
+            <div class="w-9 h-9 rounded-full bg-botanical-800 text-white font-bold text-xs flex items-center justify-center">C</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Claudia M.</p>
+              <p class="text-[11px] text-slate-500">Primera Comunión · Todo Incluido</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours Section -->
+  <section id="ubicacion" class="py-20 bg-slate-50 border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5 bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-botanical-700">Agenda tu Visita</span>
+            <h2 class="font-serif text-3xl font-bold text-slate-900 mt-1">Ubicación y Recorridos</h2>
+          </div>
+
+          <div class="space-y-4 text-sm">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-botanical-50 text-botanical-700 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900">Dirección</p>
+                <p class="text-slate-600 mt-0.5">Río Mezcalapa #55, Col. Paseos de Churubusco, C.P. 09030, Alcaldía Iztapalapa, Ciudad de México.</p>
+                <p class="text-xs text-botanical-700 font-semibold mt-1">Referencia: A 5 minutos de Parque Tezontle.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-champagne-50 text-champagne-700 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="phone-call" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900">WhatsApp de Cotizaciones Directas</p>
+                <a href="https://wa.me/525578109798" class="text-botanical-700 font-bold hover:underline block mt-0.5 text-base">+52 55 7810 9798</a>
+                <p class="text-xs text-slate-500 mt-0.5">Atención personalizada para cotizaciones y apartado de fechas.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-botanical-50 text-botanical-700 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900">Horario de Visitas para Conocer el Jardín</p>
+                <p class="text-slate-600 mt-0.5">Previa cita vía WhatsApp para mostrarte las instalaciones y opciones de montaje.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/525578109798?text=Hola%20Jard%C3%ADn%20El%20Real,%20me%20gustar%C3%ADa%20agendar%20una%20cita%20para%20conocer%20el%20jard%C3%ADn."
+               target="_blank" rel="noopener"
+               class="flex-1 inline-flex items-center justify-center gap-2 bg-botanical-700 hover:bg-botanical-800 text-white font-semibold py-3.5 px-5 rounded-full text-sm shadow-sm transition-all">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              Agendar Recorrido en WhatsApp
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Rio+Mezcalapa+55+Paseos+de+Churubusco+Iztapalapa+CDMX"
+               target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold py-3.5 px-5 rounded-full text-sm transition-all">
+              <i data-lucide="navigation" class="w-4 h-4"></i>
+              Cómo llegar
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 rounded-3xl overflow-hidden shadow-md border border-slate-200 bg-white h-[430px]">
+          <iframe
+            title="Ubicación de Jardín El Real en Paseos de Churubusco"
+            src="https://www.google.com/maps?q=R%C3%ADo+Mezcalapa+55,+Paseos+de+Churubusco,+Iztapalapa,+09030+Ciudad+de+M%C3%A9xico&hl=es&z=16&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-xl bg-botanical-50 text-botanical-800 flex items-center justify-center font-serif font-bold text-base">R</div>
+        <span class="font-bold text-slate-800">Jardín El Real</span>
+        <span>· Río Mezcalapa 55, Paseos de Churubusco, CDMX.</span>
+      </div>
+      <div>
+        © 2026 Jardín El Real. Renta de Jardín y Eventos Sociales.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/525578109798?text=Hola%20Jard%C3%ADn%20El%20Real,%20me%20gustar%C3%ADa%20pedir%20informes%20y%20conocer%20fechas%20disponibles."
+     target="_blank" rel="noopener"
+     aria-label="Cotizar evento por WhatsApp"
+     class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2.5 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold px-5 py-3.5 rounded-full shadow-2xl hover:scale-105 transition-all">
+    <i data-lucide="message-circle" class="w-5 h-5 fill-white text-[#25D366]"></i>
+    <span class="text-sm">Cotizar Evento en WhatsApp</span>
+  </a>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
