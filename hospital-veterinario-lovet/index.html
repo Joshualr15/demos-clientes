@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospital Veterinario LOVET | Urgencias 24 Horas, Cirugía y Diagnóstico en Ixtapaluca</title>
+  <meta name="description" content="Hospital Veterinario LOVET en Los Héroes, Ixtapaluca. Atención veterinaria 24 horas los 365 días del año. Rayos X, Ultrasonido, Laboratorio Clínico, Quirófano Equipado, Traumatología y Atención Especializada para Gatos y Perros. 4.4 estrellas y 383 reseñas." />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              blue: '#2563EB',
+              blueDark: '#1D4ED8',
+              red: '#DC2626',
+              amber: '#D97706',
+              dark: '#0F172A',
+              ice: '#F8FAFC'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      background-color: #FFFFFF;
+      color: #0F172A;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    @keyframes softPulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.18); opacity: 0.75; }
+    }
+    .live-dot {
+      animation: softPulse 2s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- CINTA SUPERIOR DE URGENCIAS 24/7 -->
+  <div class="bg-slate-50 border-b border-slate-200 py-2 px-4 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 font-semibold text-slate-700">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-red-50 text-red-700 border border-red-200 font-bold text-xs">
+          <i data-lucide="siren" class="w-3.5 h-3.5 text-red-600"></i>
+          URGENCIAS 24/7
+        </span>
+        <span>Independencia Mz 26 Lt 28 Dp 1, Los Héroes, Ixtapaluca</span>
+      </div>
+      <div class="flex items-center gap-4 font-semibold">
+        <a href="tel:+525577713929" class="text-blue-600 hover:underline flex items-center gap-1">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+          <span>55 7771 3929</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1. NAVBAR FIJA BLANCA -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      <!-- Logo / Nombre -->
+      <a href="#inicio" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-sm group-hover:bg-blue-700 transition-colors">
+          <i data-lucide="cross" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="font-heading font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 block leading-none">
+            HOSPITAL VETERINARIO <span class="text-blue-600">LOVET</span>
+          </span>
+          <span class="text-xs font-medium text-slate-500 tracking-wide">
+            URGENCIAS 24 HORAS • LOS HÉROES IXTAPALUCA
+          </span>
+        </div>
+      </a>
+
+      <!-- Enlaces de Navegación -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="#inicio" class="hover:text-blue-600 transition-colors">Inicio</a>
+        <a href="#especialidades" class="hover:text-blue-600 transition-colors">Especialidades y Quirófano</a>
+        <a href="#instalaciones" class="hover:text-blue-600 transition-colors">Hospital</a>
+        <a href="#opiniones" class="hover:text-blue-600 transition-colors">Reseñas (383)</a>
+        <a href="#ubicacion" class="hover:text-blue-600 transition-colors">Ubicación y Horario 24h</a>
+      </nav>
+
+      <!-- Estado en Vivo + Botón de Contacto -->
+      <div class="flex items-center gap-3">
+        <a href="#ubicacion" id="nav-live-badge" class="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 live-dot"></span>
+          <span>Abierto Ahora • 24 Horas</span>
+        </a>
+
+        <a href="https://wa.me/525577713929?text=Hola%20Hospital%20Veterinario%20LOVET%2C%20vi%20su%20sitio%20web%20y%20necesito%20informes%20o%20atenci%C3%B3n%20veterinaria."
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm px-4 py-2.5 rounded-xl shadow-sm hover:-translate-y-0.5 transition-all duration-200">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>WhatsApp 24/7</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION (100% LUMINOSO, LIMPIO Y HOSPITALARIO) -->
+  <section id="inicio" class="bg-white pt-10 pb-16 lg:py-20 border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Columna Izquierda: Propuesta de Valor -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="flex flex-wrap items-center gap-3">
+            <!-- Badge de Google Maps -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs sm:text-sm font-semibold">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
+              <span>4.4 Estrellas (383 reseñas verificadas en Google Maps)</span>
+            </div>
+
+            <!-- Badge Reloj en Vivo -->
+            <div id="hero-live-badge" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs sm:text-sm font-semibold">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 live-dot"></span>
+              <span>🟢 Abierto Ahora - Atención 24 Horas</span>
+            </div>
+          </div>
+
+          <h1 class="font-heading text-3xl sm:text-5xl lg:text-[3.2rem] font-extrabold text-slate-900 tracking-tight leading-[1.12]">
+            Preservamos el amor en las familias cuidando la <span class="text-blue-600">salud integral</span> de tu mascota las 24 horas.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+            En <strong>Hospital Veterinario LOVET</strong> contamos con médicos veterinarios altamente capacitados y tecnología de vanguardia en <strong>Los Héroes, Ixtapaluca</strong>: Rayos X, Ultrasonido, Laboratorio Clínico, Quirófano completamente equipado, Traumatología y área tranquila especializada para gatos.
+          </p>
+
+          <!-- Botones de Acción Principales -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
+            <a href="https://wa.me/525577713929?text=Hola%20Hospital%20Veterinario%20LOVET%2C%20solicito%20atenci%C3%B3n%20o%20informes%20para%20mi%20mascota."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-base px-7 py-4 rounded-xl shadow-md hover:-translate-y-1 transition-all duration-200">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <span>Contactar por WhatsApp</span>
+            </a>
+
+            <a href="tel:+525577713929"
+               class="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold text-base px-6 py-4 rounded-xl shadow-sm hover:-translate-y-1 transition-all duration-200">
+              <i data-lucide="phone-call" class="w-5 h-5"></i>
+              <span>Urgencias: 55 7771 3929</span>
+            </a>
+          </div>
+
+          <!-- Píldoras de Tecnología y Especialidades -->
+          <div class="pt-4 border-t border-slate-100 grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 bg-slate-50 px-3 py-2 rounded-lg border border-slate-200/80">
+              <i data-lucide="clock" class="w-4 h-4 text-red-600 shrink-0"></i>
+              <span>Urgencias 24/7</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 bg-slate-50 px-3 py-2 rounded-lg border border-slate-200/80">
+              <i data-lucide="scan-line" class="w-4 h-4 text-blue-600 shrink-0"></i>
+              <span>Rayos X y Ultrasonido</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 bg-slate-50 px-3 py-2 rounded-lg border border-slate-200/80">
+              <i data-lucide="bone" class="w-4 h-4 text-blue-600 shrink-0"></i>
+              <span>Traumatología y Cirugía</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 bg-slate-50 px-3 py-2 rounded-lg border border-slate-200/80">
+              <i data-lucide="cat" class="w-4 h-4 text-amber-600 shrink-0"></i>
+              <span>Especialistas en Gatos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Fotografía Real del Hospital -->
+        <div class="lg:col-span-5">
+          <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-md">
+            <div class="relative rounded-xl overflow-hidden aspect-[4/3] bg-slate-100">
+              <img src="img/fachada-principal.jpg"
+                   onerror="this.src='https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=1000&q=80'"
+                   alt="Hospital Veterinario LOVET en Los Héroes Ixtapaluca"
+                   class="w-full h-full object-cover" />
+              <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm p-3.5 rounded-xl border border-slate-200 shadow-sm flex items-center justify-between gap-3">
+                <div>
+                  <p class="text-xs font-bold uppercase tracking-wider text-blue-600">Hospital Veterinario 24 Horas</p>
+                  <p class="text-sm font-bold text-slate-900">Independencia Mz 26 Lt 28, Los Héroes, Ixtapaluca</p>
+                </div>
+                <span class="px-2.5 py-1 rounded-lg bg-amber-50 border border-amber-200 text-amber-800 font-bold text-xs shrink-0">
+                  ★ 4.4 (383)
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. CINTA DE FORTALEZAS HOSPITALARIAS (GRIS HIELO SUAVE) -->
+  <section class="bg-[#F8FAFC] py-12 border-b border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center text-red-600 shrink-0">
+            <i data-lucide="ambulance" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Urgencias Veterinarias 24/7</h3>
+            <p class="text-sm text-slate-600 mt-1 leading-relaxed">
+              Abiertos las 24 horas de lunes a domingo para atender cualquier emergencia médica o quirúrgica sin demoras.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 shrink-0">
+            <i data-lucide="microscope" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Tecnología de Vanguardia</h3>
+            <p class="text-sm text-slate-600 mt-1 leading-relaxed">
+              Contamos con Rayos X, Ultrasonido, Laboratorio Clínico propio y Quirófano completamente equipado.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-100 flex items-center justify-center text-amber-600 shrink-0">
+            <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Atención Amigable para Gatos</h3>
+            <p class="text-sm text-slate-600 mt-1 leading-relaxed">
+              Manejo clínico especializado para pacientes felinos y caninos en un entorno tranquilo, limpio y seguro.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CATÁLOGO DE ESPECIALIDADES Y SERVICIOS VERIFICADOS -->
+  <section id="especialidades" class="bg-white py-16 lg:py-20 border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+          Servicios Médicos y Hospitalarios
+        </span>
+        <h2 class="font-heading text-2xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+          Especialidades de Hospital Veterinario LOVET
+        </h2>
+        <p class="text-slate-600 mt-3 text-base">
+          Tu mascota es parte de tu familia y también de la nuestra. Conoce nuestras áreas de diagnóstico, cirugía y urgencias.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Especialidad 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center text-red-600 mb-4">
+              <i data-lucide="siren" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Urgencias Veterinarias 24/7</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Recepción inmediata de pacientes en estado crítico, estabilización médica, oxigenoterapia y monitoreo continuo día y noche.
+            </p>
+          </div>
+          <a href="https://wa.me/525577713929?text=Hola%20LOVET%2C%20tengo%20una%20urgencia%20veterinaria%20y%20voy%20en%20camino."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-red-600 hover:text-red-700">
+            <span>Avisar urgencia por WhatsApp</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Especialidad 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 mb-4">
+              <i data-lucide="scan" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Rayos X y Ultrasonido</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Imagenología diagnóstica dentro del hospital para evaluar fracturas, órganos internos, gestación y patologías torácicas o abdominales.
+            </p>
+          </div>
+          <a href="https://wa.me/525577713929?text=Hola%20LOVET%2C%20quisiera%20cotizar%20un%20estudio%20de%20Rayos%20X%20o%20Ultrasonido."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-blue-600 hover:text-blue-700">
+            <span>Solicitar estudio por WhatsApp</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Especialidad 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 mb-4">
+              <i data-lucide="shield-plus" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Quirófano Equipado y Cirugía</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Intervenciones de tejidos blandos, esterilizaciones y cirugías de emergencia con protocolos seguros de anestesia y monitoreo.
+            </p>
+          </div>
+          <a href="https://wa.me/525577713929?text=Hola%20LOVET%2C%20me%20gustar%C3%ADa%20pedir%20informes%20sobre%20una%20Cirug%C3%ADa%20veterinaria."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-blue-600 hover:text-blue-700">
+            <span>Consultar valoración quirúrgica</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Especialidad 4 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-amber-50 border border-amber-100 flex items-center justify-center text-amber-600 mb-4">
+              <i data-lucide="bone" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Traumatología y Ortopedia</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Diagnóstico y tratamiento especializado de fracturas, luxaciones y lesiones articulares o musculoesqueléticas en perros y gatos.
+            </p>
+          </div>
+          <a href="https://wa.me/525577713929?text=Hola%20LOVET%2C%20quisiera%20agendar%20una%20consulta%20de%20Traumatolog%C3%ADa."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-amber-600 hover:text-amber-700">
+            <span>Agendar revisión traumatológica</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Especialidad 5 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 mb-4">
+              <i data-lucide="test-tubes" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Laboratorio Clínico</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Estudios de sangre, química sanguínea, hemogramas y pruebas diagnósticas rápidas para tomar decisiones médicas oportunas.
+            </p>
+          </div>
+          <a href="https://wa.me/525577713929?text=Hola%20LOVET%2C%20quisiera%20informes%20sobre%20estudios%20de%20Laboratorio%20Cl%C3%ADnico."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-blue-600 hover:text-blue-700">
+            <span>Cotizar análisis clínicos</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Especialidad 6 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-amber-50 border border-amber-100 flex items-center justify-center text-amber-600 mb-4">
+              <i data-lucide="cat" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Medicina Felina y Consulta General</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Atención especializada para gatos en un ambiente tranquilo y seguro, medicina preventiva, vacunas y desparasitación.
+            </p>
+          </div>
+          <a href="https://wa.me/525577713929?text=Hola%20LOVET%2C%20quisiera%20agendar%20una%20consulta%20para%20mi%20mascota."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-amber-600 hover:text-amber-700">
+            <span>Agendar consulta médica</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. GALERÍA DEL HOSPITAL E INSTALACIONES -->
+  <section id="instalaciones" class="bg-[#F8FAFC] py-16 lg:py-20 border-b border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-blue-600 bg-white px-3 py-1 rounded-full border border-slate-200">
+            Instalaciones y Equipamiento
+          </span>
+          <h2 class="font-heading text-2xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            Conoce Hospital Veterinario LOVET
+          </h2>
+        </div>
+        <p class="text-sm text-slate-600 max-w-md">
+          Instalaciones preparadas en Los Héroes Ixtapaluca para recibir consultas programadas y emergencias las 24 horas.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Foto Real 1 -->
+        <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+          <div class="overflow-hidden rounded-xl h-56 bg-slate-100">
+            <img src="img/fachada-principal.jpg"
+                 onerror="this.src='https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=800&q=80'"
+                 alt="Hospital Veterinario LOVET Principal"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div class="pt-3 px-1">
+            <span class="text-xs font-bold text-blue-600 uppercase">Fotografía Real • Hospital</span>
+            <h3 class="font-heading font-bold text-base text-slate-900 mt-0.5">Hospital Veterinario LOVET</h3>
+            <p class="text-xs text-slate-600 mt-1">Atención médica integral 24 horas en Los Héroes, Ixtapaluca.</p>
+          </div>
+        </div>
+
+        <!-- Foto Real 2 -->
+        <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+          <div class="overflow-hidden rounded-xl h-56 bg-slate-100">
+            <img src="img/ubicacion-exterior.jpg"
+                 onerror="this.src='https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80'"
+                 alt="Exterior e instalaciones en Independencia Mz 26 Lt 28"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div class="pt-3 px-1">
+            <span class="text-xs font-bold text-red-600 uppercase">Ubicación • Los Héroes</span>
+            <h3 class="font-heading font-bold text-base text-slate-900 mt-0.5">Acceso Rápido de Urgencias</h3>
+            <p class="text-xs text-slate-600 mt-1">Independencia Mz 26 Lt 28 Dp 1, C.P. 56585, Ixtapaluca.</p>
+          </div>
+        </div>
+
+        <!-- Foto Apoyo 3 -->
+        <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+          <div class="overflow-hidden rounded-xl h-56 bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=800&q=80"
+                 alt="Quirófano equipado, Rayos X y Ultrasonido"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div class="pt-3 px-1">
+            <span class="text-xs font-bold text-blue-600 uppercase">Tecnología Médica</span>
+            <h3 class="font-heading font-bold text-base text-slate-900 mt-0.5">Quirófano e Imagenología</h3>
+            <p class="text-xs text-slate-600 mt-1">Rayos X, ultrasonido, laboratorio clínico y cirugía especializada.</p>
+          </div>
+        </div>
+
+        <!-- Foto Apoyo 4 -->
+        <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+          <div class="overflow-hidden rounded-xl h-56 bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80"
+                 alt="Área tranquila y segura para gatos"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div class="pt-3 px-1">
+            <span class="text-xs font-bold text-amber-600 uppercase">Atención Felina</span>
+            <h3 class="font-heading font-bold text-base text-slate-900 mt-0.5">Ambiente Seguro para Gatos</h3>
+            <p class="text-xs text-slate-600 mt-1">Consulta especializada libre de estrés para pacientes felinos.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. SECCIÓN DE OPINIONES VERIFICADAS DE GOOGLE MAPS -->
+  <section id="opiniones" class="bg-white py-16 lg:py-20 border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-[#F8FAFC] rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm mb-10 flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div class="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
+          <div class="bg-white px-6 py-4 rounded-2xl border border-slate-200 shadow-sm">
+            <span class="font-heading text-4xl font-extrabold text-slate-900 block">4.4</span>
+            <div class="flex items-center justify-center gap-0.5 text-amber-500 my-1">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star-half" class="w-4 h-4 fill-amber-500"></i>
+            </div>
+            <span class="text-xs font-semibold text-slate-500">383 reseñas reales</span>
+          </div>
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Respaldo Masivo en Google Maps</span>
+            <h2 class="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
+              Más de 380 familias respaldan nuestra vocación
+            </h2>
+            <p class="text-sm text-slate-600 mt-1 max-w-xl">
+              Con <strong>4.4 estrellas y 383 opiniones verificadas</strong>, Hospital Veterinario LOVET es uno de los centros hospitalarios veterinarios con mayor trayectoria y confianza en Ixtapaluca.
+            </p>
+          </div>
+        </div>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Hospital+Veterinario+Lovet+Independencia+Mz+26+Lt+28+Dp+1+Los+Heroes+56585+Ixtapaluca"
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-900 font-bold text-sm px-5 py-3.5 rounded-xl border border-slate-200 shadow-sm hover:-translate-y-0.5 transition-all shrink-0">
+          <i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i>
+          <span>Ver las 383 Opiniones en Google Maps</span>
+        </a>
+      </div>
+
+      <!-- Tarjetas de Testimonios -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="flex items-center gap-1 text-amber-500 mb-3">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+          </div>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            "Nos atendieron de urgencia en la madrugada y salvaron a nuestro perrito. Tienen rayos X, ultrasonido y laboratorio ahí mismo, lo cual hace toda la diferencia en una emergencia."
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
+            <span>Paciente de Urgencias 24/7</span>
+            <span class="text-blue-600">★ 5.0</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="flex items-center gap-1 text-amber-500 mb-3">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+          </div>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            "Excelente trato hacia los gatitos. Los médicos tienen mucha paciencia, las instalaciones están impecables y cuentan con quirófano muy bien equipado."
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
+            <span>Reseña Verificada • Los Héroes</span>
+            <span class="text-blue-600">★ 5.0</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="flex items-center gap-1 text-amber-500 mb-3">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+          </div>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            "Muy recomendados para traumatología y cirugías. Se nota la preparación de los doctores y el seguimiento que le dan a cada mascota hasta su recuperación."
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
+            <span>Cliente en Google Maps</span>
+            <span class="text-blue-600">★ 5.0</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. UBICACIÓN, HORARIOS 24 HORAS Y RELOJ EN VIVO -->
+  <section id="ubicacion" class="bg-[#F8FAFC] py-16 lg:py-20 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Columna Izquierda: Dirección, Reloj en Vivo y Horarios -->
+        <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Atención Continua 24/7</span>
+            <h2 class="font-heading text-2xl font-extrabold text-slate-900 mt-1">Ubicación y Horarios</h2>
+          </div>
+
+          <!-- Widget de Reloj en Vivo 24 Horas -->
+          <div id="schedule-live-box" class="p-4 rounded-xl bg-emerald-50 border border-emerald-200">
+            <div class="flex items-center gap-2.5">
+              <span class="w-3 h-3 rounded-full bg-emerald-500 live-dot shrink-0"></span>
+              <p id="schedule-live-title" class="font-bold text-sm text-emerald-900">
+                🟢 Abierto Ahora - ¡Servicio de Hospital y Urgencias 24 Horas!
+              </p>
+            </div>
+            <p id="schedule-live-sub" class="text-xs text-emerald-700 mt-1 pl-5">
+              Verificando hora actual en Ixtapaluca...
+            </p>
+          </div>
+
+          <!-- Dirección y Teléfono -->
+          <div class="space-y-3 text-sm">
+            <div class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-5 h-5 text-blue-600 shrink-0 mt-0.5"></i>
+              <div>
+                <p class="font-bold text-slate-900">Dirección Exacta:</p>
+                <p class="text-slate-600">Independencia Mz 26 Lt 28 Dp 1, Los Héroes, C.P. 56585, Ixtapaluca, Estado de México.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <i data-lucide="phone" class="w-5 h-5 text-red-600 shrink-0 mt-0.5"></i>
+              <div>
+                <p class="font-bold text-slate-900">Teléfono de Urgencias y Citas:</p>
+                <a href="tel:+525577713929" class="text-blue-600 font-semibold hover:underline">+52 55 7771 3929</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tabla de Horarios Lunes a Domingo -->
+          <div>
+            <h3 class="font-heading font-bold text-sm uppercase tracking-wider text-slate-500 mb-3">
+              Horario Hospitalario (365 días)
+            </h3>
+            <div class="divide-y divide-slate-100 border border-slate-200 rounded-xl overflow-hidden text-sm" id="hours-table">
+              <div data-day="1" class="flex justify-between py-2.5 px-3.5 bg-white">
+                <span class="font-medium text-slate-700">Lunes</span>
+                <span class="font-semibold text-emerald-700">Abierto las 24 horas</span>
+              </div>
+              <div data-day="2" class="flex justify-between py-2.5 px-3.5 bg-white">
+                <span class="font-medium text-slate-700">Martes</span>
+                <span class="font-semibold text-emerald-700">Abierto las 24 horas</span>
+              </div>
+              <div data-day="3" class="flex justify-between py-2.5 px-3.5 bg-white">
+                <span class="font-medium text-slate-700">Miércoles</span>
+                <span class="font-semibold text-emerald-700">Abierto las 24 horas</span>
+              </div>
+              <div data-day="4" class="flex justify-between py-2.5 px-3.5 bg-white">
+                <span class="font-medium text-slate-700">Jueves</span>
+                <span class="font-semibold text-emerald-700">Abierto las 24 horas</span>
+              </div>
+              <div data-day="5" class="flex justify-between py-2.5 px-3.5 bg-white">
+                <span class="font-medium text-slate-700">Viernes</span>
+                <span class="font-semibold text-emerald-700">Abierto las 24 horas</span>
+              </div>
+              <div data-day="6" class="flex justify-between py-2.5 px-3.5 bg-white">
+                <span class="font-medium text-slate-700">Sábado</span>
+                <span class="font-semibold text-emerald-700">Abierto las 24 horas</span>
+              </div>
+              <div data-day="0" class="flex justify-between py-2.5 px-3.5 bg-white">
+                <span class="font-medium text-slate-700">Domingo</span>
+                <span class="font-semibold text-emerald-700">Abierto las 24 horas</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/525577713929?text=Hola%20Hospital%20Veterinario%20LOVET%2C%20solicito%20informes%20o%20atenci%C3%B3n%20veterinaria."
+               target="_blank" rel="noopener noreferrer"
+               class="flex-1 inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm px-4 py-3.5 rounded-xl shadow-sm transition-all">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>WhatsApp Directo</span>
+            </a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Independencia+Mz+26+Lt+28+Dp+1,+Los+Heroes,+56585+Ixtapaluca,+Méx."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-sm px-4 py-3.5 rounded-xl transition-all">
+              <i data-lucide="navigation" class="w-4 h-4 text-blue-600"></i>
+              <span>Cómo llegar</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Mapa Interactivo de Google Maps -->
+        <div class="lg:col-span-7 bg-white p-3 rounded-2xl border border-slate-200 shadow-sm h-[520px]">
+          <iframe
+            class="w-full h-full rounded-xl"
+            src="https://maps.google.com/maps?q=Hospital+Veterinario+Lovet%2C+Independencia+Mz+26+Lt+28+Dp+1%2C+Los+Heroes%2C+56585+Ixtapaluca%2C+M%C3%A9x.&output=embed&z=17"
+            title="Mapa de ubicación de Hospital Veterinario LOVET en Los Héroes Ixtapaluca"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FOOTER LIMPIO -->
+  <footer class="bg-white py-10 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white">
+          <i data-lucide="cross" class="w-4 h-4"></i>
+        </div>
+        <span class="font-heading font-bold text-slate-900">Hospital Veterinario LOVET</span>
+        <span>• Los Héroes, Ixtapaluca</span>
+      </div>
+      <p>© 2026 Hospital Veterinario LOVET. Urgencias y medicina veterinaria 24/7.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a href="https://wa.me/525577713929?text=Hola%20Hospital%20Veterinario%20LOVET%2C%20necesito%20informes%20o%20atenci%C3%B3n%20para%20mi%20mascota."
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Contactar por WhatsApp"
+     class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-5 py-3.5 rounded-full shadow-lg hover:-translate-y-1 transition-all duration-200">
+    <i data-lucide="message-circle" class="w-5 h-5"></i>
+    <span>Urgencias / Citas WhatsApp</span>
+  </a>
+
+  <!-- SCRIPT: ICONOS Y RELOJ EN VIVO 24/7 -->
+  <script>
+    lucide.createIcons();
+
+    function updateHospitalClock() {
+      const now = new Date();
+      const day = now.getDay();
+      const timeStr = now.toLocaleTimeString('es-MX', { hour: '2-digit', minute: '2-digit' });
+      const daysEs = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+
+      const navBadge = document.getElementById('nav-live-badge');
+      const heroBadge = document.getElementById('hero-live-badge');
+      const scheduleSub = document.getElementById('schedule-live-sub');
+
+      if (navBadge) {
+        navBadge.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-500 live-dot"></span><span>Abierto Ahora • ${timeStr}</span>`;
+      }
+      if (heroBadge) {
+        heroBadge.innerHTML = `<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 live-dot"></span><span>🟢 Abierto Ahora (${timeStr}) - Atención 24 Horas</span>`;
+      }
+      if (scheduleSub) {
+        scheduleSub.textContent = `${daysEs[day]} • Hora actual: ${timeStr} • Médicos de guardia disponibles las 24 horas`;
+      }
+
+      document.querySelectorAll('#hours-table > div').forEach((row) => {
+        if (parseInt(row.getAttribute('data-day'), 10) === day) {
+          row.className = 'flex justify-between py-2.5 px-3.5 bg-blue-50/80 font-bold text-blue-900';
+        }
+      });
+    }
+
+    updateHospitalClock();
+    setInterval(updateHospitalClock, 30000);
+  </script>
+</body>
+</html>
