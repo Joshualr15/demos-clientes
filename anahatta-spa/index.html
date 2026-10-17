@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anahatta SPA | Masajes, Depilación Láser y Tratamientos Faciales en Las Arboledas</title>
+  <meta name="description" content="Anahatta SPA en Las Arboledas, Tlalnepantla. Masajes relajantes, depilación láser, tratamientos faciales y corporales, y diseño de ceja con hilo. Calificación 5.0 ★ en Google." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f2f8f6',
+              100: '#deefe9',
+              200: '#bfe0d6',
+              500: '#3c8c78',
+              600: '#2d7160',
+              700: '#265b4e',
+              800: '#21493f',
+              900: '#1c3d35',
+            },
+            lotus: {
+              50: '#fdf6f6',
+              100: '#fbeae9',
+              500: '#d4827f',
+              600: '#be6764',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #FFFFFF;
+      color: #0F172A;
+    }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.93);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 38px -15px rgba(45, 113, 96, 0.14);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-brand-100 selection:text-brand-900">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-slate-50 border-b border-slate-200/80 text-xs sm:text-sm py-2.5 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 text-slate-700 font-medium">
+        <span id="status-badge" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+          Verificando horario...
+        </span>
+        <span class="hidden md:inline text-slate-300">|</span>
+        <span class="hidden md:inline text-slate-600">Lun–Vie: 10:00 a.m. – 6:00 p.m. · Sáb: 9:00 a.m. – 2:00 p.m.</span>
+      </div>
+      <div class="flex items-center gap-4 ml-auto sm:ml-0">
+        <a href="tel:+525575148706" class="inline-flex items-center gap-1.5 text-slate-700 hover:text-brand-600 font-semibold transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-600"></i>
+          55 7514 8706
+        </a>
+        <span class="text-slate-300">|</span>
+        <a href="#ubicacion" class="inline-flex items-center gap-1 text-slate-600 hover:text-brand-600 transition-colors">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-600"></i>
+          <span class="truncate max-w-[180px] sm:max-w-none">Las Arboledas, Tlalnepantla</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Header -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-2xl bg-brand-50 border border-brand-200 flex items-center justify-center text-brand-700 shadow-sm group-hover:bg-brand-600 group-hover:text-white transition-colors">
+          <i data-lucide="flower-2" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 block leading-none">Anahatta SPA</span>
+          <span class="text-[11px] uppercase tracking-widest text-brand-700 font-semibold block mt-1">Bienestar · Belleza · Armonía</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#servicios" class="hover:text-brand-600 transition-colors">Tratamientos</a>
+        <a href="#experiencia" class="hover:text-brand-600 transition-colors">Nuestro Spa</a>
+        <a href="#galeria" class="hover:text-brand-600 transition-colors">Instalaciones</a>
+        <a href="#testimonios" class="hover:text-brand-600 transition-colors">Reseñas (5.0★)</a>
+        <a href="#ubicacion" class="hover:text-brand-600 transition-colors">Ubicación</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/525575148706?text=Hola%20Anahatta%20SPA,%20me%20gustar%C3%ADa%20agendar%20una%20cita%20o%20pedir%20informes%20sobre%20sus%20tratamientos."
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Agendar Cita</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-brand-50/70 via-white to-white pt-10 pb-20 lg:pt-16 lg:pb-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        
+        <!-- Left Column -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-brand-200 shadow-sm text-xs font-semibold text-brand-800">
+            <span class="flex items-center text-amber-500">
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+            </span>
+            <span>Calificación Perfecta 5.0 ★ en Google Maps · Las Arboledas</span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight">
+            Un santuario de <span class="italic text-brand-600 font-semibold">calma, belleza y renovación</span> para tu piel y tus sentidos.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+            En <strong>Anahatta SPA</strong> combinamos aparatología avanzada y manos expertas en un ambiente impecable, limpio y acogedor en <strong>Calz. de los Jinetes, Las Arboledas</strong>. Especialistas en depilación láser, masajes relajantes, diseño de ceja con hilo y tratamientos faciales y corporales con resultados visibles desde la primera sesión.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
+            <a href="https://wa.me/525575148706?text=Hola%20Anahatta%20SPA,%20me%20gustar%C3%ADa%20reservar%20una%20cita%20y%20conocer%20sus%20promociones."
+               target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center gap-2.5 bg-brand-600 hover:bg-brand-700 text-white font-semibold px-7 py-4 rounded-full shadow-md hover:shadow-lg transition-all text-base">
+              <i data-lucide="calendar-heart" class="w-5 h-5"></i>
+              Reservar por WhatsApp
+            </a>
+            <a href="#servicios"
+               class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-semibold px-6 py-4 rounded-full transition-all text-base">
+              <i data-lucide="sparkles" class="w-5 h-5 text-brand-600"></i>
+              Explorar Tratamientos
+            </a>
+          </div>
+
+          <!-- Trust Highlights -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-200/80 max-w-xl">
+            <div>
+              <div class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">5.0 ★</div>
+              <div class="text-xs text-slate-500 mt-0.5">100% clientes satisfechos</div>
+            </div>
+            <div>
+              <div class="font-serif text-2xl sm:text-3xl font-bold text-brand-700">1ª Sesión</div>
+              <div class="text-xs text-slate-500 mt-0.5">Cambios visibles y reales</div>
+            </div>
+            <div>
+              <div class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">100%</div>
+              <div class="text-xs text-slate-500 mt-0.5">Higiene y trato cálido</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column Image Collage -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 aspect-[4/5]">
+            <img src="img/foto-1.jpg" alt="Cabina relajante en Anahatta SPA Las Arboledas" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/55 via-transparent to-transparent"></div>
+            <div class="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-slate-100">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center shrink-0 mt-0.5">
+                  <i data-lucide="shield-check" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-bold uppercase tracking-wider text-brand-700">Reseña Verificada en Google</p>
+                  <p class="text-xs text-slate-700 italic mt-0.5">“El lugar es sumamente limpio y acogedor, te da mucha tranquilidad. El personal es de diez, muy amables y profesionales.”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section id="servicios" class="py-20 bg-slate-50 border-y border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-700 bg-brand-100/80 px-3.5 py-1.5 rounded-full">Catálogo de Bienestar y Estética</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mt-4">
+          Tratamientos personalizados con resultados reales
+        </h2>
+        <p class="text-slate-600 mt-3 text-base sm:text-lg">
+          Cuidamos cada detalle para que te sientas como en casa mientras renovamos tu piel, aliviamos tu estrés y resaltamos tu belleza natural.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <!-- Service 1 -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-100 text-brand-700 flex items-center justify-center mb-5">
+              <i data-lucide="zap" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-semibold text-brand-700 bg-brand-50 px-2.5 py-1 rounded-md">Alta Efectividad</span>
+            <h3 class="font-serif text-2xl font-bold text-slate-900 mt-2 mb-2">Depilación con Láser</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Tecnología segura y gentil con tu piel que brinda resultados notables desde la primera sesión en rostro, axilas, piernas, área de bikini y cuerpo completo.
+            </p>
+          </div>
+          <a href="https://wa.me/525575148706?text=Hola%20Anahatta%20SPA,%20me%20interesa%20cotizar%20sesiones%20de%20Depilaci%C3%B3n%20L%C3%A1ser." target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700 hover:text-brand-800 mt-2">
+            Consultar zonas y paquetes <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-100 text-brand-700 flex items-center justify-center mb-5">
+              <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-semibold text-brand-700 bg-brand-50 px-2.5 py-1 rounded-md">Relajación Profunda</span>
+            <h3 class="font-serif text-2xl font-bold text-slate-900 mt-2 mb-2">Masajes Relajantes y Terapéuticos</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Libera la tensión muscular de espalda, cuello y piernas con técnicas manuales descontracturantes, aromaterapia y piedras calientes en cabinas llenas de paz.
+            </p>
+          </div>
+          <a href="https://wa.me/525575148706?text=Hola%20Anahatta%20SPA,%20quiero%20agendar%20un%20Masaje%20Relajante." target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700 hover:text-brand-800 mt-2">
+            Agendar masaje <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-lotus-50 border border-lotus-100 text-lotus-600 flex items-center justify-center mb-5">
+              <i data-lucide="feather" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-semibold text-lotus-600 bg-lotus-50 px-2.5 py-1 rounded-md">Precisión Hindú</span>
+            <h3 class="font-serif text-2xl font-bold text-slate-900 mt-2 mb-2">Diseño y Depilación de Ceja con Hilo</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Técnica milenaria con hilo 100% hipoalergénica que no irrita ni mancha tu piel. Define el marco perfecto para tu mirada con acabado limpio y duradero.
+            </p>
+          </div>
+          <a href="https://wa.me/525575148706?text=Hola%20Anahatta%20SPA,%20me%20gustar%C3%ADa%20agendar%20Depilaci%C3%B3n%20de%20Ceja%20con%20Hilo." target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700 hover:text-brand-800 mt-2">
+            Reservar diseño de ceja <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-100 text-brand-700 flex items-center justify-center mb-5">
+              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-semibold text-brand-700 bg-brand-50 px-2.5 py-1 rounded-md">Dermoestética</span>
+            <h3 class="font-serif text-2xl font-bold text-slate-900 mt-2 mb-2">Faciales Profundos e Hidratantes</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Limpieza facial profunda, hidratación intensiva, control de acné, despigmentación y rejuvenecimiento para devolverle la luminosidad y frescura a tu rostro.
+            </p>
+          </div>
+          <a href="https://wa.me/525575148706?text=Hola%20Anahatta%20SPA,%20me%20interesa%20informaci%C3%B3n%20sobre%20sus%20Tratamientos%20Faciales." target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700 hover:text-brand-800 mt-2">
+            Pedir valoración facial <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-100 text-brand-700 flex items-center justify-center mb-5">
+              <i data-lucide="activity" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-semibold text-brand-700 bg-brand-50 px-2.5 py-1 rounded-md">Moldeo y Firmeza</span>
+            <h3 class="font-serif text-2xl font-bold text-slate-900 mt-2 mb-2">Tratamientos Corporales y Reductivos</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Protocolos reafirmantes, linfáticos y reductivos personalizados que ayudan a mejorar la textura de la piel, estimular la circulación y estilizar tu figura.
+            </p>
+          </div>
+          <a href="https://wa.me/525575148706?text=Hola%20Anahatta%20SPA,%20quiero%20informes%20sobre%20Tratamientos%20Corporales." target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700 hover:text-brand-800 mt-2">
+            Conocer paquetes corporales <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-lotus-50 border border-lotus-100 text-lotus-600 flex items-center justify-center mb-5">
+              <i data-lucide="gift" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-semibold text-lotus-600 bg-lotus-50 px-2.5 py-1 rounded-md">Experiencias Anahatta</span>
+            <h3 class="font-serif text-2xl font-bold text-slate-900 mt-2 mb-2">Rituales de Spa y Certificados de Regalo</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Combina masaje relajante + facial luminoso en una sola visita o consiente a alguien especial con una experiencia de paz inolvidable en Las Arboledas.
+            </p>
+          </div>
+          <a href="https://wa.me/525575148706?text=Hola%20Anahatta%20SPA,%20me%20interesa%20un%20Paquete%20de%20Spa%20o%20Certificado%20de%20Regalo." target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700 hover:text-brand-800 mt-2">
+            Armar mi experiencia <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="experiencia" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-700 bg-brand-50 border border-brand-200 px-3.5 py-1.5 rounded-full">La Diferencia Anahatta</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">
+            Un espacio impecable donde la calidez humana y el profesionalismo se encuentran
+          </h2>
+          <p class="text-slate-600 leading-relaxed">
+            Quienes nos visitan en Las Arboledas coinciden en tres cosas: la tranquilidad e higiene absoluta de nuestras instalaciones, la atención cálida de nuestro equipo (como el servicio de Angy y nuestras especialistas) y resultados que cumplen lo que prometen.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+              <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900">Instalaciones Sumamente Limpias y Acogedoras</h4>
+                <p class="text-sm text-slate-600 mt-0.5">Cabinas sanitizadas, aromas suaves y música relajante para que desconectes desde que cruzas la puerta.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+              <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="award" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900">Personal Calificado y Trato de Diez</h4>
+                <p class="text-sm text-slate-600 mt-0.5">Especialistas certificadas que te explican cada paso de tu tratamiento y hacen que te sientas como en casa.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+              <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900">Resultados Visibles que Cumplen lo que Prometen</h4>
+                <p class="text-sm text-slate-600 mt-0.5">Seguimiento real en cada sesión de depilación láser, faciales o tratamientos corporales.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <img src="img/foto-2.jpg" alt="Tratamiento facial hidratante en Anahatta SPA" class="w-full h-56 sm:h-64 object-cover rounded-3xl shadow-md border border-slate-100" />
+            <img src="img/foto-3.jpg" alt="Masaje descontracturante y aromaterapia" class="w-full h-44 sm:h-52 object-cover rounded-3xl shadow-md border border-slate-100" />
+          </div>
+          <div class="space-y-4 pt-6">
+            <img src="img/foto-4.jpg" alt="Depilación láser profesional" class="w-full h-44 sm:h-52 object-cover rounded-3xl shadow-md border border-slate-100" />
+            <img src="img/foto-5.jpg" alt="Ambiente de relajación y armonía" class="w-full h-56 sm:h-64 object-cover rounded-3xl shadow-md border border-slate-100" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section id="galeria" class="py-20 bg-slate-50 border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-700">Galería de Bienestar</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-2">Conoce la experiencia Anahatta SPA</h2>
+        </div>
+        <p class="text-slate-600 text-sm max-w-md">
+          Cada rincón está diseñado para transmitir serenidad, limpieza e higiene en el corazón de Las Arboledas.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-1.jpg" alt="Cabina de masaje relajante" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-semibold text-sm">Cabinas de Relajación y Paz</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-2.jpg" alt="Cuidado facial avanzado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-semibold text-sm">Faciales Hidratantes y Luminosos</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-3.jpg" alt="Masajes descontracturantes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-semibold text-sm">Terapias Descontracturantes</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-4.jpg" alt="Sesiones de depilación láser" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-semibold text-sm">Depilación Láser de Vanguardia</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-5.jpg" alt="Aromaterapia y bienestar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-semibold text-sm">Aromaterapia y Armonía Interior</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-6.jpg" alt="Diseño de ceja con hilo y estética" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-semibold text-sm">Cuidado Estético y Ceja con Hilo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verified Google Reviews -->
+  <section id="testimonios" class="py-20 bg-white border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold mb-3">
+          <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+          5.0 de 5 Estrellas en Google Maps
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">
+          Lo que opinan nuestros clientes en Las Arboledas
+        </h2>
+        <p class="text-slate-600 mt-3">
+          Reseñas reales de clientes que han vivido la experiencia de cuidado y relajación en Anahatta SPA.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-7">
+        <!-- Review 1 -->
+        <div class="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              “Lugar excelente, me realizaron una depilación con láser, desde la primera sesión vi el cambio, después me depilaron la ceja con hilo, muy recomendable, personal muy profesional y calificado.”
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/70">
+            <div class="w-9 h-9 rounded-full bg-brand-600 text-white font-bold text-xs flex items-center justify-center">G</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Clienta Verificada</p>
+              <p class="text-[11px] text-slate-500">Reseña en Google Maps · Depilación Láser y Ceja con Hilo</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              “Me encantó este spa. El lugar es sumamente limpio y acogedor, lo cual te da mucha tranquilidad. El personal es de diez, muy amables y profesionales. ¡Lo recomiendo ampliamente!”
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/70">
+            <div class="w-9 h-9 rounded-full bg-brand-600 text-white font-bold text-xs flex items-center justify-center">M</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Cliente Verificado</p>
+              <p class="text-[11px] text-slate-500">Reseña en Google Maps · Spa y Masajes</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              “Excelente lugar, muy bonito y limpio, tuve resultados muy buenos, el personal es muy amable y se notan los resultados que prometen, sin duda seguiré con mis tratamientos. Excelente servicio por parte de Angy.”
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/70">
+            <div class="w-9 h-9 rounded-full bg-brand-600 text-white font-bold text-xs flex items-center justify-center">A</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Clienta Frecuente</p>
+              <p class="text-[11px] text-slate-500">Reseña en Google Maps · Tratamientos Faciales y Corporales</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours Section -->
+  <section id="ubicacion" class="py-20 bg-slate-50 border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5 bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-700">Visítanos en Tlalnepantla</span>
+            <h2 class="font-serif text-3xl font-bold text-slate-900 mt-1">Ubicación y Horarios</h2>
+          </div>
+
+          <div class="space-y-4 text-sm">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900">Dirección</p>
+                <p class="text-slate-600 mt-0.5">Calz. de los Jinetes 45, Col. Las Arboledas, C.P. 54026, Tlalnepantla de Baz, Estado de México.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="phone-call" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900">Teléfono y WhatsApp</p>
+                <a href="tel:+525575148706" class="text-brand-700 font-semibold hover:underline block mt-0.5">+52 55 7514 8706</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div class="w-full">
+                <p class="font-bold text-slate-900 mb-2">Horario de Atención</p>
+                <ul class="space-y-1.5 text-slate-600 text-xs sm:text-sm">
+                  <li class="flex justify-between py-1 border-b border-slate-100">
+                    <span>Lunes a Viernes</span>
+                    <span class="font-semibold text-slate-900">10:00 a.m. – 6:00 p.m.</span>
+                  </li>
+                  <li class="flex justify-between py-1 border-b border-slate-100">
+                    <span>Sábado</span>
+                    <span class="font-semibold text-slate-900">9:00 a.m. – 2:00 p.m.</span>
+                  </li>
+                  <li class="flex justify-between py-1">
+                    <span>Domingo</span>
+                    <span class="text-slate-400 font-medium">Cerrado</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/525575148706?text=Hola%20Anahatta%20SPA,%20quisiera%20agendar%20una%20cita."
+               target="_blank" rel="noopener"
+               class="flex-1 inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold py-3.5 px-5 rounded-full text-sm shadow-sm transition-all">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              Agendar por WhatsApp
+            </a>
+            <a href="https://www.google.com/maps?q=19.555163,-99.213293"
+               target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold py-3.5 px-5 rounded-full text-sm transition-all">
+              <i data-lucide="navigation" class="w-4 h-4"></i>
+              Cómo llegar
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 rounded-3xl overflow-hidden shadow-md border border-slate-200 bg-white h-[430px]">
+          <iframe
+            title="Mapa de ubicación Anahatta SPA en Las Arboledas"
+            src="https://www.google.com/maps?q=19.555163,-99.213293&hl=es&z=16&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center font-serif font-bold text-base">A</div>
+        <span class="font-semibold text-slate-800">Anahatta SPA</span>
+        <span>· Calz. de los Jinetes 45, Las Arboledas, Tlalnepantla, Méx.</span>
+      </div>
+      <div>
+        © 2026 Anahatta SPA. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/525575148706?text=Hola%20Anahatta%20SPA,%20me%20gustar%C3%ADa%20pedir%20informes%20y%20agendar%20una%20cita."
+     target="_blank" rel="noopener"
+     aria-label="Agendar cita por WhatsApp"
+     class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2.5 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold px-5 py-3.5 rounded-full shadow-xl hover:scale-105 transition-all">
+    <i data-lucide="message-circle" class="w-5 h-5 fill-white text-[#25D366]"></i>
+    <span class="text-sm">WhatsApp Citas</span>
+  </a>
+
+  <script>
+    lucide.createIcons();
+
+    // Live Schedule Verification (Mexico City Time)
+    function updateOpenStatus() {
+      const badge = document.getElementById('status-badge');
+      if (!badge) return;
+
+      const now = new Date(new Date().toLocaleString("en-US", { timeZone: "America/Mexico_City" }));
+      const day = now.getDay(); // 0 = Sun, 1..5 = Mon..Fri, 6 = Sat
+      const hours = now.getHours() + now.getMinutes() / 60;
+
+      let isOpen = false;
+      if (day >= 1 && day <= 5) {
+        isOpen = hours >= 10 && hours < 18;
+      } else if (day === 6) {
+        isOpen = hours >= 9 && hours < 14;
+      }
+
+      if (isOpen) {
+        badge.className = "inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800";
+        badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span> Abierto ahora · Reserva hoy';
+      } else {
+        badge.className = "inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-100 text-amber-800";
+        badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Cerrado ahora · Agenda por WhatsApp';
+      }
+    }
+    updateOpenStatus();
+  </script>
+</body>
+</html>
