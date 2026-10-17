@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pastelería Jardín | Pasteles tradicionales en Pro-Hogar, Azcapotzalco CDMX</title>
+  <meta name="description" content="Pastelería Jardín en Av. Central 225, Col. Pro-Hogar, Azcapotzalco. Pasteles tradicionales de moka, chocolate, tres leches y queso crema, pays, gelatinas y pasteles para cumpleaños y eventos. Haz tu pedido al 55 5355 3743." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            cream: { 50: '#fffaf5', 100: '#fdf3e7', 200: '#f8e4cc' },
+            rose: { 50: '#fff1f3', 100: '#ffe0e6', 500: '#e11d58', 600: '#c81e50', 700: '#a3173f' },
+            cocoa: { 500: '#8b5e3c', 700: '#5c3a21', 800: '#43291a', 900: '#2b1a10' },
+            leaf: { 100: '#e3f1e4', 600: '#3f7d4a', 700: '#2f6038' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background:#fffaf5; color:#2b1a10; }
+    .glass-nav { background: rgba(255,250,245,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .card-hover { transition: all .3s cubic-bezier(.16,1,.3,1); }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 38px -15px rgba(200,30,80,.22); }
+    .scallop { height: 14px; background: radial-gradient(circle at 10px -2px, transparent 10px, #c81e50 11px) repeat-x; background-size: 20px 14px; }
+    .dots { background-image: radial-gradient(#f8e4cc 1.5px, transparent 1.5px); background-size: 22px 22px; }
+  </style>
+</head>
+<body class="antialiased selection:bg-rose-100 selection:text-rose-700">
+
+  <!-- Top Bar -->
+  <div class="bg-cocoa-900 text-cream-100 text-xs sm:text-sm py-2.5 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <i data-lucide="cake" class="w-4 h-4 text-rose-100"></i>
+        <span>Pasteles para toda ocasión · Pedidos por teléfono</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+525553553743" class="inline-flex items-center gap-1.5 font-semibold hover:text-white">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i> 55 5355 3743
+        </a>
+        <span class="hidden sm:inline opacity-40">|</span>
+        <a href="#ubicacion" class="hidden sm:inline-flex items-center gap-1 hover:text-white">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Pro-Hogar, Azcapotzalco
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-cream-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-full bg-rose-600 text-white flex items-center justify-center shadow">
+          <i data-lucide="cake-slice" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="font-serif text-2xl font-bold text-cocoa-900 block leading-none">Pastelería <span class="text-rose-600 italic">Jardín</span></span>
+          <span class="text-[11px] uppercase tracking-widest text-cocoa-500 font-semibold block mt-1">Tradición · Azcapotzalco CDMX</span>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-cocoa-700">
+        <a href="#pasteles" class="hover:text-rose-600">Pasteles</a>
+        <a href="#ocasiones" class="hover:text-rose-600">Ocasiones</a>
+        <a href="#pedido" class="hover:text-rose-600">Cómo pedir</a>
+        <a href="#galeria" class="hover:text-rose-600">Galería</a>
+        <a href="#ubicacion" class="hover:text-rose-600">Ubicación</a>
+      </nav>
+      <a href="tel:+525553553743"
+         class="inline-flex items-center gap-2 bg-rose-600 hover:bg-rose-700 text-white font-semibold text-sm px-5 py-2.5 rounded-full shadow-sm">
+        <i data-lucide="phone-call" class="w-4 h-4"></i><span>Pedir</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden dots pt-10 pb-20 lg:pt-16 lg:pb-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-cream-200 shadow-sm text-xs font-semibold text-cocoa-700">
+          <i data-lucide="heart" class="w-3.5 h-3.5 text-rose-600 fill-rose-600"></i>
+          La pastelería de barrio de la Pro-Hogar
+        </div>
+        <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold text-cocoa-900 leading-[1.05]">
+          El pastel que hace <span class="text-rose-600 italic">especial</span> cada celebración.
+        </h1>
+        <p class="text-base sm:text-lg text-cocoa-700 leading-relaxed max-w-2xl">
+          En <strong>Pastelería Jardín</strong> horneamos pasteles con el sabor de siempre: moka, chocolate cremoso, tres leches y especiales con queso crema, además de pays, gelatinas y pan dulce. Todo hecho para tus cumpleaños, fiestas infantiles y reuniones familiares en <strong>Azcapotzalco</strong>.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3.5 pt-2">
+          <a href="tel:+525553553743"
+             class="inline-flex items-center justify-center gap-2.5 bg-rose-600 hover:bg-rose-700 text-white font-semibold px-7 py-4 rounded-full shadow-md">
+            <i data-lucide="phone-call" class="w-5 h-5"></i> Llamar y hacer mi pedido
+          </a>
+          <a href="#pasteles" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-cream-100 text-cocoa-800 border border-cream-200 font-semibold px-6 py-4 rounded-full">
+            <i data-lucide="cake-slice" class="w-5 h-5 text-rose-600"></i> Ver pasteles
+          </a>
+        </div>
+        <div class="grid grid-cols-3 gap-4 pt-6 border-t border-cream-200 max-w-xl">
+          <div><div class="font-serif text-3xl font-bold text-cocoa-900">Clásicos</div><div class="text-xs text-cocoa-500">Sabores tradicionales</div></div>
+          <div><div class="font-serif text-3xl font-bold text-rose-600">Por encargo</div><div class="text-xs text-cocoa-500">Para tu evento</div></div>
+          <div><div class="font-serif text-3xl font-bold text-cocoa-900">Accesibles</div><div class="text-xs text-cocoa-500">Precios de barrio</div></div>
+        </div>
+      </div>
+      <div class="lg:col-span-5">
+        <div class="relative rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white bg-cream-100 aspect-[4/5]">
+          <img src="img/foto-1.jpg" alt="Pastel de chocolate de Pastelería Jardín" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-cocoa-900/50 via-transparent to-transparent"></div>
+          <div class="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur p-4 rounded-2xl shadow-lg">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center shrink-0"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-rose-600">Encuéntranos</p>
+                <p class="text-xs text-cocoa-700 mt-0.5">Av. Central 225, Col. Pro-Hogar, entre calle 10 y calle 12.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="scallop"></div>
+
+  <!-- Cakes -->
+  <section id="pasteles" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-rose-600 bg-rose-50 px-3.5 py-1.5 rounded-full">Nuestra vitrina</span>
+        <h2 class="font-serif text-4xl sm:text-5xl font-bold text-cocoa-900 mt-4">Sabores que ya son tradición</h2>
+        <p class="text-cocoa-700 mt-3">Pregunta por tamaños, precios y disponibilidad del día por teléfono.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7" id="cakes-grid"></div>
+    </div>
+  </section>
+
+  <!-- Occasions -->
+  <section id="ocasiones" class="py-20 bg-cream-100 border-y border-cream-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-6 grid grid-cols-2 gap-4 order-2 lg:order-1">
+        <div class="space-y-4">
+          <img src="img/foto-2.jpg" alt="Pastel de cumpleaños" class="w-full h-64 object-cover rounded-3xl shadow-md" />
+          <img src="img/foto-5.jpg" alt="Cupcakes para fiesta" class="w-full h-44 object-cover rounded-3xl shadow-md" />
+        </div>
+        <div class="space-y-4 pt-8">
+          <img src="img/foto-4.jpg" alt="Rebanada de pastel con frutos rojos" class="w-full h-44 object-cover rounded-3xl shadow-md" />
+          <img src="img/foto-3.jpg" alt="Pastel de varios pisos para eventos" class="w-full h-64 object-cover rounded-3xl shadow-md" />
+        </div>
+      </div>
+      <div class="lg:col-span-6 space-y-6 order-1 lg:order-2">
+        <span class="text-xs font-bold uppercase tracking-widest text-rose-600 bg-white border border-rose-100 px-3.5 py-1.5 rounded-full">Para cada ocasión</span>
+        <h2 class="font-serif text-4xl sm:text-5xl font-bold text-cocoa-900 leading-tight">Tú pones la fiesta, nosotros el pastel</h2>
+        <p class="text-cocoa-700 leading-relaxed">Desde un pastel sencillo para la sobremesa del domingo hasta pasteles grandes para tu evento. Cuéntanos cuántas personas son y te ayudamos a escoger el tamaño ideal.</p>
+        <div class="space-y-4">
+          <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-cream-200">
+            <div class="w-10 h-10 rounded-xl bg-rose-600 text-white flex items-center justify-center shrink-0"><i data-lucide="party-popper" class="w-5 h-5"></i></div>
+            <div><h4 class="font-bold">Cumpleaños y fiestas infantiles</h4><p class="text-sm text-cocoa-700">Pasteles y gelatinas que les encantan a chicos y grandes.</p></div>
+          </div>
+          <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-cream-200">
+            <div class="w-10 h-10 rounded-xl bg-rose-600 text-white flex items-center justify-center shrink-0"><i data-lucide="gem" class="w-5 h-5"></i></div>
+            <div><h4 class="font-bold">XV años, bodas y bautizos</h4><p class="text-sm text-cocoa-700">Pasteles de mayor tamaño por encargo. Haz tu pedido con anticipación.</p></div>
+          </div>
+          <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-cream-200">
+            <div class="w-10 h-10 rounded-xl bg-rose-600 text-white flex items-center justify-center shrink-0"><i data-lucide="briefcase" class="w-5 h-5"></i></div>
+            <div><h4 class="font-bold">Oficina y reuniones</h4><p class="text-sm text-cocoa-700">Pays, pan dulce y pasteles para celebrar con tu equipo o tu familia.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to order -->
+  <section id="pedido" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-rose-600 bg-rose-50 px-3.5 py-1.5 rounded-full">Así de fácil</span>
+        <h2 class="font-serif text-4xl sm:text-5xl font-bold text-cocoa-900 mt-4">¿Cómo hacer tu pedido?</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-7">
+        <div class="relative bg-cream-50 rounded-3xl p-8 border border-cream-200 text-center">
+          <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-rose-600 text-white font-serif font-bold text-lg flex items-center justify-center shadow">1</div>
+          <i data-lucide="phone-call" class="w-9 h-9 text-rose-600 mx-auto mt-3 mb-4"></i>
+          <h3 class="font-bold text-lg">Llámanos</h3>
+          <p class="text-sm text-cocoa-700 mt-2">Marca al <strong>55 5355 3743</strong> y dinos el sabor, tamaño y fecha que necesitas.</p>
+        </div>
+        <div class="relative bg-cream-50 rounded-3xl p-8 border border-cream-200 text-center">
+          <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-rose-600 text-white font-serif font-bold text-lg flex items-center justify-center shadow">2</div>
+          <i data-lucide="pen-line" class="w-9 h-9 text-rose-600 mx-auto mt-3 mb-4"></i>
+          <h3 class="font-bold text-lg">Personalízalo</h3>
+          <p class="text-sm text-cocoa-700 mt-2">Pide tu dedicatoria o el detalle especial para la ocasión.</p>
+        </div>
+        <div class="relative bg-cream-50 rounded-3xl p-8 border border-cream-200 text-center">
+          <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-rose-600 text-white font-serif font-bold text-lg flex items-center justify-center shadow">3</div>
+          <i data-lucide="store" class="w-9 h-9 text-rose-600 mx-auto mt-3 mb-4"></i>
+          <h3 class="font-bold text-lg">Recógelo</h3>
+          <p class="text-sm text-cocoa-700 mt-2">Pasa por él a la tienda en Av. Central 225. Te recomendamos traer efectivo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="galeria" class="py-20 bg-cream-100 border-t border-cream-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-rose-600">Galería</span>
+        <h2 class="font-serif text-4xl sm:text-5xl font-bold text-cocoa-900 mt-2">Antojos recién salidos del horno</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <!-- Why us -->
+  <section class="py-20 bg-white border-t border-cream-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <h2 class="font-serif text-4xl sm:text-5xl font-bold text-cocoa-900">¿Por qué los vecinos nos prefieren?</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-7">
+        <div class="bg-cream-50 rounded-3xl p-7 border border-cream-200">
+          <div class="w-12 h-12 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center mb-4"><i data-lucide="chef-hat" class="w-6 h-6"></i></div>
+          <h3 class="font-bold text-lg">Sabor de siempre</h3>
+          <p class="text-sm text-cocoa-700 mt-2">Recetas tradicionales que no cambian: el moka, el chocolate cremoso y el tres leches que ya conoces.</p>
+        </div>
+        <div class="bg-cream-50 rounded-3xl p-7 border border-cream-200">
+          <div class="w-12 h-12 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center mb-4"><i data-lucide="wallet" class="w-6 h-6"></i></div>
+          <h3 class="font-bold text-lg">Precios accesibles</h3>
+          <p class="text-sm text-cocoa-700 mt-2">Pasteles ricos sin pagar de más, ideales para fiestas familiares y celebraciones grandes.</p>
+        </div>
+        <div class="bg-cream-50 rounded-3xl p-7 border border-cream-200">
+          <div class="w-12 h-12 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center mb-4"><i data-lucide="home" class="w-6 h-6"></i></div>
+          <h3 class="font-bold text-lg">Tu pastelería de confianza</h3>
+          <p class="text-sm text-cocoa-700 mt-2">Un negocio de barrio en la Pro-Hogar, con atención cercana y amable de toda la vida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section id="ubicacion" class="py-20 bg-cream-100 border-t border-cream-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10 items-start">
+      <div class="lg:col-span-5 bg-white rounded-3xl p-8 border border-cream-200 shadow-sm space-y-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-rose-600">Visítanos</span>
+          <h2 class="font-serif text-3xl font-bold text-cocoa-900">Ubicación y contacto</h2>
+        </div>
+        <div class="space-y-4 text-sm">
+          <div class="flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center shrink-0"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+            <div><p class="font-bold">Dirección</p><p class="text-cocoa-700">Av. Central 225, Col. Pro-Hogar, Azcapotzalco, C.P. 02600, CDMX.<br/><span class="text-xs">Entre calle 10 y calle 12.</span></p></div>
+          </div>
+          <div class="flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center shrink-0"><i data-lucide="phone-call" class="w-5 h-5"></i></div>
+            <div><p class="font-bold">Teléfono para pedidos</p><a href="tel:+525553553743" class="text-rose-600 font-semibold hover:underline">55 5355 3743</a></div>
+          </div>
+          <div class="flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center shrink-0"><i data-lucide="banknote" class="w-5 h-5"></i></div>
+            <div><p class="font-bold">Formas de pago</p><p class="text-cocoa-700">Te recomendamos pagar en efectivo.</p></div>
+          </div>
+          <div class="flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center shrink-0"><i data-lucide="clock" class="w-5 h-5"></i></div>
+            <div><p class="font-bold">Horario</p><p class="text-cocoa-700">Llámanos para confirmar horario y disponibilidad del día.</p></div>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="tel:+525553553743" class="flex-1 inline-flex items-center justify-center gap-2 bg-rose-600 hover:bg-rose-700 text-white font-semibold py-3.5 px-5 rounded-full text-sm">
+            <i data-lucide="phone-call" class="w-4 h-4"></i> Llamar ahora
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Pasteleria+Jardin+Av+Central+225+Pro+Hogar+Azcapotzalco" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-cream-100 hover:bg-cream-200 font-semibold py-3.5 px-5 rounded-full text-sm">
+            <i data-lucide="navigation" class="w-4 h-4"></i> Cómo llegar
+          </a>
+        </div>
+      </div>
+      <div class="lg:col-span-7 rounded-3xl overflow-hidden shadow-md border border-cream-200 bg-white h-[460px]">
+        <iframe title="Mapa Pastelería Jardín"
+          src="https://www.google.com/maps?q=Av.+Central+225,+Pro-Hogar,+Azcapotzalco,+02600+CDMX&hl=es&z=16&output=embed"
+          width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <div class="scallop rotate-180"></div>
+  <footer class="bg-cocoa-900 text-cream-100 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <span><strong class="text-white font-serif text-base">Pastelería Jardín</strong> · Av. Central 225, Col. Pro-Hogar, Azcapotzalco, CDMX</span>
+      <span class="opacity-70">© 2026 Pastelería Jardín</span>
+    </div>
+  </footer>
+
+  <a href="tel:+525553553743" aria-label="Llamar para pedir"
+     class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2.5 bg-rose-600 hover:bg-rose-700 text-white font-bold px-5 py-3.5 rounded-full shadow-xl hover:scale-105 transition-all">
+    <i data-lucide="phone-call" class="w-5 h-5"></i><span class="text-sm">Pide tu pastel</span>
+  </a>
+
+  <script>
+    const cakes = [
+      ['coffee', 'Pastel de Moka', 'El clásico que nunca falla: bizcocho suave con crema de café y un toque de chocolate.'],
+      ['cake', 'Chocolate Cremoso', 'Para los amantes del chocolate: húmedo, intenso y con cobertura generosa.'],
+      ['milk', 'Tres Leches', 'Esponjoso y bien remojado, el favorito de las fiestas familiares.'],
+      ['cake-slice', 'Especial con Queso Crema', 'Combinación suave y cremosa que encanta desde la primera rebanada.'],
+      ['pie-chart', 'Pays', 'Pay de queso y otros sabores, perfectos para la sobremesa o un regalo.'],
+      ['ice-cream-cone', 'Gelatinas y Postres', 'Gelatinas y postres individuales para complementar tu mesa de dulces.'],
+    ];
+    document.getElementById('cakes-grid').innerHTML = cakes.map(([icon, title, desc]) => `
+      <div class="bg-cream-50 rounded-3xl p-7 border border-cream-200 shadow-sm card-hover flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center mb-5"><i data-lucide="${icon}" class="w-6 h-6"></i></div>
+          <h3 class="font-serif font-bold text-2xl text-cocoa-900 mb-2">${title}</h3>
+          <p class="text-cocoa-700 text-sm leading-relaxed mb-4">${desc}</p>
+        </div>
+        <a href="tel:+525553553743" class="inline-flex items-center gap-1.5 text-sm font-semibold text-rose-600 hover:text-rose-700">
+          Encargar <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>`).join('');
+
+    const gallery = [
+      ['foto-1.jpg', 'Chocolate cremoso'], ['foto-2.jpg', 'Pasteles de cumpleaños'], ['foto-3.jpg', 'Pasteles para eventos'],
+      ['foto-4.jpg', 'Rebanadas con fruta'], ['foto-5.jpg', 'Cupcakes para fiesta'], ['foto-6.jpg', 'Postres individuales'],
+    ];
+    document.getElementById('gallery-grid').innerHTML = gallery.map(([src, label]) => `
+      <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-cream-200 aspect-[4/3]">
+        <img src="img/${src}" alt="${label}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+        <div class="absolute inset-0 bg-gradient-to-t from-cocoa-900/60 via-transparent to-transparent"></div>
+        <span class="absolute bottom-4 left-4 text-white font-semibold text-sm">${label}</span>
+      </div>`).join('');
+
+    lucide.createIcons();
+  </script>
+</body>
+</html>
