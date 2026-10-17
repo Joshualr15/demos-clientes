@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clínica Veterinaria Chow Chow | Medicina, Diagnóstico y Cirugía en Ixtapaluca</title>
+  <meta name="description" content="Clínica Veterinaria Chow Chow en Col. Plutarco Elías Calles, Ixtapaluca. Especialistas en perros y gatos: Consulta general, Ultrasonido, Rayos X, Estudios sanguíneos, Cirugías, Hospitalización y Estética Canina. 4.8 estrellas." />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              teal: '#0D9488',
+              tealDark: '#0F766E',
+              blue: '#2563EB',
+              amber: '#D97706',
+              dark: '#0F172A',
+              ice: '#F8FAFC'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      background-color: #FFFFFF;
+      color: #0F172A;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    @keyframes softPulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.15); opacity: 0.75; }
+    }
+    .live-dot {
+      animation: softPulse 2s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-900 antialiased selection:bg-teal-600 selection:text-white">
+
+  <!-- 1. NAVBAR FIJA LUMINOSA -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      <!-- Logo / Nombre -->
+      <a href="#inicio" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-teal-600 flex items-center justify-center text-white shadow-sm group-hover:bg-teal-700 transition-colors">
+          <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="font-heading font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 block leading-none">
+            VETERINARIA <span class="text-teal-600">CHOW CHOW</span>
+          </span>
+          <span class="text-xs font-medium text-slate-500 tracking-wide">
+            CLÍNICA DE PEQUEÑAS ESPECIES • IXTAPALUCA
+          </span>
+        </div>
+      </a>
+
+      <!-- Enlaces de Navegación (Desktop) -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="#inicio" class="hover:text-teal-600 transition-colors">Inicio</a>
+        <a href="#servicios" class="hover:text-teal-600 transition-colors">Servicios Clínicos</a>
+        <a href="#instalaciones" class="hover:text-teal-600 transition-colors">Instalaciones</a>
+        <a href="#opiniones" class="hover:text-teal-600 transition-colors">Opiniones (4.8★)</a>
+        <a href="#ubicacion" class="hover:text-teal-600 transition-colors">Horarios y Mapa</a>
+      </nav>
+
+      <!-- Estado en Vivo Compacto + Botón WhatsApp -->
+      <div class="flex items-center gap-3">
+        <a href="#ubicacion" id="nav-live-badge" class="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 live-dot"></span>
+          <span>Verificando horario...</span>
+        </a>
+
+        <a href="https://wa.me/525548747424?text=Hola%20Cl%C3%ADnica%20Veterinaria%20Chow%20Chow%2C%20vi%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20o%20pedir%20informes."
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold text-sm px-4 py-2.5 rounded-xl shadow-sm hover:-translate-y-0.5 transition-all duration-200">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Agendar Cita</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION (100% CLARO, MÉDICO Y CONFIABLE) -->
+  <section id="inicio" class="bg-white pt-10 pb-16 lg:py-20 border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Columna Izquierda: Información Principal -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="flex flex-wrap items-center gap-3">
+            <!-- Badge Google Maps -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs sm:text-sm font-semibold">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
+              <span>4.8 Estrellas (40 reseñas verificadas)</span>
+            </div>
+
+            <!-- Badge Reloj en Vivo Hero -->
+            <div id="hero-live-badge" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs sm:text-sm font-semibold">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 live-dot"></span>
+              <span>Cargando estado en vivo...</span>
+            </div>
+          </div>
+
+          <h1 class="font-heading text-3xl sm:text-5xl lg:text-[3.25rem] font-extrabold text-slate-900 tracking-tight leading-[1.12]">
+            Cuidado médico integral y diagnóstico avanzado para <span class="text-teal-600">perros y gatos</span> en Ixtapaluca.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+            En <strong>Clínica Veterinaria Chow Chow</strong> brindamos atención médica especializada para pequeñas especies en <strong>Col. Plutarco Elías Calles</strong>. Contamos con ultrasonido abdominal, cardíaco y gestacional, rayos X, estudios sanguíneos, cirugías, hospitalización y estética canina.
+          </p>
+
+          <!-- Botones de Acción -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
+            <a href="https://wa.me/525548747424?text=Hola%20Cl%C3%ADnica%20Veterinaria%20Chow%20Chow%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20para%20mi%20mascota."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-2.5 bg-teal-600 hover:bg-teal-700 text-white font-bold text-base px-7 py-4 rounded-xl shadow-md hover:-translate-y-1 transition-all duration-200">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <span>Agendar por WhatsApp (55 4874 7424)</span>
+            </a>
+
+            <a href="tel:+525548747424"
+               class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 font-semibold text-base px-6 py-4 rounded-xl border border-slate-200 shadow-sm hover:-translate-y-1 transition-all duration-200">
+              <i data-lucide="phone-call" class="w-5 h-5 text-blue-600"></i>
+              <span>Llamar a la Clínica</span>
+            </a>
+          </div>
+
+          <!-- Píldoras de Especialidades Reales -->
+          <div class="pt-4 border-t border-slate-100 grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 bg-slate-50 px-3 py-2 rounded-lg border border-slate-200/80">
+              <i data-lucide="scan-line" class="w-4 h-4 text-teal-600 shrink-0"></i>
+              <span>Ultrasonido y Rayos X</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 bg-slate-50 px-3 py-2 rounded-lg border border-slate-200/80">
+              <i data-lucide="microscope" class="w-4 h-4 text-blue-600 shrink-0"></i>
+              <span>Estudios Sanguíneos</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 bg-slate-50 px-3 py-2 rounded-lg border border-slate-200/80">
+              <i data-lucide="shield-plus" class="w-4 h-4 text-teal-600 shrink-0"></i>
+              <span>Cirugía y Hospitalización</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 bg-slate-50 px-3 py-2 rounded-lg border border-slate-200/80">
+              <i data-lucide="sparkles" class="w-4 h-4 text-amber-600 shrink-0"></i>
+              <span>Estética y Farmacia</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Fotografía Real del Negocio -->
+        <div class="lg:col-span-5">
+          <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-md">
+            <div class="relative rounded-xl overflow-hidden aspect-[4/3] bg-slate-100">
+              <img src="img/fachada-principal.jpg"
+                   onerror="this.src='https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=1000&q=80'"
+                   alt="Clínica Veterinaria Chow Chow en Ixtapaluca"
+                   class="w-full h-full object-cover" />
+              <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm p-3.5 rounded-xl border border-slate-200 shadow-sm flex items-center justify-between gap-3">
+                <div>
+                  <p class="text-xs font-bold uppercase tracking-wider text-teal-600">Atención en Ixtapaluca</p>
+                  <p class="text-sm font-bold text-slate-900">Fresno Mz 51 Lt 21, Col. Plutarco Elías Calles</p>
+                </div>
+                <span class="px-2.5 py-1 rounded-lg bg-amber-50 border border-amber-200 text-amber-800 font-bold text-xs shrink-0">
+                  ★ 4.8 / 5.0
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. CINTA DE BENEFICIOS CLÍNICOS (FONDO GRIS HIELO SUAVE) -->
+  <section class="bg-[#F8FAFC] py-12 border-b border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-600 shrink-0">
+            <i data-lucide="stethoscope" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Especialistas en Perros y Gatos</h3>
+            <p class="text-sm text-slate-600 mt-1 leading-relaxed">
+              Clínica enfocada exclusivamente en pequeñas especies para brindar diagnósticos certeros y trato cálido libre de estrés.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 shrink-0">
+            <i data-lucide="activity" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Diagnóstico por Imagen y Laboratorio</h3>
+            <p class="text-sm text-slate-600 mt-1 leading-relaxed">
+              Ultrasonido abdominal, cardíaco o gestacional, estudio radiográfico y análisis sanguíneos en un mismo lugar.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-100 flex items-center justify-center text-amber-600 shrink-0">
+            <i data-lucide="calendar-check" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Abiertos de Lunes a Domingo</h3>
+            <p class="text-sm text-slate-600 mt-1 leading-relaxed">
+              Atención continua de lunes a sábado de 10:00 a.m. a 7:00 p.m. y domingos de 10:00 a.m. a 2:00 p.m.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CATÁLOGO DE SERVICIOS VERIFICADOS (FONDO BLANCO PURO) -->
+  <section id="servicios" class="bg-white py-16 lg:py-20 border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-teal-600 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+          Catálogo Oficial de Servicios
+        </span>
+        <h2 class="font-heading text-2xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+          Servicios Médicos y Veterinarios Completos
+        </h2>
+        <p class="text-slate-600 mt-3 text-base">
+          Todo lo que tu mascota necesita para su prevención, diagnóstico, recuperación y cuidado diario en Ixtapaluca.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Servicio 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-600 mb-4">
+              <i data-lucide="clipboard-plus" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Consulta General y Prevención</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Revisión física integral para perros y gatos, medicina preventiva, control de peso, vacunación y desparasitación.
+            </p>
+          </div>
+          <a href="https://wa.me/525548747424?text=Hola%2C%20quisiera%20agendar%20una%20Consulta%20General%20en%20Cl%C3%ADnica%20Veterinaria%20Chow%20Chow."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-teal-600 hover:text-teal-700">
+            <span>Solicitar consulta por WhatsApp</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 mb-4">
+              <i data-lucide="scan" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Ultrasonido y Estudio Radiográfico</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Ultrasonido abdominal, cardíaco o gestacional y estudios de Rayos X para diagnósticos internos rápidos y seguros.
+            </p>
+          </div>
+          <a href="https://wa.me/525548747424?text=Hola%2C%20quisiera%20pedir%20informes%20sobre%20Ultrasonido%20o%20Estudio%20Radiogr%C3%A1fico."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-blue-600 hover:text-blue-700">
+            <span>Cotizar estudio por WhatsApp</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-600 mb-4">
+              <i data-lucide="test-tubes" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Estudios Sanguíneos y Laboratorio</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Análisis clínicos sanguíneos y perfiles prequirúrgicos para evaluar con exactitud la salud interna de tu mascota.
+            </p>
+          </div>
+          <a href="https://wa.me/525548747424?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20Estudios%20Sangu%C3%ADneos%20para%20mi%20mascota."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-teal-600 hover:text-teal-700">
+            <span>Preguntar por estudios</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Servicio 4 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 mb-4">
+              <i data-lucide="heart-handshake" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Cirugías y Hospitalización</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Procedimientos quirúrgicos programados, esterilizaciones y área de hospitalización con monitoreo médico constante.
+            </p>
+          </div>
+          <a href="https://wa.me/525548747424?text=Hola%2C%20quisiera%20informes%20sobre%20Cirug%C3%ADas%20u%20Hospitalizaci%C3%B3n."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-blue-600 hover:text-blue-700">
+            <span>Consultar disponibilidad</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Servicio 5 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-amber-50 border border-amber-100 flex items-center justify-center text-amber-600 mb-4">
+              <i data-lucide="scissors" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Estética Canina, Alimento y Accesorios</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Baño, corte e higiene profesional, además de venta de alimento especializado y accesorios para perros y gatos.
+            </p>
+          </div>
+          <a href="https://wa.me/525548747424?text=Hola%2C%20quisiera%20agendar%20cita%20para%20Est%C3%A9tica%20Canina%20o%20preguntar%20por%20alimento."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-amber-600 hover:text-amber-700">
+            <span>Agendar estética canina</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Servicio 6 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-700 mb-4">
+              <i data-lucide="flower-2" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900">Servicio de Cremación</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Acompañamiento respetuoso y servicio digno de cremación para despedir con amor a tu compañero de vida.
+            </p>
+          </div>
+          <a href="https://wa.me/525548747424?text=Hola%2C%20solicito%20informes%20sobre%20el%20Servicio%20de%20Cremaci%C3%B3n."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-slate-700 hover:text-teal-600">
+            <span>Solicitar asistencia</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. GALERÍA DE INSTALACIONES Y ATENCIÓN (FONDO GRIS HIELO SUAVE) -->
+  <section id="instalaciones" class="bg-[#F8FAFC] py-16 lg:py-20 border-b border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-teal-600 bg-white px-3 py-1 rounded-full border border-slate-200">
+            Nuestra Clínica y Servicios
+          </span>
+          <h2 class="font-heading text-2xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            Instalaciones y Atención Veterinaria
+          </h2>
+        </div>
+        <p class="text-sm text-slate-600 max-w-md">
+          Ubicados en Col. Plutarco Elías Calles, equipados para cuidar la salud y tranquilidad de tu mascota.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Foto Real 1 -->
+        <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+          <div class="overflow-hidden rounded-xl h-56 bg-slate-100">
+            <img src="img/fachada-principal.jpg"
+                 onerror="this.src='https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=800&q=80'"
+                 alt="Clínica Veterinaria Chow Chow Fachada"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div class="pt-3 px-1">
+            <span class="text-xs font-bold text-teal-600 uppercase">Fotografía Real • Clínica</span>
+            <h3 class="font-heading font-bold text-base text-slate-900 mt-0.5">Clínica Veterinaria Chow Chow</h3>
+            <p class="text-xs text-slate-600 mt-1">Atención médica enfocada en perros y gatos en Ixtapaluca.</p>
+          </div>
+        </div>
+
+        <!-- Foto Real 2 -->
+        <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+          <div class="overflow-hidden rounded-xl h-56 bg-slate-100">
+            <img src="img/ubicacion-exterior.jpg"
+                 onerror="this.src='https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80'"
+                 alt="Ubicación exterior en Col. Plutarco Elías Calles"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div class="pt-3 px-1">
+            <span class="text-xs font-bold text-blue-600 uppercase">Ubicación • Ixtapaluca</span>
+            <h3 class="font-heading font-bold text-base text-slate-900 mt-0.5">Acceso en Col. Plutarco Elías Calles</h3>
+            <p class="text-xs text-slate-600 mt-1">Fresno Manzana 51 Lote 21, C.P. 56585, Ixtapaluca.</p>
+          </div>
+        </div>
+
+        <!-- Foto Apoyo Clínico 3 -->
+        <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+          <div class="overflow-hidden rounded-xl h-56 bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=800&q=80"
+                 alt="Diagnóstico médico, ultrasonido y rayos X"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div class="pt-3 px-1">
+            <span class="text-xs font-bold text-teal-600 uppercase">Diagnóstico Avanzado</span>
+            <h3 class="font-heading font-bold text-base text-slate-900 mt-0.5">Ultrasonido y Rayos X</h3>
+            <p class="text-xs text-slate-600 mt-1">Estudios abdominales, cardíacos, gestacionales y radiográficos.</p>
+          </div>
+        </div>
+
+        <!-- Foto Apoyo Clínico 4 -->
+        <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+          <div class="overflow-hidden rounded-xl h-56 bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800&q=80"
+                 alt="Estética canina y farmacia veterinaria"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div class="pt-3 px-1">
+            <span class="text-xs font-bold text-amber-600 uppercase">Cuidado Integral</span>
+            <h3 class="font-heading font-bold text-base text-slate-900 mt-0.5">Estética, Alimento y Accesorios</h3>
+            <p class="text-xs text-slate-600 mt-1">Higiene profesional y nutrición de calidad para tu mascota.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. SECCIÓN DE OPINIONES VERIFICADAS DE GOOGLE MAPS -->
+  <section id="opiniones" class="bg-white py-16 lg:py-20 border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-[#F8FAFC] rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm mb-10 flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div class="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
+          <div class="bg-white px-6 py-4 rounded-2xl border border-slate-200 shadow-sm">
+            <span class="font-heading text-4xl font-extrabold text-slate-900 block">4.8</span>
+            <div class="flex items-center justify-center gap-0.5 text-amber-500 my-1">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            </div>
+            <span class="text-xs font-semibold text-slate-500">40 reseñas reales</span>
+          </div>
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-teal-600">Respaldo de la Comunidad en Ixtapaluca</span>
+            <h2 class="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
+              Una de las clínicas mejor valoradas de la zona
+            </h2>
+            <p class="text-sm text-slate-600 mt-1 max-w-xl">
+              Calificación sobresaliente de <strong>4.8 de 5 estrellas</strong> respaldada por 40 familias que confían la salud de sus perros y gatos a nuestro equipo médico.
+            </p>
+          </div>
+        </div>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica+Veterinaria+Chow+Chow+Fresno+Manzana+51+Lote+21+Plutarco+Elias+Calles+56585+Ixtapaluca"
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-900 font-bold text-sm px-5 py-3.5 rounded-xl border border-slate-200 shadow-sm hover:-translate-y-0.5 transition-all shrink-0">
+          <i data-lucide="map-pin" class="w-4 h-4 text-teal-600"></i>
+          <span>Ver Ficha en Google Maps</span>
+        </a>
+      </div>
+
+      <!-- Tarjetas de Testimonios -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="flex items-center gap-1 text-amber-500 mb-3">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+          </div>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            "Excelente atención para pequeñas especies. Cuentan con ultrasonido y rayos X ahí mismo, lo que facilita mucho tener un diagnóstico rápido sin andar trasladando a tu mascota."
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
+            <span>Cliente Verificado • Ixtapaluca</span>
+            <span class="text-teal-600">★ 5.0</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="flex items-center gap-1 text-amber-500 mb-3">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+          </div>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            "Muy profesionales en cirugías y estudios sanguíneos. Tratan con mucha paciencia a los perritos y gatitos, y explican todo el tratamiento con claridad."
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
+            <span>Reseña de Google Maps</span>
+            <span class="text-teal-600">★ 5.0</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="flex items-center gap-1 text-amber-500 mb-3">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+          </div>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            "El servicio de estética canina y el surtido de alimento y accesorios es muy completo. Además abren todos los días incluyendo domingos por la mañana."
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
+            <span>Vecino de Col. Plutarco Elías Calles</span>
+            <span class="text-teal-600">★ 5.0</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. UBICACIÓN, HORARIOS Y RELOJ EN VIVO -->
+  <section id="ubicacion" class="bg-[#F8FAFC] py-16 lg:py-20 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Columna Izquierda: Dirección, Reloj en Vivo y Horarios -->
+        <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-teal-600">Contacto y Horarios Oficiales</span>
+            <h2 class="font-heading text-2xl font-extrabold text-slate-900 mt-1">Visítanos en Ixtapaluca</h2>
+          </div>
+
+          <!-- Widget de Reloj en Vivo -->
+          <div id="schedule-live-box" class="p-4 rounded-xl bg-emerald-50 border border-emerald-200">
+            <div class="flex items-center gap-2.5">
+              <span id="schedule-live-dot" class="w-3 h-3 rounded-full bg-emerald-500 live-dot shrink-0"></span>
+              <p id="schedule-live-title" class="font-bold text-sm text-emerald-900">
+                Verificando horario actual...
+              </p>
+            </div>
+            <p id="schedule-live-sub" class="text-xs text-emerald-700 mt-1 pl-5">
+              Hora local en Ixtapaluca, Estado de México
+            </p>
+          </div>
+
+          <!-- Dirección y Teléfono -->
+          <div class="space-y-3 text-sm">
+            <div class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-5 h-5 text-teal-600 shrink-0 mt-0.5"></i>
+              <div>
+                <p class="font-bold text-slate-900">Dirección Exacta:</p>
+                <p class="text-slate-600">Fresno Manzana 51 Lote 21, Col. Plutarco Elías Calles, C.P. 56585, Ixtapaluca, Estado de México.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <i data-lucide="phone" class="w-5 h-5 text-blue-600 shrink-0 mt-0.5"></i>
+              <div>
+                <p class="font-bold text-slate-900">Teléfono y WhatsApp:</p>
+                <a href="tel:+525548747424" class="text-blue-600 font-semibold hover:underline">+52 55 4874 7424</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tabla de Horarios Lunes a Domingo -->
+          <div>
+            <h3 class="font-heading font-bold text-sm uppercase tracking-wider text-slate-500 mb-3">
+              Horario de Atención Semanal
+            </h3>
+            <div class="divide-y divide-slate-100 border border-slate-200 rounded-xl overflow-hidden text-sm" id="hours-table">
+              <div data-day="1" class="flex justify-between py-2.5 px-3.5 bg-white">
+                <span class="font-medium text-slate-700">Lunes</span>
+                <span class="font-semibold text-slate-900">10:00 a.m. – 7:00 p.m.</span>
+              </div>
+              <div data-day="2" class="flex justify-between py-2.5 px-3.5 bg-white">
+                <span class="font-medium text-slate-700">Martes</span>
+                <span class="font-semibold text-slate-900">10:00 a.m. – 7:00 p.m.</span>
+              </div>
+              <div data-day="3" class="flex justify-between py-2.5 px-3.5 bg-white">
+                <span class="font-medium text-slate-700">Miércoles</span>
+                <span class="font-semibold text-slate-900">10:00 a.m. – 7:00 p.m.</span>
+              </div>
+              <div data-day="4" class="flex justify-between py-2.5 px-3.5 bg-white">
+                <span class="font-medium text-slate-700">Jueves</span>
+                <span class="font-semibold text-slate-900">10:00 a.m. – 7:00 p.m.</span>
+              </div>
+              <div data-day="5" class="flex justify-between py-2.5 px-3.5 bg-white">
+                <span class="font-medium text-slate-700">Viernes</span>
+                <span class="font-semibold text-slate-900">10:00 a.m. – 7:00 p.m.</span>
+              </div>
+              <div data-day="6" class="flex justify-between py-2.5 px-3.5 bg-white">
+                <span class="font-medium text-slate-700">Sábado</span>
+                <span class="font-semibold text-slate-900">10:00 a.m. – 7:00 p.m.</span>
+              </div>
+              <div data-day="0" class="flex justify-between py-2.5 px-3.5 bg-white">
+                <span class="font-medium text-slate-700">Domingo</span>
+                <span class="font-semibold text-slate-900">10:00 a.m. – 2:00 p.m.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/525548747424?text=Hola%20Cl%C3%ADnica%20Veterinaria%20Chow%20Chow%2C%20quisiera%20agendar%20una%20cita."
+               target="_blank" rel="noopener noreferrer"
+               class="flex-1 inline-flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-bold text-sm px-4 py-3.5 rounded-xl shadow-sm transition-all">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Enviar WhatsApp</span>
+            </a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Colonia,+Fresno+Manzana+51+Lote+21,+Plutarco+Elias+Calles,+56585+Ixtapaluca,+Méx."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-sm px-4 py-3.5 rounded-xl transition-all">
+              <i data-lucide="navigation" class="w-4 h-4 text-blue-600"></i>
+              <span>Cómo llegar</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Mapa Interactivo de Google Maps -->
+        <div class="lg:col-span-7 bg-white p-3 rounded-2xl border border-slate-200 shadow-sm h-[520px]">
+          <iframe
+            class="w-full h-full rounded-xl"
+            src="https://maps.google.com/maps?q=Cl%C3%ADnica+Veterinaria+Chow+Chow%2C+Colonia%2C+Fresno+Manzana+51+Lote+21%2C+Plutarco+Elias+Calles%2C+56585+Ixtapaluca%2C+M%C3%A9x.&output=embed&z=17"
+            title="Mapa de ubicación de Clínica Veterinaria Chow Chow en Ixtapaluca"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FOOTER LIMPIO -->
+  <footer class="bg-white py-10 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-teal-600 flex items-center justify-center text-white">
+          <i data-lucide="heart-pulse" class="w-4 h-4"></i>
+        </div>
+        <span class="font-heading font-bold text-slate-900">Clínica Veterinaria Chow Chow</span>
+        <span>• Ixtapaluca, Estado de México</span>
+      </div>
+      <p>© 2026 Clínica Veterinaria Chow Chow. Atención médica para pequeñas especies.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a href="https://wa.me/525548747424?text=Hola%20Cl%C3%ADnica%20Veterinaria%20Chow%20Chow%2C%20solicito%20informes%20para%20mi%20mascota."
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Contactar por WhatsApp"
+     class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-5 py-3.5 rounded-full shadow-lg hover:-translate-y-1 transition-all duration-200">
+    <i data-lucide="message-circle" class="w-5 h-5"></i>
+    <span>WhatsApp Directo</span>
+  </a>
+
+  <!-- SCRIPT: ICONOS Y RELOJ EN VIVO -->
+  <script>
+    lucide.createIcons();
+
+    function updateVetLiveStatus() {
+      const now = new Date();
+      const day = now.getDay(); // 0 = Domingo, 1 = Lunes, ..., 6 = Sábado
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+      const currentMinutes = hours * 60 + minutes;
+
+      // Horarios oficiales de Clínica Veterinaria Chow Chow:
+      // Lunes a Sábado (1-6): 10:00 (600) a 19:00 (1140)
+      // Domingo (0): 10:00 (600) a 14:00 (840)
+      let openMinutes = 10 * 60;
+      let closeMinutes = day === 0 ? 14 * 60 : 19 * 60;
+
+      const isOpen = currentMinutes >= openMinutes && currentMinutes < closeMinutes;
+      const timeStr = now.toLocaleTimeString('es-MX', { hour: '2-digit', minute: '2-digit' });
+
+      const navBadge = document.getElementById('nav-live-badge');
+      const heroBadge = document.getElementById('hero-live-badge');
+      const scheduleBox = document.getElementById('schedule-live-box');
+      const scheduleDot = document.getElementById('schedule-live-dot');
+      const scheduleTitle = document.getElementById('schedule-live-title');
+      const scheduleSub = document.getElementById('schedule-live-sub');
+
+      if (isOpen) {
+        const msg = '🟢 Abierto Ahora - ¡Agenda o acude a consulta!';
+        if (navBadge) {
+          navBadge.className = 'hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200';
+          navBadge.innerHTML = '<span class="w-2 h-2 rounded-full bg-emerald-500 live-dot"></span><span>Abierto Ahora</span>';
+        }
+        if (heroBadge) {
+          heroBadge.className = 'inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs sm:text-sm font-semibold';
+          heroBadge.innerHTML = `<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 live-dot"></span><span>${msg}</span>`;
+        }
+        if (scheduleBox) {
+          scheduleBox.className = 'p-4 rounded-xl bg-emerald-50 border border-emerald-200';
+          scheduleDot.className = 'w-3 h-3 rounded-full bg-emerald-500 live-dot shrink-0';
+          scheduleTitle.className = 'font-bold text-sm text-emerald-900';
+          scheduleTitle.textContent = msg;
+          scheduleSub.className = 'text-xs text-emerald-700 mt-1 pl-5';
+          scheduleSub.textContent = `Hora actual: ${timeStr} • Cerramos hoy a las ${day === 0 ? '2:00 p.m.' : '7:00 p.m.'}`;
+        }
+      } else {
+        const msg = '🔴 Cerrado en este momento - Agenda tu cita por WhatsApp';
+        if (navBadge) {
+          navBadge.className = 'hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold bg-rose-50 text-rose-800 border border-rose-200';
+          navBadge.innerHTML = '<span class="w-2 h-2 rounded-full bg-rose-500"></span><span>Cerrado Ahora</span>';
+        }
+        if (heroBadge) {
+          heroBadge.className = 'inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-50 border border-rose-200 text-rose-800 text-xs sm:text-sm font-semibold';
+          heroBadge.innerHTML = `<span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span><span>${msg}</span>`;
+        }
+        if (scheduleBox) {
+          scheduleBox.className = 'p-4 rounded-xl bg-rose-50 border border-rose-200';
+          scheduleDot.className = 'w-3 h-3 rounded-full bg-rose-500 shrink-0';
+          scheduleTitle.className = 'font-bold text-sm text-rose-900';
+          scheduleTitle.textContent = msg;
+          scheduleSub.className = 'text-xs text-rose-700 mt-1 pl-5';
+          scheduleSub.textContent = `Hora actual: ${timeStr} • Abrimos a las 10:00 a.m.`;
+        }
+      }
+
+      // Resaltar día actual en la tabla
+      document.querySelectorAll('#hours-table > div').forEach((row) => {
+        if (parseInt(row.getAttribute('data-day'), 10) === day) {
+          row.className = 'flex justify-between py-2.5 px-3.5 bg-teal-50/80 font-bold text-teal-900';
+        }
+      });
+    }
+
+    updateVetLiveStatus();
+    setInterval(updateVetLiveStatus, 30000);
+  </script>
+</body>
+</html>
