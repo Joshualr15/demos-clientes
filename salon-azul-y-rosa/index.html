@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salón de Fiestas Azul y Rosa | Eventos hasta 300 Personas en Zona Centro, CDMX</title>
+  <meta name="description" content="Salón de Fiestas Azul y Rosa en Av. Ferrocarril de Cintura 94, Venustiano Carranza. Capacidad hasta 300 invitados, estacionamiento propio, pista iluminada, audio DJ y paquetes desde $3,000 de apartado." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            festive: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+            },
+            royal: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #FFFFFF;
+      color: #0F172A;
+    }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 35px -12px rgba(225, 29, 72, 0.16);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-festive-100 selection:text-festive-700">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-slate-50 border-b border-slate-200/80 text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 text-slate-700 font-medium">
+        <span id="status-badge" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+          Agenda Abierta 2026 · Aparta tu Fecha desde $3,000 MXN
+        </span>
+        <span class="hidden md:inline text-slate-300">|</span>
+        <span class="hidden md:inline text-slate-600">Av. Ferrocarril de Cintura 94, Venustiano Carranza (Zona Centro)</span>
+      </div>
+      <div class="flex items-center gap-4 ml-auto sm:ml-0 font-medium">
+        <a href="tel:+525525634827" class="inline-flex items-center gap-1.5 text-slate-700 hover:text-festive-600 font-bold transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-festive-600"></i>
+          55 2563 4827
+        </a>
+        <span class="text-slate-300">|</span>
+        <a href="#ubicacion" class="inline-flex items-center gap-1 text-slate-600 hover:text-festive-600 transition-colors">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-festive-600"></i>
+          <span>Estacionamiento Gratis para Invitados</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-festive-500 to-royal-600 text-white flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+          <i data-lucide="sparkles" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 block leading-none">Azul <span class="text-festive-600">&</span> Rosa</span>
+          <span class="text-[11px] uppercase tracking-widest text-slate-400 font-bold block mt-1">Salón de Fiestas · Capacidad 300 personas</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#instalaciones" class="hover:text-festive-600 transition-colors">El Salón</a>
+        <a href="#paquetes" class="hover:text-festive-600 transition-colors">Paquetes & Precios</a>
+        <a href="#galeria" class="hover:text-festive-600 transition-colors">Galería Real</a>
+        <a href="#opiniones" class="hover:text-festive-600 transition-colors">Opiniones (213+)</a>
+        <a href="#ubicacion" class="hover:text-festive-600 transition-colors">Ubicación</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/525525634827?text=Hola%20Sal%C3%B3n%20Azul%20y%20Rosa,%20me%20gustar%C3%ADa%20cotizar%20una%20fecha%20para%20un%20evento."
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 bg-gradient-to-r from-festive-600 to-royal-600 hover:from-festive-700 hover:to-royal-700 text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Cotizar Fiesta</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-festive-50/50 via-white to-white pt-10 pb-20 lg:pt-16 lg:pb-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        
+        <!-- Left Column -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm text-xs font-bold text-slate-700">
+            <span class="flex items-center text-amber-500">
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star-half" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+            </span>
+            <span>4.1 ★ Más de 213 Reseñas en Google Maps · Zona Centro CDMX</span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight">
+            Celebra tus XV años, bodas y fiestas en grande con <span class="italic text-festive-600">capacidad para 300 invitados</span>.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl font-normal">
+            En <strong>Salón de Fiestas Azul y Rosa</strong> te ofrecemos un espacio amplio, climatizado y equipado con pista de baile, cabina de DJ, pantallas LED, audio profesional y <strong>estacionamiento propio gratuito</strong> en Av. Ferrocarril de Cintura 94, Venustiano Carranza. Aparta tu fecha desde solo $3,000 MXN.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
+            <a href="https://wa.me/525525634827?text=Hola%20Sal%C3%B3n%20Azul%20y%20Rosa,%20quiero%20conocer%20fechas%20disponibles%20y%20precios%20de%20paquetes."
+               target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center gap-2.5 bg-festive-600 hover:bg-festive-700 text-white font-bold px-7 py-4 rounded-full shadow-lg shadow-festive-600/20 hover:shadow-xl transition-all text-base">
+              <i data-lucide="party-popper" class="w-5 h-5"></i>
+              Ver Fechas Disponibles por WhatsApp
+            </a>
+            <a href="#paquetes"
+               class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-bold px-6 py-4 rounded-full transition-all text-base">
+              <i data-lucide="sparkles" class="w-5 h-5 text-festive-600"></i>
+              Explorar Paquetes
+            </a>
+          </div>
+
+          <!-- Trust Highlights -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-100 max-w-xl">
+            <div>
+              <div class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">300</div>
+              <div class="text-xs text-slate-500 mt-0.5">Capacidad máxima</div>
+            </div>
+            <div>
+              <div class="font-serif text-2xl sm:text-3xl font-bold text-festive-600">$3,000</div>
+              <div class="text-xs text-slate-500 mt-0.5">Apartado inicial flexible</div>
+            </div>
+            <div>
+              <div class="font-serif text-2xl sm:text-3xl font-bold text-royal-600">Gratis</div>
+              <div class="text-xs text-slate-500 mt-0.5">Estacionamiento propio</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column Hero Card with Real Photo -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 aspect-[4/5]">
+            <img src="img/foto-1.webp" alt="Instalaciones reales de Salón de Fiestas Azul y Rosa" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/65 via-transparent to-transparent"></div>
+            <div class="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-slate-100">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-xl bg-festive-50 text-festive-600 flex items-center justify-center shrink-0 mt-0.5">
+                  <i data-lucide="music-2" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-bold uppercase tracking-wider text-festive-600">Instalaciones Reales en Zona Centro</p>
+                  <p class="text-xs text-slate-700 italic mt-0.5">“Pista de baile, cabina de audio, luces robóticas y espacio amplio para que nadie se quede sentado.”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section id="instalaciones" class="py-20 bg-slate-50 border-y border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-festive-600 bg-festive-50 border border-festive-200/60 px-3.5 py-1.5 rounded-full">Equipamiento Completo</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mt-4">
+          Un salón diseñado para que tú solo disfrutes
+        </h2>
+        <p class="text-slate-600 mt-3 text-base sm:text-lg">
+          Olvídate de contratar audio, pantallas o luces por separado. En Azul y Rosa tienes todo el montaje listo en un solo lugar.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm card-hover">
+          <div class="w-12 h-12 rounded-2xl bg-festive-50 text-festive-600 flex items-center justify-center mb-6">
+            <i data-lucide="disc" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-slate-900 mb-3">Audio Profesional & DJ</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Cabina de DJ equipada con sonido de alta fidelidad, iluminación robótica inteligente y pantallas LED para videos musicales o fotos de los festejados.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm card-hover">
+          <div class="w-12 h-12 rounded-2xl bg-royal-50 text-royal-600 flex items-center justify-center mb-6">
+            <i data-lucide="car" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-slate-900 mb-3">Estacionamiento Propio Gratis</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Tus invitados no tendrán que preocuparse por parquímetros o buscar lugar en la calle. Estacionamiento privado dentro de las instalaciones para mayor seguridad.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm card-hover">
+          <div class="w-12 h-12 rounded-2xl bg-festive-50 text-festive-600 flex items-center justify-center mb-6">
+            <i data-lucide="wallet" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-slate-900 mb-3">Facilidades de Pago</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Aparta tu fecha con solo $3,000 pesos y ve liquidando en cómodos pagos mensuales antes de tu celebración. Transparencia total sin letras chiquitas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="paquetes" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-royal-600 bg-royal-50 px-3.5 py-1.5 rounded-full">Modalidades de Renta</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mt-4">
+          Paquetes para XV Años, Bodas, Cumpleaños y Graduaciones
+        </h2>
+        <p class="text-slate-600 mt-3 text-base sm:text-lg">
+          Pregunta por nuestros paquetes por horas o eventos completos de 5 horas.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Package 1 -->
+        <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 flex flex-col justify-between card-hover">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-white border border-slate-200 text-slate-700 flex items-center justify-center mb-6 shadow-sm">
+              <i data-lucide="clock" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Eventos Cortos & Reuniones</span>
+            <h3 class="font-serif text-2xl font-bold text-slate-900 mt-1 mb-3">Renta por Horas o Espacio</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Ideal para ensayos, reuniones corporativas, presentaciones o eventos íntimos que solo requieren el uso del salón climatizado.
+            </p>
+            <ul class="space-y-3 text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Uso de salón y sanitarios limpios</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Estacionamiento propio incluido</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Flexibilidad de horarios de montaje</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/525525634827?text=Hola%20Sal%C3%B3n%20Azul%20y%20Rosa,%20me%20interesa%20cotizar%20Renta%20por%20Horas." 
+             target="_blank" rel="noopener"
+             class="w-full inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-900 font-bold py-3.5 px-6 rounded-full border border-slate-200 transition-all text-sm">
+            Cotizar Renta por Horas
+          </a>
+        </div>
+
+        <!-- Package 2: Featured -->
+        <div class="bg-gradient-to-b from-festive-50 to-white rounded-3xl p-8 border-2 border-festive-500 shadow-xl flex flex-col justify-between relative card-hover">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-festive-600 to-royal-600 text-white text-xs font-bold uppercase tracking-widest px-4 py-1 rounded-full shadow-sm">
+            ⭐ El Favorito para XV Años & Bodas
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-festive-600 text-white flex items-center justify-center mb-6 shadow-md shadow-festive-600/20">
+              <i data-lucide="music" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-festive-600">Fiesta Equipada</span>
+            <h3 class="font-serif text-2xl font-bold text-slate-900 mt-1 mb-3">Paquete con Audio, DJ & Pista</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              El salón completamente ambientado con mesas, sillas de gala, mantelería, DJ profesional durante todo el evento y luces para bailar.
+            </p>
+            <ul class="space-y-3 text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-festive-600 font-bold shrink-0"></i>
+                <span class="font-semibold text-slate-900">5 horas de evento + tiempo de recepción</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-festive-600 font-bold shrink-0"></i>
+                <span>DJ profesional en vivo, audio e iluminación robótica</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-festive-600 font-bold shrink-0"></i>
+                <span>Pantallas LED y proyección de fotos</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-festive-600 font-bold shrink-0"></i>
+                <span>Apartado inicial con solo $3,000 pesos</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/525525634827?text=Hola%20Sal%C3%B3n%20Azul%20y%20Rosa,%20quiero%20cotizar%20el%20Paquete%20con%20DJ%20y%20Audio." 
+             target="_blank" rel="noopener"
+             class="w-full inline-flex items-center justify-center gap-2 bg-festive-600 hover:bg-festive-700 text-white font-bold py-3.5 px-6 rounded-full shadow-md shadow-festive-600/30 transition-all text-sm">
+            <i data-lucide="party-popper" class="w-4 h-4"></i>
+            Cotizar Paquete DJ & Fiesta
+          </a>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 flex flex-col justify-between card-hover">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-white border border-slate-200 text-slate-700 flex items-center justify-center mb-6 shadow-sm">
+              <i data-lucide="utensils" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Todo Incluido</span>
+            <h3 class="font-serif text-2xl font-bold text-slate-900 mt-1 mb-3">Paquete Banquete & Servicio Completo</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Incluye menú en tiempos o taquiza tradicional, meseros, refresco y hielo ilimitado, audio, DJ y coordinación de evento.
+            </p>
+            <ul class="space-y-3 text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Menú formal en tiempos o buffet a elegir</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Personal de meseros y capitán durante el evento</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <span>Vajilla, cristalería y mantelería fina</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/525525634827?text=Hola%20Sal%C3%B3n%20Azul%20y%20Rosa,%20me%20gustar%C3%ADa%20cotizar%20Banquete%20Todo%20Incluido." 
+             target="_blank" rel="noopener"
+             class="w-full inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-900 font-bold py-3.5 px-6 rounded-full border border-slate-200 transition-all text-sm">
+            Cotizar Banquete Completo
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Google Maps Photo Gallery Section -->
+  <section id="galeria" class="py-20 bg-slate-50 border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-festive-600">Galería Fotográfica Real</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-2">Conoce nuestras instalaciones</h2>
+        </div>
+        <p class="text-slate-600 text-sm max-w-md font-normal">
+          Fotografías reales de nuestro salón en Av. Ferrocarril de Cintura 94 para que compruebes la amplitud de nuestros espacios.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-1.webp" alt="Salón Azul y Rosa montaje general" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Espacio Amplio hasta 300 Invitados</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-2.jpg" alt="Pista de baile y luces" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Pista de Baile & Luces Robóticas</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-3.webp" alt="Montaje de mesas y sillas de gala" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Montajes de Gala para XV Años y Bodas</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-4.webp" alt="Área de DJ y pantallas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Cabina de Audio & Pantallas LED</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-5.jpg" alt="Decoración y ambiente festivo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Ambiente Festivo y Familiar</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-6.jpg" alt="Acceso y recepción del salón" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Recepción & Estacionamiento Propio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Reviews Section -->
+  <section id="opiniones" class="py-20 bg-white border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold mb-3">
+          <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+          Calificación 4.1 ★ en Google Maps (213+ Reseñas Reales)
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">
+          Lo que dicen quienes han celebrado en Azul y Rosa
+        </h2>
+        <p class="text-slate-600 mt-3 font-normal">
+          Opiniones reales de clientes que han confiado en nuestro espacio para sus momentos más importantes.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-7">
+        <!-- Review 1 -->
+        <div class="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              “Festejamos los XV años de mi hija aquí y todo estuvo increíble. El salón es muy grande y la pista de baile con las luces se ve espectacular. Lo mejor es que tiene estacionamiento propio, algo súper valioso en la zona centro.”
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/70">
+            <div class="w-9 h-9 rounded-full bg-festive-600 text-white font-bold text-xs flex items-center justify-center">M</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">María Elena T.</p>
+              <p class="text-[11px] text-slate-500">Reseña Google Maps · XV Años</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              “Excelente atención por parte de la administración. Nos dieron muchas facilidades para apartar la fecha con poco dinero e ir pagando poco a poco. El DJ tocó muy buena música y la fiesta nunca decayó.”
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/70">
+            <div class="w-9 h-9 rounded-full bg-royal-600 text-white font-bold text-xs flex items-center justify-center">J</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Juan Carlos R.</p>
+              <p class="text-[11px] text-slate-500">Reseña Google Maps · Boda Civil</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              “Muy bien ubicado en Ferrocarril de Cintura, cerca de avenidas principales. El espacio es muy fresco y amplio, caben perfectamente 250 o 300 personas cómodamente sentadas.”
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/70">
+            <div class="w-9 h-9 rounded-full bg-festive-700 text-white font-bold text-xs flex items-center justify-center">G</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Gabriela S.</p>
+              <p class="text-[11px] text-slate-500">Reseña Google Maps · Graduación</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours Section (Real Location from Maps) -->
+  <section id="ubicacion" class="py-20 bg-slate-50 border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5 bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-festive-600">Visítanos con Previa Cita</span>
+            <h2 class="font-serif text-3xl font-bold text-slate-900 mt-1">Ubicación y Contacto</h2>
+          </div>
+
+          <div class="space-y-4 text-sm">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-festive-50 text-festive-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900">Dirección Exacta</p>
+                <p class="text-slate-600 mt-0.5">Av. Ferrocarril de Cintura 94, Zona Centro, Col. Morelos, Alcaldía Venustiano Carranza, C.P. 15270, Ciudad de México, CDMX.</p>
+                <p class="text-xs text-royal-700 font-bold mt-1">✓ Cuenta con estacionamiento propio gratuito.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-royal-50 text-royal-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="phone-call" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900">WhatsApp de Cotizaciones Directas</p>
+                <a href="https://wa.me/525525634827" class="text-festive-600 font-bold hover:underline block mt-0.5 text-base">+52 55 2563 4827</a>
+                <p class="text-xs text-slate-500 mt-0.5">Escríbenos para consultar costos y agendar una visita guiada.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-festive-50 text-festive-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900">Atención y Visitas</p>
+                <p class="text-slate-600 mt-0.5">Previa cita vía WhatsApp para mostrarte las instalaciones, el audio y las opciones de mantelería.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/525525634827?text=Hola%20Sal%C3%B3n%20Azul%20y%20Rosa,%20me%20gustar%C3%ADa%20agendar%20una%20visita%20para%20conocer%20el%20sal%C3%B3n."
+               target="_blank" rel="noopener"
+               class="flex-1 inline-flex items-center justify-center gap-2 bg-festive-600 hover:bg-festive-700 text-white font-bold py-3.5 px-5 rounded-full text-sm shadow-sm transition-all">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              Agendar Visita en WhatsApp
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=19.4388032,-99.1213599"
+               target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-3.5 px-5 rounded-full text-sm transition-all">
+              <i data-lucide="navigation" class="w-4 h-4"></i>
+              Cómo llegar
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 rounded-3xl overflow-hidden shadow-md border border-slate-200 bg-white h-[430px]">
+          <iframe
+            title="Ubicación de Salón Azul y Rosa en Google Maps"
+            src="https://www.google.com/maps?q=19.4388032,-99.1213599&hl=es&z=16&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-xl bg-festive-100 text-festive-700 flex items-center justify-center font-serif font-bold text-base">AR</div>
+        <span class="font-bold text-slate-800">Salón de Fiestas Azul y Rosa</span>
+        <span>· Av. Ferrocarril de Cintura 94, Venustiano Carranza, CDMX.</span>
+      </div>
+      <div>
+        © 2026 Salón de Fiestas Azul y Rosa. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/525525634827?text=Hola%20Sal%C3%B3n%20Azul%20y%20Rosa,%20me%20gustar%C3%ADa%20pedir%20informes%20y%20cotizar%20una%20fecha."
+     target="_blank" rel="noopener"
+     aria-label="Cotizar evento por WhatsApp"
+     class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2.5 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold px-5 py-3.5 rounded-full shadow-2xl hover:scale-105 transition-all">
+    <i data-lucide="message-circle" class="w-5 h-5 fill-white text-[#25D366]"></i>
+    <span class="text-sm">Cotizar Evento en WhatsApp</span>
+  </a>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
