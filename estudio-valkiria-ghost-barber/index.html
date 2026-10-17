@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Valkiria Ghost Barber | Barbería en Azcapotzalco, CDMX</title>
+  <meta name="description" content="Estudio Valkiria Ghost Barber en Pdte. Madero, Azcapotzalco. Cortes clásicos y fade, diseño de barba, afeitado con toalla caliente. Calificación 5/5. Agenda por WhatsApp." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['"Bebas Neue"', 'sans-serif'],
+          },
+          colors: {
+            blood: { 50: '#fef2f2', 100: '#fee2e2', 500: '#dc2626', 600: '#b91c1c', 700: '#991b1b' },
+            steel: { 50: '#f8fafc', 100: '#f1f5f9', 200: '#e2e8f0', 700: '#334155', 800: '#1e293b', 900: '#0f172a' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background:#FFFFFF; color:#0F172A; }
+    .glass-nav { background: rgba(255,255,255,0.94); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .card-hover { transition: all .3s cubic-bezier(.16,1,.3,1); }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 38px -15px rgba(185,28,28,.18); }
+    .barber-stripe { background: repeating-linear-gradient(135deg, #b91c1c 0 10px, #ffffff 10px 20px, #1e3a8a 20px 30px, #ffffff 30px 40px); }
+  </style>
+</head>
+<body class="antialiased selection:bg-blood-100 selection:text-blood-700">
+
+  <div class="barber-stripe h-1.5 w-full"></div>
+
+  <!-- Top Bar -->
+  <div class="bg-steel-50 border-b border-steel-200 text-xs sm:text-sm py-2.5 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 text-steel-700 font-medium">
+        <span id="status-badge" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span> Verificando horario...
+        </span>
+        <span class="hidden md:inline text-steel-200">|</span>
+        <span class="hidden md:inline">Lun–Vie 10:30 a.m. – 8:00 p.m. · Sáb 10:00 a.m. – 5:00 p.m.</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+525516923948" class="inline-flex items-center gap-1.5 font-semibold hover:text-blood-600">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-blood-600"></i> 55 1692 3948
+        </a>
+        <span class="text-steel-200">|</span>
+        <a href="#ubicacion" class="inline-flex items-center gap-1 hover:text-blood-600">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-blood-600"></i> Pdte. Madero, Azcapotzalco
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-steel-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-steel-900 text-white flex items-center justify-center shadow">
+          <i data-lucide="scissors" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="font-display text-3xl tracking-wide text-steel-900 block leading-none">VALKIRIA <span class="text-blood-600">GHOST</span> BARBER</span>
+          <span class="text-[11px] uppercase tracking-widest text-steel-700 font-semibold block mt-0.5">Estudio · Azcapotzalco CDMX</span>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-steel-700">
+        <a href="#servicios" class="hover:text-blood-600">Servicios</a>
+        <a href="#estudio" class="hover:text-blood-600">El Estudio</a>
+        <a href="#galeria" class="hover:text-blood-600">Galería</a>
+        <a href="#opiniones" class="hover:text-blood-600">Opiniones 5/5</a>
+        <a href="#ubicacion" class="hover:text-blood-600">Ubicación</a>
+      </nav>
+      <a href="https://wa.me/525516923948?text=Hola%20Valkiria%20Ghost%20Barber,%20quiero%20agendar%20una%20cita."
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 bg-blood-600 hover:bg-blood-700 text-white font-semibold text-sm px-5 py-2.5 rounded-full shadow-sm">
+        <i data-lucide="message-circle" class="w-4 h-4"></i><span>Agendar</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-steel-50 via-white to-white pt-10 pb-20 lg:pt-16 lg:pb-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-steel-200 shadow-sm text-xs font-semibold text-steel-800">
+          <span class="flex text-amber-400">
+            <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+          </span>
+          Calificación 5/5 · Barbería en Azcapotzalco
+        </div>
+        <h1 class="font-display text-6xl sm:text-7xl lg:text-8xl text-steel-900 leading-[0.95] tracking-wide">
+          Tu estilo, <span class="text-blood-600">afilado</span><br/>al máximo nivel.
+        </h1>
+        <p class="text-base sm:text-lg text-steel-700 leading-relaxed max-w-2xl">
+          En <strong>Estudio Valkiria Ghost Barber</strong> fusionamos la técnica de la vieja escuela con las tendencias urbanas. Cortes clásicos y fades precisos, diseño de barba con navaja y afeitado con toalla caliente, con atención personalizada y sin prisas en <strong>Pdte. Madero, Azcapotzalco</strong>.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3.5 pt-2">
+          <a href="https://wa.me/525516923948?text=Hola%20Valkiria%20Ghost%20Barber,%20%C2%BFqu%C3%A9%20horarios%20tienen%20disponibles%20para%20corte%3F"
+             target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center gap-2.5 bg-blood-600 hover:bg-blood-700 text-white font-semibold px-7 py-4 rounded-full shadow-md">
+            <i data-lucide="calendar-check" class="w-5 h-5"></i> Reservar por WhatsApp
+          </a>
+          <a href="#servicios" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-steel-50 text-steel-800 border border-steel-200 font-semibold px-6 py-4 rounded-full">
+            <i data-lucide="scissors" class="w-5 h-5 text-blood-600"></i> Ver Servicios
+          </a>
+        </div>
+        <div class="grid grid-cols-3 gap-4 pt-6 border-t border-steel-200 max-w-xl">
+          <div><div class="font-display text-4xl text-steel-900">5/5 ★</div><div class="text-xs text-steel-700">Opiniones de clientes</div></div>
+          <div><div class="font-display text-4xl text-blood-600">Con Cita</div><div class="text-xs text-steel-700">Atención sin esperas</div></div>
+          <div><div class="font-display text-4xl text-steel-900">6 Días</div><div class="text-xs text-steel-700">De lunes a sábado</div></div>
+        </div>
+      </div>
+      <div class="lg:col-span-5">
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-steel-100 aspect-[4/5]">
+          <img src="img/foto-1.jpg" alt="Estudio Valkiria Ghost Barber en Azcapotzalco" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-steel-900/60 via-transparent to-transparent"></div>
+          <div class="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur p-4 rounded-2xl shadow-lg">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-blood-50 text-blood-600 flex items-center justify-center shrink-0"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-blood-600">¿Cómo llegar?</p>
+                <p class="text-xs text-steel-700 mt-0.5">Pasando los tacos al carbón “Mil Salsas”, enfrente de las canchas de básquetbol.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="servicios" class="py-20 bg-steel-50 border-y border-steel-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-blood-600 bg-blood-50 px-3.5 py-1.5 rounded-full">Menú de Servicios</span>
+        <h2 class="font-display text-5xl sm:text-6xl text-steel-900 mt-4 tracking-wide">Precisión en cada detalle</h2>
+        <p class="text-steel-700 mt-3">Pregunta por precios y disponibilidad directamente por WhatsApp.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7" id="services-grid"></div>
+    </div>
+  </section>
+
+  <!-- Studio -->
+  <section id="estudio" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-6 space-y-6">
+        <span class="text-xs font-bold uppercase tracking-widest text-blood-600 bg-blood-50 border border-blood-100 px-3.5 py-1.5 rounded-full">El Estudio</span>
+        <h2 class="font-display text-5xl text-steel-900 tracking-wide leading-none">Más que un corte: una experiencia</h2>
+        <p class="text-steel-700 leading-relaxed">Un espacio cómodo, relajado y con buena vibra, donde cada cliente recibe asesoría de estilo según la forma de su rostro y su personalidad.</p>
+        <div class="space-y-4">
+          <div class="flex items-start gap-4 p-4 rounded-2xl bg-steel-50 border border-steel-100">
+            <div class="w-10 h-10 rounded-xl bg-steel-900 text-white flex items-center justify-center shrink-0"><i data-lucide="user-check" class="w-5 h-5"></i></div>
+            <div><h4 class="font-bold">Atención personalizada</h4><p class="text-sm text-steel-700">Trabajamos con cita para dedicarte el tiempo que tu corte merece.</p></div>
+          </div>
+          <div class="flex items-start gap-4 p-4 rounded-2xl bg-steel-50 border border-steel-100">
+            <div class="w-10 h-10 rounded-xl bg-steel-900 text-white flex items-center justify-center shrink-0"><i data-lucide="award" class="w-5 h-5"></i></div>
+            <div><h4 class="font-bold">Clásico y moderno</h4><p class="text-sm text-steel-700">Desde el corte tradicional hasta fades, taper y diseños urbanos.</p></div>
+          </div>
+          <div class="flex items-start gap-4 p-4 rounded-2xl bg-steel-50 border border-steel-100">
+            <div class="w-10 h-10 rounded-xl bg-steel-900 text-white flex items-center justify-center shrink-0"><i data-lucide="sparkles" class="w-5 h-5"></i></div>
+            <div><h4 class="font-bold">Acabados impecables</h4><p class="text-sm text-steel-700">Navaja, toalla caliente y productos de calidad para un look nítido toda la semana.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+        <div class="space-y-4">
+          <img src="img/foto-2.jpg" alt="Corte fade" class="w-full h-60 object-cover rounded-3xl shadow-md" />
+          <img src="img/foto-3.jpg" alt="Diseño de barba" class="w-full h-48 object-cover rounded-3xl shadow-md" />
+        </div>
+        <div class="space-y-4 pt-6">
+          <img src="img/foto-4.jpg" alt="Afeitado con toalla caliente" class="w-full h-48 object-cover rounded-3xl shadow-md" />
+          <img src="img/foto-5.jpg" alt="Herramientas de barbería" class="w-full h-60 object-cover rounded-3xl shadow-md" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="galeria" class="py-20 bg-steel-50 border-t border-steel-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-blood-600">Galería</span>
+        <h2 class="font-display text-5xl text-steel-900 mt-2 tracking-wide">Trabajos y ambiente</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <!-- Opinions -->
+  <section id="opiniones" class="py-20 bg-white border-t border-steel-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold mb-3">
+          <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i> Calificación 5/5
+        </div>
+        <h2 class="font-display text-5xl sm:text-6xl text-steel-900 tracking-wide">Lo que destacan nuestros clientes</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-7">
+        <div class="bg-steel-50 rounded-3xl p-7 border border-steel-200">
+          <div class="w-12 h-12 rounded-2xl bg-blood-50 text-blood-600 flex items-center justify-center mb-4"><i data-lucide="heart-handshake" class="w-6 h-6"></i></div>
+          <h3 class="font-bold text-lg">Trato y profesionalismo</h3>
+          <p class="text-sm text-steel-700 mt-2">Los clientes resaltan el buen trato, la dedicación y la destreza del equipo, con especial mención al trabajo de Carmen.</p>
+        </div>
+        <div class="bg-steel-50 rounded-3xl p-7 border border-steel-200">
+          <div class="w-12 h-12 rounded-2xl bg-blood-50 text-blood-600 flex items-center justify-center mb-4"><i data-lucide="scissors" class="w-6 h-6"></i></div>
+          <h3 class="font-bold text-lg">Calidad en cada servicio</h3>
+          <p class="text-sm text-steel-700 mt-2">Cortes clásicos y modernos, arreglo de barba y correcciones de color con acabados de alta calidad y atención al detalle.</p>
+        </div>
+        <div class="bg-steel-50 rounded-3xl p-7 border border-steel-200">
+          <div class="w-12 h-12 rounded-2xl bg-blood-50 text-blood-600 flex items-center justify-center mb-4"><i data-lucide="armchair" class="w-6 h-6"></i></div>
+          <h3 class="font-bold text-lg">Ambiente con buena vibra</h3>
+          <p class="text-sm text-steel-700 mt-2">Un estudio cómodo y relajado, ideal para disfrutar la experiencia de cuidado personal sin prisas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section id="ubicacion" class="py-20 bg-steel-50 border-t border-steel-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10 items-start">
+      <div class="lg:col-span-5 bg-white rounded-3xl p-8 border border-steel-200 shadow-sm space-y-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-blood-600">Visítanos</span>
+          <h2 class="font-display text-4xl text-steel-900 tracking-wide">Ubicación y Horarios</h2>
+        </div>
+        <div class="space-y-4 text-sm">
+          <div class="flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-blood-50 text-blood-600 flex items-center justify-center shrink-0"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+            <div><p class="font-bold">Dirección</p><p class="text-steel-700">Calz. Puente de Guerra interior 104, Col. Presidente Madero, Azcapotzalco, C.P. 02420, CDMX.<br/><span class="text-xs">Pasando los tacos al carbón “Mil Salsas”, enfrente de las canchas de básquetbol.</span></p></div>
+          </div>
+          <div class="flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-blood-50 text-blood-600 flex items-center justify-center shrink-0"><i data-lucide="phone-call" class="w-5 h-5"></i></div>
+            <div><p class="font-bold">Teléfono y WhatsApp</p><a href="tel:+525516923948" class="text-blood-600 font-semibold hover:underline">+52 55 1692 3948</a></div>
+          </div>
+          <div class="flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-blood-50 text-blood-600 flex items-center justify-center shrink-0"><i data-lucide="clock" class="w-5 h-5"></i></div>
+            <div class="w-full">
+              <p class="font-bold mb-2">Horario</p>
+              <ul class="space-y-1.5 text-steel-700">
+                <li class="flex justify-between py-1 border-b border-steel-100"><span>Lunes a Viernes</span><span class="font-semibold text-steel-900">10:30 a.m. – 8:00 p.m.</span></li>
+                <li class="flex justify-between py-1 border-b border-steel-100"><span>Sábado</span><span class="font-semibold text-steel-900">10:00 a.m. – 5:00 p.m.</span></li>
+                <li class="flex justify-between py-1"><span>Domingo</span><span class="text-steel-700">Cerrado</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="https://wa.me/525516923948?text=Hola%20Valkiria%20Ghost%20Barber,%20quiero%20agendar%20una%20cita." target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center gap-2 bg-blood-600 hover:bg-blood-700 text-white font-semibold py-3.5 px-5 rounded-full text-sm">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> Agendar por WhatsApp
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Estudio+Valkiria+Ghost+Barber+Calz+Puente+de+Guerra+104+Azcapotzalco" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-steel-100 hover:bg-steel-200 font-semibold py-3.5 px-5 rounded-full text-sm">
+            <i data-lucide="navigation" class="w-4 h-4"></i> Cómo llegar
+          </a>
+        </div>
+      </div>
+      <div class="lg:col-span-7 rounded-3xl overflow-hidden shadow-md border border-steel-200 bg-white h-[430px]">
+        <iframe title="Mapa Estudio Valkiria Ghost Barber"
+          src="https://www.google.com/maps?q=Calz.+Puente+de+Guerra+104,+Presidente+Madero,+Azcapotzalco,+02420+CDMX&hl=es&z=16&output=embed"
+          width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white border-t border-steel-200 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-steel-700">
+      <span><strong class="text-steel-900">Estudio Valkiria Ghost Barber</strong> · Calz. Puente de Guerra int. 104, Pdte. Madero, Azcapotzalco, CDMX</span>
+      <span>© 2026 Estudio Valkiria Ghost Barber</span>
+    </div>
+  </footer>
+  <div class="barber-stripe h-1.5 w-full"></div>
+
+  <a href="https://wa.me/525516923948?text=Hola%20Valkiria%20Ghost%20Barber,%20quiero%20agendar%20una%20cita." target="_blank" rel="noopener" aria-label="WhatsApp"
+     class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2.5 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold px-5 py-3.5 rounded-full shadow-xl hover:scale-105 transition-all">
+    <i data-lucide="message-circle" class="w-5 h-5"></i><span class="text-sm">Agenda tu corte</span>
+  </a>
+
+  <script>
+    const WA = 'https://wa.me/525516923948?text=';
+    const services = [
+      ['scissors', 'Corte de Cabello', 'Clásico, fade, taper fade, mid o low. Asesoría según la forma de tu rostro.', 'Corte de cabello'],
+      ['brush', 'Diseño y Perfilado de Barba', 'Alineado con navaja libre para bordes nítidos durante toda la semana.', 'Perfilado de barba'],
+      ['flame', 'Afeitado con Toalla Caliente', 'Ritual tradicional al ras que cuida tu piel y evita irritaciones.', 'Afeitado con toalla caliente'],
+      ['user-round', 'Afeitado de Cabeza', 'Acabado limpio y suave para quienes prefieren el look a rapa.', 'Afeitado de cabeza'],
+      ['palette', 'Tinte, Matiz y Corrección de Color', 'Cubre canas o atrévete a un cambio con resultados naturales y duraderos.', 'Tinte y matiz'],
+      ['eye', 'Perfilado de Ceja y Detalles', 'El toque final que completa tu imagen con precisión.', 'Perfilado de ceja'],
+    ];
+    document.getElementById('services-grid').innerHTML = services.map(([icon, title, desc, q]) => `
+      <div class="bg-white rounded-3xl p-7 border border-steel-200 shadow-sm card-hover flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-blood-50 text-blood-600 flex items-center justify-center mb-5"><i data-lucide="${icon}" class="w-6 h-6"></i></div>
+          <h3 class="font-bold text-xl text-steel-900 mb-2">${title}</h3>
+          <p class="text-steel-700 text-sm leading-relaxed mb-4">${desc}</p>
+        </div>
+        <a href="${WA}${encodeURIComponent('Hola Valkiria Ghost Barber, quiero informes y agendar: ' + q)}" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blood-600 hover:text-blood-700">
+          Agendar <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>`).join('');
+
+    const gallery = [
+      ['foto-1.jpg', 'Nuestro estudio'], ['foto-2.jpg', 'Fades de precisión'], ['foto-3.jpg', 'Diseño de barba'],
+      ['foto-4.jpg', 'Afeitado clásico'], ['foto-5.jpg', 'Herramientas profesionales'], ['foto-6.jpg', 'Cortes modernos'],
+    ];
+    document.getElementById('gallery-grid').innerHTML = gallery.map(([src, label]) => `
+      <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-steel-200 aspect-[4/3]">
+        <img src="img/${src}" alt="${label}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+        <div class="absolute inset-0 bg-gradient-to-t from-steel-900/60 via-transparent to-transparent"></div>
+        <span class="absolute bottom-4 left-4 text-white font-semibold text-sm">${label}</span>
+      </div>`).join('');
+
+    lucide.createIcons();
+
+    function updateOpenStatus() {
+      const badge = document.getElementById('status-badge');
+      const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Mexico_City' }));
+      const d = now.getDay(), h = now.getHours() + now.getMinutes() / 60;
+      const open = (d >= 1 && d <= 5 && h >= 10.5 && h < 20) || (d === 6 && h >= 10 && h < 17);
+      if (open) {
+        badge.className = 'inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800';
+        badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span> Abierto ahora';
+      } else {
+        badge.className = 'inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-100 text-amber-800';
+        badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Cerrado ahora · Agenda por WhatsApp';
+      }
+    }
+    updateOpenStatus();
+    setInterval(updateOpenStatus, 60000);
+  </script>
+</body>
+</html>
