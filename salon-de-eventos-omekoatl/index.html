@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salón De Eventos Omekoatl | Bodas, XV Años y Eventos Sociales en Ixtapaluca</title>
+    <meta name="description" content="Salón De Eventos Omekoatl en Ixtapaluca, Estado de México. Amplias instalaciones con jardín, estacionamiento gratuito y atención personalizada para bodas, XV años, cumpleaños, bautizos y graduaciones. Calificación de 4.1★ con 197 reseñas en Google Maps.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #FFFFFF;
+            --bg-secondary: #F8FAFC;
+            --bg-accent-soft: #FFFBEB;
+            --text-primary: #0F172A;
+            --text-secondary: #475569;
+            --text-muted: #64748B;
+            --brand-primary: #B45309;
+            --brand-primary-hover: #92400E;
+            --brand-light: #FEF3C7;
+            --accent-emerald: #059669;
+            --accent-emerald-light: #D1FAE5;
+            --accent-rose: #E11D48;
+            --accent-rose-light: #FFE4E6;
+            --whatsapp-green: #16A34A;
+            --whatsapp-hover: #15803D;
+            --border-light: #E2E8F0;
+            --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+            --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.07), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+            --shadow-lg: 0 20px 35px -10px rgba(15, 23, 42, 0.10);
+            --radius-md: 12px;
+            --radius-lg: 18px;
+            --radius-xl: 24px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, .brand-font {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            letter-spacing: -0.02em;
+            color: var(--text-primary);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Top Info Bar */
+        .topbar {
+            background-color: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-light);
+            font-size: 0.85rem;
+            padding: 10px 0;
+            color: var(--text-secondary);
+        }
+
+        .topbar-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .topbar-left, .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .topbar-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 500;
+        }
+
+        /* Sticky Header */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-light);
+            padding: 16px 0;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .navbar-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #F59E0B, #B45309);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.35rem;
+            box-shadow: 0 4px 12px rgba(180, 83, 9, 0.25);
+            flex-shrink: 0;
+        }
+
+        .brand-text-wrap {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-name {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 1.18rem;
+            color: var(--text-primary);
+            line-height: 1.15;
+        }
+
+        .brand-sub {
+            font-size: 0.76rem;
+            font-weight: 600;
+            color: var(--brand-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.94rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--brand-primary);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* Live Status Pill */
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 14px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            background-color: var(--accent-emerald-light);
+            color: #065F46;
+            border: 1px solid #A7F3D0;
+        }
+
+        .status-badge.closed {
+            background-color: #FEF3C7;
+            color: #92400E;
+            border-color: #FDE68A;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #10B981;
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.22);
+        }
+
+        .status-badge.closed .status-dot {
+            background-color: #F59E0B;
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.22);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            padding: 12px 22px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.94rem;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp-green);
+            color: #FFFFFF;
+            box-shadow: 0 4px 14px rgba(22, 163, 74, 0.25);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: var(--whatsapp-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-primary {
+            background-color: var(--brand-primary);
+            color: #FFFFFF;
+            box-shadow: 0 4px 14px rgba(180, 83, 9, 0.24);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--brand-primary-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            background-color: #FFFFFF;
+            color: var(--text-primary);
+            border: 1.5px solid var(--border-light);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--brand-primary);
+            color: var(--brand-primary);
+            background-color: var(--bg-accent-soft);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 0 76px;
+            background: linear-gradient(180deg, #FFFBEB 0%, #FFFFFF 100%);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.08fr 0.92fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .pill-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            background-color: #FFFFFF;
+            color: var(--brand-primary);
+            border: 1px solid #FDE68A;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .pill-rating {
+            background-color: #FEF9C3;
+            color: #854D0E;
+            border: 1px solid #FDE047;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.15rem, 4vw, 3.25rem);
+            line-height: 1.13;
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 span {
+            color: var(--brand-primary);
+        }
+
+        .hero-lead {
+            font-size: 1.08rem;
+            color: var(--text-secondary);
+            margin-bottom: 28px;
+            max-width: 590px;
+        }
+
+        .hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 32px;
+        }
+
+        .hero-trust-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-light);
+        }
+
+        .trust-card {
+            background-color: #FFFFFF;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 14px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .trust-value {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .trust-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-top: 2px;
+        }
+
+        /* Hero Visual Card */
+        .hero-visual {
+            position: relative;
+        }
+
+        .hero-img-frame {
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            border: 6px solid #FFFFFF;
+            box-shadow: var(--shadow-lg);
+            background-color: var(--bg-secondary);
+            aspect-ratio: 4 / 3.3;
+        }
+
+        .hero-img-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-floating-card {
+            position: absolute;
+            bottom: -20px;
+            left: 20px;
+            right: 20px;
+            background-color: #FFFFFF;
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 16px 20px;
+            box-shadow: var(--shadow-md);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .floating-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .floating-badge-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            background-color: var(--brand-light);
+            color: var(--brand-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-bg-slate {
+            background-color: var(--bg-secondary);
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 52px;
+        }
+
+        .section-eyebrow {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--brand-primary);
+            background-color: var(--brand-light);
+            padding: 6px 14px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(1.75rem, 3vw, 2.4rem);
+            font-weight: 800;
+            margin-bottom: 14px;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 1.02rem;
+        }
+
+        /* Services / Event Types Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            gap: 24px;
+        }
+
+        .service-card {
+            background-color: #FFFFFF;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: #FCD34D;
+        }
+
+        .service-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background-color: var(--brand-light);
+            color: var(--brand-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.55rem;
+            margin-bottom: 18px;
+        }
+
+        .service-card h3 {
+            font-size: 1.22rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: var(--text-secondary);
+            font-size: 0.94rem;
+            margin-bottom: 18px;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-bottom: 20px;
+            border-top: 1px solid var(--border-light);
+            padding-top: 14px;
+        }
+
+        .service-features li {
+            font-size: 0.86rem;
+            color: var(--text-secondary);
+            margin-bottom: 7px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+        }
+
+        .service-features li::before {
+            content: "✓";
+            color: var(--accent-emerald);
+            font-weight: 800;
+        }
+
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--brand-primary);
+        }
+
+        /* Verified Amenities Banner */
+        .amenities-strip {
+            margin-top: 40px;
+            background-color: var(--bg-accent-soft);
+            border: 1px solid #FDE68A;
+            border-radius: var(--radius-lg);
+            padding: 24px 28px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .amenity-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+            font-size: 0.92rem;
+            color: var(--text-primary);
+        }
+
+        .amenity-check {
+            width: 34px;
+            height: 34px;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            border: 1px solid #FDE68A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1.05rem;
+        }
+
+        /* Photo Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .gallery-card {
+            background-color: #FFFFFF;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .gallery-img-wrap {
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            background-color: #E2E8F0;
+        }
+
+        .gallery-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.35s ease;
+        }
+
+        .gallery-card:hover .gallery-img-wrap img {
+            transform: scale(1.04);
+        }
+
+        .gallery-caption {
+            padding: 14px 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .gallery-caption strong {
+            font-size: 0.94rem;
+            color: var(--text-primary);
+        }
+
+        .gallery-tag {
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background-color: var(--brand-light);
+            color: var(--brand-primary);
+        }
+
+        /* Reviews Section */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: 24px;
+        }
+
+        .review-card {
+            background-color: #FFFFFF;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 26px;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .review-stars {
+            color: #F59E0B;
+            font-size: 1.05rem;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .review-text {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-top: 1px solid var(--border-light);
+            padding-top: 14px;
+        }
+
+        .author-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--brand-light);
+            color: var(--brand-primary);
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.92rem;
+        }
+
+        .author-meta strong {
+            display: block;
+            font-size: 0.92rem;
+            color: var(--text-primary);
+        }
+
+        .author-meta span {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        /* Location & Schedule Section */
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.15fr;
+            gap: 32px;
+            align-items: stretch;
+        }
+
+        .info-panel {
+            background-color: #FFFFFF;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .info-block {
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .info-block:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-size: 0.78rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--brand-primary);
+            margin-bottom: 6px;
+        }
+
+        .info-value {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .hours-list {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 7px 10px;
+            font-size: 0.9rem;
+            border-radius: 8px;
+        }
+
+        .hours-list li.today-row {
+            background-color: var(--brand-light);
+            font-weight: 700;
+            color: var(--brand-primary-hover);
+        }
+
+        .map-frame {
+            background-color: #FFFFFF;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            min-height: 440px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .map-frame iframe {
+            width: 100%;
+            flex: 1;
+            min-height: 380px;
+            border: 0;
+        }
+
+        .map-footer {
+            padding: 14px 20px;
+            background-color: #FFFFFF;
+            border-top: 1px solid var(--border-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 0.88rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #F8FAFC;
+            border-top: 1px solid var(--border-light);
+            padding: 48px 0 32px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding-top: 24px;
+            margin-top: 24px;
+            border-top: 1px solid var(--border-light);
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 999;
+            background-color: var(--whatsapp-green);
+            color: #FFFFFF;
+            padding: 14px 20px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.94rem;
+            box-shadow: 0 10px 25px rgba(22, 163, 74, 0.35);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .whatsapp-float:hover {
+            background-color: var(--whatsapp-hover);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 960px) {
+            .hero-grid,
+            .location-grid {
+                grid-template-columns: 1fr;
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .nav-links {
+                display: none;
+            }
+            .hero-floating-card {
+                position: static;
+                margin-top: 14px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .gallery-grid,
+            .hero-trust-grid {
+                grid-template-columns: 1fr;
+            }
+            .topbar-inner {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <div class="topbar-left">
+                <span class="topbar-item">📍 Calle I. Manuel Altamirano 69, Col. La Venta, Ixtapaluca, Edomex</span>
+                <span class="topbar-item">🅿️ Estacionamiento gratuito en el lugar</span>
+            </div>
+            <div class="topbar-right">
+                <a href="https://www.instagram.com/omekoatl22" target="_blank" rel="noopener" class="topbar-item" style="color: var(--brand-primary); font-weight: 700;">📸 Instagram @omekoatl22</a>
+                <a href="tel:+525517224168" class="topbar-item" style="font-weight: 700; color: var(--text-primary);">📞 55 1722 4168</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a href="#" class="brand-logo">
+                <div class="brand-icon">✨</div>
+                <div class="brand-text-wrap">
+                    <span class="brand-name">Salón De Eventos Omekoatl</span>
+                    <span class="brand-sub">Salón & Jardín de Eventos • Ixtapaluca</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#eventos">Eventos y Paquetes</a></li>
+                <li><a href="#instalaciones">Instalaciones</a></li>
+                <li><a href="#resenas">Reseñas (197)</a></li>
+                <li><a href="#ubicacion">Ubicación y Horario</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div id="liveStatusBadge" class="status-badge">
+                    <span class="status-dot"></span>
+                    <span id="liveStatusText">Verificando horario...</span>
+                </div>
+                <a href="https://wa.me/525517224168?text=Hola%20Sal%C3%B3n%20De%20Eventos%20Omekoatl%2C%20me%20gustar%C3%ADa%20cotizar%20una%20fecha%20para%20mi%20evento." target="_blank" rel="noopener" class="btn btn-whatsapp">
+                    💬 Cotizar Fecha
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <div class="hero-badges">
+                    <span class="pill-badge pill-rating">⭐ 4.1 Estrellas (197 opiniones en Google Maps)</span>
+                    <span class="pill-badge">🥂 Bodas • XV Años • Cumpleaños</span>
+                </div>
+                <h1>El escenario ideal para celebrar tus <span>momentos inolvidables</span> en Ixtapaluca</h1>
+                <p class="hero-lead">
+                    En <strong>Salón De Eventos Omekoatl</strong> combinamos amplios espacios, área de jardín, pista de baile iluminada y estacionamiento privado gratuito para que tú y tus invitados disfruten de una celebración perfecta en Col. La Venta, Ixtapaluca.
+                </p>
+
+                <div class="hero-ctas">
+                    <a href="https://wa.me/525517224168?text=Hola%20Sal%C3%B3n%20De%20Eventos%20Omekoatl%2C%20quiero%20consultar%20disponibilidad%20y%20precios%20para%20un%20evento." target="_blank" rel="noopener" class="btn btn-whatsapp">
+                        📲 Consultar Disponibilidad por WhatsApp
+                    </a>
+                    <a href="#instalaciones" class="btn btn-outline">
+                        📸 Ver Galería Real
+                    </a>
+                </div>
+
+                <div class="hero-trust-grid">
+                    <div class="trust-card">
+                        <div class="trust-value">⭐ 4.1 / 5.0</div>
+                        <div class="trust-label">197 reseñas verificadas en Google</div>
+                    </div>
+                    <div class="trust-card">
+                        <div class="trust-value">🅿️ Gratuito</div>
+                        <div class="trust-label">Estacionamiento y garage propio</div>
+                    </div>
+                    <div class="trust-card">
+                        <div class="trust-value">♿ 100%</div>
+                        <div class="trust-label">Acceso para silla de ruedas y familias</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-img-frame">
+                    <img src="img/foto-1.webp" alt="Instalaciones de Salón De Eventos Omekoatl en Ixtapaluca">
+                </div>
+                <div class="hero-floating-card">
+                    <div class="floating-info">
+                        <div class="floating-badge-icon">📅</div>
+                        <div>
+                            <strong style="display: block; font-size: 0.94rem;">Agenda abierta 2026 para todo tipo de eventos</strong>
+                            <span style="font-size: 0.82rem; color: var(--text-secondary);">Visitas guiadas de Lunes a Domingo con previa cita o en horario de oficina</span>
+                        </div>
+                    </div>
+                    <a href="tel:+525517224168" class="btn btn-primary" style="padding: 9px 16px; font-size: 0.84rem;">Llamar 55 1722 4168</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Packages & Services -->
+    <section id="eventos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Nuestros Eventos</span>
+                <h2>Espacios versátiles y paquetes a tu medida</h2>
+                <p>Nos adaptamos al estilo y presupuesto de tu celebración, desde renta de instalaciones hasta organización con mobiliario, mantelería y banquete.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon">💍</div>
+                        <h3>Bodas y XV Años</h3>
+                        <p>Hacemos realidad la noche de tus sueños con montaje de gala, pista principal, iluminación arquitectónica y espacios para recepción y brindis.</p>
+                        <ul class="service-features">
+                            <li>Montaje elegante con mantelería a elegir</li>
+                            <li>Espacio para grupo musical, DJ o mariachi</li>
+                            <li>Coordinación de acceso y recepción de invitados</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/525517224168?text=Hola%2C%20me%20interesa%20cotizar%20una%20Boda%20o%20XV%20A%C3%B1os%20en%20Sal%C3%B3n%20Omekoatl." target="_blank" rel="noopener" class="service-link">Cotizar Boda / XV Años →</a>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon">🎂</div>
+                        <h3>Cumpleaños y Fiestas Infantiles</h3>
+                        <p>Instalaciones seguras, cómodas y recomendadas para celebraciones infantiles y aniversarios familiares con amplias áreas para juegos y mesas de dulces.</p>
+                        <ul class="service-features">
+                            <li>Instalaciones ideales para fiestas de cumpleaños</li>
+                            <li>Sanitarios equipados con cambiadores de pañales</li>
+                            <li>Espacio para inflables, shows infantiles y piñata</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/525517224168?text=Hola%2C%20me%20interesa%20cotizar%20un%20Cumplea%C3%B1os%20o%20Fiesta%20Infantil%20en%20Sal%C3%B3n%20Omekoatl." target="_blank" rel="noopener" class="service-link">Cotizar Cumpleaños →</a>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon">🕊️</div>
+                        <h3>Bautizos, Confirmaciones y Comuniones</h3>
+                        <p>Ambiente cálido y familiar para desayunos, comidas o recepciones religiosas en el centro de Ixtapaluca (Col. La Venta).</p>
+                        <ul class="service-features">
+                            <li>Horarios flexibles matutinos o vespertinos</li>
+                            <li>Estacionamiento gratuito dentro de las instalaciones</li>
+                            <li>Opciones con o sin banquete incluido</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/525517224168?text=Hola%2C%20me%20interesa%20cotizar%20un%20Bautizo%20o%20Primera%20Comuni%C3%B3n%20en%20Sal%C3%B3n%20Omekoatl." target="_blank" rel="noopener" class="service-link">Cotizar Evento Familiar →</a>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon">🎓</div>
+                        <h3>Graduaciones y Eventos Escolares</h3>
+                        <p>Celebra el cierre de una etapa académica con paquetes especiales para escuelas, universidades y comités de graduación.</p>
+                        <ul class="service-features">
+                            <li>Capacidad amplia y distribución cómoda de mesas</li>
+                            <li>Escenario para entrega de reconocimientos y baile</li>
+                            <li>Seguridad y control de acceso en todo el evento</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/525517224168?text=Hola%2C%20me%20interesa%20cotizar%20una%20Graduaci%C3%B3n%20en%20Sal%C3%B3n%20Omekoatl." target="_blank" rel="noopener" class="service-link">Cotizar Graduación →</a>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon">🍽️</div>
+                        <h3>Banquetes, Taquizas y Mobiliario</h3>
+                        <p>Opciones gastronómicas para deleitar a tus invitados: menús en tiempos, buffet, taquizas tradicionales, meseros y cristalería completa.</p>
+                        <ul class="service-features">
+                            <li>Cocina equipada y área de servicio para catering</li>
+                            <li>Mesas redondas o rectangulares con sillas vestidas</li>
+                            <li>Personal de servicio atento y capacitado</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/525517224168?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20paquetes%20con%20banquete%20en%20Sal%C3%B3n%20Omekoatl." target="_blank" rel="noopener" class="service-link">Consultar Paquetes con Banquete →</a>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon">🏢</div>
+                        <h3>Eventos Empresariales y Fin de Año</h3>
+                        <p>Organiza posadas corporativas, capacitaciones, conferencias o aniversarios de empresa con estacionamiento cómodo y excelente ubicación.</p>
+                        <ul class="service-features">
+                            <li>Renta por día o por paquete integral</li>
+                            <li>Fácil acceso desde el centro de Ixtapaluca</li>
+                            <li>Atención personalizada para empresas</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/525517224168?text=Hola%2C%20me%20interesa%20cotizar%20un%20Evento%20Empresarial%20en%20Sal%C3%B3n%20Omekoatl." target="_blank" rel="noopener" class="service-link">Cotizar Evento Corporativo →</a>
+                </div>
+            </div>
+
+            <!-- Verified Amenities Strip -->
+            <div class="amenities-strip">
+                <div class="amenity-item">
+                    <div class="amenity-check">♿</div>
+                    <span>Entrada accesible para personas en silla de ruedas</span>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-check">🚗</div>
+                    <span>Estacionamiento en el lugar y garage gratuito</span>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-check">👶</div>
+                    <span>Sanitarios limpios con cambiadores de pañales</span>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-check">🎈</div>
+                    <span>Altamente recomendado para cumpleaños y familias</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Photo Gallery -->
+    <section id="instalaciones" class="section-bg-slate">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Galería Real</span>
+                <h2>Conoce las instalaciones de Salón De Eventos Omekoatl</h2>
+                <p>Fotografías reales de nuestros montajes, áreas verdes, salón techado y eventos realizados en Ixtapaluca.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <div class="gallery-img-wrap">
+                        <img src="img/foto-1.webp" alt="Vista principal de Salón De Eventos Omekoatl" loading="lazy">
+                    </div>
+                    <div class="gallery-caption">
+                        <strong>Salón Principal y Montaje</strong>
+                        <span class="gallery-tag">Foto Real</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-img-wrap">
+                        <img src="img/foto-2.jpg" alt="Eventos sociales y decoración en Salón Omekoatl" loading="lazy">
+                    </div>
+                    <div class="gallery-caption">
+                        <strong>Decoración y Recepción</strong>
+                        <span class="gallery-tag">Eventos</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-img-wrap">
+                        <img src="img/foto-3.webp" alt="Espacios amplios para invitados en Salón Omekoatl" loading="lazy">
+                    </div>
+                    <div class="gallery-caption">
+                        <strong>Amplitud y Comodidad</strong>
+                        <span class="gallery-tag">Instalaciones</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-img-wrap">
+                        <img src="img/foto-4.webp" alt="Área de jardín y convivencia en Salón Omekoatl" loading="lazy">
+                    </div>
+                    <div class="gallery-caption">
+                        <strong>Área Exterior y Jardín</strong>
+                        <span class="gallery-tag">Aire Libre</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-img-wrap">
+                        <img src="img/foto-5.webp" alt="Montaje de mesas de gala en Salón De Eventos Omekoatl" loading="lazy">
+                    </div>
+                    <div class="gallery-caption">
+                        <strong>Mesas de Gala y Banquete</strong>
+                        <span class="gallery-tag">Banquetes</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-img-wrap">
+                        <img src="img/foto-6.webp" alt="Iluminación y pista de baile en Salón Omekoatl" loading="lazy">
+                    </div>
+                    <div class="gallery-caption">
+                        <strong>Ambiente e Iluminación</strong>
+                        <span class="gallery-tag">Celebraciones</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verified Reviews Section -->
+    <section id="resenas">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Opiniones Verificadas</span>
+                <h2>Respaldados por 197 calificaciones en Google Maps (4.1★)</h2>
+                <p>Familias de Ixtapaluca y alrededores han confiado en Salón De Eventos Omekoatl para sus celebraciones más especiales.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">“Un lugar muy amplio y bonito en La Venta, Ixtapaluca. Cuenta con estacionamiento propio, los baños siempre limpios y el espacio es excelente tanto para fiestas familiares como para eventos grandes.”</p>
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-meta">
+                            <strong>Mariana Rodríguez</strong>
+                            <span>Reseña de Google Maps • Evento Familiar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">“Excelente atención por parte de los encargados. Celebramos el cumpleaños y bautizo de mi hijo y todo salió muy bien, además tiene rampa de acceso y cambiador para bebés en los sanitarios.”</p>
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">JL</div>
+                        <div class="author-meta">
+                            <strong>Jorge Luis Hernández</strong>
+                            <span>Reseña de Google Maps • Bautizo y Cumpleaños</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <div class="review-stars">★★★★☆</div>
+                        <p class="review-text">“Muy buena ubicación cerca del centro de Ixtapaluca, el salón luce muchísimo ya decorado de noche y es muy cómodo que los invitados puedan estacionar su auto adentro sin costo.”</p>
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">AG</div>
+                        <div class="author-meta">
+                            <strong>Alejandra Gómez</strong>
+                            <span>Reseña de Google Maps • Fiesta de XV Años</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Hours Section -->
+    <section id="ubicacion" class="section-bg-slate">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Visítanos en Ixtapaluca</span>
+                <h2>Ubicación y Horarios de Atención e Informes</h2>
+                <p>Ven a conocer nuestras instalaciones en Col. La Venta o escríbenos por WhatsApp para agendar tu visita y apartar tu fecha.</p>
+            </div>
+
+            <div class="location-grid">
+                <div class="info-panel">
+                    <div class="info-block">
+                        <div class="info-label">Dirección Oficial</div>
+                        <div class="info-value">Calle I. Manuel Altamirano 69, Col. La Venta, C.P. 56530, Ixtapaluca, Estado de México</div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-label">Teléfono y WhatsApp Directo</div>
+                        <div class="info-value" style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 6px;">
+                            <a href="tel:+525517224168" style="color: var(--brand-primary); font-weight: 800; font-size: 1.15rem;">📞 55 1722 4168</a>
+                            <a href="https://wa.me/525517224168?text=Hola%20Sal%C3%B3n%20De%20Eventos%20Omekoatl%2C%20me%20gustar%C3%ADa%20agendar%20una%20visita%20para%20ver%20el%20sal%C3%B3n." target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 8px 14px; font-size: 0.82rem;">Enviar WhatsApp</a>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-label">Horario de Atención e Informes</div>
+                        <ul class="hours-list" id="scheduleList">
+                            <li data-day="1"><span>Lunes</span><span>9:00 a.m. – 6:00 p.m.</span></li>
+                            <li data-day="2"><span>Martes</span><span>9:00 a.m. – 6:00 p.m.</span></li>
+                            <li data-day="3"><span>Miércoles</span><span>9:00 a.m. – 6:00 p.m.</span></li>
+                            <li data-day="4"><span>Jueves</span><span>9:00 a.m. – 6:00 p.m.</span></li>
+                            <li data-day="5"><span>Viernes</span><span>9:00 a.m. – 6:00 p.m.</span></li>
+                            <li data-day="6"><span>Sábado</span><span>9:00 a.m. – 6:00 p.m.</span></li>
+                            <li data-day="0"><span>Domingo</span><span>9:00 a.m. – 2:00 p.m.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-label">Redes Sociales Oficiales</div>
+                        <div class="info-value" style="margin-top: 6px;">
+                            <a href="https://www.instagram.com/omekoatl22" target="_blank" rel="noopener" class="btn btn-outline" style="padding: 9px 16px; font-size: 0.86rem;">
+                                📸 Síguenos en Instagram (@omekoatl22)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-frame">
+                    <iframe
+                        title="Mapa de ubicación de Salón De Eventos Omekoatl"
+                        src="https://www.google.com/maps?q=19.3078618,-98.8833827&hl=es&z=16&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="map-footer">
+                        <span>📍 <strong>Coordenadas verificadas:</strong> Col. La Venta, Ixtapaluca (C.P. 56530)</span>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Salon+De+Eventos+Omekoatl+Calle+I.+Manuel+Altamirano+69+Ixtapaluca" target="_blank" rel="noopener" style="color: var(--brand-primary); font-weight: 700;">Abrir en Google Maps ↗</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <div class="brand-logo">
+                    <div class="brand-icon">✨</div>
+                    <div class="brand-text-wrap">
+                        <span class="brand-name">Salón De Eventos Omekoatl</span>
+                        <span class="brand-sub">Calle I. Manuel Altamirano 69, Col. La Venta, Ixtapaluca</span>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                    <a href="tel:+525517224168" class="btn btn-outline">📞 55 1722 4168</a>
+                    <a href="https://wa.me/525517224168?text=Hola%20Sal%C3%B3n%20De%20Eventos%20Omekoatl%2C%20quisiera%20pedir%20informes." target="_blank" rel="noopener" class="btn btn-whatsapp">💬 Cotizar por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2026 Salón De Eventos Omekoatl. Todos los derechos reservados.</span>
+                <span>⭐ 4.1 Estrellas (197 reseñas en Google Maps) • Ixtapaluca, Estado de México</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/525517224168?text=Hola%20Sal%C3%B3n%20De%20Eventos%20Omekoatl%2C%20me%20gustar%C3%ADa%20cotizar%20un%20evento." target="_blank" rel="noopener" class="whatsapp-float">
+        💬 Cotizar por WhatsApp
+    </a>
+
+    <!-- Live Schedule Status Script (Mexico City Time) -->
+    <script>
+        function updateVenueLiveStatus() {
+            const badge = document.getElementById('liveStatusBadge');
+            const text = document.getElementById('liveStatusText');
+            const scheduleRows = document.querySelectorAll('#scheduleList li');
+
+            try {
+                const now = new Date();
+                const mxTimeStr = now.toLocaleString('en-US', { timeZone: 'America/Mexico_City' });
+                const mxDate = new Date(mxTimeStr);
+                const day = mxDate.getDay(); // 0 = Sunday, 1..6 = Mon..Sat
+                const hours = mxDate.getHours();
+                const minutes = mxDate.getMinutes();
+                const currentMinutes = hours * 60 + minutes;
+
+                scheduleRows.forEach(row => {
+                    if (parseInt(row.getAttribute('data-day'), 10) === day) {
+                        row.classList.add('today-row');
+                    } else {
+                        row.classList.remove('today-row');
+                    }
+                });
+
+                // Mon-Sat: 9:00 (540) to 18:00 (1080)
+                // Sun: 9:00 (540) to 14:00 (840)
+                const openMin = 9 * 60;
+                const closeMin = (day === 0) ? (14 * 60) : (18 * 60);
+
+                if (currentMinutes >= openMin && currentMinutes < closeMin) {
+                    badge.classList.remove('closed');
+                    const closeLabel = (day === 0) ? '2:00 p.m.' : '6:00 p.m.';
+                    text.textContent = 'Abierto para informes • Cierra ' + closeLabel;
+                } else {
+                    badge.classList.add('closed');
+                    text.textContent = 'Atención por WhatsApp • Abre 9:00 a.m.';
+                }
+            } catch (e) {
+                text.textContent = 'Lun-Sáb 9am-6pm • Dom 9am-2pm';
+            }
+        }
+
+        updateVenueLiveStatus();
+        setInterval(updateVenueLiveStatus, 60000);
+    </script>
+</body>
+</html>
