@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Physioactive | Fisioterapia y Rehabilitación Física en Tlalpan, CDMX</title>
+  <meta name="description" content="Physioactive en San Fernando, Tlalpan. Fisioterapia deportiva, rehabilitación postquirúrgica, dolor de espalda y columna. Atención personalizada y con evidencia científica." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            physio: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              200: '#99f6e4',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
+            },
+            vital: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              600: '#2563eb',
+              700: '#1d4ed8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #FFFFFF;
+      color: #0F172A;
+    }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 35px -12px rgba(15, 118, 110, 0.16);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-physio-100 selection:text-physio-900">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-slate-50 border-b border-slate-200/80 text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 text-slate-700 font-medium">
+        <span id="status-badge" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+          Citas Disponibles Esta Semana · Atención 1 a 1
+        </span>
+        <span class="hidden md:inline text-slate-300">|</span>
+        <span class="hidden md:inline text-slate-600">San Fernando, Alcaldía Tlalpan (Zona Sur CDMX)</span>
+      </div>
+      <div class="flex items-center gap-4 ml-auto sm:ml-0 font-medium">
+        <a href="tel:+525564270057" class="inline-flex items-center gap-1.5 text-slate-700 hover:text-physio-700 font-bold transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-physio-600"></i>
+          55 6427 0057
+        </a>
+        <span class="text-slate-300">|</span>
+        <a href="#contacto" class="inline-flex items-center gap-1 text-slate-600 hover:text-physio-700 transition-colors">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-physio-600"></i>
+          <span>Tlalpan, CDMX</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-2xl bg-physio-50 border border-physio-200 text-physio-700 flex items-center justify-center shadow-sm group-hover:bg-physio-700 group-hover:text-white transition-all">
+          <i data-lucide="activity" class="w-6 h-6 stroke-[2.2]"></i>
+        </div>
+        <div>
+          <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 block leading-none">Physio<span class="text-physio-600">active</span></span>
+          <span class="text-[11px] uppercase tracking-widest text-slate-400 font-bold block mt-1">Fisioterapia & Rehabilitación · Tlalpan</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#especialidades" class="hover:text-physio-700 transition-colors">Especialidades</a>
+        <a href="#metodologia" class="hover:text-physio-700 transition-colors">Método de Atención</a>
+        <a href="#instalaciones" class="hover:text-physio-700 transition-colors">Clínica</a>
+        <a href="#testimonios" class="hover:text-physio-700 transition-colors">Testimonios</a>
+        <a href="#contacto" class="hover:text-physio-700 transition-colors">Ubicación</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/525564270057?text=Hola%20Physioactive,%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20valoraci%C3%B3n."
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 bg-physio-700 hover:bg-physio-800 text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Agendar Valoración</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-physio-50/70 via-white to-white pt-10 pb-20 lg:pt-16 lg:pb-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        
+        <!-- Left Column -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-physio-200 shadow-sm text-xs font-bold text-physio-800">
+            <span class="flex items-center text-amber-500">
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+            </span>
+            <span>Atención Personalizada en Zona San Fernando, Tlalpan</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
+            Alivia el dolor, recupera tu movilidad y <span class="text-physio-600">vuelve a tu vida activa</span>.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl font-normal">
+            En <strong>Physioactive</strong> tratamos el origen de tu dolor, no solo los síntomas. Fisioterapia ortopédica, deportiva y rehabilitación postquirúrgica basada en evidencia científica y terapia manual para que recuperes tu bienestar con seguridad y confianza en <strong>Tlalpan, CDMX</strong>.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
+            <a href="https://wa.me/525564270057?text=Hola%20Physioactive,%20tengo%20un%20dolor/lesi%C3%B3n%20y%20quiero%20agendar%20una%20valoraci%C3%B3n."
+               target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center gap-2.5 bg-physio-700 hover:bg-physio-800 text-white font-bold px-7 py-4 rounded-full shadow-lg shadow-physio-700/20 hover:shadow-xl transition-all text-base">
+              <i data-lucide="calendar-check" class="w-5 h-5"></i>
+              Agendar Cita en WhatsApp
+            </a>
+            <a href="#especialidades"
+               class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-bold px-6 py-4 rounded-full transition-all text-base">
+              <i data-lucide="sparkles" class="w-5 h-5 text-physio-600"></i>
+              Ver Especialidades
+            </a>
+          </div>
+
+          <!-- Trust Highlights -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-200/80 max-w-xl">
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">1 a 1</div>
+              <div class="text-xs text-slate-500 mt-0.5">Sesiones 100% personalizadas</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-physio-700">Científico</div>
+              <div class="text-xs text-slate-500 mt-0.5">Basado en evidencia clínica</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">Tlalpan</div>
+              <div class="text-xs text-slate-500 mt-0.5">Zona San Fernando y Sur CDMX</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column Hero Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 aspect-[4/5]">
+            <img src="img/foto-1.jpg" alt="Terapia física y rehabilitación en Physioactive Tlalpan" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/65 via-transparent to-transparent"></div>
+            <div class="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-slate-100">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-xl bg-physio-50 text-physio-700 flex items-center justify-center shrink-0 mt-0.5">
+                  <i data-lucide="heart-pulse" class="w-5 h-5 stroke-[2.2]"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-bold uppercase tracking-wider text-physio-700">Enfoque de Recuperación Integral</p>
+                  <p class="text-xs text-slate-700 italic mt-0.5">“Evaluamos tu postura, rango articular y fuerza para diseñar una rehabilitación a tu medida sin recetas genéricas.”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialties Grid -->
+  <section id="especialidades" class="py-20 bg-slate-50 border-y border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-physio-700 bg-physio-100/80 px-3.5 py-1.5 rounded-full">Servicios Clínicos Especializados</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mt-4 tracking-tight">
+          Soluciones precisas para cada tipo de dolor
+        </h2>
+        <p class="text-slate-600 mt-3 text-base sm:text-lg">
+          Tratamientos diseñados por fisioterapeutas titulados para devolverte la funcionalidad en el menor tiempo posible.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <!-- Specialty 1 -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-physio-50 border border-physio-100 text-physio-700 flex items-center justify-center mb-5">
+              <i data-lucide="zap" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Fisioterapia Deportiva</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Atención y readaptación de esguinces, desgarres musculares, fascitis plantar, tendinitis rotuliana o aquilea para que regreses a entrenar sin recaídas.
+            </p>
+          </div>
+          <a href="https://wa.me/525564270057?text=Hola%20Physioactive,%20me%20interesa%20informaci%C3%B3n%20sobre%20Fisioterapia%20Deportiva." target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-bold text-physio-700 hover:text-physio-800">
+            Consultar tratamiento deportivo <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Specialty 2 -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-vital-50 border border-vital-100 text-vital-600 flex items-center justify-center mb-5">
+              <i data-lucide="shield-alert" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Dolor de Columna & Lumbalgia</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Alivio de dolor lumbar, contracturas dorsales, cervicalgias y dolor del nervio ciático mediante terapia manual, descompresión y fortalecimiento core.
+            </p>
+          </div>
+          <a href="https://wa.me/525564270057?text=Hola%20Physioactive,%20tengo%20dolor%20de%20espalda/lumbar%20y%20quiero%20atenci%C3%B3n." target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-bold text-physio-700 hover:text-physio-800">
+            Aliviar dolor de espalda <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Specialty 3 -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-physio-50 border border-physio-100 text-physio-700 flex items-center justify-center mb-5">
+              <i data-lucide="stethoscope" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Rehabilitación Postquirúrgica</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Recuperación guiada tras cirugías de ligamento cruzado anterior (LCA), meniscos, manguito rotador, fracturas y prótesis de cadera o rodilla.
+            </p>
+          </div>
+          <a href="https://wa.me/525564270057?text=Hola%20Physioactive,%20necesito%20rehabilitaci%C3%B3n%20despu%C3%A9s%20de%20una%20cirug%C3%ADa." target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-bold text-physio-700 hover:text-physio-800">
+            Iniciar plan postquirúrgico <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Specialty 4 -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-physio-50 border border-physio-100 text-physio-700 flex items-center justify-center mb-5">
+              <i data-lucide="hand-metal" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Terapia Manual & Punción Seca</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Técnicas avanzadas para desactivar puntos gatillo miofasciales, descontracturar tejidos profundos y restaurar la movilidad articular restringida.
+            </p>
+          </div>
+          <a href="https://wa.me/525564270057?text=Hola%20Physioactive,%20me%20interesa%20Punci%C3%B3n%20Seca%20y%20Terapia%20Manual." target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-bold text-physio-700 hover:text-physio-800">
+            Consultar terapia manual <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Specialty 5 -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-vital-50 border border-vital-100 text-vital-600 flex items-center justify-center mb-5">
+              <i data-lucide="heart" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Fisioterapia Geriátrica</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Atención cariñosa y paciente para adultos mayores enfocada en mejorar equilibrio, fuerza de piernas, marcha independiente y control de artrosis.
+            </p>
+          </div>
+          <a href="https://wa.me/525564270057?text=Hola%20Physioactive,%20quiero%20informaci%C3%B3n%20para%20un%20adulto%20mayor." target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-bold text-physio-700 hover:text-physio-800">
+            Ver atención geriátrica <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Specialty 6 -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-physio-50 border border-physio-100 text-physio-700 flex items-center justify-center mb-5">
+              <i data-lucide="trending-up" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Ejercicio Terapéutico Guiado</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Programas de fortalecimiento postural y neuromuscular adaptados para asegurar que el dolor no regrese y ganes resistencia en tu día a día.
+            </p>
+          </div>
+          <a href="https://wa.me/525564270057?text=Hola%20Physioactive,%20me%20interesa%20Ejercicio%20Terap%C3%A9utico." target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-bold text-physio-700 hover:text-physio-800">
+            Conocer programas guiados <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Methodology / How it works -->
+  <section id="metodologia" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-physio-700 bg-physio-50 border border-physio-200 px-3.5 py-1.5 rounded-full">Nuestro Proceso</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4 tracking-tight">
+          ¿Cómo es tu camino de recuperación en Physioactive?
+        </h2>
+        <p class="text-slate-600 mt-3 text-base sm:text-lg">
+          Un protocolo paso a paso diseñado para darte claridad y resultados desde la primera sesión.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80">
+          <div class="w-10 h-10 rounded-2xl bg-physio-700 text-white font-extrabold flex items-center justify-center mb-4">1</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">Valoración Inicial</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Entrevista clínica, pruebas ortopédicas de movilidad y análisis postural para ubicar la causa real del dolor.</p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80">
+          <div class="w-10 h-10 rounded-2xl bg-physio-700 text-white font-extrabold flex items-center justify-center mb-4">2</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">Plan a la Medida</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Diseñamos un programa individualizado combinando terapia manual, aparatología y ejercicio activo.</p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80">
+          <div class="w-10 h-10 rounded-2xl bg-physio-700 text-white font-extrabold flex items-center justify-center mb-4">3</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">Sesiones 1 a 1</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Tiempo exclusivo con tu fisioterapeuta, sin prisas ni atenciones compartidas en la camilla.</p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80">
+          <div class="w-10 h-10 rounded-2xl bg-physio-700 text-white font-extrabold flex items-center justify-center mb-4">4</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">Alta y Prevención</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Te enseñamos pautas y ejercicios para casa que evitan que la lesión vuelva a aparecer en el futuro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section id="instalaciones" class="py-20 bg-slate-50 border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-physio-700">Espacio de Salud y Bienestar</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Instalaciones y equipo en Tlalpan</h2>
+        </div>
+        <p class="text-slate-600 text-sm max-w-md font-normal">
+          Un ambiente limpio, profesional y cómodo para que tu proceso de recuperación sea agradable y seguro.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-1.jpg" alt="Terapia manual y estiramiento" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Terapia Manual y Movilidad</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-2.jpg" alt="Ejercicio funcional guiado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Readaptación Funcional Activa</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-3.jpg" alt="Cabina de valoración fisioterapéutica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Cabinas Privadas y Climatizadas</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-4.jpg" alt="Fisioterapia para hombro y articulaciones" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Cuidado Articular y Muscular</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-5.jpg" alt="Bandas elásticas y fortalecimiento" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Equipo de Fortalecimiento Progresivo</span>
+        </div>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-slate-200/80 aspect-[4/3]">
+          <img src="img/foto-6.jpg" alt="Atención geriátrica y postura" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-90"></div>
+          <span class="absolute bottom-4 left-4 text-white font-bold text-sm">Mejora Postural y Marcha</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonios" class="py-20 bg-white border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold mb-3">
+          <i data-lucide="star" class="w-3.5 h-3.5 fill-emerald-600 text-emerald-600"></i>
+          Testimonios de Pacientes en Recuperación
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          Historias de éxito en Tlalpan
+        </h2>
+        <p class="text-slate-600 mt-3 font-normal">
+          Personas reales que recuperaron su movilidad y dijeron adiós al dolor en Physioactive.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-7">
+        <!-- Review 1 -->
+        <div class="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              “Llegué con un dolor lumbar fuertísimo que no me dejaba dormir ni trabajar. Desde la primera sesión de terapia manual sentí un alivio enorme y los ejercicios me ayudaron a fortalecer mi espalda. ¡Súper profesionales!”
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/70">
+            <div class="w-9 h-9 rounded-full bg-physio-700 text-white font-bold text-xs flex items-center justify-center">M</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Mauricio S.</p>
+              <p class="text-[11px] text-slate-500">Paciente de Lumbalgia · San Fernando</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              “Me rehabilitaron de una lesión de rodilla jugando fútbol. Me explicaron cada paso con mucha paciencia y la atención 1 a 1 hace toda la diferencia. Ya pude volver a correr sin miedo.”
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/70">
+            <div class="w-9 h-9 rounded-full bg-vital-600 text-white font-bold text-xs flex items-center justify-center">J</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Jorge R.</p>
+              <p class="text-[11px] text-slate-500">Deportista · Fisioterapia de Rodilla</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              “Llevé a mi mamá para rehabilitación de cadera y el trato humano y la dedicación fueron excepcionales. Su movilidad mejoró muchísimo y ahora camina con mucha mayor seguridad.”
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/70">
+            <div class="w-9 h-9 rounded-full bg-physio-800 text-white font-bold text-xs flex items-center justify-center">A</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Ana Laura V.</p>
+              <p class="text-[11px] text-slate-500">Fisioterapia Geriátrica · Tlalpan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Contact Section -->
+  <section id="contacto" class="py-20 bg-slate-50 border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5 bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-physio-700">Agenda tu Cita</span>
+            <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Ubicación y Contacto</h2>
+          </div>
+
+          <div class="space-y-4 text-sm">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-physio-50 text-physio-700 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900">Zona de Atención</p>
+                <p class="text-slate-600 mt-0.5">Zona San Fernando / San Pedro Apóstol, Alcaldía Tlalpan, Ciudad de México (Sur CDMX).</p>
+                <p class="text-xs text-physio-700 font-semibold mt-1">Citas programadas para garantizar atención sin esperas.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-vital-50 text-vital-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="phone-call" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900">WhatsApp de Citas Directas</p>
+                <a href="https://wa.me/525564270057" class="text-physio-700 font-bold hover:underline block mt-0.5 text-base">+52 55 6427 0057</a>
+                <p class="text-xs text-slate-500 mt-0.5">Escríbenos para consultar horarios y costos de valoración.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-physio-50 text-physio-700 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="instagram" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900">Instagram Oficial</p>
+                <a href="https://instagram.com/physioactive.pro" target="_blank" rel="noopener" class="text-physio-700 font-semibold hover:underline block mt-0.5">@physioactive.pro</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/525564270057?text=Hola%20Physioactive,%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20valoraci%C3%B3n."
+               target="_blank" rel="noopener"
+               class="flex-1 inline-flex items-center justify-center gap-2 bg-physio-700 hover:bg-physio-800 text-white font-bold py-3.5 px-5 rounded-full text-sm shadow-sm transition-all">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              Agendar Valoración en WhatsApp
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=San+Fernando+Tlalpan+CDMX"
+               target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-3.5 px-5 rounded-full text-sm transition-all">
+              <i data-lucide="navigation" class="w-4 h-4"></i>
+              Cómo llegar
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 rounded-3xl overflow-hidden shadow-md border border-slate-200 bg-white h-[430px]">
+          <iframe
+            title="Zona de ubicación Physioactive en Tlalpan"
+            src="https://www.google.com/maps?q=San+Fernando,+Tlalpan,+Ciudad+de+M%C3%A9xico&hl=es&z=15&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-xl bg-physio-100 text-physio-700 flex items-center justify-center font-bold text-base">P</div>
+        <span class="font-bold text-slate-800">Physioactive</span>
+        <span>· San Fernando, Tlalpan, Ciudad de México.</span>
+      </div>
+      <div>
+        © 2026 Physioactive. Fisioterapia y Rehabilitación Física Especializada.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/525564270057?text=Hola%20Physioactive,%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20valoraci%C3%B3n."
+     target="_blank" rel="noopener"
+     aria-label="Agendar valoración por WhatsApp"
+     class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2.5 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold px-5 py-3.5 rounded-full shadow-2xl hover:scale-105 transition-all">
+    <i data-lucide="message-circle" class="w-5 h-5 fill-white text-[#25D366]"></i>
+    <span class="text-sm">Agendar Cita en WhatsApp</span>
+  </a>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
