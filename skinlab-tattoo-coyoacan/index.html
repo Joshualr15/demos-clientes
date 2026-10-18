@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinLab Coyoacán | Estudio de Tatuajes & Body Piercing en CDMX</title>
+    <meta name="description" content="Estudio de tatuajes y perforaciones corporales en el Centro de Coyoacán, CDMX. Trazo fino, micro-realismo, blackwork y titanio grado implante F-136. ¡Cotiza aquí!">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            800: '#9a3412',
+                            900: '#7c2d12',
+                        },
+                        copper: {
+                            500: '#d97706',
+                            600: '#b45309',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Syne', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-slate-800 font-sans antialiased selection:bg-brand-100 selection:text-brand-900">
+
+    <!-- Top Announcement Bar -->
+    <header class="bg-stone-900 text-stone-200 text-xs sm:text-sm py-2 px-4 shadow-sm border-b border-stone-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1 bg-amber-500/20 text-amber-300 text-xs px-2.5 py-0.5 rounded-full font-semibold border border-amber-400/30">
+                    <i class="fa-solid fa-star text-amber-400"></i> Calificación 4.8 ⭐⭐⭐⭐⭐
+                </span>
+                <span class="hidden md:inline text-stone-300">
+                    <i class="fa-solid fa-certificate mr-1 text-orange-400"></i> Agujas 100% Desechables • Joyería en Titanio Grado Implante F-136 • Coyoacán Centro
+                </span>
+            </div>
+            <div class="flex items-center gap-4 text-xs sm:text-sm">
+                <a href="https://maps.google.com/?q=Felipe+Carrillo+Puerto+46+Coyoacan+CDMX" target="_blank" class="hover:text-orange-300 transition-colors hidden sm:inline-flex items-center gap-1 text-stone-300">
+                    <i class="fa-solid fa-location-dot text-orange-400"></i> Carrillo Puerto #46, Centro de Coyoacán, CDMX
+                </a>
+                <a href="https://wa.me/525535782875" target="_blank" class="hover:text-orange-200 font-semibold inline-flex items-center gap-1.5 bg-orange-600/30 hover:bg-orange-600/50 text-orange-300 px-3 py-1 rounded-full transition-all border border-orange-500/30">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i> 55 3578 2875
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar (100% Light Mode) -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-xs transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-stone-900 to-stone-800 flex items-center justify-center text-white text-xl shadow-md group-hover:scale-105 transition-transform border border-stone-700">
+                        <i class="fa-solid fa-pen-nib text-orange-400"></i>
+                    </div>
+                    <div>
+                        <span class="font-display font-extrabold text-2xl tracking-tight text-stone-900 group-hover:text-brand-600 transition-colors">
+                            SkinLab
+                        </span>
+                        <span class="block text-[11px] font-bold text-brand-700 tracking-wider uppercase">
+                            Tattoo & Body Piercing • Coyoacán
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-7 text-sm font-semibold text-stone-600">
+                    <a href="#estilos" class="hover:text-brand-600 transition-colors">Estilos</a>
+                    <a href="#piercing" class="hover:text-brand-600 transition-colors">Piercing</a>
+                    <a href="#galeria" class="hover:text-brand-600 transition-colors">Galería</a>
+                    <a href="#bioseguridad" class="hover:text-brand-600 transition-colors">Bioseguridad</a>
+                    <a href="#cotizador" class="hover:text-brand-600 transition-colors text-brand-600 flex items-center gap-1.5">
+                        <i class="fa-solid fa-calculator text-brand-500"></i> Cotizador Online
+                    </a>
+                    <a href="#opiniones" class="hover:text-brand-600 transition-colors">Reseñas</a>
+                    <a href="#contacto" class="hover:text-brand-600 transition-colors">Ubicación</a>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="#cotizador" class="inline-flex items-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-800 border border-brand-200 font-bold px-4 py-2.5 rounded-xl text-sm transition-all shadow-xs">
+                        <i class="fa-solid fa-calculator"></i> Cotizar Idea
+                    </a>
+                    <a href="https://wa.me/525535782875?text=Hola%20SkinLab%20Coyoac%C3%A1n%2C%20quisiera%20cotizar%20un%20tatuaje%20o%20perforaci%C3%B3n." target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-stone-900 via-stone-800 to-brand-700 hover:from-black hover:to-brand-800 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all shadow-md shadow-stone-900/10 hover:scale-[1.02]">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i> Enviar Idea
+                    </a>
+                </div>
+
+                <!-- Mobile menu toggle button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl text-stone-600 hover:text-stone-900 hover:bg-stone-100 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden border-b border-stone-200 bg-white px-4 pt-2 pb-6 space-y-3">
+            <a href="#estilos" class="block px-3 py-2 rounded-lg text-base font-semibold text-stone-700 hover:bg-brand-50 hover:text-brand-700">Estilos de Tatuaje</a>
+            <a href="#piercing" class="block px-3 py-2 rounded-lg text-base font-semibold text-stone-700 hover:bg-brand-50 hover:text-brand-700">Body Piercing</a>
+            <a href="#galeria" class="block px-3 py-2 rounded-lg text-base font-semibold text-stone-700 hover:bg-brand-50 hover:text-brand-700">Galería de Trabajos</a>
+            <a href="#bioseguridad" class="block px-3 py-2 rounded-lg text-base font-semibold text-stone-700 hover:bg-brand-50 hover:text-brand-700">Bioseguridad e Higiene</a>
+            <a href="#cotizador" class="block px-3 py-2 rounded-lg text-base font-semibold text-brand-600 bg-brand-50">🎨 Calculadora de Cotización</a>
+            <a href="#opiniones" class="block px-3 py-2 rounded-lg text-base font-semibold text-stone-700 hover:bg-brand-50 hover:text-brand-700">Reseñas de Clientes</a>
+            <a href="#contacto" class="block px-3 py-2 rounded-lg text-base font-semibold text-stone-700 hover:bg-brand-50 hover:text-brand-700">Ubicación en Coyoacán</a>
+            <div class="pt-2">
+                <a href="https://wa.me/525535782875?text=Hola%20SkinLab%20Coyoac%C3%A1n%2C%20quisiera%20agendar%20cita%20o%20cotizar." target="_blank" class="w-full block text-center bg-stone-900 text-white font-bold py-3 rounded-xl shadow-md">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 mr-1"></i> WhatsApp Inmediato
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (100% Light Mode) -->
+    <section class="relative overflow-hidden pt-8 pb-16 lg:py-20 bg-gradient-to-b from-brand-50/60 via-stone-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Content Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white border border-stone-200 shadow-xs px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-stone-800">
+                        <span class="w-2.5 h-2.5 rounded-full bg-orange-500 animate-ping"></span>
+                        <span>📍 Estudio de Tatuajes & Piercing en Centro de Coyoacán • 4.8 ⭐⭐⭐⭐⭐</span>
+                    </div>
+
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-stone-900 tracking-tight leading-[1.12]">
+                        Tus ideas transformadas en arte con <span class="bg-gradient-to-r from-brand-600 via-orange-600 to-amber-600 bg-clip-text text-transparent">trazo fino y máxima bioseguridad</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-stone-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        En <strong>SkinLab Coyoacán</strong> convertimos tus recuerdos e inspiración en piezas duraderas sobre la piel. Especialistas en línea fina, micro-realismo, blackwork y perforaciones corporales con joyería de titanio grado implante ASTM F-136. Un espacio limpio, luminoso y profesional en el corazón cultural del sur de la CDMX.
+                    </p>
+
+                    <!-- Trust Checklist -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-left">
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-stone-200/90 shadow-xs">
+                            <div class="w-7 h-7 rounded-lg bg-orange-100 text-brand-700 flex items-center justify-center text-sm font-bold shrink-0">
+                                <i class="fa-solid fa-box-archive"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-bold text-stone-800">100% Desechable</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-stone-200/90 shadow-xs">
+                            <div class="w-7 h-7 rounded-lg bg-stone-100 text-stone-800 flex items-center justify-center text-sm font-bold shrink-0">
+                                <i class="fa-solid fa-gem"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-bold text-stone-800">Titanio ASTM F-136</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-stone-200/90 shadow-xs col-span-2 sm:col-span-1">
+                            <div class="w-7 h-7 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center text-sm font-bold shrink-0">
+                                <i class="fa-solid fa-feather-pointed"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-bold text-stone-800">Trazo Fino 1RL & 3RL</span>
+                        </div>
+                    </div>
+
+                    <!-- Call To Actions -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
+                        <a href="#cotizador" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-stone-900 via-stone-800 to-brand-700 hover:from-black hover:to-brand-800 text-white font-extrabold text-base px-8 py-4 rounded-2xl shadow-lg shadow-stone-900/20 hover:shadow-xl hover:scale-[1.02] transition-all">
+                            <i class="fa-solid fa-calculator text-lg text-orange-400"></i>
+                            <span>Calcular Cotización Online</span>
+                        </a>
+                        <a href="https://wa.me/525535782875?text=Hola%20SkinLab%2C%20quisiera%20mandarles%20mi%20dise%C3%B1o%20de%20referencia%20para%20cotizar." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-white hover:bg-stone-50 text-stone-800 border-2 border-stone-200 hover:border-brand-500 font-bold text-base px-6 py-4 rounded-2xl shadow-xs hover:shadow transition-all">
+                            <i class="fa-brands fa-whatsapp text-emerald-500 text-xl"></i>
+                            <span>Enviar Foto a WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <!-- Micro Social Proof -->
+                    <div class="flex items-center justify-center lg:justify-start gap-4 pt-4 border-t border-stone-200">
+                        <div class="flex items-center text-amber-400 text-base">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="ml-2 font-extrabold text-stone-900 text-sm">4.8 / 5.0</span>
+                        </div>
+                        <p class="text-xs text-stone-500 font-medium">
+                            En reseñas de clientes locales y viajeros en el Centro de Coyoacán
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Visual Column -->
+                <div class="lg:col-span-5 relative">
+                    <!-- Subtle Glow Blobs -->
+                    <div class="absolute -top-6 -right-6 w-72 h-72 bg-orange-200/50 rounded-full blur-3xl pointer-events-none"></div>
+                    <div class="absolute -bottom-6 -left-6 w-72 h-72 bg-stone-300/40 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <!-- Main Image Card -->
+                    <div class="relative bg-white p-3 rounded-3xl shadow-2xl border border-stone-200/90">
+                        <div class="relative rounded-2xl overflow-hidden aspect-[4/4.5] group">
+                            <img src="img/hero-tattoo.jpg" alt="Artista tatuando con máxima higiene en SkinLab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent"></div>
+                            
+                            <!-- Floating Tag Inside Image -->
+                            <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3.5 rounded-xl border border-white/80 shadow-lg flex items-center justify-between">
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Material Grado Clínico</p>
+                                    <p class="text-sm font-extrabold text-stone-900">Agujas abiertas frente a tus ojos</p>
+                                </div>
+                                <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded-full font-bold flex items-center gap-1">
+                                    <i class="fa-solid fa-shield-virus text-emerald-600"></i> Estéril
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Top Badge -->
+                        <div class="absolute -top-4 -left-4 bg-white shadow-xl border border-stone-100 rounded-2xl p-3 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-stone-400 uppercase">Cuidado</p>
+                                <p class="text-xs font-extrabold text-stone-800">Cicatrización Asistida</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Bottom Badge -->
+                        <div class="absolute -bottom-4 -right-4 bg-white shadow-xl border border-stone-100 rounded-2xl p-3 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-stone-100 text-stone-800 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-sparkles"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-stone-400 uppercase">Piercing</p>
+                                <p class="text-xs font-extrabold text-stone-800">Joyería Hipoalergénica</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics Ribbon -->
+    <section class="py-8 bg-white border-y border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-stone-100">
+                <div class="pt-2 md:pt-0">
+                    <p class="font-display text-3xl sm:text-4xl font-extrabold text-brand-600">+4,000</p>
+                    <p class="text-xs sm:text-sm font-semibold text-stone-600 mt-1">Piezas & Perforaciones Realizadas</p>
+                </div>
+                <div class="pt-2 md:pt-0">
+                    <p class="font-display text-3xl sm:text-4xl font-extrabold text-amber-500">4.8 ★</p>
+                    <p class="text-xs sm:text-sm font-semibold text-stone-600 mt-1">Calificación en Directorios y Google</p>
+                </div>
+                <div class="pt-2 md:pt-0">
+                    <p class="font-display text-3xl sm:text-4xl font-extrabold text-stone-900">100%</p>
+                    <p class="text-xs sm:text-sm font-semibold text-stone-600 mt-1">Agujas & Cartuchos Desechables</p>
+                </div>
+                <div class="pt-2 md:pt-0">
+                    <p class="font-display text-3xl sm:text-4xl font-extrabold text-emerald-600">7 Días</p>
+                    <p class="text-xs sm:text-sm font-semibold text-stone-600 mt-1">Abierto Lun a Dom en Coyoacán</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estilos de Tatuaje Especializados -->
+    <section id="estilos" class="py-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-palette"></i> Especialidades de Autor
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+                    El estilo que buscas, realizado a la perfección
+                </h2>
+                <p class="text-stone-600 text-base sm:text-lg">
+                    Nuestros artistas dominan diversas corrientes para plasmar exactamente la estética que imaginas.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Style 1: Fine Line -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-brand-200 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brand-600 text-white text-[11px] font-bold px-3 py-1 rounded-bl-xl tracking-wider uppercase">
+                        Más Solicitado
+                    </div>
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-orange-100 text-brand-600 flex items-center justify-center text-2xl group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-feather"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-stone-900">Fine Line & Trazo Fino</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Líneas ultra delgadas y elegantes. Especialistas en botánica, caligrafía sutil, micro-ilustraciones, constelaciones y trazos limpios que lucen delicados y cicatrizan nítidos.
+                        </p>
+                        <ul class="space-y-2 text-xs sm:text-sm text-stone-700 pt-2 border-t border-stone-100">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-brand-500"></i> Agujas 1RL y 3RL de precisión quirúrgica
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-brand-500"></i> Cero expansión de tinta indeseada
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-brand-500"></i> Ideal para tu primer tatuaje
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#cotizador" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-50 hover:bg-brand-100 text-brand-800 font-bold text-sm transition-colors">
+                            Cotizar Trazo Fino <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Style 2: Micro-realismo & Retratos -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-stone-100 text-stone-800 flex items-center justify-center text-2xl group-hover:bg-stone-900 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-stone-900">Micro-Realismo</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Detalle fotográfico a escala pequeña: retratos de mascotas queridas, obras de arte clásicas, esculturas y escenas complejas con degradados de sombra suaves y texturas vivas.
+                        </p>
+                        <ul class="space-y-2 text-xs sm:text-sm text-stone-700 pt-2 border-t border-stone-100">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-stone-600"></i> Sombras suaves sin cortes duros
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-stone-600"></i> Tinta importada Dynamic & Panthera
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-stone-600"></i> Escala perfecta para brazos y piernas
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#cotizador" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-slate-100 hover:bg-stone-200 text-stone-800 font-bold text-sm transition-colors">
+                            Cotizar Realismo <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Style 3: Blackwork & Puntillismo -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-2xl group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-shapes"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-stone-900">Blackwork & Geometría</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Negros profundos, geometría sagrada, dotwork (puntillismo), patrones ornamentales y mandalas con alto impacto visual y durabilidad insuperable a través de los años.
+                        </p>
+                        <ul class="space-y-2 text-xs sm:text-sm text-stone-700 pt-2 border-t border-stone-100">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-amber-600"></i> Cobertura sólida y sin parches
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-amber-600"></i> Simetría milimétrica guiada por plantilla
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-amber-600"></i> Diseños que fluyen con tu anatomía
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#cotizador" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-slate-100 hover:bg-amber-50 text-stone-800 hover:text-amber-800 font-bold text-sm transition-colors">
+                            Cotizar Blackwork <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Style 4: Neotradicional & Color -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center text-2xl group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-brush"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-stone-900">Neotradicional & Color</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Líneas variadas con gran volumen, paletas de color vibrantes, motivos de fauna mexicana, flora, mitología y rostros estilizados llenos de carácter y dinamismo.
+                        </p>
+                        <ul class="space-y-2 text-xs sm:text-sm text-stone-700 pt-2 border-t border-stone-100">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-rose-500"></i> Pigmentos veganos de saturación profunda
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-rose-500"></i> Colores que perduran con el tiempo
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-rose-500"></i> Adaptación a tono de piel personalizada
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#cotizador" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-slate-100 hover:bg-rose-50 text-stone-800 hover:text-rose-700 font-bold text-sm transition-colors">
+                            Cotizar Color <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Style 5: Cover-Ups & Restauración -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-stone-900">Cover-Up & Restauración</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            ¿Tienes un tatuaje viejo que ya no te gusta o un nombre del pasado? Diseñamos composiciones inteligentes para cubrirlo totalmente sin que parezca un parche oscuro.
+                        </p>
+                        <ul class="space-y-2 text-xs sm:text-sm text-stone-700 pt-2 border-t border-stone-100">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-indigo-500"></i> Evaluación gratuita previa por foto
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-indigo-500"></i> Ocultamiento de cicatrices quirúrgicas
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-indigo-500"></i> Renovación y refrescado de tintas
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-6">
+                        <a href="https://wa.me/525535782875?text=Hola%20SkinLab%2C%20quisiera%20enviarles%20foto%20de%20un%20tatuaje%20para%20un%20cover-up." target="_blank" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-slate-100 hover:bg-indigo-50 text-stone-800 hover:text-indigo-700 font-bold text-sm transition-colors">
+                            Consultar Cover-Up <i class="fa-brands fa-whatsapp text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Style 6: Flash Tattoos & Walk-Ins -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-stone-900">Flash Tattoos & Walk-Ins</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            ¿Estás paseando por el Centro de Coyoacán y te nació la inspiración? Contamos con carpetas de diseños exclusivos listos para tatuarse y espacio para clientes sin cita previa.
+                        </p>
+                        <ul class="space-y-2 text-xs sm:text-sm text-stone-700 pt-2 border-t border-stone-100">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-500"></i> Diseños de autor a precio especial
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-500"></i> Servicio rápido de 45 a 90 minutos
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-500"></i> Atención inmediata según agenda del día
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-6">
+                        <a href="https://wa.me/525535782875?text=Hola%20SkinLab%2C%20quisiera%20saber%20si%20tienen%20disponibilidad%20para%20un%20tatuaje%20flash%20hoy." target="_blank" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-slate-100 hover:bg-emerald-50 text-stone-800 hover:text-emerald-700 font-bold text-sm transition-colors">
+                            Disponibilidad Hoy <i class="fa-brands fa-whatsapp text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Especial: Body Piercing & Curación de Oreja -->
+    <section id="piercing" class="py-20 bg-white border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">
+                        <i class="fa-solid fa-gem"></i> Body Piercing Profesional
+                    </span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight leading-tight">
+                        Perforaciones seguras con joyería de Titanio ASTM F-136
+                    </h2>
+                    <p class="text-stone-600 text-base leading-relaxed">
+                        Olvídate de las pistolas perforadoras que desgarran cartílago y transmiten bacterias. En SkinLab realizamos perforaciones exclusivamente con aguja americana estéril y joyería de grado médico que garantiza una cicatrización limpia, rápida y sin granulomas.
+                    </p>
+
+                    <div class="space-y-3 pt-2">
+                        <div class="p-4 rounded-2xl bg-stone-50 border border-stone-200 flex items-start gap-3.5">
+                            <div class="w-8 h-8 rounded-full bg-stone-900 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-900 text-sm">Titanio Grado Implante ASTM F-136</h4>
+                                <p class="text-xs sm:text-sm text-stone-600">El mismo material usado en prótesis médicas. 100% biocompatible, hipoalergénico y libre de níquel.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-stone-50 border border-stone-200 flex items-start gap-3.5">
+                            <div class="w-8 h-8 rounded-full bg-stone-900 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-900 text-sm">Joyería con Rosca Interna o Threadless</h4>
+                                <p class="text-xs sm:text-sm text-stone-600">No raspa los tejidos al colocarse ni acumula suciedad como las piezas genéricas de fantasía.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-stone-50 border border-stone-200 flex items-start gap-3.5">
+                            <div class="w-8 h-8 rounded-full bg-stone-900 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-900 text-sm">Diseño de Oreja (Ear Curation)</h4>
+                                <p class="text-xs sm:text-sm text-stone-600">Asesoría de estilo para armonizar múltiples piercings (Hélix, Tragus, Conch, Daith, Rook) con tu anatomía.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="#cotizador" class="inline-flex items-center gap-2 bg-stone-900 hover:bg-black text-white font-bold px-6 py-3.5 rounded-xl text-sm transition-all shadow-md">
+                            <i class="fa-solid fa-calculator text-orange-400"></i> Cotizar Piercing & Joyería
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual: Piercing Showcase Image -->
+                <div class="lg:col-span-6 relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border border-stone-200 aspect-[4/4.5] group">
+                        <img src="img/piercing-curation.jpg" alt="Curación de oreja y joyería en SkinLab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Visual de Trabajos Realizados -->
+    <section id="galeria" class="py-20 bg-stone-50 border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-images"></i> Galería de Estudio
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+                    El arte que creamos día con día en Coyoacán
+                </h2>
+                <p class="text-stone-600 text-base sm:text-lg">
+                    Trazos que inspiran, cicatrizaciones sanas y la satisfacción de llevar una pieza de autor en tu piel.
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/fineline-art.jpg" alt="Tatuaje floral trazo fino" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-stone-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Fine Line
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-stone-900 text-base">Botánica y Trazo Micro</h4>
+                        <p class="text-xs text-stone-500 mt-1">Líneas con aguja 1RL que lucen ligeras y sofisticadas.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/blackwork-design.jpg" alt="Diseño blackwork geométrico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-stone-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Blackwork
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-stone-900 text-base">Geometría y Contrastes</h4>
+                        <p class="text-xs text-stone-500 mt-1">Puntillismo de arrastre con negros intensos y duraderos.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/estudio-higiene.jpg" alt="Equipo de tatuaje estéril en SkinLab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-stone-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Estudio Estéril
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-stone-900 text-base">Máquinas Rotativas Suaves</h4>
+                        <p class="text-xs text-stone-500 mt-1">Menor inflamación y trauma en la piel para una rápida curación.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/piercing-curation.jpg" alt="Piercing y joyería brillante" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-stone-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Body Piercing
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-stone-900 text-base">Curación con Cristales Swarovski</h4>
+                        <p class="text-xs text-stone-500 mt-1">Joyería de titanio con brillos resistentes al agua y sudor.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/hero-tattoo.jpg" alt="Atención profesional al cliente" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-stone-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Proceso Cómodo
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-stone-900 text-base">Atención Paciente y Cálida</h4>
+                        <p class="text-xs text-stone-500 mt-1">Ambiente relajante, buena música y explicaciones paso a paso.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/lifestyle-coyoacan.jpg" alt="Cliente feliz en Coyoacán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-stone-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Vibra Coyoacán
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-stone-900 text-base">Tu Recuerdo en el Sur de CDMX</h4>
+                        <p class="text-xs text-stone-500 mt-1">Ubicación inmejorable para disfrutar tu tarde en el centro histórico.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bioseguridad y Protocolos Clínicos -->
+    <section id="bioseguridad" class="py-16 bg-white border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-emerald-700 bg-emerald-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-shield-halved"></i> Salud y Protección
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+                    Nuestros 4 Pilares Innegociables de Bioseguridad
+                </h2>
+                <p class="text-stone-600 text-sm sm:text-base">
+                    Tu piel y tu salud son nuestra prioridad absoluta en cada procedimiento.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 text-center space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-700 flex items-center justify-center mx-auto text-xl font-bold">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-base">Agujas Selladas de Fábrica</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed">
+                        Cartuchos estériles con fecha de caducidad visible, abiertos frente a ti y desechados en contenedor RPBI inmediatamente.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 text-center space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-stone-200 text-stone-800 flex items-center justify-center mx-auto text-xl font-bold">
+                        <i class="fa-solid fa-hand-dots"></i>
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-base">Tintas Veganas Certificadas</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed">
+                        Tinta 100% libre de metales pesados o crueldad animal, con registro sanitario internacional para evitar alergias.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 text-center space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto text-xl font-bold">
+                        <i class="fa-solid fa-pump-medical"></i>
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-base">Desinfección de Grado Médico</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed">
+                        Esterilización de áreas de trabajo con desinfectantes de nivel hospitalario entre cada cliente y campos plásticos desechables.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 text-center space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center mx-auto text-xl font-bold">
+                        <i class="fa-solid fa-bandage"></i>
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-base">Parche Segunda Piel</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed">
+                        Protección con membrana transparente transpirable que bloquea agua y bacterias para que tu tatuaje cure solo sin costras.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COTIZADOR INTERACTIVO (ALTA CONVERSIÓN) -->
+    <section id="cotizador" class="py-20 bg-gradient-to-b from-brand-50/80 via-stone-100 to-white relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <span class="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-brand-800 bg-brand-200/80 px-4 py-1.5 rounded-full shadow-xs">
+                    <i class="fa-solid fa-calculator"></i> Calculadora Online de Tatuajes & Piercing
+                </span>
+                <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-stone-900 tracking-tight">
+                    Cotiza tu idea en menos de 1 minuto
+                </h2>
+                <p class="text-stone-600 text-base sm:text-lg">
+                    Sin intermediarios ni presupuestos al azar. Selecciona si deseas tatuaje o piercing, el tamaño y extras, y recibe el costo estimado con botón directo a WhatsApp.
+                </p>
+            </div>
+
+            <!-- Main Interactive Calculator Box -->
+            <div class="bg-white rounded-3xl shadow-2xl border border-stone-200/90 overflow-hidden">
+                <div class="grid lg:grid-cols-12">
+                    
+                    <!-- Left: Configuration Inputs (7 cols) -->
+                    <div class="lg:col-span-7 p-6 sm:p-10 space-y-8">
+                        
+                        <!-- Step 1: Select Main Service Type -->
+                        <div>
+                            <label class="block text-sm font-extrabold text-stone-800 mb-3 flex items-center justify-between">
+                                <span>1. ¿Qué servicio deseas cotizar?</span>
+                                <span class="text-xs font-semibold text-brand-600">Paso 1 de 3</span>
+                            </label>
+                            <div class="grid grid-cols-2 gap-3" id="serviceTypeButtons">
+                                <button type="button" data-type="tattoo" class="service-type-btn active-type p-4 rounded-2xl border-2 text-left transition-all border-stone-900 bg-stone-900 text-white">
+                                    <i class="fa-solid fa-pen-nib text-orange-400 text-xl block mb-1"></i>
+                                    <p class="font-bold text-sm">Tatuaje Artístico</p>
+                                    <p class="text-xs text-stone-300">Trazo fino, blackwork, color</p>
+                                </button>
+
+                                <button type="button" data-type="piercing" class="service-type-btn p-4 rounded-2xl border-2 text-left transition-all border-stone-200 hover:border-stone-300 bg-white text-stone-900">
+                                    <i class="fa-solid fa-gem text-stone-400 text-xl block mb-1"></i>
+                                    <p class="font-bold text-sm">Body Piercing</p>
+                                    <p class="text-xs text-stone-500">Titanio grado implante F-136</p>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2A: Tattoo Configuration (Visible when tattoo is selected) -->
+                        <div id="tattooOptionsSection" class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-extrabold text-stone-800 mb-3 flex items-center justify-between">
+                                    <span>2. Tamaño aproximado del Tatuaje:</span>
+                                    <span class="text-xs font-semibold text-brand-600">Paso 2 de 3</span>
+                                </label>
+                                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5" id="tattooSizeOptions">
+                                    <button type="button" data-size-price="1000" data-label="Mini (&lt; 5 cm)" class="size-btn active-size p-3 rounded-xl border-2 text-center transition-all border-brand-600 bg-brand-50 text-stone-900">
+                                        <p class="font-bold text-xs text-stone-900">Mini</p>
+                                        <p class="text-[10px] text-stone-500">&lt; 5 cm</p>
+                                        <span class="text-[11px] font-extrabold text-brand-700 block mt-1">$1,000</span>
+                                    </button>
+
+                                    <button type="button" data-size-price="1600" data-label="Mediano (6 - 12 cm)" class="size-btn p-3 rounded-xl border-2 text-center transition-all border-stone-200 hover:border-stone-300 bg-white">
+                                        <p class="font-bold text-xs text-stone-800">Mediano</p>
+                                        <p class="text-[10px] text-stone-500">6 a 12 cm</p>
+                                        <span class="text-[11px] font-extrabold text-stone-700 block mt-1">$1,600</span>
+                                    </button>
+
+                                    <button type="button" data-size-price="2600" data-label="Grande (13 - 20 cm)" class="size-btn p-3 rounded-xl border-2 text-center transition-all border-stone-200 hover:border-stone-300 bg-white">
+                                        <p class="font-bold text-xs text-stone-800">Grande</p>
+                                        <p class="text-[10px] text-stone-500">13 a 20 cm</p>
+                                        <span class="text-[11px] font-extrabold text-stone-700 block mt-1">$2,600</span>
+                                    </button>
+
+                                    <button type="button" data-size-price="4200" data-label="Media Manga (&gt; 20 cm)" class="size-btn p-3 rounded-xl border-2 text-center transition-all border-stone-200 hover:border-stone-300 bg-white">
+                                        <p class="font-bold text-xs text-stone-800">Manga</p>
+                                        <p class="text-[10px] text-stone-500">&gt; 20 cm</p>
+                                        <span class="text-[11px] font-extrabold text-stone-700 block mt-1">$4,200</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Tattoo Placement -->
+                            <div>
+                                <label for="bodyZoneSelect" class="block text-sm font-extrabold text-stone-800 mb-2">
+                                    Zona del Cuerpo (Complejidad de piel):
+                                </label>
+                                <select id="bodyZoneSelect" class="w-full p-3 rounded-xl border border-stone-200 bg-white text-stone-800 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-brand-500">
+                                    <option value="0" selected>Brazo / Antebrazo / Gemelo (Zona Estándar)</option>
+                                    <option value="150">Pierna / Muslo / Hombro / Espalda (+$150 MXN)</option>
+                                    <option value="300">Costillas / Pecho / Cuello / Dedos (Zona Sensible +$300 MXN)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Step 2B: Piercing Configuration (Hidden by default) -->
+                        <div id="piercingOptionsSection" class="hidden space-y-6">
+                            <div>
+                                <label class="block text-sm font-extrabold text-stone-800 mb-3 flex items-center justify-between">
+                                    <span>2. Selecciona la Zona de Perforación:</span>
+                                    <span class="text-xs font-semibold text-brand-600">Paso 2 de 3</span>
+                                </label>
+                                <div class="grid sm:grid-cols-2 gap-2.5" id="piercingZoneOptions">
+                                    <button type="button" data-piercing-price="450" data-label="Lóbulo / Hélix" class="piercing-btn active-piercing p-3 rounded-xl border-2 text-left transition-all border-brand-600 bg-brand-50 text-stone-900">
+                                        <p class="font-bold text-xs text-stone-900">Lóbulo / Hélix Clásico</p>
+                                        <span class="text-xs font-extrabold text-brand-700">$450 MXN</span>
+                                    </button>
+                                    <button type="button" data-piercing-price="550" data-label="Nostril / Septum" class="piercing-btn p-3 rounded-xl border-2 text-left transition-all border-stone-200 hover:border-stone-300 bg-white">
+                                        <p class="font-bold text-xs text-stone-800">Nostril (Nariz) / Septum</p>
+                                        <span class="text-xs font-extrabold text-stone-700">$550 MXN</span>
+                                    </button>
+                                    <button type="button" data-piercing-price="600" data-label="Tragus / Conch / Daith / Rook" class="piercing-btn p-3 rounded-xl border-2 text-left transition-all border-stone-200 hover:border-stone-300 bg-white">
+                                        <p class="font-bold text-xs text-stone-800">Tragus / Conch / Daith / Rook</p>
+                                        <span class="text-xs font-extrabold text-stone-700">$600 MXN</span>
+                                    </button>
+                                    <button type="button" data-piercing-price="650" data-label="Ombligo / Pezón / Ceja" class="piercing-btn p-3 rounded-xl border-2 text-left transition-all border-stone-200 hover:border-stone-300 bg-white">
+                                        <p class="font-bold text-xs text-stone-800">Ombligo / Pezón / Ceja</p>
+                                        <span class="text-xs font-extrabold text-stone-700">$650 MXN</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Add-ons / Extras -->
+                        <div>
+                            <label class="block text-sm font-extrabold text-stone-800 mb-3 flex items-center justify-between">
+                                <span>3. Adicionales Recomendados (Opcional):</span>
+                                <span class="text-xs font-semibold text-brand-600">Paso 3 de 3</span>
+                            </label>
+                            <div class="space-y-2.5">
+                                <label class="flex items-center justify-between p-3 rounded-xl border border-stone-200 hover:bg-stone-50 cursor-pointer transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" id="extraSecondSkin" class="extra-check w-4 h-4 text-brand-600 rounded border-stone-300 focus:ring-brand-500" value="150" checked>
+                                        <div>
+                                            <p class="text-xs sm:text-sm font-bold text-stone-800">Parche de Segunda Piel 'Second Skin'</p>
+                                            <p class="text-[11px] text-stone-500">Cura tu tatuaje sin costras ni molestias por 5 días</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-stone-800">+$150 MXN</span>
+                                </label>
+
+                                <label class="flex items-center justify-between p-3 rounded-xl border border-stone-200 hover:bg-stone-50 cursor-pointer transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" id="extraColor" class="extra-check w-4 h-4 text-brand-600 rounded border-stone-300 focus:ring-brand-500" value="300">
+                                        <div>
+                                            <p class="text-xs sm:text-sm font-bold text-stone-800">Tatuaje Full Color / Acuarela</p>
+                                            <p class="text-[11px] text-stone-500">Pigmentación en múltiples tonos y degradados vivos</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-stone-800">+$300 MXN</span>
+                                </label>
+
+                                <label class="flex items-center justify-between p-3 rounded-xl border border-stone-200 hover:bg-stone-50 cursor-pointer transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" id="extraBalsamo" class="extra-check w-4 h-4 text-brand-600 rounded border-stone-300 focus:ring-brand-500" value="180">
+                                        <div>
+                                            <p class="text-xs sm:text-sm font-bold text-stone-800">Bálsamo Cicatrizante Vegano Orgánico (Lata)</p>
+                                            <p class="text-[11px] text-stone-500">Con caléndula y vitamina E para hidratar la piel</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-stone-800">+$180 MXN</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right: Live Quote Summary & WhatsApp Trigger (5 cols) -->
+                    <div class="lg:col-span-5 bg-gradient-to-br from-stone-950 via-stone-900 to-black text-white p-6 sm:p-10 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-stone-800">
+                        <div>
+                            <div class="flex items-center justify-between border-b border-stone-800 pb-4 mb-6">
+                                <span class="font-display font-bold text-lg text-white">Resumen Estimado</span>
+                                <span class="text-xs font-semibold bg-orange-500/20 text-orange-300 border border-orange-500/30 px-2.5 py-1 rounded-full">
+                                    Cotización en Vivo
+                                </span>
+                            </div>
+
+                            <div class="space-y-3.5 text-xs sm:text-sm">
+                                <div class="flex justify-between text-stone-300">
+                                    <span>Servicio:</span>
+                                    <span id="summaryService" class="font-semibold text-white">Tatuaje Artístico</span>
+                                </div>
+                                <div class="flex justify-between text-stone-300">
+                                    <span>Detalle / Tamaño:</span>
+                                    <span id="summaryDetail" class="font-semibold text-white">Mini (&lt; 5 cm)</span>
+                                </div>
+                                <div class="flex justify-between text-stone-300">
+                                    <span>Base estimada:</span>
+                                    <span id="summaryBase" class="font-semibold text-white">$1,000 MXN</span>
+                                </div>
+                                <div class="flex justify-between text-stone-300">
+                                    <span>Extras seleccionados:</span>
+                                    <span id="summaryExtras" class="font-semibold text-white">$150 MXN</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-8 border-t border-stone-800 mt-8 space-y-6">
+                            <div>
+                                <p class="text-xs uppercase tracking-wider text-stone-400 font-bold">Total Estimado:</p>
+                                <div class="flex items-baseline gap-2 mt-1">
+                                    <span id="summaryTotal" class="font-display text-4xl sm:text-5xl font-extrabold text-orange-400">$1,150</span>
+                                    <span class="text-sm font-semibold text-stone-400">MXN</span>
+                                </div>
+                                <p class="text-[11px] text-stone-400 mt-1.5 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-circle-check text-emerald-400"></i> Incluye material estéril desechable y asesoría
+                                </p>
+                            </div>
+
+                            <!-- WhatsApp Direct Reserve Button -->
+                            <a id="btnWhatsappQuote" href="#" target="_blank" class="w-full inline-flex items-center justify-center gap-3 bg-gradient-to-r from-orange-600 via-brand-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white font-extrabold text-base py-4 px-6 rounded-2xl shadow-xl shadow-orange-950/40 hover:scale-[1.02] transition-all text-center">
+                                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                                <span>Enviar Cotización a WhatsApp</span>
+                            </a>
+                            <p class="text-[11px] text-center text-stone-400">
+                                Puedes adjuntar tu imagen o boceto de referencia al abrir el chat.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Opiniones Reales de Clientes -->
+    <section id="opiniones" class="py-20 bg-white border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-amber-700 bg-amber-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-star text-amber-500"></i> Calificación 4.8 en Redes & Mapas
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+                    Experiencias de quienes ya plasmaron su arte con nosotros
+                </h2>
+                <p class="text-stone-600 text-base">
+                    Nuestra pasión por el detalle, la paciencia y la higiene han convertido a SkinLab en un referente en Coyoacán.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-stone-50 p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-xs flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-stone-700 text-sm italic leading-relaxed">
+                            "Fue mi primer tatuaje y tenía muchísimos nervios, pero la tatuadora me tuvo una paciencia infinita. Me explicó cada paso, abrió el material frente a mí y el trazo fino quedó mil veces más bonito de lo que imaginaba. ¡Súper recomendado!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-stone-200">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-800 font-extrabold flex items-center justify-center text-sm">
+                            VA
+                        </div>
+                        <div>
+                            <p class="font-bold text-stone-900 text-sm">Valeria Alarcón</p>
+                            <p class="text-xs text-stone-500">Trazo Fino Botánico • Primera pieza</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-stone-50 p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-xs flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-stone-700 text-sm italic leading-relaxed">
+                            "Me hice un piercing Helix y un Nostril. En otros lados me habían puesto piezas chafas que se me infectaban; aquí la joyería de titanio grado implante no me dio ninguna molestia. Cero dolor y cicatrizaron perfecto."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-stone-200">
+                        <div class="w-10 h-10 rounded-full bg-stone-200 text-stone-800 font-extrabold flex items-center justify-center text-sm">
+                            SV
+                        </div>
+                        <div>
+                            <p class="font-bold text-stone-900 text-sm">Sofía Villarreal</p>
+                            <p class="text-xs text-stone-500">Body Piercing • Titanio ASTM F-136</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-stone-50 p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-xs flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-stone-700 text-sm italic leading-relaxed">
+                            "Llegamos de imprevisto caminando por el centro de Coyoacán y nos atendieron excelente para un flash tattoo. El lugar está súper limpio, iluminado, con un ambiente muy relajado. Ya estoy planeando mi siguiente pieza con ellos."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-stone-200">
+                        <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 font-extrabold flex items-center justify-center text-sm">
+                            DM
+                        </div>
+                        <div>
+                            <p class="font-bold text-stone-900 text-sm">Diego Morales</p>
+                            <p class="text-xs text-stone-500">Flash Tattoo • Walk-in en Coyoacán</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="py-16 bg-stone-50 border-t border-stone-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 space-y-2">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-circle-question"></i> Resolvemos tus Preguntas
+                </span>
+                <h2 class="font-display text-3xl font-extrabold text-stone-900">Preguntas Frecuentes</h2>
+            </div>
+
+            <div class="space-y-3" id="faqAccordion">
+                
+                <div class="border border-stone-200 bg-white rounded-2xl overflow-hidden transition-all">
+                    <button type="button" class="faq-btn w-full px-6 py-4 text-left font-bold text-stone-900 flex justify-between items-center hover:bg-stone-50">
+                        <span>¿Necesito agendar cita o puedo llegar directamente (walk-in)?</span>
+                        <i class="fa-solid fa-chevron-down text-stone-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
+                        Aceptamos clientes sin cita para tatuajes pequeños, flash y perforaciones según la disponibilidad del día. Sin embargo, para piezas medianas o personalizadas con diseño previo, te recomendamos agendar tu espacio por WhatsApp para garantizar tiempo exclusivo con tu artista.
+                    </div>
+                </div>
+
+                <div class="border border-stone-200 bg-white rounded-2xl overflow-hidden transition-all">
+                    <button type="button" class="faq-btn w-full px-6 py-4 text-left font-bold text-stone-900 flex justify-between items-center hover:bg-stone-50">
+                        <span>¿Cómo preparo mi piel antes de la sesión de tatuaje?</span>
+                        <i class="fa-solid fa-chevron-down text-stone-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
+                        Es fundamental dormir bien la noche anterior, comer adecuadamente antes de llegar y mantener la piel bien hidratada los días previos. Evita ingerir alcohol, aspirinas o drogas anticoagulantes 24 horas antes de tu cita.
+                    </div>
+                </div>
+
+                <div class="border border-stone-200 bg-white rounded-2xl overflow-hidden transition-all">
+                    <button type="button" class="faq-btn w-full px-6 py-4 text-left font-bold text-stone-900 flex justify-between items-center hover:bg-stone-50">
+                        <span>¿Por qué utilizan titanio grado implante para piercings?</span>
+                        <i class="fa-solid fa-chevron-down text-stone-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
+                        El titanio ASTM F-136 es el metal más seguro del mundo para el cuerpo humano. No contiene níquel (causante del 90% de las alergias e infecciones), no se oxida, es sumamente ligero y tiene un pulido espejo que permite que la piel cicatrice sin adherirse al poste.
+                    </div>
+                </div>
+
+                <div class="border border-stone-200 bg-white rounded-2xl overflow-hidden transition-all">
+                    <button type="button" class="faq-btn w-full px-6 py-4 text-left font-bold text-stone-900 flex justify-between items-center hover:bg-stone-50">
+                        <span>¿Cómo debo cuidar mi tatuaje con la segunda piel (Second Skin)?</span>
+                        <i class="fa-solid fa-chevron-down text-stone-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
+                        El parche se deja puesto de 4 a 5 días. Puedes bañarte normalmente ya que es resistente al agua, pero no debes sumergirte en albercas o saunas. Al retirarlo bajo agua tibia, solo lavas con jabón neutro y aplicas una capa muy ligera de bálsamo cicatrizante.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación y Mapa -->
+    <section id="contacto" class="py-20 bg-white border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Info Card -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">
+                        <i class="fa-solid fa-map-pin"></i> En el Corazón del Sur
+                    </span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+                        Ven a conocernos a Coyoacán
+                    </h2>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Estamos ubicados sobre Calle Felipe Carrillo Puerto #46, a solo dos cuadras del Jardín Centenario y la Fuente de los Coyotes. Una zona segura, caminable y llena de cafeterías y arte.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-3.5 p-4 bg-stone-50 rounded-2xl border border-stone-200 shadow-xs">
+                            <div class="w-10 h-10 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-stone-400 uppercase">Dirección</p>
+                                <p class="text-sm font-bold text-stone-800">Felipe Carrillo Puerto #46, Planta Baja, Centro de Coyoacán, C.P. 04000, CDMX</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 p-4 bg-stone-50 rounded-2xl border border-stone-200 shadow-xs">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-stone-400 uppercase">WhatsApp & Citas</p>
+                                <p class="text-sm font-bold text-stone-800">+52 55 3578 2875</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 p-4 bg-stone-50 rounded-2xl border border-stone-200 shadow-xs">
+                            <div class="w-10 h-10 rounded-xl bg-stone-200 text-stone-800 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-stone-400 uppercase">Horario de Estudio</p>
+                                <p class="text-sm font-bold text-stone-800">Lunes a Domingo: 12:00 a 20:30 hrs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                        <a href="https://maps.google.com/?q=Felipe+Carrillo+Puerto+46+Coyoacan+CDMX" target="_blank" class="inline-flex items-center justify-center gap-2 bg-stone-900 hover:bg-black text-white font-bold px-5 py-3 rounded-xl text-sm transition-all shadow-sm">
+                            <i class="fa-solid fa-location-arrow text-orange-400"></i> Abrir en Google Maps
+                        </a>
+                        <a href="https://wa.me/525535782875?text=Hola%20SkinLab%2C%20quisiera%20agendar%20una%20cita%20para%20visitar%20el%20estudio." target="_blank" class="inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-bold px-5 py-3 rounded-xl text-sm transition-all shadow-sm">
+                            <i class="fa-brands fa-whatsapp"></i> Agendar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="lg:col-span-7 bg-stone-50 p-3 rounded-3xl shadow-xl border border-stone-200">
+                    <div class="w-full h-[400px] rounded-2xl overflow-hidden">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Felipe+Carrillo+Puerto+46+Coyoacan+CDMX&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Footer Banner -->
+    <section class="py-12 bg-gradient-to-r from-stone-950 via-stone-900 to-brand-900 text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+            <h2 class="font-display text-3xl sm:text-4xl font-extrabold tracking-tight">
+                ¿Tienes una idea en mente? ¡Hagámosla realidad!
+            </h2>
+            <p class="text-stone-300 text-base max-w-2xl mx-auto">
+                Mándanos tu boceto o foto de referencia por WhatsApp y recibe asesoría directa de nuestros artistas residentes.
+            </p>
+            <div class="pt-2">
+                <a href="https://wa.me/525535782875?text=Hola%20SkinLab%20Coyoac%C3%A1n%2C%20les%20mando%20esta%20idea%20para%20cotizar." target="_blank" class="inline-flex items-center gap-3 bg-orange-500 hover:bg-orange-400 text-stone-950 font-extrabold text-base px-8 py-4 rounded-2xl shadow-xl hover:scale-105 transition-all">
+                    <i class="fa-brands fa-whatsapp text-2xl text-stone-950"></i>
+                    <span>Escribir al WhatsApp del Estudio</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-stone-200 py-12 text-stone-500 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                
+                <div class="space-y-3 md:col-span-2">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-xl bg-stone-900 text-orange-400 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <span class="font-display font-extrabold text-xl text-stone-900">SkinLab Coyoacán</span>
+                    </div>
+                    <p class="text-stone-500 text-xs leading-relaxed max-w-sm">
+                        Estudio profesional de tatuajes y body piercing en el Centro de Coyoacán, Ciudad de México. Arte corporal con trazo fino, bioseguridad de grado clínico y joyería hipoalergénica.
+                    </p>
+                </div>
+
+                <div class="space-y-2">
+                    <p class="font-bold text-stone-900 uppercase tracking-wider text-xs">Navegación</p>
+                    <ul class="space-y-1.5 text-xs">
+                        <li><a href="#estilos" class="hover:text-brand-600">Estilos de Tatuaje</a></li>
+                        <li><a href="#piercing" class="hover:text-brand-600">Body Piercing</a></li>
+                        <li><a href="#cotizador" class="hover:text-brand-600 font-bold text-brand-600">Cotizador Online</a></li>
+                        <li><a href="#bioseguridad" class="hover:text-brand-600">Protocolos de Higiene</a></li>
+                        <li><a href="#opiniones" class="hover:text-brand-600">Reseñas de Clientes</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-2">
+                    <p class="font-bold text-stone-900 uppercase tracking-wider text-xs">Contacto & Ubicación</p>
+                    <p class="text-xs">Felipe Carrillo Puerto #46, Centro de Coyoacán, CDMX</p>
+                    <p class="text-xs font-bold text-stone-800">WhatsApp: +52 55 3578 2875</p>
+                    <p class="text-xs">Lun a Dom: 12:00 - 20:30 hrs</p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+                <p>© 2026 SkinLab Coyoacán. Propuesta de Plataforma Digital Exclusiva.</p>
+                <div class="flex items-center gap-4">
+                    <a href="#top" class="hover:text-brand-600 font-semibold flex items-center gap-1">
+                        Subir al inicio <i class="fa-solid fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Desktop Button -->
+    <a href="https://wa.me/525535782875?text=Hola%20SkinLab%20Coyoac%C3%A1n%2C%20quisiera%20cotizar%20un%20tatuaje%20o%20piercing." target="_blank" class="hidden sm:flex fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl items-center justify-center gap-2 group transition-all duration-300 hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 font-bold text-sm px-0 group-hover:px-2">
+            Cotizar por WhatsApp
+        </span>
+    </a>
+
+    <!-- Mobile Bottom Bar -->
+    <div class="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-stone-200 p-2.5 flex items-center gap-2 shadow-lg">
+        <a href="#cotizador" class="flex-1 bg-stone-100 text-stone-800 text-center font-bold text-xs py-2.5 rounded-xl border border-stone-200">
+            <i class="fa-solid fa-calculator mr-1 text-orange-600"></i> Cotizar
+        </a>
+        <a id="mobileBtnWa" href="https://wa.me/525535782875?text=Hola%20SkinLab%20Coyoac%C3%A1n%2C%20quisiera%20cotizar%20un%20dise%C3%B1o." target="_blank" class="flex-[1.5] bg-stone-900 text-white text-center font-bold text-xs py-2.5 rounded-xl shadow-md">
+            <i class="fa-brands fa-whatsapp text-emerald-400 mr-1 text-sm"></i> WhatsApp Citas
+        </a>
+    </div>
+
+    <!-- JavaScript for Calculator & Interactive UI -->
+    <script>
+        // State
+        const state = {
+            serviceType: 'tattoo', // 'tattoo' or 'piercing'
+            tattooPrice: 1000,
+            tattooSizeLabel: 'Mini (< 5 cm)',
+            bodyZonePrice: 0,
+            bodyZoneLabel: 'Brazo / Antebrazo',
+            piercingPrice: 450,
+            piercingLabel: 'Lóbulo / Hélix Clásico',
+            extraSecondSkin: true,
+            extraColor: false,
+            extraBalsamo: false
+        };
+
+        // DOM Elements
+        const serviceTypeBtns = document.querySelectorAll('.service-type-btn');
+        const tattooOptionsSection = document.getElementById('tattooOptionsSection');
+        const piercingOptionsSection = document.getElementById('piercingOptionsSection');
+        const tattooSizeBtns = document.querySelectorAll('.size-btn');
+        const bodyZoneSelect = document.getElementById('bodyZoneSelect');
+        const piercingBtns = document.querySelectorAll('.piercing-btn');
+        const extraSecondSkin = document.getElementById('extraSecondSkin');
+        const extraColor = document.getElementById('extraColor');
+        const extraBalsamo = document.getElementById('extraBalsamo');
+
+        // Summary DOM
+        const summaryService = document.getElementById('summaryService');
+        const summaryDetail = document.getElementById('summaryDetail');
+        const summaryBase = document.getElementById('summaryBase');
+        const summaryExtras = document.getElementById('summaryExtras');
+        const summaryTotal = document.getElementById('summaryTotal');
+        const btnWhatsappQuote = document.getElementById('btnWhatsappQuote');
+        const mobileBtnWa = document.getElementById('mobileBtnWa');
+
+        // Service Type Switch
+        serviceTypeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                serviceTypeBtns.forEach(b => {
+                    b.classList.remove('active-type', 'border-stone-900', 'bg-stone-900', 'text-white');
+                    b.classList.add('border-stone-200', 'bg-white', 'text-stone-900');
+                    const icon = b.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('text-orange-400');
+                        icon.classList.add('text-stone-400');
+                    }
+                    const subtext = b.querySelector('p:last-child');
+                    if (subtext) {
+                        subtext.classList.remove('text-stone-300');
+                        subtext.classList.add('text-stone-500');
+                    }
+                });
+                btn.classList.add('active-type', 'border-stone-900', 'bg-stone-900', 'text-white');
+                btn.classList.remove('border-stone-200', 'bg-white', 'text-stone-900');
+                const activeIcon = btn.querySelector('i');
+                if (activeIcon) {
+                    activeIcon.classList.remove('text-stone-400');
+                    activeIcon.classList.add('text-orange-400');
+                }
+                const activeSub = btn.querySelector('p:last-child');
+                if (activeSub) {
+                    activeSub.classList.remove('text-stone-500');
+                    activeSub.classList.add('text-stone-300');
+                }
+
+                state.serviceType = btn.dataset.type;
+
+                if (state.serviceType === 'tattoo') {
+                    tattooOptionsSection.classList.remove('hidden');
+                    piercingOptionsSection.classList.add('hidden');
+                } else {
+                    tattooOptionsSection.classList.add('hidden');
+                    piercingOptionsSection.classList.remove('hidden');
+                }
+                updateCalculation();
+            });
+        });
+
+        // Tattoo Size Selection
+        tattooSizeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tattooSizeBtns.forEach(b => {
+                    b.classList.remove('active-size', 'border-brand-600', 'bg-brand-50');
+                    b.classList.add('border-stone-200', 'bg-white');
+                    b.querySelector('span').classList.remove('text-brand-700');
+                    b.querySelector('span').classList.add('text-stone-700');
+                });
+                btn.classList.add('active-size', 'border-brand-600', 'bg-brand-50');
+                btn.classList.remove('border-stone-200', 'bg-white');
+                btn.querySelector('span').classList.remove('text-stone-700');
+                btn.querySelector('span').classList.add('text-brand-700');
+
+                state.tattooPrice = parseFloat(btn.dataset.sizePrice);
+                state.tattooSizeLabel = btn.dataset.label;
+                updateCalculation();
+            });
+        });
+
+        // Body Zone Change
+        bodyZoneSelect.addEventListener('change', (e) => {
+            state.bodyZonePrice = parseFloat(e.target.value);
+            state.bodyZoneLabel = e.target.options[e.target.selectedIndex].text.split('(')[0].trim();
+            updateCalculation();
+        });
+
+        // Piercing Selection
+        piercingBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                piercingBtns.forEach(b => {
+                    b.classList.remove('active-piercing', 'border-brand-600', 'bg-brand-50');
+                    b.classList.add('border-stone-200', 'bg-white');
+                    b.querySelector('span').classList.remove('text-brand-700');
+                    b.querySelector('span').classList.add('text-stone-700');
+                });
+                btn.classList.add('active-piercing', 'border-brand-600', 'bg-brand-50');
+                btn.classList.remove('border-stone-200', 'bg-white');
+                btn.querySelector('span').classList.remove('text-stone-700');
+                btn.querySelector('span').classList.add('text-brand-700');
+
+                state.piercingPrice = parseFloat(btn.dataset.piercingPrice);
+                state.piercingLabel = btn.dataset.label;
+                updateCalculation();
+            });
+        });
+
+        // Extras Checkboxes
+        [extraSecondSkin, extraColor, extraBalsamo].forEach(chk => {
+            chk.addEventListener('change', () => {
+                updateCalculation();
+            });
+        });
+
+        function updateCalculation() {
+            let basePrice = 0;
+            let serviceTitle = '';
+            let detailTitle = '';
+
+            if (state.serviceType === 'tattoo') {
+                basePrice = state.tattooPrice + state.bodyZonePrice;
+                serviceTitle = 'Tatuaje Artístico';
+                detailTitle = `${state.tattooSizeLabel} en ${state.bodyZoneLabel}`;
+            } else {
+                basePrice = state.piercingPrice;
+                serviceTitle = 'Body Piercing (Titanio F-136)';
+                detailTitle = state.piercingLabel;
+            }
+
+            // Extras calculation
+            let extras = 0;
+            let extrasList = [];
+            if (extraSecondSkin.checked) {
+                extras += 150;
+                extrasList.push('Parche Segunda Piel ($150)');
+            }
+            if (extraColor.checked && state.serviceType === 'tattoo') {
+                extras += 300;
+                extrasList.push('Full Color / Acuarela ($300)');
+            }
+            if (extraBalsamo.checked) {
+                extras += 180;
+                extrasList.push('Bálsamo Vegano ($180)');
+            }
+
+            const total = basePrice + extras;
+
+            // Update Summary UI
+            summaryService.textContent = serviceTitle;
+            summaryDetail.textContent = detailTitle;
+            summaryBase.textContent = `$${basePrice.toLocaleString()} MXN`;
+            summaryExtras.textContent = `$${extras.toLocaleString()} MXN`;
+            summaryTotal.textContent = `$${total.toLocaleString()}`;
+
+            // Build WhatsApp Message
+            const extrasStr = extrasList.length > 0 ? extrasList.join(', ') : 'Ninguno';
+
+            const waMsg = `Hola SkinLab Coyoacán, coticé un servicio en su sitio web:%0A%0A` +
+                          `🎨 Servicio: ${encodeURIComponent(serviceTitle)}%0A` +
+                          `📍 Detalle / Zona: ${encodeURIComponent(detailTitle)}%0A` +
+                          `✨ Extras: ${encodeURIComponent(extrasStr)}%0A` +
+                          `💰 Total Estimado: $${total.toLocaleString()} MXN%0A%0A` +
+                          `¿Tienen cita disponible en estos días para llevarles mi idea a su estudio de Carrillo Puerto?`;
+
+            btnWhatsappQuote.href = `https://wa.me/525535782875?text=${waMsg}`;
+            if (mobileBtnWa) {
+                mobileBtnWa.href = `https://wa.me/525535782875?text=${waMsg}`;
+            }
+        }
+
+        // Initialize Calculator
+        updateCalculation();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // FAQ Accordion
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const isOpen = !content.classList.contains('hidden');
+
+                // Close all
+                document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+                document.querySelectorAll('.faq-btn i').forEach(i => i.classList.remove('rotate-180'));
+
+                if (!isOpen) {
+                    content.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
