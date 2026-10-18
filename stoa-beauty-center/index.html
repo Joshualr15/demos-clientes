@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stoa Beauty Center | Salón de Belleza de Alta Gama en Colonia Nápoles WTC, CDMX</title>
+  <meta name="description" content="Stoa Beauty Center en Plaza Dakota 95, Col. Nápoles, Benito Juárez CDMX. Especialistas en Rizos (Método Curly), Tratamiento Japonés Mucota, Balayage, Brazilian Blowout y Spa Capilar.">
+  <meta name="keywords" content="Stoa Beauty Center, salon de belleza napoles, metodo curly cdmx, corte rizos cdmx, balayage wtc, tratamiento mucota, plaza dakota 95">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cream: '#FAF7F2',
+              sand: '#F3ECE3',
+              champagne: '#E8D8C4',
+              gold: '#C59B6D',
+              darkgold: '#A37949',
+              dark: '#1C1917',
+              charcoal: '#2D2825',
+              soft: '#8C827A'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF7F2;
+      color: #1C1917;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-serif-luxury {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(197, 155, 109, 0.2);
+    }
+    .shadow-luxury {
+      box-shadow: 0 10px 30px -5px rgba(28, 25, 23, 0.05), 0 20px 40px -15px rgba(197, 155, 109, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-brand-cream text-brand-dark antialiased">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-brand-charcoal text-white text-xs py-2 px-4 border-b border-brand-gold/30">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-brand-gold/30 text-brand-champagne">
+          ⭐ 4.9 de Calificación (131+ Reseñas)
+        </span>
+        <span class="hidden md:inline text-gray-300">| Plaza Dakota 95, Col. Nápoles (Frente al WTC)</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <div id="live-status-pill" class="flex items-center gap-1.5 text-[11px] font-medium text-emerald-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Abierto hoy: 07:00 - 21:00 hrs</span>
+        </div>
+        <a href="tel:5596273522" class="hover:text-brand-champagne transition flex items-center gap-1 font-semibold">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-gold"></i> 55 9627 3522
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-brand-sand transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-full bg-brand-charcoal flex items-center justify-center text-brand-gold border border-brand-gold/40 shadow-sm transition group-hover:scale-105">
+          <span class="font-serif-luxury text-2xl font-bold tracking-wider">S</span>
+        </div>
+        <div>
+          <span class="font-serif-luxury text-2xl sm:text-3xl font-semibold tracking-wide text-brand-dark block leading-tight">STOA</span>
+          <span class="text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-brand-darkgold font-bold block -mt-1">Beauty Center • Nápoles</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-brand-charcoal">
+        <a href="#especialidades" class="hover:text-brand-darkgold transition">Especialidades</a>
+        <a href="#servicios" class="hover:text-brand-darkgold transition">Tratamientos</a>
+        <a href="#cotizador" class="hover:text-brand-darkgold transition text-brand-darkgold font-semibold">Cotizador en Vivo</a>
+        <a href="#galeria" class="hover:text-brand-darkgold transition">Instalaciones</a>
+        <a href="#opiniones" class="hover:text-brand-darkgold transition">Opiniones</a>
+        <a href="#ubicacion" class="hover:text-brand-darkgold transition">Ubicación</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/525596273522?text=Hola%20Stoa%20Beauty%20Center%2C%20quisiera%20agendar%20una%20cita%20o%20diagn%C3%B3stico%20personalizado." target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-2 bg-brand-gold hover:bg-brand-darkgold text-white font-medium px-5 py-2.5 rounded-full text-sm shadow-md transition transform hover:-translate-y-0.5">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Agendar por WhatsApp</span>
+        </a>
+        <a href="tel:5596273522" class="p-2.5 rounded-full bg-brand-sand text-brand-dark hover:bg-brand-champagne transition sm:hidden" title="Llamar">
+          <i data-lucide="phone" class="w-5 h-5 text-brand-darkgold"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Copy -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-brand-gold/30 text-xs font-semibold text-brand-darkgold shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-brand-gold"></span>
+            Salón de Belleza Premium en Plaza Dakota 95 • Frente al WTC
+          </div>
+
+          <h1 class="font-serif-luxury text-4xl sm:text-5xl lg:text-6xl text-brand-dark font-normal leading-[1.15]">
+            El arte de resaltar tu belleza con <span class="italic font-semibold text-brand-darkgold">precisión, cuidado y estilo</span>.
+          </h1>
+
+          <p class="text-base sm:text-lg text-brand-soft max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+            Especialistas reconocidos en el <strong>Método Curly & diseño de rizos</strong>, el revolucionario <strong>Tratamiento Japonés Mucota Tokio Gloss</strong>, diseño de color <strong>Balayage</strong> y salud integral capilar con más de 14 especialistas certificados.
+          </p>
+
+          <!-- Badges -->
+          <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-4 text-xs font-medium text-brand-charcoal">
+            <div class="flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg border border-brand-sand shadow-sm">
+              <i data-lucide="sparkles" class="w-4 h-4 text-brand-gold"></i>
+              <span>Diagnóstico de Rizos Gratis</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg border border-brand-sand shadow-sm">
+              <i data-lucide="shield-check" class="w-4 h-4 text-brand-gold"></i>
+              <span>Tratamientos Libres de Formol</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg border border-brand-sand shadow-sm">
+              <i data-lucide="car" class="w-4 h-4 text-brand-gold"></i>
+              <span>Estacionamiento en Plaza</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="https://wa.me/525596273522?text=Hola%20Stoa%20Beauty%20Center%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20una%20cita." target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-charcoal hover:bg-black text-white font-medium px-8 py-4 rounded-full text-base shadow-lg transition transform hover:-translate-y-0.5">
+              <i data-lucide="message-circle" class="w-5 h-5 text-emerald-400"></i>
+              <span>Agendar por WhatsApp</span>
+            </a>
+            <a href="#cotizador" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-brand-sand text-brand-dark font-medium px-8 py-4 rounded-full text-base border border-brand-gold/40 shadow-sm transition">
+              <i data-lucide="calculator" class="w-5 h-5 text-brand-darkgold"></i>
+              <span>Calcular Mi Servicio</span>
+            </a>
+          </div>
+
+          <!-- Stats Quick Bar -->
+          <div class="pt-6 grid grid-cols-3 gap-4 border-t border-brand-champagne/40 max-w-lg mx-auto lg:mx-0">
+            <div>
+              <p class="font-serif-luxury text-3xl font-bold text-brand-dark">4.9 ⭐</p>
+              <p class="text-xs text-brand-soft">131+ Reseñas 5 Estrellas</p>
+            </div>
+            <div>
+              <p class="font-serif-luxury text-3xl font-bold text-brand-dark">14+</p>
+              <p class="text-xs text-brand-soft">Estilistas y Expertos</p>
+            </div>
+            <div>
+              <p class="font-serif-luxury text-3xl font-bold text-brand-dark">7 Días</p>
+              <p class="text-xs text-brand-soft">Atención Toda la Semana</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual Collage with Real Photos -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative z-10 grid grid-cols-2 gap-4">
+            <div class="space-y-4">
+              <div class="relative overflow-hidden rounded-2xl shadow-luxury group">
+                <img src="img/foto-5.jpg" alt="Fachada y recepción de Stoa Beauty Center en Plaza Dakota 95" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
+                  <span class="text-white text-xs font-medium">Recepción & Salón Stoa</span>
+                </div>
+              </div>
+              <div class="relative overflow-hidden rounded-2xl shadow-luxury group">
+                <img src="img/foto-2.jpg" alt="Rizos y Método Curly en Stoa Beauty Center" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
+                  <span class="text-white text-xs font-medium">Especialistas en Rizos</span>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-4 pt-6">
+              <div class="relative overflow-hidden rounded-2xl shadow-luxury group">
+                <img src="img/foto-1.jpg" alt="Cabello liso perfecto y tratamiento capilar restaurador" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
+                  <span class="text-white text-xs font-medium">Tratamientos Restauradores</span>
+                </div>
+              </div>
+              <div class="relative overflow-hidden rounded-2xl shadow-luxury group">
+                <img src="img/foto-3.jpg" alt="Balayage y peinado de ondas en Stoa" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
+                  <span class="text-white text-xs font-medium">Balayage & Color</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Decorative Floating Card -->
+          <div class="absolute -bottom-6 -left-6 z-20 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-brand-gold/30 shadow-luxury max-w-[220px] hidden sm:block">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+              <span class="text-xs font-bold text-brand-dark">Plaza Dakota 95</span>
+            </div>
+            <p class="text-[11px] text-brand-soft leading-tight">Col. Nápoles, Benito Juárez. Con acceso fácil y estacionamiento vigilado.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIALTIES / PILLARS -->
+  <section id="especialidades" class="py-16 bg-white border-y border-brand-sand">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs uppercase tracking-[0.2em] text-brand-darkgold font-bold">Nuestras Especialidades Signature</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl text-brand-dark mt-2 font-normal">
+          Tecnología y técnica para transformar tu cabello
+        </h2>
+        <div class="w-16 h-0.5 bg-brand-gold mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Specialty 1 -->
+        <div class="p-6 rounded-2xl bg-brand-cream border border-brand-sand hover:border-brand-gold/40 transition duration-300 hover:shadow-luxury group">
+          <div class="w-12 h-12 rounded-xl bg-brand-sand flex items-center justify-center text-brand-darkgold mb-5 group-hover:bg-brand-gold group-hover:text-white transition">
+            <i data-lucide="waves" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-brand-dark mb-2">Especialistas en Rizos</h3>
+          <p class="text-sm text-brand-soft leading-relaxed mb-4">
+            Corte en seco estructurado bajo el Método Curly, diagnóstico y recomendaciones personalizadas, detox capilar y fórmulas de hidratación intensiva.
+          </p>
+          <span class="text-xs font-semibold text-brand-darkgold">Desde $880 MXN • Diagnóstico Gratis</span>
+        </div>
+
+        <!-- Specialty 2 -->
+        <div class="p-6 rounded-2xl bg-brand-cream border border-brand-sand hover:border-brand-gold/40 transition duration-300 hover:shadow-luxury group">
+          <div class="w-12 h-12 rounded-xl bg-brand-sand flex items-center justify-center text-brand-darkgold mb-5 group-hover:bg-brand-gold group-hover:text-white transition">
+            <i data-lucide="sparkle" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-brand-dark mb-2">Tokio Gloss Japonés</h3>
+          <p class="text-sm text-brand-soft leading-relaxed mb-4">
+            Tratamiento de restauración profunda con tecnología japonesa Mucota. Reconstruye enlaces de queratina, devuelve brillo extremo y suavidad de seda.
+          </p>
+          <span class="text-xs font-semibold text-brand-darkgold">Desde $1,212 MXN • Duración 60m</span>
+        </div>
+
+        <!-- Specialty 3 -->
+        <div class="p-6 rounded-2xl bg-brand-cream border border-brand-sand hover:border-brand-gold/40 transition duration-300 hover:shadow-luxury group">
+          <div class="w-12 h-12 rounded-xl bg-brand-sand flex items-center justify-center text-brand-darkgold mb-5 group-hover:bg-brand-gold group-hover:text-white transition">
+            <i data-lucide="palette" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-brand-dark mb-2">Colorimetría & Balayage</h3>
+          <p class="text-sm text-brand-soft leading-relaxed mb-4">
+            Técnicas de degradado natural, Baby Lights, iluminación y neutralización con protectores de fibra capilar y productos premium libres de amoníaco.
+          </p>
+          <span class="text-xs font-semibold text-brand-darkgold">Paquetes desde $2,250 MXN</span>
+        </div>
+
+        <!-- Specialty 4 -->
+        <div class="p-6 rounded-2xl bg-brand-cream border border-brand-sand hover:border-brand-gold/40 transition duration-300 hover:shadow-luxury group">
+          <div class="w-12 h-12 rounded-xl bg-brand-sand flex items-center justify-center text-brand-darkgold mb-5 group-hover:bg-brand-gold group-hover:text-white transition">
+            <i data-lucide="shield" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-brand-dark mb-2">Alaciados Sin Formol</h3>
+          <p class="text-sm text-brand-soft leading-relaxed mb-4">
+            Brazilian Blowout original y Brasil Cacau certificados. Cero vapores tóxicos, eliminan el frizz al 100% manteniendo el movimiento natural del cabello.
+          </p>
+          <span class="text-xs font-semibold text-brand-darkgold">Desde $3,465 MXN • Larga Duración</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE CALCULATOR SECTION -->
+  <section id="cotizador" class="py-20 bg-brand-cream relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-gold/20 text-brand-darkgold text-xs font-bold uppercase tracking-wider mb-2">
+          <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+          Cotizador Interactivo Oficial
+        </span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl text-brand-dark font-normal">
+          Calcula y personaliza tu cita en segundos
+        </h2>
+        <p class="text-sm text-brand-soft mt-2">
+          Selecciona los servicios que deseas para obtener un estimado exacto en Pesos Mexicanos (MXN) y agenda con tu selección lista por WhatsApp.
+        </p>
+      </div>
+
+      <!-- Calculator Card -->
+      <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-luxury border border-brand-sand">
+        
+        <!-- Step 1: Category Selection Tabs -->
+        <div class="mb-8">
+          <label class="block text-xs font-bold uppercase tracking-wider text-brand-soft mb-3">1. Selecciona la categoría principal:</label>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2" id="cat-tabs">
+            <button onclick="selectCategory('rizos')" id="tab-rizos" class="category-btn active px-3 py-2.5 rounded-xl text-xs font-medium text-center border transition bg-brand-charcoal text-white border-brand-charcoal shadow-sm">
+              🌀 Rizos
+            </button>
+            <button onclick="selectCategory('corte')" id="tab-corte" class="category-btn px-3 py-2.5 rounded-xl text-xs font-medium text-center border transition bg-white text-brand-charcoal border-brand-sand hover:border-brand-gold">
+              ✂️ Cortes
+            </button>
+            <button onclick="selectCategory('tratamientos')" id="tab-tratamientos" class="category-btn px-3 py-2.5 rounded-xl text-xs font-medium text-center border transition bg-white text-brand-charcoal border-brand-sand hover:border-brand-gold">
+              ✨ Restauración
+            </button>
+            <button onclick="selectCategory('color')" id="tab-color" class="category-btn px-3 py-2.5 rounded-xl text-xs font-medium text-center border transition bg-white text-brand-charcoal border-brand-sand hover:border-brand-gold">
+              🎨 Color & Mechas
+            </button>
+            <button onclick="selectCategory('alaciados')" id="tab-alaciados" class="category-btn px-3 py-2.5 rounded-xl text-xs font-medium text-center border transition bg-white text-brand-charcoal border-brand-sand hover:border-brand-gold">
+              🌿 Brazilian
+            </button>
+            <button onclick="selectCategory('spa_uñas')" id="tab-spa_uñas" class="category-btn px-3 py-2.5 rounded-xl text-xs font-medium text-center border transition bg-white text-brand-charcoal border-brand-sand hover:border-brand-gold">
+              💅 Uñas & Spa
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Service Checklist for Selected Category -->
+        <div class="mb-8">
+          <div class="flex items-center justify-between mb-3">
+            <label class="text-xs font-bold uppercase tracking-wider text-brand-soft">2. Elige tus servicios o tratamientos:</label>
+            <span class="text-xs text-brand-darkgold font-semibold" id="cat-indicator">Mostrando: Especialistas en Rizos</span>
+          </div>
+
+          <div id="services-container" class="grid sm:grid-cols-2 gap-3 max-h-80 overflow-y-auto pr-1">
+            <!-- Dynamically populated via JavaScript -->
+          </div>
+        </div>
+
+        <!-- Step 3: Appointment Preference Options -->
+        <div class="mb-8 p-4 rounded-2xl bg-brand-cream border border-brand-sand">
+          <label class="block text-xs font-bold uppercase tracking-wider text-brand-soft mb-3">3. Preferencia de horario para tu visita:</label>
+          <div class="grid sm:grid-cols-3 gap-3 text-xs">
+            <label class="flex items-center gap-2 p-3 bg-white rounded-xl border border-brand-sand cursor-pointer hover:border-brand-gold transition">
+              <input type="radio" name="horario_pref" value="Mañana (07:00 a 12:00 hrs)" checked onchange="updateQuote()" class="text-brand-gold focus:ring-brand-gold">
+              <div>
+                <span class="font-semibold block text-brand-dark">Turno Matutino</span>
+                <span class="text-brand-soft">07:00 a 12:00 hrs</span>
+              </div>
+            </label>
+            <label class="flex items-center gap-2 p-3 bg-white rounded-xl border border-brand-sand cursor-pointer hover:border-brand-gold transition">
+              <input type="radio" name="horario_pref" value="Tarde (12:00 a 17:00 hrs)" onchange="updateQuote()" class="text-brand-gold focus:ring-brand-gold">
+              <div>
+                <span class="font-semibold block text-brand-dark">Turno Mediodía</span>
+                <span class="text-brand-soft">12:00 a 17:00 hrs</span>
+              </div>
+            </label>
+            <label class="flex items-center gap-2 p-3 bg-white rounded-xl border border-brand-sand cursor-pointer hover:border-brand-gold transition">
+              <input type="radio" name="horario_pref" value="Vespertino (17:00 a 21:00 hrs)" onchange="updateQuote()" class="text-brand-gold focus:ring-brand-gold">
+              <div>
+                <span class="font-semibold block text-brand-dark">Turno Tarde / Noche</span>
+                <span class="text-brand-soft">17:00 a 21:00 hrs</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Quote Summary Box -->
+        <div class="p-6 rounded-2xl bg-brand-charcoal text-white border border-brand-gold/30">
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div>
+              <span class="text-xs uppercase tracking-wider text-brand-champagne font-semibold block mb-1">Resumen Estimado de tu Cotización</span>
+              <div class="flex items-baseline gap-2">
+                <span class="text-3xl sm:text-4xl font-serif-luxury font-bold text-white" id="total-price">$0 MXN</span>
+                <span class="text-xs text-gray-300" id="total-duration">0 servicios seleccionados</span>
+              </div>
+              <p class="text-xs text-gray-400 mt-1" id="selected-list-preview">Aún no has seleccionado ningún servicio.</p>
+            </div>
+
+            <div class="w-full md:w-auto">
+              <a id="btn-whatsapp-quote" href="https://wa.me/525596273522?text=Hola%20Stoa%20Beauty%20Center%2C%20quisiera%20agendar%20una%20cita." target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-8 py-4 rounded-full text-sm shadow-lg transition transform hover:-translate-y-0.5">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                <span>Enviar Cotización por WhatsApp</span>
+              </a>
+              <span class="block text-center text-[11px] text-gray-400 mt-2">Confirmación y atención personalizada directa</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FULL MENU / CATALOG PREVIEW -->
+  <section id="servicios" class="py-16 bg-white border-t border-brand-sand">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs uppercase tracking-[0.2em] text-brand-darkgold font-bold">Catálogo Completo</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl text-brand-dark mt-2 font-normal">
+          Tratamientos realizados con marcas de clase mundial
+        </h2>
+        <p class="text-sm text-brand-soft mt-2">
+          Utilizamos líneas profesionales como Mucota, L'Oréal Professionnel, Kérastase y Brazilian Blowout original.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Column 1 -->
+        <div class="space-y-6">
+          <div class="border-b border-brand-sand pb-4">
+            <h3 class="font-serif-luxury text-2xl font-bold text-brand-dark flex items-center gap-2">
+              <span class="text-brand-darkgold">01.</span> Especialistas en Rizos
+            </h3>
+            <p class="text-xs text-brand-soft">Diagnóstico, corte en seco y definición.</p>
+          </div>
+          <ul class="space-y-3 text-sm">
+            <li class="flex justify-between items-baseline border-b border-dashed border-brand-sand pb-2">
+              <span class="font-medium text-brand-dark">Diagnóstico & Consulta Curly</span>
+              <span class="font-semibold text-emerald-600 text-xs bg-emerald-50 px-2 py-0.5 rounded">GRATIS</span>
+            </li>
+            <li class="flex justify-between items-baseline border-b border-dashed border-brand-sand pb-2">
+              <div>
+                <span class="font-medium text-brand-dark block">Corte de Rizos Dama</span>
+                <span class="text-[11px] text-brand-soft">Técnica especializada en seco</span>
+              </div>
+              <span class="font-semibold text-brand-darkgold text-xs">desde $880 MXN</span>
+            </li>
+            <li class="flex justify-between items-baseline border-b border-dashed border-brand-sand pb-2">
+              <div>
+                <span class="font-medium text-brand-dark block">Paquete Rizos + Hidratación</span>
+                <span class="text-[11px] text-brand-soft">Recuperación de elasticidad</span>
+              </div>
+              <span class="font-semibold text-brand-darkgold text-xs">desde $1,047 MXN</span>
+            </li>
+            <li class="flex justify-between items-baseline border-b border-dashed border-brand-sand pb-2">
+              <div>
+                <span class="font-medium text-brand-dark block">Corte de Rizos + Detox</span>
+                <span class="text-[11px] text-brand-soft">Limpieza profunda de residuos</span>
+              </div>
+              <span class="font-semibold text-brand-darkgold text-xs">desde $1,930 MXN</span>
+            </li>
+            <li class="flex justify-between items-baseline pb-2">
+              <div>
+                <span class="font-medium text-brand-dark block">Operación Rizos de Revista</span>
+                <span class="text-[11px] text-brand-soft">Protocolo premium intensivo</span>
+              </div>
+              <span class="font-semibold text-brand-darkgold text-xs">desde $2,025 MXN</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="space-y-6">
+          <div class="border-b border-brand-sand pb-4">
+            <h3 class="font-serif-luxury text-2xl font-bold text-brand-dark flex items-center gap-2">
+              <span class="text-brand-darkgold">02.</span> Cortes & Restauración
+            </h3>
+            <p class="text-xs text-brand-soft">Estilo y terapias de choque capilar.</p>
+          </div>
+          <ul class="space-y-3 text-sm">
+            <li class="flex justify-between items-baseline border-b border-dashed border-brand-sand pb-2">
+              <div>
+                <span class="font-medium text-brand-dark block">Corte Dama Básico / Estándar</span>
+                <span class="text-[11px] text-brand-soft">Incluye lavado y peinado express</span>
+              </div>
+              <span class="font-semibold text-brand-darkgold text-xs">desde $535 MXN</span>
+            </li>
+            <li class="flex justify-between items-baseline border-b border-dashed border-brand-sand pb-2">
+              <div>
+                <span class="font-medium text-brand-dark block">Corte Caballero + Ritual</span>
+                <span class="text-[11px] text-brand-soft">Perfilado, masaje y lavado</span>
+              </div>
+              <span class="font-semibold text-brand-darkgold text-xs">desde $449 MXN</span>
+            </li>
+            <li class="flex justify-between items-baseline border-b border-dashed border-brand-sand pb-2">
+              <div>
+                <span class="font-medium text-brand-dark block">Tratamiento Japonés Mucota</span>
+                <span class="text-[11px] text-brand-soft">Tokio Gloss Restaurador</span>
+              </div>
+              <span class="font-semibold text-brand-darkgold text-xs">desde $1,212 MXN</span>
+            </li>
+            <li class="flex justify-between items-baseline border-b border-dashed border-brand-sand pb-2">
+              <div>
+                <span class="font-medium text-brand-dark block">Tratamiento Térmico Algas Marinas</span>
+                <span class="text-[11px] text-brand-soft">Corte dama + nutrición marina</span>
+              </div>
+              <span class="font-semibold text-brand-darkgold text-xs">desde $1,349 MXN</span>
+            </li>
+            <li class="flex justify-between items-baseline pb-2">
+              <div>
+                <span class="font-medium text-brand-dark block">Dermoabrasión & Oxigenación</span>
+                <span class="text-[11px] text-brand-soft">Desintoxicación del cuero cabelludo</span>
+              </div>
+              <span class="font-semibold text-brand-darkgold text-xs">desde $539 MXN</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="space-y-6">
+          <div class="border-b border-brand-sand pb-4">
+            <h3 class="font-serif-luxury text-2xl font-bold text-brand-dark flex items-center gap-2">
+              <span class="text-brand-darkgold">03.</span> Alaciados & Color
+            </h3>
+            <p class="text-xs text-brand-soft">Brillo espejo y tonos personalizados.</p>
+          </div>
+          <ul class="space-y-3 text-sm">
+            <li class="flex justify-between items-baseline border-b border-dashed border-brand-sand pb-2">
+              <div>
+                <span class="font-medium text-brand-dark block">Brazilian Blowout Original</span>
+                <span class="text-[11px] text-brand-soft">Libre de formol, cabello corto/mediano</span>
+              </div>
+              <span class="font-semibold text-brand-darkgold text-xs">desde $3,465 MXN</span>
+            </li>
+            <li class="flex justify-between items-baseline border-b border-dashed border-brand-sand pb-2">
+              <div>
+                <span class="font-medium text-brand-dark block">Brasil Cacau Antifrizz</span>
+                <span class="text-[11px] text-brand-soft">Brillo sellado de keratina pura</span>
+              </div>
+              <span class="font-semibold text-brand-darkgold text-xs">desde $2,141 MXN</span>
+            </li>
+            <li class="flex justify-between items-baseline border-b border-dashed border-brand-sand pb-2">
+              <div>
+                <span class="font-medium text-brand-dark block">Paquete Balayage Mediano</span>
+                <span class="text-[11px] text-brand-soft">Incluye extracción + proteína</span>
+              </div>
+              <span class="font-semibold text-brand-darkgold text-xs">desde $4,887 MXN</span>
+            </li>
+            <li class="flex justify-between items-baseline border-b border-dashed border-brand-sand pb-2">
+              <div>
+                <span class="font-medium text-brand-dark block">Baby Lights Iluminación</span>
+                <span class="text-[11px] text-brand-soft">Degradado fino con matiz</span>
+              </div>
+              <span class="font-semibold text-brand-darkgold text-xs">desde $2,250 MXN</span>
+            </li>
+            <li class="flex justify-between items-baseline pb-2">
+              <div>
+                <span class="font-medium text-brand-dark block">Pedicure Spa + Manicura</span>
+                <span class="text-[11px] text-brand-soft">Exfoliación, masaje y esmaltado</span>
+              </div>
+              <span class="font-semibold text-brand-darkgold text-xs">desde $495 MXN</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="mt-12 text-center">
+        <a href="#cotizador" class="inline-flex items-center gap-2 text-brand-darkgold hover:text-brand-dark font-semibold text-sm underline decoration-brand-gold underline-offset-4 transition">
+          Ver todos los 40+ servicios en el cotizador interactivo &rarr;
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY / INSTALACIONES REALES -->
+  <section id="galeria" class="py-20 bg-brand-cream border-t border-brand-sand">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-xs uppercase tracking-[0.2em] text-brand-darkgold font-bold">Nuestras Instalaciones</span>
+          <h2 class="font-serif-luxury text-3xl sm:text-4xl text-brand-dark mt-2 font-normal">
+            Un espacio de calma, sofisticación y cuidado en la Nápoles
+          </h2>
+        </div>
+        <p class="text-sm text-brand-soft max-w-md mt-4 md:mt-0">
+          Ubicado en el primer piso de Plaza Dakota 95, con área de lavado relajante, estaciones de corte ergonómicas y estacionamiento privado.
+        </p>
+      </div>
+
+      <!-- Real Photo Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Foto 1 -->
+        <div class="group relative overflow-hidden rounded-2xl bg-white border border-brand-sand shadow-sm hover:shadow-luxury transition duration-300">
+          <div class="overflow-hidden aspect-[4/3]">
+            <img src="img/foto-5.jpg" alt="Recepción oficial y logotipo de Stoa Beauty Center" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+          </div>
+          <div class="p-4 bg-white">
+            <span class="text-[10px] font-bold text-brand-darkgold uppercase tracking-wider block">Recepción Principal</span>
+            <p class="text-sm font-medium text-brand-dark mt-0.5">Bienvenida cálida en Plaza Dakota 95</p>
+          </div>
+        </div>
+
+        <!-- Foto 2 -->
+        <div class="group relative overflow-hidden rounded-2xl bg-white border border-brand-sand shadow-sm hover:shadow-luxury transition duration-300">
+          <div class="overflow-hidden aspect-[4/3]">
+            <img src="img/foto-4.jpg" alt="Estaciones de estilizado, sillas y espejos en Stoa" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+          </div>
+          <div class="p-4 bg-white">
+            <span class="text-[10px] font-bold text-brand-darkgold uppercase tracking-wider block">Área de Estilizado</span>
+            <p class="text-sm font-medium text-brand-dark mt-0.5">Estaciones de peinado con iluminación profesional</p>
+          </div>
+        </div>
+
+        <!-- Foto 3 -->
+        <div class="group relative overflow-hidden rounded-2xl bg-white border border-brand-sand shadow-sm hover:shadow-luxury transition duration-300">
+          <div class="overflow-hidden aspect-[4/3]">
+            <img src="img/foto-2.jpg" alt="Rizos definidos y método curly en Stoa" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+          </div>
+          <div class="p-4 bg-white">
+            <span class="text-[10px] font-bold text-brand-darkgold uppercase tracking-wider block">Método Curly</span>
+            <p class="text-sm font-medium text-brand-dark mt-0.5">Definición de rizos naturales con brillo y volumen</p>
+          </div>
+        </div>
+
+        <!-- Foto 4 -->
+        <div class="group relative overflow-hidden rounded-2xl bg-white border border-brand-sand shadow-sm hover:shadow-luxury transition duration-300">
+          <div class="overflow-hidden aspect-[4/3]">
+            <img src="img/foto-1.jpg" alt="Cabello liso perfecto y nutrición capilar" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+          </div>
+          <div class="p-4 bg-white">
+            <span class="text-[10px] font-bold text-brand-darkgold uppercase tracking-wider block">Tratamiento Mucota</span>
+            <p class="text-sm font-medium text-brand-dark mt-0.5">Restauración profunda y efecto seda japonés</p>
+          </div>
+        </div>
+
+        <!-- Foto 5 -->
+        <div class="group relative overflow-hidden rounded-2xl bg-white border border-brand-sand shadow-sm hover:shadow-luxury transition duration-300">
+          <div class="overflow-hidden aspect-[4/3]">
+            <img src="img/foto-3.jpg" alt="Balayage rubio y ondas de peinado" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+          </div>
+          <div class="p-4 bg-white">
+            <span class="text-[10px] font-bold text-brand-darkgold uppercase tracking-wider block">Color & Balayage</span>
+            <p class="text-sm font-medium text-brand-dark mt-0.5">Técnicas de degradado sutil y protección capilar</p>
+          </div>
+        </div>
+
+        <!-- Foto 6 -->
+        <div class="group relative overflow-hidden rounded-2xl bg-white border border-brand-sand shadow-sm hover:shadow-luxury transition duration-300">
+          <div class="overflow-hidden aspect-[4/3]">
+            <img src="img/foto-6.jpg" alt="Cabina de lavado y spa capilar" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+          </div>
+          <div class="p-4 bg-white">
+            <span class="text-[10px] font-bold text-brand-darkgold uppercase tracking-wider block">Spa Capilar & Relax</span>
+            <p class="text-sm font-medium text-brand-dark mt-0.5">Lavado relajante y aplicación de mascarillas nutritivas</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- REAL TESTIMONIALS & REVIEWS -->
+  <section id="opiniones" class="py-20 bg-white border-t border-brand-sand">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-1 text-amber-500 text-lg mb-2">
+          ★★★★★
+        </div>
+        <span class="text-xs uppercase tracking-[0.2em] text-brand-darkgold font-bold block">Opiniones Reales Verificadas</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl text-brand-dark mt-2 font-normal">
+          Lo que dicen nuestras clientas sobre Stoa
+        </h2>
+        <p class="text-sm text-brand-soft mt-2">
+          Calificación de <strong>4.9 de 5 estrellas</strong> respaldada por más de 131 clientes satisfechos.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="p-6 rounded-2xl bg-brand-cream border border-brand-sand shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-500 text-sm mb-3">★★★★★</div>
+            <p class="text-sm text-brand-charcoal italic leading-relaxed mb-6">
+              "Como siempre el equipo maravilloso, súper atentos y cálidos. Vicente extraordinario en atención y calidad de servicio."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-brand-champagne/40">
+            <div class="w-10 h-10 rounded-full bg-brand-sand flex items-center justify-center font-bold text-xs text-brand-darkgold">
+              SV
+            </div>
+            <div>
+              <p class="text-xs font-bold text-brand-dark">Sara V.</p>
+              <p class="text-[11px] text-brand-soft">Cliente Verificada • Salón Nápoles</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="p-6 rounded-2xl bg-brand-cream border border-brand-sand shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-500 text-sm mb-3">★★★★★</div>
+            <p class="text-sm text-brand-charcoal italic leading-relaxed mb-6">
+              "Excelente atención y servicio, muy profesional, amable y eficiente. El tratamiento capilar dejó mi cabello espectacular."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-brand-champagne/40">
+            <div class="w-10 h-10 rounded-full bg-brand-sand flex items-center justify-center font-bold text-xs text-brand-darkgold">
+              CR
+            </div>
+            <div>
+              <p class="text-xs font-bold text-brand-dark">Carolina R.</p>
+              <p class="text-[11px] text-brand-soft">Cliente Verificada • Tratamiento Capilar</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="p-6 rounded-2xl bg-brand-cream border border-brand-sand shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-500 text-sm mb-3">★★★★★</div>
+            <p class="text-sm text-brand-charcoal italic leading-relaxed mb-6">
+              "Experiencia y verdadero conocimiento en cabello y atención a cliente. Elizabeth fue sumamente cordial y cuidó cada detalle de mis rizos."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-brand-champagne/40">
+            <div class="w-10 h-10 rounded-full bg-brand-sand flex items-center justify-center font-bold text-xs text-brand-darkgold">
+              SM
+            </div>
+            <div>
+              <p class="text-xs font-bold text-brand-dark">Sofia M.</p>
+              <p class="text-[11px] text-brand-soft">Cliente Verificada • Especialista en Rizos</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LOCATION & CONTACT MAP SECTION -->
+  <section id="ubicacion" class="py-20 bg-brand-cream border-t border-brand-sand">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Info Column -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs uppercase tracking-[0.2em] text-brand-darkgold font-bold block">Visítanos en la Nápoles</span>
+          <h2 class="font-serif-luxury text-3xl sm:text-4xl text-brand-dark font-normal">
+            Frente al WTC Ciudad de México y Pepsi Center
+          </h2>
+          <p class="text-sm text-brand-soft leading-relaxed">
+            Stoa Beauty Center se localiza dentro de la moderna <strong>Plaza Dakota 95</strong>, un punto céntrico con seguridad, comodidad y estacionamiento propio.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-white border border-brand-sand flex items-center justify-center text-brand-darkgold shrink-0 shadow-sm">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-brand-dark">Dirección:</p>
+                <p class="text-sm text-brand-soft">Calle Dakota #95, Colonia Nápoles, Alcaldía Benito Juárez, C.P. 03810, Ciudad de México, CDMX.</p>
+                <p class="text-xs text-brand-darkgold mt-0.5 font-medium">Plaza Dakota 95 • Coordenadas: 19.39112, -99.17608</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-white border border-brand-sand flex items-center justify-center text-brand-darkgold shrink-0 shadow-sm">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-brand-dark">Horario de Atención:</p>
+                <p class="text-sm text-brand-soft">Lunes a Sábado: 07:00 – 21:00 hrs</p>
+                <p class="text-sm text-brand-soft">Domingo: 08:00 – 20:00 hrs</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-white border border-brand-sand flex items-center justify-center text-brand-darkgold shrink-0 shadow-sm">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-brand-dark">Teléfono / WhatsApp:</p>
+                <a href="tel:5596273522" class="text-sm text-brand-dark font-semibold hover:text-brand-darkgold transition block">
+                  +52 55 9627 3522 (55 9627 3522)
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-3">
+            <a href="https://maps.google.com/?daddr=Dakota%2095%2C%20Ciudad%20De%20M%C3%A9xico%2C%2003810" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-brand-charcoal text-white hover:bg-black font-medium px-5 py-2.5 rounded-full text-xs shadow-md transition">
+              <i data-lucide="navigation" class="w-4 h-4 text-brand-gold"></i>
+              <span>Abrir en Google Maps</span>
+            </a>
+            <a href="https://wa.me/525596273522?text=Hola%20Stoa%20Beauty%20Center%2C%20quisiera%20saber%20c%C3%B3mo%20llegar%20y%20si%20tienen%20disponibilidad%20hoy." target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-emerald-600 text-white hover:bg-emerald-700 font-medium px-5 py-2.5 rounded-full text-xs shadow-md transition">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Preguntar por WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Map Iframe Column -->
+        <div class="lg:col-span-7">
+          <div class="rounded-3xl overflow-hidden border-2 border-brand-sand shadow-luxury bg-white h-[420px] relative">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.1555543166826!2d-99.1786613!3d19.3911228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff70c79321ef%3A0x7d0e405e3ec30d5b!2sPlaza%20Dakota%2095%2C%20Dakota%2095%2C%20N%C3%A1poles%2C%20Benito%20Ju%C3%A1rez%2C%2003810%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1716000000000!5m2!1ses-419!2smx" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación de Stoa Beauty Center en Plaza Dakota 95">
+            </iframe>
+            
+            <div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-xl border border-brand-gold/40 shadow-md text-xs">
+              <span class="font-bold text-brand-dark block">Stoa Beauty Center</span>
+              <span class="text-[11px] text-brand-soft">Plaza Dakota 95, Nápoles</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-charcoal text-white pt-14 pb-8 border-t border-brand-gold/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-brand-sand/10">
+        
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-brand-gold flex items-center justify-center text-white font-serif-luxury font-bold">S</div>
+            <span class="font-serif-luxury text-xl font-bold tracking-wider text-white">STOA</span>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Salón de belleza de alta gama, cuidado capilar profesional y diseño de rizos en Colonia Nápoles, Benito Juárez, CDMX.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-brand-gold mb-3">Especialidades</h4>
+          <ul class="space-y-2 text-xs text-gray-300">
+            <li>Especialistas en Rizos (Método Curly)</li>
+            <li>Tokio Gloss Tratamiento Japonés</li>
+            <li>Balayage & Colorimetría</li>
+            <li>Brazilian Blowout (Sin Formol)</li>
+            <li>Dermoabrasión y Salud Capilar</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-brand-gold mb-3">Ubicación & Citas</h4>
+          <ul class="space-y-2 text-xs text-gray-300">
+            <li>Plaza Dakota 95, Col. Nápoles</li>
+            <li>Alcaldía Benito Juárez, CDMX</li>
+            <li>Tel: 55 9627 3522</li>
+            <li>Horario: Lun-Sáb 7am a 9pm | Dom 8am a 8pm</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-brand-gold mb-3">Redes & Contacto</h4>
+          <p class="text-xs text-gray-400 mb-3">Instagram: <a href="https://www.instagram.com/stoabeautycentermx/" target="_blank" rel="noopener" class="text-brand-champagne hover:underline">@stoabeautycentermx</a></p>
+          <a href="https://wa.me/525596273522?text=Hola%20Stoa%20Beauty%20Center%2C%20quisiera%20agendar%20una%20cita." target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-medium px-4 py-2.5 rounded-full transition shadow">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>WhatsApp Directo</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-400">
+        <p>© 2026 Stoa Beauty Center Nápoles. Todos los derechos reservados.</p>
+        <p>Propuesta de diseño web de alta conversión para Stoa Beauty Center Plaza Dakota.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP CTA BUTTON -->
+  <aside aria-label="Contacto rápido" class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
+    <div class="bg-white/95 backdrop-blur shadow-luxury border border-brand-sand px-3 py-1.5 rounded-full text-xs font-semibold text-brand-dark hidden sm:flex items-center gap-1.5 animate-bounce">
+      <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+      <span>¿Deseas agendar tu cita hoy?</span>
+    </div>
+    <a href="https://wa.me/525596273522?text=Hola%20Stoa%20Beauty%20Center%2C%20me%20gustar%C3%ADa%20agendar%20un%20servicio%20en%20Plaza%20Dakota%2095." target="_blank" rel="noopener" class="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center shadow-2xl transition transform hover:scale-110" title="Chatear por WhatsApp">
+      <i data-lucide="message-circle" class="w-7 h-7"></i>
+    </a>
+  </aside>
+
+  <!-- JAVASCRIPT: CALCULATOR DATA & LOGIC -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Catalog Data with exact prices from Stoa Beauty Center
+    const CATALOG = {
+      rizos: [
+        { id: "rz_diag", name: "Diagnóstico & Consulta Curly", price: 0, desc: "Evaluación del patrón de rizo y porosidad", time: "30 min" },
+        { id: "rz_corte", name: "Corte de Rizos Dama en Seco", price: 880, desc: "Técnica especializada para definir ondas y rizos", time: "60 min" },
+        { id: "rz_hidra", name: "Paquete Rizos + Hidratación", price: 1047, desc: "Recuperación de elasticidad y nutrición", time: "60 min" },
+        { id: "rz_detox", name: "Corte de Rizos + Detox Profundo", price: 1930, desc: "Limpieza profunda de residuos acumulados + corte", time: "90 min" },
+        { id: "rz_revista", name: "Operación Rizos de Revista", price: 2025, desc: "Protocolo completo de choque, nutrición y estilizado", time: "90 min" }
+      ],
+      corte: [
+        { id: "co_dama", name: "Corte Dama Básico / Estándar", price: 535, desc: "Incluye lavado y peinado express", time: "60 min" },
+        { id: "co_caballero", name: "Corte Caballero Sencillo", price: 351, desc: "Tijera o máquina con acabado limpio", time: "45 min" },
+        { id: "co_ritual_cab", name: "Corte Caballero + Ritual Premium", price: 449, desc: "Perfilado, lavado oxigenante y masaje capilar", time: "60 min" },
+        { id: "co_dama_prem", name: "Corte Dama + Restauración Premium", price: 778, desc: "Corte con ampolleta restauradora élite", time: "60 min" },
+        { id: "co_termico", name: "Corte + Tratamiento Algas Marinas", price: 1349, desc: "Tratamiento térmico reparador de cutícula", time: "75 min" }
+      ],
+      tratamientos: [
+        { id: "tr_mucota", name: "Tokio Gloss Tratamiento Mucota", price: 1212, desc: "Tecnología japonesa restauradora efecto seda", time: "60 min" },
+        { id: "tr_ampolleta", name: "Ampolletas L'Oréal Professionnel", price: 621, desc: "Nutrición instantánea según tipo de hebra", time: "30 min" },
+        { id: "tr_oxigenante", name: "Limpieza Oxigenante Cuero Cabelludo", price: 539, desc: "Exfoliación capilar anti-grasa y anti-caspa", time: "45 min" },
+        { id: "tr_dermo", name: "Dermoabrasión Dermatológica sin corte", price: 1395, desc: "Desintoxicación folicular profunda", time: "60 min" },
+        { id: "tr_exosomas", name: "Aplicación de Exosomas Mesenquimales", price: 4050, desc: "Terapia médica regenerativa anticaída", time: "60 min" }
+      ],
+      color: [
+        { id: "cl_balayage", name: "Paquete Balayage Mediano Completo", price: 4887, desc: "Incluye decoloración + extracción + proteína protectora", time: "180 min" },
+        { id: "cl_babylights", name: "Baby Lights Mediano", price: 2790, desc: "Mechas ultrafinas de iluminación sutil", time: "120 min" },
+        { id: "cl_luces", name: "Retoque de Luces", price: 2700, desc: "Mantenimiento de luminosidad en raíz", time: "90 min" },
+        { id: "cl_retoque_sin", name: "Retoque de Raíz Sin Amoníaco", price: 1618, desc: "Coloración suave libre de amoníaco con masaje", time: "60 min" },
+        { id: "cl_retoque_cab", name: "Retoque Color Caballero", price: 580, desc: "Camuflaje de canas natural", time: "45 min" }
+      ],
+      alaciados: [
+        { id: "al_bb_corto", name: "Brazilian Blowout Corto (Sin Formol)", price: 3465, desc: "Cero frizz, brillo máximo y duración 3 a 4 meses", time: "120 min" },
+        { id: "al_bb_mediano", name: "Brazilian Blowout Mediano", price: 4032, desc: "Alineación y suavidad sin maltratar la fibra", time: "150 min" },
+        { id: "al_bb_largo", name: "Brazilian Blowout Largo", price: 4590, desc: "Sellado de cutícula con keratina botánica", time: "180 min" },
+        { id: "al_cacau", name: "Brasil Cacau Restaurador Antifrizz", price: 2141, desc: "Nutrición con cacao natural y brillo intenso", time: "120 min" }
+      ],
+      spa_uñas: [
+        { id: "sp_pedi_spa", name: "Pedicure SPA Relajante", price: 495, desc: "Tina de hidromasaje, exfoliación, sales y esmalte", time: "60 min" },
+        { id: "sp_pedi_clas", name: "Pedicure Clásico", price: 351, desc: "Limpieza y arreglo estético de uñas de pies", time: "45 min" },
+        { id: "sp_unas_acril", name: "Uñas de Acrílico Completas", price: 630, desc: "Set completo con largo y forma a elegir", time: "90 min" },
+        { id: "sp_escul", name: "Uñas Esculturales de Salón", price: 855, desc: "Modelado fino sin tip, ultra natural", time: "100 min" },
+        { id: "sp_shellac", name: "Retiro y Aplicación de Shellac / Gel", price: 288, desc: "Retiro cuidadoso y nueva capa de brillo", time: "45 min" }
+      ]
+    };
+
+    // State for selected services
+    let selectedServices = new Map();
+    let currentCategory = 'rizos';
+
+    const categoryNames = {
+      rizos: "Especialistas en Rizos (Método Curly)",
+      corte: "Cortes de Cabello & Styling",
+      tratamientos: "Restauración & Spa Capilar",
+      color: "Colorimetría & Balayage",
+      alaciados: "Alaciados Brasileños Sin Formol",
+      spa_uñas: "Manos, Pies & Uñas Spa"
+    };
+
+    function selectCategory(catKey) {
+      currentCategory = catKey;
+      
+      // Update tabs UI
+      document.querySelectorAll('.category-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-charcoal', 'text-white', 'border-brand-charcoal', 'shadow-sm');
+        btn.classList.add('bg-white', 'text-brand-charcoal', 'border-brand-sand');
+      });
+      const activeBtn = document.getElementById('tab-' + catKey);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-white', 'text-brand-charcoal', 'border-brand-sand');
+        activeBtn.classList.add('bg-brand-charcoal', 'text-white', 'border-brand-charcoal', 'shadow-sm');
+      }
+
+      document.getElementById('cat-indicator').innerText = "Mostrando: " + categoryNames[catKey];
+      renderServicesList();
+    }
+
+    function renderServicesList() {
+      const container = document.getElementById('services-container');
+      const items = CATALOG[currentCategory] || [];
+      
+      container.innerHTML = items.map(item => {
+        const isChecked = selectedServices.has(item.id) ? 'checked' : '';
+        const priceDisplay = item.price === 0 ? 'GRATIS' : `$${item.price.toLocaleString()} MXN`;
+        const activeClass = isChecked ? 'border-brand-gold bg-brand-cream/60' : 'border-brand-sand bg-white';
+
+        return `
+          <label class="flex items-start gap-3 p-3.5 rounded-xl border ${activeClass} cursor-pointer hover:border-brand-gold/60 transition group">
+            <input type="checkbox" value="${item.id}" ${isChecked} onchange="toggleService('${item.id}', '${item.name}', ${item.price})" class="mt-1 w-4 h-4 rounded text-brand-gold focus:ring-brand-gold border-brand-sand">
+            <div class="flex-1">
+              <div class="flex items-baseline justify-between gap-2">
+                <span class="text-xs font-bold text-brand-dark group-hover:text-brand-darkgold transition">${item.name}</span>
+                <span class="text-xs font-semibold ${item.price === 0 ? 'text-emerald-600' : 'text-brand-darkgold'} shrink-0">${priceDisplay}</span>
+              </div>
+              <p class="text-[11px] text-brand-soft leading-tight mt-0.5">${item.desc}</p>
+              <span class="text-[10px] text-gray-400 mt-1 block">⏱️ ${item.time}</span>
+            </div>
+          </label>
+        `;
+      }).join('');
+    }
+
+    function toggleService(id, name, price) {
+      if (selectedServices.has(id)) {
+        selectedServices.delete(id);
+      } else {
+        selectedServices.set(id, { name, price });
+      }
+      renderServicesList();
+      updateQuote();
+    }
+
+    function updateQuote() {
+      let total = 0;
+      let count = selectedServices.size;
+      let names = [];
+
+      selectedServices.forEach(s => {
+        total += s.price;
+        names.push(s.name);
+      });
+
+      // Update Total UI
+      document.getElementById('total-price').innerText = `$${total.toLocaleString()} MXN`;
+      document.getElementById('total-duration').innerText = `${count} ${count === 1 ? 'servicio seleccionado' : 'servicios seleccionados'}`;
+      
+      const previewEl = document.getElementById('selected-list-preview');
+      if (count === 0) {
+        previewEl.innerText = "Aún no has seleccionado ningún servicio.";
+      } else {
+        previewEl.innerText = names.join(" • ");
+      }
+
+      // Read preferred schedule
+      const scheduleRadio = document.querySelector('input[name="horario_pref"]:checked');
+      const horario = scheduleRadio ? scheduleRadio.value : "Turno Matutino";
+
+      // Prepare WhatsApp link
+      let waText = `Hola Stoa Beauty Center (Plaza Dakota 95), coticé en su página web y deseo agendar una cita:\n\n`;
+      if (count > 0) {
+        waText += `✨ *Servicios seleccionados:*\n`;
+        selectedServices.forEach(s => {
+          waText += `• ${s.name} ($${s.price.toLocaleString()} MXN)\n`;
+        });
+        waText += `\n💰 *Total estimado:* $${total.toLocaleString()} MXN\n`;
+      } else {
+        waText += `Deseo solicitar información y disponibilidad de citas.\n`;
+      }
+      waText += `⏰ *Preferencia de horario:* ${horario}\n`;
+      waText += `\n¿Tienen disponibilidad en estos días? Muchas gracias.`;
+
+      const encodedUrl = `https://wa.me/525596273522?text=${encodeURIComponent(waText)}`;
+      document.getElementById('btn-whatsapp-quote').setAttribute('href', encodedUrl);
+    }
+
+    // Dynamic Live Open/Close Status
+    function checkLiveHours() {
+      const now = new Date();
+      const day = now.getDay(); // 0 is Sunday
+      const hour = now.getHours();
+      const pill = document.getElementById('live-status-pill');
+
+      let isOpen = false;
+      let closesAt = "21:00";
+
+      if (day === 0) { // Sunday
+        isOpen = (hour >= 8 && hour < 20);
+        closesAt = "20:00";
+      } else { // Monday to Saturday
+        isOpen = (hour >= 7 && hour < 21);
+        closesAt = "21:00";
+      }
+
+      if (isOpen) {
+        pill.innerHTML = `
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Abierto hoy hasta las ${closesAt} hrs</span>
+        `;
+        pill.className = "flex items-center gap-1.5 text-[11px] font-medium text-emerald-300";
+      } else {
+        pill.innerHTML = `
+          <span class="w-2 h-2 rounded-full bg-rose-400"></span>
+          <span>Cerrado ahora • Abre mañana 07:00 hrs</span>
+        `;
+        pill.className = "flex items-center gap-1.5 text-[11px] font-medium text-rose-300";
+      }
+    }
+
+    // Initial run
+    selectCategory('rizos');
+    checkLiveHours();
+  </script>
+</body>
+</html>
