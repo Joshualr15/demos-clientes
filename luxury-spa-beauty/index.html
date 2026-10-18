@@ -1,0 +1,2265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Spa & Beauty | Masajes, Faciales y Sauna en Roma Norte, CDMX</title>
+  <meta name="description" content="Luxury Spa & Beauty en Roma Norte, CDMX. Masajes relajantes, faciales de alta gama, sauna y tratamientos de bienestar en Av. Oaxaca 86. Agenda tu cita por WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --primary: #9d7a54;
+      --primary-dark: #7e5f3c;
+      --primary-light: #f7f1eb;
+      --accent-rose: #d4a373;
+      --gold: #c5a880;
+      --gold-soft: #fbf7f2;
+      --text-main: #2b2623;
+      --text-muted: #6b635c;
+      --bg-body: #faf8f5;
+      --bg-white: #ffffff;
+      --bg-card: #ffffff;
+      --border-soft: #ede6df;
+      --shadow-sm: 0 4px 12px rgba(157, 122, 84, 0.06);
+      --shadow-md: 0 10px 30px rgba(157, 122, 84, 0.1);
+      --shadow-lg: 0 20px 45px rgba(157, 122, 84, 0.14);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+      --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-main);
+      background-color: var(--bg-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, .serif-font {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Banner */
+    .top-banner {
+      background: linear-gradient(90deg, #9d7a54, #bfa07d, #9d7a54);
+      color: #ffffff;
+      text-align: center;
+      padding: 9px 16px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .top-banner a {
+      text-decoration: underline;
+      font-weight: 700;
+      margin-left: 6px;
+      color: #fff;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border-soft);
+      transition: var(--transition);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--gold), var(--primary));
+      color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      box-shadow: 0 4px 15px rgba(157, 122, 84, 0.25);
+    }
+
+    .brand-text h1 {
+      font-size: 1.55rem;
+      letter-spacing: 0.5px;
+      color: var(--text-main);
+      margin: 0;
+    }
+
+    .brand-text span {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--primary);
+      font-weight: 600;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--primary);
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .btn-nav-whatsapp {
+      background: #25D366;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: var(--radius-full);
+      font-size: 0.88rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+      transition: var(--transition);
+    }
+
+    .btn-nav-whatsapp:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+      color: #fff;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--text-main);
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      padding: 70px 0 60px;
+      position: relative;
+      background: radial-gradient(circle at 10% 20%, rgba(247, 241, 235, 0.8), transparent 60%),
+                  radial-gradient(circle at 90% 80%, rgba(251, 247, 242, 0.9), transparent 50%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--gold-soft);
+      border: 1px solid var(--border-soft);
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .hero-badge i {
+      color: var(--primary);
+    }
+
+    .hero-title {
+      font-size: 3.4rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 18px;
+      line-height: 1.12;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    .hero-description {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 30px;
+      line-height: 1.7;
+      max-width: 540px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 35px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      color: #ffffff;
+      padding: 15px 30px;
+      border-radius: var(--radius-full);
+      font-size: 1rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+      transition: var(--transition);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.45);
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background-color: #ffffff;
+      color: var(--text-main);
+      border: 1px solid var(--border-soft);
+      padding: 15px 28px;
+      border-radius: var(--radius-full);
+      font-size: 1rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--primary-light);
+      border-color: var(--primary);
+      color: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    /* Live status badge */
+    .live-status-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background-color: #ffffff;
+      padding: 10px 18px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-soft);
+      box-shadow: var(--shadow-sm);
+      font-size: 0.88rem;
+    }
+
+    .pulse-dot {
+      width: 10px;
+      height: 10px;
+      background-color: #10b981;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .pulse-dot::after {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: rgba(16, 185, 129, 0.4);
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(0.9); opacity: 0.8; }
+      50% { transform: scale(1.6); opacity: 0; }
+      100% { transform: scale(0.9); opacity: 0; }
+    }
+
+    .status-text {
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .status-sub {
+      color: var(--text-muted);
+      font-size: 0.82rem;
+    }
+
+    /* Hero Visual Card */
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-main-img-wrap {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      border: 8px solid #ffffff;
+    }
+
+    .hero-main-img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+
+    .hero-main-img-wrap:hover .hero-main-img {
+      transform: scale(1.03);
+    }
+
+    .floating-card-rating {
+      position: absolute;
+      bottom: -20px;
+      left: -25px;
+      background: #ffffff;
+      padding: 16px 22px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-soft);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .stars-box {
+      color: #f59e0b;
+      font-size: 1.1rem;
+    }
+
+    .rating-number {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: block;
+      line-height: 1;
+    }
+
+    .rating-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .floating-badge-roma {
+      position: absolute;
+      top: 25px;
+      right: -15px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      padding: 12px 20px;
+      border-radius: var(--radius-full);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-soft);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .floating-badge-roma i {
+      color: #ef4444;
+    }
+
+    /* Trust Highlights Bar */
+    .trust-bar {
+      background-color: #ffffff;
+      border-top: 1px solid var(--border-soft);
+      border-bottom: 1px solid var(--border-soft);
+      padding: 26px 0;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .trust-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .trust-text h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 2px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .trust-text p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Section Headers */
+    .section-header {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 50px;
+    }
+
+    .section-tag {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .section-title {
+      font-size: 2.7rem;
+      color: var(--text-main);
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    .section-subtitle {
+      font-size: 1.02rem;
+      color: var(--text-muted);
+    }
+
+    /* Services Section */
+    .services-section {
+      padding: 80px 0;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .service-card {
+      background-color: var(--bg-card);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-soft);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--gold);
+    }
+
+    .service-img-wrap {
+      height: 220px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .service-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .service-card:hover .service-img {
+      transform: scale(1.08);
+    }
+
+    .service-tag-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--primary-dark);
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .service-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .service-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 0.85rem;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .service-meta span i {
+      margin-right: 5px;
+    }
+
+    .service-title {
+      font-size: 1.55rem;
+      color: var(--text-main);
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .service-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .service-benefits {
+      list-style: none;
+      margin-bottom: 22px;
+      border-top: 1px dashed var(--border-soft);
+      padding-top: 16px;
+    }
+
+    .service-benefits li {
+      font-size: 0.85rem;
+      color: var(--text-main);
+      margin-bottom: 7px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .service-benefits li i {
+      color: #10b981;
+      font-size: 0.8rem;
+    }
+
+    .btn-service-book {
+      background-color: var(--primary-light);
+      color: var(--primary-dark);
+      border: 1px solid var(--border-soft);
+      padding: 12px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: var(--transition);
+    }
+
+    .service-card:hover .btn-service-book {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      color: #ffffff;
+      border-color: transparent;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+    }
+
+    /* Interactive Spa Calculator / Package Builder */
+    .calculator-section {
+      padding: 80px 0;
+      background: linear-gradient(180deg, var(--bg-body), #ffffff 50%, var(--bg-body));
+    }
+
+    .calc-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 45px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-soft);
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+    }
+
+    .calc-title {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+
+    .calc-subtitle {
+      color: var(--text-muted);
+      margin-bottom: 25px;
+      font-size: 0.95rem;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .form-select, .form-input {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      background-color: var(--bg-body);
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .form-select:focus, .form-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(157, 122, 84, 0.15);
+      background-color: #fff;
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .radio-pill {
+      display: block;
+      cursor: pointer;
+    }
+
+    .radio-pill input {
+      display: none;
+    }
+
+    .pill-content {
+      border: 1px solid var(--border-soft);
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition: var(--transition);
+      background-color: var(--bg-body);
+    }
+
+    .radio-pill input:checked + .pill-content {
+      background-color: var(--primary-light);
+      border-color: var(--primary);
+      color: var(--primary-dark);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .calc-summary {
+      background: linear-gradient(135deg, var(--gold-soft), var(--primary-light));
+      border-radius: var(--radius-md);
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid var(--border-soft);
+    }
+
+    .summary-heading {
+      font-size: 1.4rem;
+      color: var(--text-main);
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(157, 122, 84, 0.2);
+      padding-bottom: 10px;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    .summary-row strong {
+      color: var(--text-main);
+    }
+
+    .summary-total {
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 2px solid rgba(157, 122, 84, 0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .total-label {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .total-price {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .btn-calc-whatsapp {
+      margin-top: 25px;
+      background: #25D366;
+      color: #ffffff;
+      padding: 15px 20px;
+      border-radius: var(--radius-full);
+      font-size: 1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+      transition: var(--transition);
+      cursor: pointer;
+      border: none;
+      width: 100%;
+    }
+
+    .btn-calc-whatsapp:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
+    }
+
+    /* Facilities / Real Photos Showcase */
+    .facilities-section {
+      padding: 80px 0;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      height: 280px;
+      box-shadow: var(--shadow-sm);
+      border: 4px solid #ffffff;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(43, 38, 35, 0.8) 0%, transparent 60%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      color: #ffffff;
+      opacity: 0.95;
+      transition: var(--transition);
+    }
+
+    .gallery-overlay h4 {
+      font-size: 1.3rem;
+      margin-bottom: 4px;
+      color: #fff;
+    }
+
+    .gallery-overlay p {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    /* Reviews Section */
+    .reviews-section {
+      padding: 80px 0;
+      background-color: #ffffff;
+      border-top: 1px solid var(--border-soft);
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .reviews-header-stats {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .stats-score {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--text-main);
+      font-family: 'Cormorant Garamond', serif;
+      line-height: 1;
+    }
+
+    .stats-stars {
+      color: #f59e0b;
+      font-size: 1.3rem;
+      margin-bottom: 4px;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .review-card {
+      background: var(--bg-body);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .review-stars {
+      color: #f59e0b;
+      font-size: 0.95rem;
+      margin-bottom: 14px;
+    }
+
+    .review-text {
+      font-size: 0.95rem;
+      color: var(--text-main);
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-top: 1px solid var(--border-soft);
+      padding-top: 14px;
+    }
+
+    .author-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--primary));
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .author-info h5 {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 2px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .author-info span {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* Location & Map Section */
+    .location-section {
+      padding: 80px 0;
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .location-info-card {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      padding: 35px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-soft);
+    }
+
+    .info-list {
+      list-style: none;
+      margin: 25px 0;
+    }
+
+    .info-item {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+
+    .info-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      flex-shrink: 0;
+    }
+
+    .info-text h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .info-text p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .map-container {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 6px solid #ffffff;
+      height: 440px;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      padding: 70px 0 90px;
+      background-color: #ffffff;
+      border-top: 1px solid var(--border-soft);
+    }
+
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-sm);
+      margin-bottom: 14px;
+      overflow: hidden;
+      background: var(--bg-body);
+      transition: var(--transition);
+    }
+
+    .faq-item:hover {
+      border-color: var(--primary);
+    }
+
+    .faq-question {
+      padding: 20px 24px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-main);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .faq-question i {
+      color: var(--primary);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-answer {
+      padding: 0 24px 20px;
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-item.active .faq-question i {
+      transform: rotate(180deg);
+    }
+
+    /* Final CTA */
+    .cta-banner {
+      background: linear-gradient(135deg, #2b2623, #433932);
+      color: #ffffff;
+      padding: 70px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at center, rgba(197, 168, 128, 0.2), transparent 70%);
+      pointer-events: none;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    .cta-title {
+      font-size: 3rem;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .cta-text {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 30px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #1f1b19;
+      color: #a39992;
+      padding: 60px 0 30px;
+      font-size: 0.88rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .footer-brand h3 {
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .footer-col h4 {
+      color: #ffffff;
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 600;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #332d29;
+      padding-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.82rem;
+    }
+
+    /* Floating WhatsApp widget */
+    .whatsapp-float-widget {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .wa-bubble {
+      background: #ffffff;
+      color: var(--text-main);
+      padding: 10px 16px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid var(--border-soft);
+      animation: fadeInRight 0.6s ease;
+      white-space: nowrap;
+    }
+
+    .wa-float-btn {
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      border-radius: 50%;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .wa-float-btn:hover {
+      transform: scale(1.08);
+      color: #fff;
+    }
+
+    .wa-badge {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      background-color: #ef4444;
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-title {
+        font-size: 2.8rem;
+      }
+      .hero-description {
+        margin: 0 auto 30px;
+      }
+      .hero-actions {
+        justify-content: center;
+      }
+      .floating-card-rating {
+        left: 10px;
+      }
+      .services-grid, .gallery-grid, .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .calc-card, .location-grid {
+        grid-template-columns: 1fr;
+      }
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .nav-links {
+        display: none;
+      }
+      .mobile-menu-btn {
+        display: block;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-title {
+        font-size: 2.2rem;
+      }
+      .services-grid, .gallery-grid, .reviews-grid, .trust-grid, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .calc-card {
+        padding: 24px;
+      }
+      .options-grid {
+        grid-template-columns: 1fr;
+      }
+      .wa-bubble {
+        display: none;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-banner" aria-label="Aviso">
+    <span>🌸 Masajes terapéuticos, faciales y sauna en Roma Norte | Citas exclusivas hoy:</span>
+    <a href="https://wa.me/525564874175?text=Hola%20Luxury%20Spa%20%26%20Beauty,%20quisiera%20consultar%20disponibilidad%20para%20una%20cita%20hoy" target="_blank" rel="noopener">WhatsApp Directo 55 6487 4175 &rarr;</a>
+  </aside>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#inicio" class="brand-logo">
+        <div class="brand-icon">
+          <i class="fa-solid fa-spa"></i>
+        </div>
+        <div class="brand-text">
+          <h1>Luxury Spa & Beauty</h1>
+          <span>Roma Norte · CDMX</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#cotizador">Armar Paquete</a></li>
+        <li><a href="#instalaciones">Instalaciones</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+      </ul>
+
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <a href="https://wa.me/525564874175?text=Hola%20Luxury%20Spa%20%26%20Beauty,%20me%20gustar%C3%ADa%20agendar%20una%20cita" class="btn-nav-whatsapp" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Agendar Cita</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="inicio">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fa-solid fa-gem"></i> Experiencia Wellness Exclusiva
+          </div>
+
+          <h2 class="hero-title">
+            Tu refugio de paz y <em>renovación</em> en el corazón de la Roma Norte
+          </h2>
+
+          <p class="hero-description">
+            Sumérgete en una atmósfera de calma absoluta. Masajes relajantes, faciales glow de alta gama, sauna desintoxicante y rituales para parejas en Av. Oaxaca 86.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://wa.me/525564874175?text=Hola%20Luxury%20Spa%20%26%20Beauty,%20deseo%20agendar%20mi%20cita%20por%20favor" class="btn-primary" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp" style="font-size: 1.25rem;"></i>
+              <span>Agendar Cita por WhatsApp</span>
+            </a>
+            <a href="#servicios" class="btn-secondary">
+              <i class="fa-solid fa-leaf"></i>
+              <span>Ver Menú de Servicios</span>
+            </a>
+          </div>
+
+          <!-- Real-Time Schedule Widget -->
+          <div class="live-status-box" id="liveScheduleBox">
+            <div class="pulse-dot" id="scheduleDot"></div>
+            <div>
+              <span class="status-text" id="scheduleStatus">Verificando horario en tiempo real...</span>
+              <span class="status-sub" id="scheduleHours">Lun-Vie: 10:00 - 19:00 hrs | Sáb: 10:00 - 15:00 hrs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-main-img-wrap">
+            <img src="img/foto-1.jpg" alt="Luxury Spa & Beauty Roma Norte Cabina de Masajes" class="hero-main-img">
+          </div>
+
+          <div class="floating-badge-roma">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Av. Oaxaca 86, Roma Norte</span>
+          </div>
+
+          <div class="floating-card-rating">
+            <div class="stars-box">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div>
+              <span class="rating-number">4.9 / 5</span>
+              <span class="rating-label">Clientes satisfechos en CDMX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="trust-text">
+            <h4>100% Privado</h4>
+            <p>Cabinas individuales y para parejas</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <div class="trust-text">
+            <h4>Terapeutas Certificadas</h4>
+            <p>Técnicas terapéuticas avanzadas</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><i class="fa-solid fa-pump-soap"></i></div>
+          <div class="trust-text">
+            <h4>Dermocosmética Premium</h4>
+            <p>Productos de grado profesional</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="trust-text">
+            <h4>Atención Puntual</h4>
+            <p>Reserva fácil y confirmación exprés</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Menú de Bienestar</span>
+        <h2 class="section-title">Nuestros Tratamientos Exclusivos</h2>
+        <p class="section-subtitle">Cada sesión está diseñada para devolver el equilibrio a tu piel, mente y cuerpo con protocolos personalizados.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <article class="service-card">
+          <div class="service-img-wrap">
+            <img src="img/foto-1.jpg" alt="Masaje Terapéutico y Relajante Holístico" class="service-img">
+            <span class="service-tag-badge">Más Solicitado</span>
+          </div>
+          <div class="service-body">
+            <div class="service-meta">
+              <span><i class="fa-regular fa-clock"></i> 60 / 90 Minutos</span>
+              <span><i class="fa-solid fa-award"></i> Terapéutico</span>
+            </div>
+            <h3 class="service-title">Masaje Relajante Holístico</h3>
+            <p class="service-desc">
+              Técnica combinada sueca y descontracturante con aceites esenciales aromáticos tibios y piedras volcánicas para liberar cargas de estrés y contracturas.
+            </p>
+            <ul class="service-benefits">
+              <li><i class="fa-solid fa-check"></i> Alivio inmediato de cuello, hombros y espalda</li>
+              <li><i class="fa-solid fa-check"></i> Aromaterapia y musicoterapia ambiental</li>
+              <li><i class="fa-solid fa-check"></i> Mejora la circulación y la calidad del sueño</li>
+            </ul>
+            <a href="https://wa.me/525564874175?text=Hola%20Luxury%20Spa,%20me%20interesa%20agendar%20el%20Masaje%20Relajante%20Hol%C3%ADstico" class="btn-service-book" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> Reservar Servicio
+            </a>
+          </div>
+        </article>
+
+        <!-- Service 2 -->
+        <article class="service-card">
+          <div class="service-img-wrap">
+            <img src="img/foto-3.jpg" alt="Limpieza Facial Profunda Glow" class="service-img">
+            <span class="service-tag-badge">Skin Care</span>
+          </div>
+          <div class="service-body">
+            <div class="service-meta">
+              <span><i class="fa-regular fa-clock"></i> 75 Minutos</span>
+              <span><i class="fa-solid fa-sparkles"></i> Glow Effect</span>
+            </div>
+            <h3 class="service-title">Limpieza Facial Profunda Glow</h3>
+            <p class="service-desc">
+              Protocolo clínico de 10 pasos: desmaquillado, exfoliación enzimática, vapor de ozono, extracción ultrasónica de impurezas, alta frecuencia y mascarilla hidroplástica.
+            </p>
+            <ul class="service-benefits">
+              <li><i class="fa-solid fa-check"></i> Poros limpios, refinados y descongestionados</li>
+              <li><i class="fa-solid fa-check"></i> Hidratación profunda con ácido hialurónico</li>
+              <li><i class="fa-solid fa-check"></i> Piel suave, uniforme y con brillo natural</li>
+            </ul>
+            <a href="https://wa.me/525564874175?text=Hola%20Luxury%20Spa,%20me%20interesa%20la%20Limpieza%20Facial%20Profunda%20Glow" class="btn-service-book" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> Reservar Servicio
+            </a>
+          </div>
+        </article>
+
+        <!-- Service 3 -->
+        <article class="service-card">
+          <div class="service-img-wrap">
+            <img src="img/foto-2.jpg" alt="Sesión de Sauna Desintoxicante" class="service-img">
+            <span class="service-tag-badge">Detox & Relax</span>
+          </div>
+          <div class="service-body">
+            <div class="service-meta">
+              <span><i class="fa-regular fa-clock"></i> 45 / 60 Minutos</span>
+              <span><i class="fa-solid fa-fire-flame-curved"></i> Termoterapia</span>
+            </div>
+            <h3 class="service-title">Sauna Desintoxicante & Relax</h3>
+            <p class="service-desc">
+              Experiencia térmica con calor seco aromatizado con eucalipto y menta. Dilata los poros, elimina toxinas profundas y prepara los músculos para la máxima relajación.
+            </p>
+            <ul class="service-benefits">
+              <li><i class="fa-solid fa-check"></i> Desintoxicación celular y depuración de toxinas</li>
+              <li><i class="fa-solid fa-check"></i> Alivia la rigidez articular y muscular</li>
+              <li><i class="fa-solid fa-check"></i> Toallas y bebidas hidratantes de cortesía</li>
+            </ul>
+            <a href="https://wa.me/525564874175?text=Hola%20Luxury%20Spa,%20quiero%20reservar%20una%20sesi%C3%B3n%20de%20Sauna%20Desintoxicante" class="btn-service-book" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> Reservar Servicio
+            </a>
+          </div>
+        </article>
+
+        <!-- Service 4 -->
+        <article class="service-card">
+          <div class="service-img-wrap">
+            <img src="img/foto-6.jpg" alt="Ritual Spa en Pareja Dúo Relax" class="service-img">
+            <span class="service-tag-badge">Experiencia Romántica</span>
+          </div>
+          <div class="service-body">
+            <div class="service-meta">
+              <span><i class="fa-regular fa-clock"></i> 90 Minutos</span>
+              <span><i class="fa-solid fa-heart"></i> Para 2 Personas</span>
+            </div>
+            <h3 class="service-title">Ritual Day Spa Parejas</h3>
+            <p class="service-desc">
+              Cabina privada ambientada con velas y aromas para compartir. Incluye masaje corporal sincronizado, exfoliación de pies, copas de cortesía y acceso a sauna.
+            </p>
+            <ul class="service-benefits">
+              <li><i class="fa-solid fa-check"></i> Cabina exclusiva y privada para dos personas</li>
+              <li><i class="fa-solid fa-check"></i> Masaje relajante simultáneo a cuatro manos</li>
+              <li><i class="fa-solid fa-check"></i> Ideal para aniversarios, cumpleaños o regalos</li>
+            </ul>
+            <a href="https://wa.me/525564874175?text=Hola%20Luxury%20Spa,%20deseo%20cotizar%20el%20Ritual%20Day%20Spa%20en%20Pareja" class="btn-service-book" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> Reservar Servicio
+            </a>
+          </div>
+        </article>
+
+        <!-- Service 5 -->
+        <article class="service-card">
+          <div class="service-img-wrap">
+            <img src="img/foto-4.jpg" alt="Facial Antiedad y Reafirmante Colágeno" class="service-img">
+            <span class="service-tag-badge">Anti-Aging</span>
+          </div>
+          <div class="service-body">
+            <div class="service-meta">
+              <span><i class="fa-regular fa-clock"></i> 60 Minutos</span>
+              <span><i class="fa-solid fa-wand-magic-sparkles"></i> Lifting</span>
+            </div>
+            <h3 class="service-title">Facial Antiedad & Colágeno</h3>
+            <p class="service-desc">
+              Tratamiento reafirmante intensivo con sueros de péptidos, colágeno marino y terapia led que reactiva la síntesis celular, aportando firmeza y elasticidad inmediata.
+            </p>
+            <ul class="service-benefits">
+              <li><i class="fa-solid fa-check"></i> Suaviza líneas finas y signos de fatiga</li>
+              <li><i class="fa-solid fa-check"></i> Efecto tensor y reafirmante instantáneo</li>
+              <li><i class="fa-solid fa-check"></i> Masaje facial kobido descontracturante</li>
+            </ul>
+            <a href="https://wa.me/525564874175?text=Hola%20Luxury%20Spa,%20me%20gustar%C3%ADa%20agendar%20el%20Facial%20Antiedad%20Col%C3%A1geno" class="btn-service-book" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> Reservar Servicio
+            </a>
+          </div>
+        </article>
+
+        <!-- Service 6 -->
+        <article class="service-card">
+          <div class="service-img-wrap">
+            <img src="img/foto-5.jpg" alt="Tratamiento Corporal Exfoliante y Envoltura" class="service-img">
+            <span class="service-tag-badge">Cuidado Corporal</span>
+          </div>
+          <div class="service-body">
+            <div class="service-meta">
+              <span><i class="fa-regular fa-clock"></i> 80 Minutos</span>
+              <span><i class="fa-solid fa-spa"></i> Nutrición</span>
+            </div>
+            <h3 class="service-title">Envoltura & Exfoliación Corporal</h3>
+            <p class="service-desc">
+              Renovación profunda de la piel con sales marinas del Himalaya, pulido corporal con manteca de karité y envoltura nutritiva de algas o chocolate para hidratación extrema.
+            </p>
+            <ul class="service-benefits">
+              <li><i class="fa-solid fa-check"></i> Elimina células muertas y textura áspera</li>
+              <li><i class="fa-solid fa-check"></i> Máxima suavidad, nutrición y sedosidad</li>
+              <li><i class="fa-solid fa-check"></i> Drenaje linfático suave desinflamatorio</li>
+            </ul>
+            <a href="https://wa.me/525564874175?text=Hola%20Luxury%20Spa,%20me%20interesa%20la%20Envoltura%20y%20Exfoliaci%C3%B3n%20Corporal" class="btn-service-book" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> Reservar Servicio
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Package Builder / Calculator -->
+  <section class="calculator-section" id="cotizador">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Cotizador Personalizado</span>
+        <h2 class="section-title">Arma tu Paquete Spa Ideal</h2>
+        <p class="section-subtitle">Selecciona tus tratamientos favoritos y cotiza en segundos tu experiencia para ti o para sorprender a alguien especial.</p>
+      </div>
+
+      <div class="calc-card">
+        <div class="calc-form">
+          <h3 class="calc-title">Configura tu Sesión</h3>
+          <p class="calc-subtitle">Personaliza cada detalle antes de enviar tu solicitud por WhatsApp.</p>
+
+          <div class="form-group">
+            <label class="form-label" for="serviceSelect"><i class="fa-solid fa-spa"></i> Tratamiento Principal:</label>
+            <select class="form-select" id="serviceSelect" onchange="calculateSpaPackage()">
+              <option value="Masaje Relajante Holístico" data-price="950">Masaje Relajante Holístico (Desde $950 MXN)</option>
+              <option value="Limpieza Facial Profunda Glow" data-price="850">Limpieza Facial Profunda Glow (Desde $850 MXN)</option>
+              <option value="Ritual Day Spa Parejas" data-price="2200">Ritual Day Spa Parejas (Desde $2,200 MXN)</option>
+              <option value="Facial Antiedad Colágeno" data-price="1100">Facial Antiedad Colágeno (Desde $1,100 MXN)</option>
+              <option value="Envoltura y Exfoliación Corporal" data-price="1250">Envoltura y Exfoliación Corporal (Desde $1,250 MXN)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"><i class="fa-regular fa-clock"></i> Duración de la Sesión:</label>
+            <div class="options-grid">
+              <label class="radio-pill">
+                <input type="radio" name="duration" value="60 min" data-extra="0" checked onchange="calculateSpaPackage()">
+                <div class="pill-content">60 Minutos (Estándar)</div>
+              </label>
+              <label class="radio-pill">
+                <input type="radio" name="duration" value="90 min" data-extra="350" onchange="calculateSpaPackage()">
+                <div class="pill-content">90 Minutos (+ $350 MXN)</div>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"><i class="fa-solid fa-user-group"></i> Número de Personas:</label>
+            <div class="options-grid">
+              <label class="radio-pill">
+                <input type="radio" name="persons" value="1 Persona" data-mult="1" checked onchange="calculateSpaPackage()">
+                <div class="pill-content">1 Persona (Individual)</div>
+              </label>
+              <label class="radio-pill">
+                <input type="radio" name="persons" value="En Pareja (2 Personas)" data-mult="1.8" onchange="calculateSpaPackage()">
+                <div class="pill-content">Dúo / Pareja (Ahorro 10%)</div>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"><i class="fa-solid fa-plus-circle"></i> Complemento Especial:</label>
+            <select class="form-select" id="extraSelect" onchange="calculateSpaPackage()">
+              <option value="Sin complemento adicional" data-price="0">Ninguno (Solo tratamiento seleccionado)</option>
+              <option value="Pase a Sauna Desintoxicante (30 min)" data-price="300">Pase a Sauna Desintoxicante (+ $300 MXN)</option>
+              <option value="Mascarilla de Ojos Descongestiva de Colágeno" data-price="200">Mascarilla de Ojos Descongestiva (+ $200 MXN)</option>
+              <option value="Exfoliación de Manos y Pies" data-price="250">Exfoliación de Manos y Pies (+ $250 MXN)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="calc-summary">
+          <div>
+            <h4 class="summary-heading">Resumen de tu Experiencia</h4>
+            
+            <div class="summary-row">
+              <span>Tratamiento:</span>
+              <strong id="sumService">Masaje Relajante Holístico</strong>
+            </div>
+            <div class="summary-row">
+              <span>Duración:</span>
+              <strong id="sumDuration">60 min</strong>
+            </div>
+            <div class="summary-row">
+              <span>Modalidad:</span>
+              <strong id="sumPersons">1 Persona</strong>
+            </div>
+            <div class="summary-row">
+              <span>Extra:</span>
+              <strong id="sumExtra">Ninguno</strong>
+            </div>
+          </div>
+
+          <div>
+            <div class="summary-total">
+              <span class="total-label">Total Estimado:</span>
+              <span class="total-price" id="sumPrice">$950 MXN</span>
+            </div>
+
+            <button type="button" class="btn-calc-whatsapp" onclick="sendCustomWhatsApp()">
+              <i class="fa-brands fa-whatsapp" style="font-size: 1.3rem;"></i>
+              <span>Agendar Paquete por WhatsApp</span>
+            </button>
+            <p style="font-size: 0.78rem; color: var(--text-muted); text-align: center; margin-top: 10px;">
+              * Precios en pesos mexicanos. Pago en recepción o transferencia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities / Real Photos Section -->
+  <section class="facilities-section" id="instalaciones">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Espacio Exclusivo</span>
+        <h2 class="section-title">Instalaciones en Roma Norte</h2>
+        <p class="section-subtitle">Conoce nuestras cabinas privadas climatizadas, cabinas para parejas y áreas de bienestar preparadas para tu descanso.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="img/foto-1.jpg" alt="Cabina de masaje holístico con iluminación tenue">
+          <div class="gallery-overlay">
+            <h4>Cabinas Privadas de Masaje</h4>
+            <p>Climatizadas, con aromaterapia y música relajante</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="img/foto-2.jpg" alt="Suite de relajación y wellness">
+          <div class="gallery-overlay">
+            <h4>Área de Recuperación & Té</h4>
+            <p>Infusiones herbales y ambiente de serenidad</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="img/foto-3.jpg" alt="Cabina de faciales clínicos y estética facial">
+          <div class="gallery-overlay">
+            <h4>Cabina Facial Especializada</h4>
+            <p>Aparatología de última generación y dermocosmética</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="img/foto-4.jpg" alt="Recepción Luxury Spa & Beauty Roma Norte">
+          <div class="gallery-overlay">
+            <h4>Recepción & Lounge</h4>
+            <p>Bienvenida cálida en el piso 3 de Av. Oaxaca 86</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="img/foto-5.jpg" alt="Estación de cuidado estético y manicura spa">
+          <div class="gallery-overlay">
+            <h4>Beauty & Cuidado Integral</h4>
+            <p>Cuidado de manos, pies y tratamientos corporales</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="img/foto-6.jpg" alt="Ritual de piedras calientes y esencias de spa">
+          <div class="gallery-overlay">
+            <h4>Rituales Terapéuticos</h4>
+            <p>Piedras volcánicas, esencias orgánicas y toallas tibias</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Authentic Reviews Section -->
+  <section class="reviews-section" id="opiniones">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Experiencias Reales</span>
+        <h2 class="section-title">Lo Que Dicen Quienes Nos Visitan</h2>
+        <p class="section-subtitle">Opiniones verificadas de clientes que disfrutan de nuestros servicios en Roma Norte, CDMX.</p>
+      </div>
+
+      <div class="reviews-header-stats">
+        <div class="stats-score">4.9</div>
+        <div>
+          <div class="stats-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="font-size: 0.95rem; font-weight: 600; color: var(--text-main);">
+            Calificación Promedio en Google Maps & Fresha
+          </p>
+          <span style="font-size: 0.8rem; color: var(--text-muted);">Más de 120 valoraciones positivas</span>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Desde el momento en que entras te hacen sentir como en casa y las señoritas se aseguran de que la pases lo mejor posible tanto en su calidez humana como en la atención brindada. ¡Hace que valga la pena volver a visitar, recomendadísimo!"
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">MC</div>
+            <div class="author-info">
+              <h5>Mariana Cárdenas</h5>
+              <span>Cliente Verificada · Roma Norte</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Me encantó el lugar, las chicas súper lindas y atienden con mucha privacidad, un excelente servicio. La limpieza facial profunda me dejó la piel increíblemente hidratada y suave."
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">VR</div>
+            <div class="author-info">
+              <h5>Valeria Rodríguez</h5>
+              <span>Cliente Verificada · CDMX</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Excelente lugar y la promoción de limpieza profunda es 100% completa, justo como lo anuncian. La puntualidad y la higiene del lugar son de primer nivel. Muchas gracias."
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">AL</div>
+            <div class="author-info">
+              <h5>Alejandro Lozano</h5>
+              <span>Cliente Verificado · Cuauhtémoc</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Muy buen servicio, excelente paciencia, muy profesionales y empáticos. El masaje relajante con piedras calientes me quitó una contractura que llevaba semanas cargando."
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">GM</div>
+            <div class="author-info">
+              <h5>Gabriela Morales</h5>
+              <span>Cliente Verificada · Condesa</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Súper recomendable, excelente atención y servicio. La privacidad que tienen en el piso 3 de Av. Oaxaca te aísla completamente del ruido de la ciudad."
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">SO</div>
+            <div class="author-info">
+              <h5>Sofía Ortiz</h5>
+              <span>Cliente Verificada · Roma Nte.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Fuimos en pareja por nuestro aniversario y quedamos fascinados. La atención personalizada, las toallitas tibias y el té al terminar hicieron que fuera una experiencia inolvidable."
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">DH</div>
+            <div class="author-info">
+              <h5>Daniel Hernández</h5>
+              <span>Cliente Verificado · CDMX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exact Location & Maps Section -->
+  <section class="location-section" id="ubicacion">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Ubicación Estratégica</span>
+        <h2 class="section-title">Encuéntranos en Roma Norte</h2>
+        <p class="section-subtitle">Situados en una de las zonas más emblemáticas y accesibles de la Ciudad de México.</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-info-card">
+          <h3 class="serif-font" style="font-size: 2rem; margin-bottom: 8px;">Luxury Spa & Beauty</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Tu espacio de serenidad y cuidado personal.</p>
+
+          <ul class="info-list">
+            <li class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-text">
+                <h4>Dirección Oficial</h4>
+                <p>Av. Oaxaca #86, Interior 300 (Piso 3), Col. Roma Norte, Alcaldía Cuauhtémoc, C.P. 06700, CDMX.</p>
+              </div>
+            </li>
+
+            <li class="info-item">
+              <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="info-text">
+                <h4>Citas y WhatsApp</h4>
+                <p><strong>+52 55 6487 4175</strong> (Respuesta inmediata en horario hábil)</p>
+              </div>
+            </li>
+
+            <li class="info-item">
+              <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+              <div class="info-text">
+                <h4>Horarios de Atención</h4>
+                <p>Lunes a Viernes: 10:00 AM – 7:00 PM<br>Sábados: 10:00 AM – 3:00 PM<br>Domingos: Cerrado</p>
+              </div>
+            </li>
+
+            <li class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-compass"></i></div>
+              <div class="info-text">
+                <h4>Referencias Cercanas</h4>
+                <p>A solo 3 cuadras de la Glorieta de Cibeles, entre Colima y Durango, cerca de Metrobús Álvaro Obregón / Insurgentes.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="https://maps.google.com/?q=19.418851,-99.167137" target="_blank" rel="noopener" class="btn-secondary" style="flex: 1; justify-content: center;">
+              <i class="fa-solid fa-map-location-dot"></i> Abrir en Google Maps
+            </a>
+            <a href="https://wa.me/525564874175?text=Hola%20Luxury%20Spa,%20me%20encuentro%20en%20camino%20o%20quiero%20agendar%20cita" target="_blank" rel="noopener" class="btn-primary" style="flex: 1; justify-content: center;">
+              <i class="fa-brands fa-whatsapp"></i> Mandar WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <!-- Real Google Maps Embed at exact coordinates 19.418851,-99.167137 -->
+          <iframe 
+            src="https://maps.google.com/maps?q=19.418851,-99.167137&hl=es&z=16&output=embed" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación de Luxury Spa & Beauty en Roma Norte CDMX">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Preguntas Frecuentes</span>
+        <h2 class="section-title">Resolvemos tus Dudas</h2>
+        <p class="section-subtitle">Todo lo que necesitas saber antes de tu primera visita a Luxury Spa & Beauty.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Es indispensable agendar cita previa?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Sí. Para garantizar la privacidad, la sanitización de cabinas y la exclusividad de cada paciente, trabajamos bajo previa cita confirmada por WhatsApp con al menos 2 a 4 horas de anticipación.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Tienen paquetes especiales para parejas o aniversarios?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            ¡Sí! Contamos con cabina doble exclusiva para parejas, que incluye masaje relajante sincronizado, sauna, aromaterapia personalizada y detalles de bienvenida. Pregúntanos por WhatsApp para armar tu paquete a medida.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Qué métodos de pago aceptan?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Aceptamos transferencias electrónicas SPEI, tarjetas de débito/crédito y pago en efectivo al llegar a tu cita en recepción.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Tienen estacionamiento o valet parking?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Sobre Av. Oaxaca y calles aledañas hay servicio de parquímetro con fácil disponibilidad, así como varios estacionamientos públicos seguros a menos de una cuadra de distancia.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Date el Respiro que te Mereces</h2>
+        <p class="cta-text">
+          Permite que nuestras terapeutas especializadas liberen tu cuerpo de las tensiones diarias en un oasis de calma en Roma Norte.
+        </p>
+        <a href="https://wa.me/525564874175?text=Hola%20Luxury%20Spa%20%26%20Beauty,%20quiero%20reservar%20mi%20cita%20hoy" class="btn-primary" style="font-size: 1.1rem; padding: 18px 36px;" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp" style="font-size: 1.4rem;"></i>
+          <span>Agendar mi Cita Inmediata</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="serif-font">Luxury Spa & Beauty</h3>
+          <p>
+            Centro boutique de bienestar, masajes terapéuticos, estética facial y sauna en la Colonia Roma Norte, Ciudad de México.
+          </p>
+          <div style="display: flex; gap: 14px; font-size: 1.25rem;">
+            <a href="https://www.instagram.com/luxury.spa.beautyy/" target="_blank" rel="noopener" style="color: #fff;"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/525564874175" target="_blank" rel="noopener" style="color: #fff;"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://maps.google.com/?q=19.418851,-99.167137" target="_blank" rel="noopener" style="color: #fff;"><i class="fa-solid fa-map-location-dot"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="#servicios">Masajes Relajantes</a></li>
+            <li><a href="#servicios">Limpieza Facial Glow</a></li>
+            <li><a href="#servicios">Sauna Desintoxicante</a></li>
+            <li><a href="#servicios">Day Spa Parejas</a></li>
+            <li><a href="#servicios">Facial Antiedad</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#cotizador">Armar Paquete</a></li>
+            <li><a href="#instalaciones">Instalaciones</a></li>
+            <li><a href="#opiniones">Opiniones</a></li>
+            <li><a href="#ubicacion">Ubicación Maps</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto Directo</h4>
+          <p style="margin-bottom: 8px;"><i class="fa-solid fa-location-dot" style="color: var(--gold); margin-right: 8px;"></i> Av. Oaxaca 86, Int. 300, Roma Nte., CDMX</p>
+          <p style="margin-bottom: 8px;"><i class="fa-brands fa-whatsapp" style="color: #25D366; margin-right: 8px;"></i> +52 55 6487 4175</p>
+          <p style="margin-bottom: 8px;"><i class="fa-brands fa-instagram" style="color: #E1306C; margin-right: 8px;"></i> @luxury.spa.beautyy</p>
+          <p><i class="fa-regular fa-clock" style="color: var(--gold); margin-right: 8px;"></i> Lun-Vie 10-19h | Sáb 10-15h</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Luxury Spa & Beauty. Todos los derechos reservados. Roma Norte, Alcaldía Cuauhtémoc, CDMX.</p>
+        <p>Sitio Web Diseñado para Máxima Conversión</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Widget -->
+  <div class="whatsapp-float-widget">
+    <div class="wa-bubble">
+      ¿Necesitas relajarte? ¡Escríbenos para tu cita hoy! ✨
+    </div>
+    <a href="https://wa.me/525564874175?text=Hola%20Luxury%20Spa%20%26%20Beauty,%20quisiera%20informaci%C3%B3n%20para%20una%20cita" class="wa-float-btn" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="wa-badge">1</span>
+    </a>
+  </div>
+
+  <!-- JavaScript for Live Clock and Calculator -->
+  <script>
+    // Real-Time Schedule Checker
+    function updateScheduleStatus() {
+      const now = new Date();
+      // CDMX timezone UTC-6
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+      const cdmxDate = new Date(utc - (3600000 * 6));
+      
+      const day = cdmxDate.getDay(); // 0 is Sunday, 1 is Monday... 6 is Saturday
+      const hour = cdmxDate.getHours();
+      const minutes = cdmxDate.getMinutes();
+      const totalMinutes = hour * 60 + minutes;
+
+      const dot = document.getElementById('scheduleDot');
+      const status = document.getElementById('scheduleStatus');
+
+      let isOpen = false;
+
+      // Monday to Friday: 10:00 to 19:00 (600 min to 1140 min)
+      if (day >= 1 && day <= 5) {
+        if (totalMinutes >= 600 && totalMinutes < 1140) {
+          isOpen = true;
+        }
+      } 
+      // Saturday: 10:00 to 15:00 (600 min to 900 min)
+      else if (day === 6) {
+        if (totalMinutes >= 600 && totalMinutes < 900) {
+          isOpen = true;
+        }
+      }
+
+      if (isOpen) {
+        dot.style.backgroundColor = '#10b981';
+        status.innerHTML = '<span style="color: #059669;">🟢 ABIERTO AHORA</span> — Recepción activa en Roma Norte';
+      } else {
+        dot.style.backgroundColor = '#f59e0b';
+        status.innerHTML = '<span style="color: #d97706;">🟡 CERRADO AHORA</span> — Recibiendo mensajes para próximas citas';
+      }
+    }
+
+    updateScheduleStatus();
+    setInterval(updateScheduleStatus, 60000);
+
+    // Interactive Spa Package Calculator
+    function calculateSpaPackage() {
+      const serviceSelect = document.getElementById('serviceSelect');
+      const serviceName = serviceSelect.value;
+      const basePrice = parseFloat(serviceSelect.options[serviceSelect.selectedIndex].getAttribute('data-price'));
+
+      const durationRadio = document.querySelector('input[name="duration"]:checked');
+      const durationVal = durationRadio.value;
+      const durationExtra = parseFloat(durationRadio.getAttribute('data-extra'));
+
+      const personsRadio = document.querySelector('input[name="persons"]:checked');
+      const personsVal = personsRadio.value;
+      const personsMult = parseFloat(personsRadio.getAttribute('data-mult'));
+
+      const extraSelect = document.getElementById('extraSelect');
+      const extraName = extraSelect.value;
+      const extraPrice = parseFloat(extraSelect.options[extraSelect.selectedIndex].getAttribute('data-price'));
+
+      // Calculate total
+      let subtotal = (basePrice + durationExtra) * personsMult;
+      let total = Math.round(subtotal + extraPrice);
+
+      // Update Summary DOM
+      document.getElementById('sumService').textContent = serviceName;
+      document.getElementById('sumDuration').textContent = durationVal;
+      document.getElementById('sumPersons').textContent = personsVal;
+      document.getElementById('sumExtra').textContent = extraName === "Sin complemento adicional" ? "Ninguno" : extraName;
+      document.getElementById('sumPrice').textContent = "$" + total.toLocaleString('es-MX') + " MXN";
+
+      return {
+        service: serviceName,
+        duration: durationVal,
+        persons: personsVal,
+        extra: extraName,
+        total: total
+      };
+    }
+
+    function sendCustomWhatsApp() {
+      const details = calculateSpaPackage();
+      const msg = `Hola Luxury Spa & Beauty, me gustaría agendar la siguiente experiencia que armé en su sitio web:\n\n` +
+                  `✨ *Tratamiento:* ${details.service}\n` +
+                  `⏱ *Duración:* ${details.duration}\n` +
+                  `👥 *Modalidad:* ${details.persons}\n` +
+                  `🌸 *Complemento:* ${details.extra}\n` +
+                  `💳 *Presupuesto Estimado:* $${details.total.toLocaleString('es-MX')} MXN\n\n` +
+                  `¿Tienen disponibilidad esta semana?`;
+      
+      const encodedMsg = encodeURIComponent(msg);
+      window.open(`https://wa.me/525564874175?text=${encodedMsg}`, '_blank');
+    }
+
+    // FAQ Accordion
+    function toggleFaq(element) {
+      const parent = element.parentElement;
+      const allItems = document.querySelectorAll('.faq-item');
+      allItems.forEach(item => {
+        if (item !== parent) {
+          item.classList.remove('active');
+        }
+      });
+      parent.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
