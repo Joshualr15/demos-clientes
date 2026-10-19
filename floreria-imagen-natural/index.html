@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florería Imagen Natural | Ramos Buchones & Arreglos Florales en CDMX</title>
+    <meta name="description" content="Florería boutique en CDMX. Ramos buchones de rosas, girasoles, tulipanes y arreglos florales con entrega el mismo día. ¡Cotiza y personaliza tu ramo online!">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rosebrand: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            700: '#be123c',
+                            800: '#9f1239',
+                            900: '#881337',
+                        },
+                        amberbrand: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Syne', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-rose-50/20 text-slate-800 font-sans antialiased selection:bg-rose-100 selection:text-rose-900">
+
+    <!-- Top Announcement Bar -->
+    <header class="bg-rosebrand-900 text-rose-100 text-xs sm:text-sm py-2 px-4 shadow-sm border-b border-rosebrand-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1 bg-amberbrand-500/20 text-amber-300 text-xs px-2.5 py-0.5 rounded-full font-semibold border border-amber-400/30">
+                    <i class="fa-solid fa-star text-amber-400"></i> Calificación 4.8 ⭐⭐⭐⭐⭐
+                </span>
+                <span class="hidden md:inline text-rose-200">
+                    <i class="fa-solid fa-truck-fast mr-1 text-rose-300"></i> Entregas el Mismo Día en CDMX • Flores 100% Frescas de Invernadero
+                </span>
+            </div>
+            <div class="flex items-center gap-4 text-xs sm:text-sm">
+                <a href="#contacto" class="hover:text-amber-200 transition-colors hidden sm:inline-flex items-center gap-1 text-rose-200">
+                    <i class="fa-solid fa-location-dot text-rose-400"></i> Av. de Las Torres #58A, Tepepan, CDMX
+                </a>
+                <a href="https://wa.me/525549359328" target="_blank" class="hover:text-amber-200 font-semibold inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-amber-300 px-3 py-1 rounded-full transition-all border border-amber-400/30">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i> 55 4935 9328
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar (100% Light Mode) -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-rose-100 shadow-xs transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-rosebrand-500 to-rosebrand-700 flex items-center justify-center text-white text-2xl shadow-md group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <div>
+                        <span class="font-display font-extrabold text-2xl tracking-tight text-slate-900 group-hover:text-rosebrand-600 transition-colors">
+                            Imagen Natural
+                        </span>
+                        <span class="block text-[11px] font-bold text-rosebrand-700 tracking-wider uppercase">
+                            Florería Boutique • CDMX
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
+                    <a href="#catalogo" class="hover:text-rosebrand-600 transition-colors">Colecciones</a>
+                    <a href="#buchones" class="hover:text-rosebrand-600 transition-colors">Ramos Buchones</a>
+                    <a href="#galeria" class="hover:text-rosebrand-600 transition-colors">Galería</a>
+                    <a href="#por-que-nosotros" class="hover:text-rosebrand-600 transition-colors">¿Por qué nosotros?</a>
+                    <a href="#cotizador" class="hover:text-rosebrand-600 transition-colors text-rosebrand-600 flex items-center gap-1.5">
+                        <i class="fa-solid fa-wand-magic-sparkles text-rosebrand-500"></i> Diseñar Mi Ramo
+                    </a>
+                    <a href="#opiniones" class="hover:text-rosebrand-600 transition-colors">Reseñas</a>
+                    <a href="#contacto" class="hover:text-rosebrand-600 transition-colors">Contacto</a>
+                </div>
+
+                <!-- Action Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="#cotizador" class="inline-flex items-center gap-2 bg-rosebrand-50 hover:bg-rosebrand-100 text-rosebrand-800 border border-rosebrand-200 font-bold px-4 py-2.5 rounded-xl text-sm transition-all shadow-xs">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Personalizar Ramo
+                    </a>
+                    <a href="https://wa.me/525549359328?text=Hola%20Florer%C3%ADa%20Imagen%20Natural%2C%20quisiera%20pedir%20informes%20para%20un%20arreglo%20floral." target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-rosebrand-600 to-rosebrand-700 hover:from-rosebrand-700 hover:to-rosebrand-800 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all shadow-md shadow-rosebrand-500/20 hover:scale-[1.02]">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Enviar Flores
+                    </a>
+                </div>
+
+                <!-- Mobile menu toggle button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden border-b border-rose-100 bg-white px-4 pt-2 pb-6 space-y-3">
+            <a href="#catalogo" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-rosebrand-50 hover:text-rosebrand-700">Colecciones</a>
+            <a href="#buchones" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-rosebrand-50 hover:text-rosebrand-700">Ramos Buchones</a>
+            <a href="#galeria" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-rosebrand-50 hover:text-rosebrand-700">Galería de Arreglos</a>
+            <a href="#por-que-nosotros" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-rosebrand-50 hover:text-rosebrand-700">¿Por qué Imagen Natural?</a>
+            <a href="#cotizador" class="block px-3 py-2 rounded-lg text-base font-semibold text-rosebrand-600 bg-rosebrand-50">🌹 Personalizador de Ramos</a>
+            <a href="#opiniones" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-rosebrand-50 hover:text-rosebrand-700">Opiniones de Clientes</a>
+            <a href="#contacto" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-rosebrand-50 hover:text-rosebrand-700">Ubicación y Envíos</a>
+            <div class="pt-2">
+                <a href="https://wa.me/525549359328?text=Hola%20Florer%C3%ADa%20Imagen%20Natural%2C%20quisiera%20ordenar%20un%20ramo." target="_blank" class="w-full block text-center bg-rosebrand-600 text-white font-bold py-3 rounded-xl shadow-md">
+                    <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp Inmediato
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (100% Light Mode) -->
+    <section class="relative overflow-hidden pt-8 pb-16 lg:py-20 bg-gradient-to-b from-rose-50/70 via-pink-50/30 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Content Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white border border-rose-200 shadow-xs px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-rosebrand-900">
+                        <span class="w-2.5 h-2.5 rounded-full bg-rosebrand-500 animate-ping"></span>
+                        <span>🌹 Florería Boutique en CDMX • Entrega Hoy Mismo</span>
+                    </div>
+
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12]">
+                        Flores frescas que expresan lo que <span class="bg-gradient-to-r from-rosebrand-600 to-pink-600 bg-clip-text text-transparent">las palabras no pueden</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        En <strong>Florería Imagen Natural</strong> diseñamos ramos buchones de impacto, elegantes bouquets de rosas, girasoles vibrantes y arreglos florales de autor. Flores de corte diario con envolturas importadas, entrega express a domicilio y tarjeta personalizada con dedicatoria en toda la CDMX.
+                    </p>
+
+                    <!-- Trust Checklist -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-left">
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-rose-100 shadow-xs">
+                            <div class="w-7 h-7 rounded-lg bg-rose-100 text-rosebrand-700 flex items-center justify-center text-sm font-bold shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-bold text-slate-800">Entrega Mismo Día</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-rose-100 shadow-xs">
+                            <div class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center text-sm font-bold shrink-0">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-bold text-slate-800">Flores Frescas 100%</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-rose-100 shadow-xs col-span-2 sm:col-span-1">
+                            <div class="w-7 h-7 rounded-lg bg-amber-100 text-amberbrand-700 flex items-center justify-center text-sm font-bold shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-bold text-slate-800">Tarjeta con Mensaje</span>
+                        </div>
+                    </div>
+
+                    <!-- Call To Actions -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
+                        <a href="#cotizador" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-rosebrand-600 via-rosebrand-700 to-pink-700 hover:from-rosebrand-700 hover:to-pink-800 text-white font-extrabold text-base px-8 py-4 rounded-2xl shadow-lg shadow-rosebrand-600/25 hover:shadow-xl hover:scale-[1.02] transition-all">
+                            <i class="fa-solid fa-wand-magic-sparkles text-lg"></i>
+                            <span>Personalizar y Cotizar Ramo</span>
+                        </a>
+                        <a href="https://wa.me/525549359328?text=Hola%20Florer%C3%ADa%20Imagen%20Natural%2C%20quisiera%20ver%20los%20ramos%20disponibles%20para%20entrega%20hoy." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-white hover:bg-slate-50 text-slate-800 border-2 border-slate-200 hover:border-rosebrand-500 font-bold text-base px-6 py-4 rounded-2xl shadow-xs hover:shadow transition-all">
+                            <i class="fa-brands fa-whatsapp text-emerald-500 text-xl"></i>
+                            <span>Ver Catálogo en WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <!-- Rating Proof -->
+                    <div class="flex items-center justify-center lg:justify-start gap-4 pt-4 border-t border-slate-200">
+                        <div class="flex items-center text-amber-400 text-base">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="ml-2 font-extrabold text-slate-900 text-sm">4.8 / 5.0</span>
+                        </div>
+                        <p class="text-xs text-slate-500 font-medium">
+                            En más de 5,000 entregas de aniversario, cumpleaños y sorpresas en CDMX
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Visual Column -->
+                <div class="lg:col-span-5 relative">
+                    <!-- Subtle Glow Blobs -->
+                    <div class="absolute -top-6 -right-6 w-72 h-72 bg-rose-200/50 rounded-full blur-3xl pointer-events-none"></div>
+                    <div class="absolute -bottom-6 -left-6 w-72 h-72 bg-amber-200/40 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <!-- Main Image Card -->
+                    <div class="relative bg-white p-3 rounded-3xl shadow-2xl border border-rose-100">
+                        <div class="relative rounded-2xl overflow-hidden aspect-[4/4.5] group">
+                            <img src="img/hero-rosas.jpg" alt="Ramo de rosas rojas de alta calidad en Florería Imagen Natural" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+                            
+                            <!-- Floating Tag Inside Image -->
+                            <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3.5 rounded-xl border border-white/80 shadow-lg flex items-center justify-between">
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-wider text-rosebrand-600">Flores de Invernadero</p>
+                                    <p class="text-sm font-extrabold text-slate-900">Apertura perfecta y aroma natural</p>
+                                </div>
+                                <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded-full font-bold flex items-center gap-1">
+                                    <i class="fa-solid fa-check text-emerald-600"></i> Fresco
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Top Badge -->
+                        <div class="absolute -top-4 -left-4 bg-white shadow-xl border border-slate-100 rounded-2xl p-3 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-rose-100 text-rosebrand-600 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase">Favorito</p>
+                                <p class="text-xs font-extrabold text-slate-800">Ramos Buchones 50 y 100 Rosas</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Bottom Badge -->
+                        <div class="absolute -bottom-4 -right-4 bg-white shadow-xl border border-slate-100 rounded-2xl p-3 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amberbrand-600 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-camera"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase">Garantía</p>
+                                <p class="text-xs font-extrabold text-slate-800">Te enviamos foto antes de entregar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics Ribbon -->
+    <section class="py-8 bg-white border-y border-rose-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-slate-100">
+                <div class="pt-2 md:pt-0">
+                    <p class="font-display text-3xl sm:text-4xl font-extrabold text-rosebrand-600">+5,000</p>
+                    <p class="text-xs sm:text-sm font-semibold text-slate-600 mt-1">Arreglos Entregados con Amor</p>
+                </div>
+                <div class="pt-2 md:pt-0">
+                    <p class="font-display text-3xl sm:text-4xl font-extrabold text-amberbrand-500">4.8 ★</p>
+                    <p class="text-xs sm:text-sm font-semibold text-slate-600 mt-1">Calificación de Clientes</p>
+                </div>
+                <div class="pt-2 md:pt-0">
+                    <p class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900">Mismo Día</p>
+                    <p class="text-xs sm:text-sm font-semibold text-slate-600 mt-1">Entregas Rápidas en Toda CDMX</p>
+                </div>
+                <div class="pt-2 md:pt-0">
+                    <p class="font-display text-3xl sm:text-4xl font-extrabold text-emerald-600">Foto Previa</p>
+                    <p class="text-xs sm:text-sm font-semibold text-slate-600 mt-1">Te enviamos foto antes de salir</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Colecciones de Temporada -->
+    <section id="catalogo" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-rosebrand-700 bg-rosebrand-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-gift"></i> Catálogo Floral
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Nuestras Colecciones Más Amadas
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Diseños florales armados a mano por floristas expertos para cada momento especial.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Collection 1: Ramos Buchones -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-rose-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-rosebrand-600 text-white text-[10px] font-extrabold px-3 py-1 rounded-bl-xl tracking-wider uppercase">
+                        El Más Vendido
+                    </div>
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-rose-100 text-rosebrand-600 flex items-center justify-center text-2xl group-hover:bg-rosebrand-600 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-slate-900">Ramos Buchones de Rosas</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Ramos redondos gigantescos de 50 o 100 rosas rojas seleccionadas con envoltura coreana impermeable, mariposas decorativas o corona dorada de reina.
+                        </p>
+                        <ul class="space-y-2 text-xs sm:text-sm text-slate-700 pt-2 border-t border-slate-100">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-rosebrand-500"></i> Rosas de tallo largo de invernadero</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-rosebrand-500"></i> Corona o mariposas 3D incluidas</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-rosebrand-500"></i> Envoltura en satén y papel coreano</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#cotizador" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-rosebrand-50 hover:bg-rosebrand-100 text-rosebrand-800 font-bold text-sm transition-colors">
+                            Cotizar Buchón <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Collection 2: Girasoles Radiantes -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amberbrand-600 flex items-center justify-center text-2xl group-hover:bg-amberbrand-500 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-slate-900">Girasoles & Silvestres</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Girasoles grandes y llenos de vida acompañados de eucalipto fresco, follajes aromáticos y envoltura en papel kraft para transmitir alegría, éxito y luz.
+                        </p>
+                        <ul class="space-y-2 text-xs sm:text-sm text-slate-700 pt-2 border-t border-slate-100">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amberbrand-500"></i> Flores de máxima duración (hasta 12 días)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amberbrand-500"></i> Ideal para cumpleaños y graduaciones</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amberbrand-500"></i> Combinación con rosas o margaritas</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#cotizador" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-slate-100 hover:bg-amber-50 text-slate-800 hover:text-amberbrand-800 font-bold text-sm transition-colors">
+                            Cotizar Girasoles <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Collection 3: Flower Boxes & Ferrero -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-pink-100 text-pink-600 flex items-center justify-center text-2xl group-hover:bg-pink-600 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-box-open"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-slate-900">Cajas de Lujo & Chocolates</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Cilindros de terciopelo o cajas acrílicas transparentes con rosas preservadas o naturales, acompañadas de chocolates Ferrero Rocher y globo flotante con helio.
+                        </p>
+                        <ul class="space-y-2 text-xs sm:text-sm text-slate-700 pt-2 border-t border-slate-100">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-pink-500"></i> Sombrerera cilíndrica de alta gama</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-pink-500"></i> Caja con chocolates Ferrero 16 pzas</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-pink-500"></i> Lista para exhibir sin necesidad de florero</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#cotizador" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-slate-100 hover:bg-pink-50 text-slate-800 hover:text-pink-800 font-bold text-sm transition-colors">
+                            Cotizar Caja Floral <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Especial Ramos Buchones -->
+    <section id="buchones" class="py-20 bg-white border-t border-rose-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-rosebrand-700 bg-rosebrand-100 px-3.5 py-1.5 rounded-full">
+                        <i class="fa-solid fa-heart"></i> El Regalo Definitivo
+                    </span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                        Ramos buchones monumentales que dejan sin aliento
+                    </h2>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        Un ramo buchón no es solo un regalo, es una declaración inolvidable de amor, felicitación o celebración. En Florería Imagen Natural seleccionamos cada rosa para que todas abran al mismo tiempo con un botón grande, aterciopelado y perfecto.
+                    </p>
+
+                    <div class="space-y-3 pt-2">
+                        <div class="p-4 rounded-2xl bg-rose-50/70 border border-rose-200 flex items-start gap-3.5">
+                            <div class="w-8 h-8 rounded-full bg-rosebrand-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Armado esférico perfecto de 50 o 100 rosas</h4>
+                                <p class="text-xs sm:text-sm text-slate-600">Simetría impecable realizada por floristas con técnica de espiral compacta.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-rose-50/70 border border-rose-200 flex items-start gap-3.5">
+                            <div class="w-8 h-8 rounded-full bg-rosebrand-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Tarjeta con sobre sellado y tu mensaje íntimo</h4>
+                                <p class="text-xs sm:text-sm text-slate-600">Imprimimos o caligrafiamos tu dedicatoria en papel de lino sin costo extra.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-rose-50/70 border border-rose-200 flex items-start gap-3.5">
+                            <div class="w-8 h-8 rounded-full bg-rosebrand-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Entrega sorpresa en mano del destinatario</h4>
+                                <p class="text-xs sm:text-sm text-slate-600">Llevamos el ramo a su oficina, casa, restaurante o universidad con total discreción.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="#cotizador" class="inline-flex items-center gap-2 bg-rosebrand-600 hover:bg-rosebrand-700 text-white font-bold px-6 py-3.5 rounded-xl text-sm transition-all shadow-md">
+                            <i class="fa-solid fa-wand-magic-sparkles text-amber-300"></i> Personalizar Ramo Buchón
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual: Buchón photo -->
+                <div class="lg:col-span-6 relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border border-rose-100 aspect-[4/4.5] group">
+                        <img src="img/ramo-buchon.jpg" alt="Ramo buchón de rosas rojas de lujo en CDMX" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Arreglos -->
+    <section id="galeria" class="py-20 bg-slate-50 border-t border-rose-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-rosebrand-700 bg-rosebrand-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-camera"></i> Entregas Reales
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    La calidad y frescura que recibirás en tu puerta
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Cada arreglo se fotografía en nuestro taller antes de salir a entrega para tu completa tranquilidad.
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white rounded-3xl overflow-hidden border border-rose-100 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/hero-rosas.jpg" alt="Bouquet de rosas rojas y eucalipto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Rosas Rojas
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Rosas de Selección Especial</h4>
+                        <p class="text-xs text-slate-500 mt-1">Botones grandes, color uniforme y aroma dulce natural.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-rose-100 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/girasoles.jpg" alt="Girasoles frescos en ramo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Girasoles
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Girasoles Dorados con Kraft</h4>
+                        <p class="text-xs text-slate-500 mt-1">Diseños alegres que llenan de luz cualquier espacio.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-rose-100 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/caja-regalo.jpg" alt="Caja con flores y chocolates de regalo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Flower Box
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Cajas de Regalo Sorpresa</h4>
+                        <p class="text-xs text-slate-500 mt-1">Arreglos listos con chocolates Ferrero y dedicatoria.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-rose-100 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/ramo-buchon.jpg" alt="Ramo buchón de 100 rosas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Impacto 100 Rosas
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Ramo Buchón Esférico</h4>
+                        <p class="text-xs text-slate-500 mt-1">Un regalo impresionante para aniversarios y cumpleaños.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-rose-100 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/taller-florista.jpg" alt="Florista armando arreglos florales" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Hecho a Mano
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Cuidado y Amor en Cada Tallo</h4>
+                        <p class="text-xs text-slate-500 mt-1">Limpieza de espinas, hidratación y envoltura de alta costura floral.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-rose-100 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/tulipanes-pastel.jpg" alt="Tulipanes holandeses en tonos pastel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Tulipanes
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Tulipanes y Flores Finas</h4>
+                        <p class="text-xs text-slate-500 mt-1">Colores pasteles sutiles para momentos elegantes.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COTIZADOR & PERSONALIZADOR INTERACTIVO (ALTA CONVERSIÓN) -->
+    <section id="cotizador" class="py-20 bg-gradient-to-b from-rose-50/80 via-pink-100/40 to-white relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <span class="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-rosebrand-900 bg-rosebrand-200/80 px-4 py-1.5 rounded-full shadow-xs">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Personalizador de Arreglos Online
+                </span>
+                <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
+                    Arma tu ramo y cotiza al instante
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Elige el tipo de flor, el tamaño del arreglo y los complementos especiales. Manda tu pedido listo por WhatsApp con entrega hoy mismo.
+                </p>
+            </div>
+
+            <!-- Main Interactive Calculator Box -->
+            <div class="bg-white rounded-3xl shadow-2xl border border-rose-100 overflow-hidden">
+                <div class="grid lg:grid-cols-12">
+                    
+                    <!-- Left: Configuration Inputs (7 cols) -->
+                    <div class="lg:col-span-7 p-6 sm:p-10 space-y-8">
+                        
+                        <!-- Step 1: Flower Type -->
+                        <div>
+                            <label class="block text-sm font-extrabold text-slate-800 mb-3 flex items-center justify-between">
+                                <span>1. Selecciona la Flor Principal:</span>
+                                <span class="text-xs font-semibold text-rosebrand-600">Paso 1 de 3</span>
+                            </label>
+                            <div class="grid grid-cols-2 gap-3" id="flowerOptions">
+                                <button type="button" data-price-per-stem="28" data-label="Rosas Rojas / Rosadas Premium" class="flower-btn active-flower p-4 rounded-2xl border-2 text-left transition-all border-rosebrand-600 bg-rosebrand-50 text-slate-900">
+                                    <i class="fa-solid fa-spa text-rosebrand-600 text-xl block mb-1"></i>
+                                    <p class="font-bold text-sm">Rosas Premium</p>
+                                    <p class="text-xs text-slate-500">Rojas, rosas o blancas</p>
+                                </button>
+
+                                <button type="button" data-price-per-stem="45" data-label="Girasoles Radiantes" class="flower-btn p-4 rounded-2xl border-2 text-left transition-all border-slate-200 hover:border-slate-300 bg-white text-slate-900">
+                                    <i class="fa-solid fa-sun text-slate-400 text-xl block mb-1"></i>
+                                    <p class="font-bold text-sm">Girasoles</p>
+                                    <p class="text-xs text-slate-500">Grandes y luminosos</p>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Bouquet Size / Count -->
+                        <div>
+                            <label class="block text-sm font-extrabold text-slate-800 mb-3 flex items-center justify-between">
+                                <span>2. Selecciona el Tamaño del Ramo:</span>
+                                <span class="text-xs font-semibold text-rosebrand-600">Paso 2 de 3</span>
+                            </label>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5" id="sizeOptions">
+                                <button type="button" data-stems="12" data-wrapping="150" data-label="Detalle Clásico (12 Flores)" class="size-btn p-3 rounded-xl border-2 text-center transition-all border-slate-200 hover:border-slate-300 bg-white">
+                                    <p class="font-bold text-xs text-slate-800">12 Flores</p>
+                                    <p class="text-[10px] text-slate-500">Detalle Sutil</p>
+                                </button>
+
+                                <button type="button" data-stems="24" data-wrapping="200" data-label="Ramo Romántico (24 Flores)" class="size-btn active-size p-3 rounded-xl border-2 text-center transition-all border-rosebrand-600 bg-rosebrand-50 text-slate-900">
+                                    <p class="font-bold text-xs text-slate-900">24 Flores</p>
+                                    <p class="text-[10px] text-rosebrand-600 font-bold">Más Pedido</p>
+                                </button>
+
+                                <button type="button" data-stems="50" data-wrapping="350" data-label="Ramo Buchón (50 Flores)" class="size-btn p-3 rounded-xl border-2 text-center transition-all border-slate-200 hover:border-slate-300 bg-white">
+                                    <p class="font-bold text-xs text-slate-800">50 Flores</p>
+                                    <p class="text-[10px] text-slate-500">Ramo Buchón</p>
+                                </button>
+
+                                <button type="button" data-stems="100" data-wrapping="500" data-label="Buchón Monumental (100 Flores)" class="size-btn p-3 rounded-xl border-2 text-center transition-all border-slate-200 hover:border-slate-300 bg-white">
+                                    <p class="font-bold text-xs text-slate-800">100 Flores</p>
+                                    <p class="text-[10px] text-slate-500">Monumental</p>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Add-ons / Extras -->
+                        <div>
+                            <label class="block text-sm font-extrabold text-slate-800 mb-3 flex items-center justify-between">
+                                <span>3. Complementos Especiales (Opcional):</span>
+                                <span class="text-xs font-semibold text-rosebrand-600">Paso 3 de 3</span>
+                            </label>
+                            <div class="space-y-2.5">
+                                <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" id="extraFerrero" class="extra-check w-4 h-4 text-rosebrand-600 rounded border-slate-300 focus:ring-rosebrand-500" value="260">
+                                        <div>
+                                            <p class="text-xs sm:text-sm font-bold text-slate-800">Caja de Chocolates Ferrero Rocher (16 pzas)</p>
+                                            <p class="text-[11px] text-slate-500">El acompañamiento dulce tradicional</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-slate-800">+$260 MXN</span>
+                                </label>
+
+                                <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" id="extraCorona" class="extra-check w-4 h-4 text-rosebrand-600 rounded border-slate-300 focus:ring-rosebrand-500" value="150">
+                                        <div>
+                                            <p class="text-xs sm:text-sm font-bold text-slate-800">Corona Dorada de Reina para Ramo Buchón</p>
+                                            <p class="text-[11px] text-slate-500">Toque de impacto en el centro del ramo</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-slate-800">+$150 MXN</span>
+                                </label>
+
+                                <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" id="extraGlobo" class="extra-check w-4 h-4 text-rosebrand-600 rounded border-slate-300 focus:ring-rosebrand-500" value="140">
+                                        <div>
+                                            <p class="text-xs sm:text-sm font-bold text-slate-800">Globo Metálico 18" con Helio (Amor / Cumpleaños)</p>
+                                            <p class="text-[11px] text-slate-500">Flotante con listón rizado</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-slate-800">+$140 MXN</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right: Live Quote Summary & WhatsApp Trigger (5 cols) -->
+                    <div class="lg:col-span-5 bg-gradient-to-br from-rosebrand-950 via-slate-900 to-rose-950 text-white p-6 sm:p-10 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-rosebrand-900">
+                        <div>
+                            <div class="flex items-center justify-between border-b border-rosebrand-800 pb-4 mb-6">
+                                <span class="font-display font-bold text-lg text-white">Resumen de Tu Ramo</span>
+                                <span class="text-xs font-semibold bg-rosebrand-500/20 text-rose-300 border border-rosebrand-500/30 px-2.5 py-1 rounded-full">
+                                    En Vivo
+                                </span>
+                            </div>
+
+                            <div class="space-y-3.5 text-xs sm:text-sm">
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Flor seleccionada:</span>
+                                    <span id="summaryFlower" class="font-semibold text-white">Rosas Premium</span>
+                                </div>
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Tamaño del arreglo:</span>
+                                    <span id="summarySize" class="font-semibold text-white">24 Flores</span>
+                                </div>
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Tarjeta con dedicatoria:</span>
+                                    <span class="font-bold text-emerald-400">Gratis (Incluida)</span>
+                                </div>
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Envoltura y follajes:</span>
+                                    <span class="font-semibold text-white">Papel Coreano de Lujo</span>
+                                </div>
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Complementos extras:</span>
+                                    <span id="summaryExtras" class="font-semibold text-white">$0 MXN</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-8 border-t border-rosebrand-800 mt-8 space-y-6">
+                            <div>
+                                <p class="text-xs uppercase tracking-wider text-slate-400 font-bold">Total Estimado:</p>
+                                <div class="flex items-baseline gap-2 mt-1">
+                                    <span id="summaryTotal" class="font-display text-4xl sm:text-5xl font-extrabold text-rose-300">$872</span>
+                                    <span class="text-sm font-semibold text-slate-400">MXN</span>
+                                </div>
+                                <p class="text-[11px] text-slate-400 mt-1.5 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-camera text-rose-400"></i> Te enviamos foto de tu ramo terminado antes de entregarlo
+                                </p>
+                            </div>
+
+                            <!-- WhatsApp Direct Reserve Button -->
+                            <a id="btnWhatsappQuote" href="#" target="_blank" class="w-full inline-flex items-center justify-center gap-3 bg-gradient-to-r from-rosebrand-600 via-rosebrand-500 to-pink-600 hover:from-rosebrand-700 hover:to-pink-700 text-white font-extrabold text-base py-4 px-6 rounded-2xl shadow-xl shadow-rosebrand-950/40 hover:scale-[1.02] transition-all text-center">
+                                <i class="fa-brands fa-whatsapp text-2xl text-emerald-300"></i>
+                                <span>Ordenar Ramo por WhatsApp</span>
+                            </a>
+                            <p class="text-[11px] text-center text-slate-400">
+                                Al dar clic podrás escribir tu dedicatoria y dirección de entrega directamente en WhatsApp.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Opiniones Reales de Clientes -->
+    <section id="opiniones" class="py-20 bg-white border-t border-rose-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-rosebrand-700 bg-rosebrand-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-star text-amber-500"></i> Calificación 4.8 en el Sur de CDMX
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Momentos mágicos que hemos entregado
+                </h2>
+                <p class="text-slate-600 text-base">
+                    La frescura de las rosas y la puntualidad en cada entrega sorpresa son nuestro sello.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-rose-50/30 p-6 sm:p-8 rounded-3xl border border-rose-100 shadow-xs flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic leading-relaxed">
+                            "Pedí un ramo buchón de 50 rosas para el cumpleaños de mi novia con entrega en su oficina. Quedó impactada, las rosas estaban perfectas y duraron frescas más de una semana. Además me mandaron foto antes de llevarlo."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-rose-100">
+                        <div class="w-10 h-10 rounded-full bg-rose-100 text-rosebrand-800 font-extrabold flex items-center justify-center text-sm">
+                            AO
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900 text-sm">Alejandro Ortiz</p>
+                            <p class="text-xs text-slate-500">Ramo Buchón 50 Rosas • Entrega en Tlalpan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-rose-50/30 p-6 sm:p-8 rounded-3xl border border-rose-100 shadow-xs flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic leading-relaxed">
+                            "Se me olvidó el aniversario con las prisas del trabajo y me salvaron la vida entregando en menos de 3 horas un ramo de girasoles con chocolates. La atención por WhatsApp fue súper rápida y amable."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-rose-100">
+                        <div class="w-10 h-10 rounded-full bg-amber-100 text-amberbrand-700 font-extrabold flex items-center justify-center text-sm">
+                            RM
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900 text-sm">Ricardo Mendoza</p>
+                            <p class="text-xs text-slate-500">Girasoles & Ferrero • Entrega Express Coyoacán</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-rose-50/30 p-6 sm:p-8 rounded-3xl border border-rose-100 shadow-xs flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic leading-relaxed">
+                            "Flores de excelente calidad y precios muy justos comparados con las florerías caras de centros comerciales. Mi mamá quedó fascinada con su arreglo. Son mi florería de cabecera desde ahora."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-rose-100">
+                        <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 font-extrabold flex items-center justify-center text-sm">
+                            CS
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900 text-sm">Claudia Salinas</p>
+                            <p class="text-xs text-slate-500">Bouquet Floral • Xochimilco</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="py-16 bg-slate-50 border-t border-rose-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 space-y-2">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-rosebrand-700 bg-rosebrand-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-circle-question"></i> Resolvemos tus Preguntas
+                </span>
+                <h2 class="font-display text-3xl font-extrabold text-slate-900">Preguntas Frecuentes</h2>
+            </div>
+
+            <div class="space-y-3" id="faqAccordion">
+                
+                <div class="border border-rose-100 bg-white rounded-2xl overflow-hidden transition-all">
+                    <button type="button" class="faq-btn w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-rose-50/50">
+                        <span>¿Pueden entregar el mismo día si realizo mi pedido hoy?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        ¡Sí! Para entregas el mismo día te recomendamos ordenar antes de las 4:00 PM para tener tiempo de elaborar tu arreglo con calma y coordinar la ruta de entrega.
+                    </div>
+                </div>
+
+                <div class="border border-rose-100 bg-white rounded-2xl overflow-hidden transition-all">
+                    <button type="button" class="faq-btn w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-rose-50/50">
+                        <span>¿Me envían foto de cómo quedó el ramo antes de entregarlo?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        Totalmente. En cuanto tu florista termina de armar el arreglo con su envoltura y tarjeta de dedicatoria, te enviamos una fotografía por WhatsApp para tu visto bueno antes de que el repartidor salga a ruta.
+                    </div>
+                </div>
+
+                <div class="border border-rose-100 bg-white rounded-2xl overflow-hidden transition-all">
+                    <button type="button" class="faq-btn w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-rose-50/50">
+                        <span>¿Cómo puedo realizar el pago de mi pedido?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        Aceptamos transferencias bancarias SPEI (BBVA, Banamex, Santander, etc.), depósitos en tiendas OXXO, Mercado Pago o pago en efectivo si decides recoger tu arreglo directamente en nuestro taller.
+                    </div>
+                </div>
+
+                <div class="border border-rose-100 bg-white rounded-2xl overflow-hidden transition-all">
+                    <button type="button" class="faq-btn w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-rose-50/50">
+                        <span>¿Cómo debo cuidar mis flores para que duren más tiempo?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        Coloca el ramo en un florero limpio con agua fresca. Corta 1 o 2 cm de los tallos en ángulo diagonal de 45° cada dos días y cambia el agua fresca. Mantén las flores en un lugar ventilado lejos de los rayos directos del sol.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación y Contacto -->
+    <section id="contacto" class="py-20 bg-white border-t border-rose-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Info Card -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-rosebrand-700 bg-rosebrand-100 px-3.5 py-1.5 rounded-full">
+                        <i class="fa-solid fa-location-dot"></i> Taller Floral & Envíos
+                    </span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                        Ubicación y Cobertura
+                    </h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Nuestro taller floral se encuentra ubicado en Av. de Las Torres #58A, en Tepepan (zona sur de la CDMX), con cobertura de entrega en Xochimilco, Tlalpan, Coyoacán, Benito Juárez, Álvaro Obregón y toda la CDMX.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-3.5 p-4 bg-rose-50/40 rounded-2xl border border-rose-100 shadow-xs">
+                            <div class="w-10 h-10 rounded-xl bg-rose-100 text-rosebrand-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-store text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase">Taller Boutique</p>
+                                <p class="text-sm font-bold text-slate-800">Av. de Las Torres #58A, Ampliación Tepepan, Xochimilco, C.P. 16029, CDMX</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 p-4 bg-rose-50/40 rounded-2xl border border-rose-100 shadow-xs">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase">WhatsApp & Pedidos</p>
+                                <p class="text-sm font-bold text-slate-800">+52 55 4935 9328 / +52 55 5452 1410</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 p-4 bg-rose-50/40 rounded-2xl border border-rose-100 shadow-xs">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amberbrand-700 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase">Horario de Entregas</p>
+                                <p class="text-sm font-bold text-slate-800">Lunes a Domingo: 08:30 AM a 08:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                        <a href="https://maps.google.com/?q=Av+de+Las+Torres+58A+Ampliacion+Tepepan+Xochimilco+CDMX" target="_blank" class="inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-black text-white font-bold px-5 py-3 rounded-xl text-sm transition-all shadow-sm">
+                            <i class="fa-solid fa-location-arrow text-rose-400"></i> Abrir en Google Maps
+                        </a>
+                        <a href="https://wa.me/525549359328?text=Hola%20Florer%C3%ADa%20Imagen%20Natural%2C%20quisiera%20agendar%20un%20ramo%20a%20domicilio." target="_blank" class="inline-flex items-center justify-center gap-2 bg-rosebrand-600 hover:bg-rosebrand-700 text-white font-bold px-5 py-3 rounded-xl text-sm transition-all shadow-sm">
+                            <i class="fa-brands fa-whatsapp"></i> Ordenar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="lg:col-span-7 bg-rose-50/40 p-3 rounded-3xl shadow-xl border border-rose-100">
+                    <div class="w-full h-[400px] rounded-2xl overflow-hidden">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Av+de+Las+Torres+58A+Ampliacion+Tepepan+Xochimilco+CDMX&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Footer Banner -->
+    <section class="py-12 bg-gradient-to-r from-rosebrand-950 via-slate-900 to-pink-950 text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+            <h2 class="font-display text-3xl sm:text-4xl font-extrabold tracking-tight">
+                ¿Quieres sorprender a esa persona especial hoy?
+            </h2>
+            <p class="text-rose-200 text-base max-w-2xl mx-auto">
+                No esperes una fecha del calendario. Un detalle floral espontáneo alegra el día y queda grabado en el corazón para siempre.
+            </p>
+            <div class="pt-2">
+                <a href="https://wa.me/525549359328?text=Hola%20Florer%C3%ADa%20Imagen%20Natural%2C%20quiero%20mandar%20un%20ramo%20sorpresa%20hoy." target="_blank" class="inline-flex items-center gap-3 bg-rosebrand-500 hover:bg-rosebrand-400 text-white font-extrabold text-base px-8 py-4 rounded-2xl shadow-xl hover:scale-105 transition-all">
+                    <i class="fa-brands fa-whatsapp text-2xl text-emerald-300"></i>
+                    <span>Mandar Flores por WhatsApp Ahora</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-rose-100 py-12 text-slate-500 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                
+                <div class="space-y-3 md:col-span-2">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-xl bg-rosebrand-600 text-white flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+                        <span class="font-display font-extrabold text-xl text-slate-900">Florería Imagen Natural</span>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed max-w-sm">
+                        Diseño floral de autor, ramos buchones de impacto y entrega de flores a domicilio en la Ciudad de México. Flores frescas de invernadero con entrega el mismo día.
+                    </p>
+                </div>
+
+                <div class="space-y-2">
+                    <p class="font-bold text-slate-900 uppercase tracking-wider text-xs">Arreglos & Colecciones</p>
+                    <ul class="space-y-1.5 text-xs">
+                        <li><a href="#catalogo" class="hover:text-rosebrand-600">Ramos de Rosas</a></li>
+                        <li><a href="#buchones" class="hover:text-rosebrand-600">Ramos Buchones</a></li>
+                        <li><a href="#catalogo" class="hover:text-rosebrand-600">Girasoles Radiantes</a></li>
+                        <li><a href="#cotizador" class="hover:text-rosebrand-600 font-bold text-rosebrand-600">Personalizador de Ramos</a></li>
+                        <li><a href="#opiniones" class="hover:text-rosebrand-600">Opiniones de Clientes</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-2">
+                    <p class="font-bold text-slate-900 uppercase tracking-wider text-xs">Contacto & Envíos</p>
+                    <p class="text-xs">Av. de Las Torres #58A, Tepepan, Xochimilco, CDMX</p>
+                    <p class="text-xs font-bold text-slate-800">WhatsApp: +52 55 4935 9328</p>
+                    <p class="text-xs font-bold text-slate-800">Tel: +52 55 5452 1410</p>
+                    <p class="text-xs">Entregas de Lunes a Domingo: 08:30 - 20:00 hrs</p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-rose-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+                <p>© 2026 Florería Imagen Natural. Propuesta de Plataforma Digital Exclusiva.</p>
+                <div class="flex items-center gap-4">
+                    <a href="#top" class="hover:text-rosebrand-600 font-semibold flex items-center gap-1">
+                        Subir al inicio <i class="fa-solid fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Desktop Button -->
+    <a href="https://wa.me/525549359328?text=Hola%20Florer%C3%ADa%20Imagen%20Natural%2C%20quisiera%20ordenar%20un%20ramo." target="_blank" class="hidden sm:flex fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl items-center justify-center gap-2 group transition-all duration-300 hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 font-bold text-sm px-0 group-hover:px-2">
+            Ordenar Flores por WhatsApp
+        </span>
+    </a>
+
+    <!-- Mobile Bottom Bar -->
+    <div class="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-rose-100 p-2.5 flex items-center gap-2 shadow-lg">
+        <a href="#cotizador" class="flex-1 bg-rose-50 text-slate-800 text-center font-bold text-xs py-2.5 rounded-xl border border-rose-200">
+            <i class="fa-solid fa-wand-magic-sparkles mr-1 text-rosebrand-600"></i> Diseñar
+        </a>
+        <a id="mobileBtnWa" href="https://wa.me/525549359328?text=Hola%20Florer%C3%ADa%20Imagen%20Natural%2C%20quisiera%20ordenar%20un%20ramo." target="_blank" class="flex-[1.5] bg-rosebrand-600 text-white text-center font-bold text-xs py-2.5 rounded-xl shadow-md">
+            <i class="fa-brands fa-whatsapp text-white mr-1 text-sm"></i> WhatsApp Flores
+        </a>
+    </div>
+
+    <!-- JavaScript for Calculator & Interactive UI -->
+    <script>
+        // State
+        const state = {
+            pricePerStem: 28,
+            flowerLabel: 'Rosas Premium',
+            stems: 24,
+            wrappingCost: 200,
+            sizeLabel: '24 Flores',
+            extraFerrero: false,
+            extraCorona: false,
+            extraGlobo: false
+        };
+
+        // DOM Elements
+        const flowerBtns = document.querySelectorAll('.flower-btn');
+        const sizeBtns = document.querySelectorAll('.size-btn');
+        const extraFerrero = document.getElementById('extraFerrero');
+        const extraCorona = document.getElementById('extraCorona');
+        const extraGlobo = document.getElementById('extraGlobo');
+
+        // Summary DOM
+        const summaryFlower = document.getElementById('summaryFlower');
+        const summarySize = document.getElementById('summarySize');
+        const summaryExtras = document.getElementById('summaryExtras');
+        const summaryTotal = document.getElementById('summaryTotal');
+        const btnWhatsappQuote = document.getElementById('btnWhatsappQuote');
+        const mobileBtnWa = document.getElementById('mobileBtnWa');
+
+        // Flower Selection
+        flowerBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                flowerBtns.forEach(b => {
+                    b.classList.remove('active-flower', 'border-rosebrand-600', 'bg-rosebrand-50');
+                    b.classList.add('border-slate-200', 'bg-white');
+                    const icon = b.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('text-rosebrand-600');
+                        icon.classList.add('text-slate-400');
+                    }
+                });
+                btn.classList.add('active-flower', 'border-rosebrand-600', 'bg-rosebrand-50');
+                btn.classList.remove('border-slate-200', 'bg-white');
+                const activeIcon = btn.querySelector('i');
+                if (activeIcon) {
+                    activeIcon.classList.remove('text-slate-400');
+                    activeIcon.classList.add('text-rosebrand-600');
+                }
+
+                state.pricePerStem = parseFloat(btn.dataset.pricePerStem);
+                state.flowerLabel = btn.querySelector('p.font-bold').textContent;
+                updateCalculation();
+            });
+        });
+
+        // Size Selection
+        sizeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                sizeBtns.forEach(b => {
+                    b.classList.remove('active-size', 'border-rosebrand-600', 'bg-rosebrand-50');
+                    b.classList.add('border-slate-200', 'bg-white');
+                });
+                btn.classList.add('active-size', 'border-rosebrand-600', 'bg-rosebrand-50');
+                btn.classList.remove('border-slate-200', 'bg-white');
+
+                state.stems = parseInt(btn.dataset.stems);
+                state.wrappingCost = parseFloat(btn.dataset.wrapping);
+                state.sizeLabel = btn.querySelector('p.font-bold').textContent;
+                updateCalculation();
+            });
+        });
+
+        // Extras Checkboxes
+        [extraFerrero, extraCorona, extraGlobo].forEach(chk => {
+            chk.addEventListener('change', () => {
+                updateCalculation();
+            });
+        });
+
+        function updateCalculation() {
+            const flowersCost = state.stems * state.pricePerStem;
+            const baseArrangementCost = flowersCost + state.wrappingCost;
+
+            let extrasTotal = 0;
+            let extrasList = [];
+
+            if (extraFerrero.checked) {
+                extrasTotal += 260;
+                extrasList.push('Chocolates Ferrero 16p ($260)');
+            }
+            if (extraCorona.checked) {
+                extrasTotal += 150;
+                extrasList.push('Corona Dorada ($150)');
+            }
+            if (extraGlobo.checked) {
+                extrasTotal += 140;
+                extrasList.push('Globo Helio 18" ($140)');
+            }
+
+            const total = baseArrangementCost + extrasTotal;
+
+            // Update Summary UI
+            summaryFlower.textContent = state.flowerLabel;
+            summarySize.textContent = `${state.sizeLabel} (${state.stems} tallos)`;
+            summaryExtras.textContent = `$${extrasTotal.toLocaleString()} MXN`;
+            summaryTotal.textContent = `$${total.toLocaleString()}`;
+
+            // Build WhatsApp Message
+            const extrasStr = extrasList.length > 0 ? extrasList.join(', ') : 'Ninguno';
+
+            const waMsg = `Hola Florería Imagen Natural, coticé este arreglo en su sitio web:%0A%0A` +
+                          `🌹 Flor: ${encodeURIComponent(state.flowerLabel)}%0A` +
+                          `💐 Tamaño: ${state.stems} flores con envoltura de lujo%0A` +
+                          `✨ Extras: ${encodeURIComponent(extrasStr)}%0A` +
+                          `💌 Tarjeta dedicatoria: Incluida gratis%0A` +
+                          `💰 Total Estimado: $${total.toLocaleString()} MXN%0A%0A` +
+                          `¿Tienen entrega disponible para el día de hoy en mi zona?`;
+
+            btnWhatsappQuote.href = `https://wa.me/525549359328?text=${waMsg}`;
+            if (mobileBtnWa) {
+                mobileBtnWa.href = `https://wa.me/525549359328?text=${waMsg}`;
+            }
+        }
+
+        // Initialize Calculator
+        updateCalculation();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // FAQ Accordion
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const isOpen = !content.classList.contains('hidden');
+
+                // Close all
+                document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+                document.querySelectorAll('.faq-btn i').forEach(i => i.classList.remove('rotate-180'));
+
+                if (!isOpen) {
+                    content.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
