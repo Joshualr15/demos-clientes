@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PodoMedicaMx | Clínica Podológica Especializada en Venustiano Carranza CDMX</title>
+  <meta name="description" content="Alivio del dolor, quiropodia completa, uña encarnada (espiculotomía), hongos y pie diabético en Col. Federal CDMX (a 1 cuadra de Metro Gómez Farías). Agenda tu cita.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Outfit"', 'sans-serif'],
+          },
+          colors: {
+            medical: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .custom-shadow {
+      box-shadow: 0 10px 30px -5px rgba(2, 132, 199, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+    }
+    .service-card {
+      transition: all 0.25s ease-in-out;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 30px -10px rgba(2, 132, 199, 0.15);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Clinical Top Bar -->
+  <div class="bg-medical-900 text-white text-xs py-2 px-4 border-b border-medical-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2 sm:gap-4 flex-wrap justify-center sm:justify-start">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-bold bg-medical-600 text-white">
+          <i class="fa-solid fa-calendar-check text-[10px]"></i> Atención Exclusiva con Previa Cita
+        </span>
+        <span class="text-slate-300 hidden md:inline">📍 Calle Gobierno Del Distrito #83, Col. Federal (a 1 cuadra de Metro Gómez Farías)</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <span class="text-slate-300 hidden lg:inline"><i class="fa-regular fa-clock text-sky-400 mr-1"></i> Lun-Vie 10am-9pm | Sáb 10am-7pm</span>
+        <a href="https://api.whatsapp.com/send?phone=525513924669&text=Hola%20PodoMedicaMx!%20Deseo%20agendar%20una%20cita%20podol%C3%B3gica" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-bold flex items-center gap-1 transition">
+          <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Citas: 55 1392 4669
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 custom-shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 bg-medical-600 rounded-xl flex items-center justify-center text-white shadow-md shadow-medical-600/30 group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-socks text-2xl"></i>
+        </div>
+        <div>
+          <span class="font-display text-2xl font-bold tracking-tight text-slate-900 block leading-none">
+            Podo<span class="text-medical-600">Medica</span><span class="text-xs uppercase bg-medical-50 text-medical-700 px-1.5 py-0.5 rounded font-extrabold border border-medical-200 ml-1">MX</span>
+          </span>
+          <span class="text-[11px] uppercase tracking-wider text-slate-500 font-semibold">
+            Consultorio Podológico de Primera Opción
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-slate-700">
+        <a href="#servicios" class="hover:text-medical-600 transition">Servicios Podológicos</a>
+        <a href="#proceso" class="hover:text-medical-600 transition">Protocolo Clínico</a>
+        <a href="#cotizador" class="hover:text-medical-600 transition">Cotizador & Citas</a>
+        <a href="#testimonios" class="hover:text-medical-600 transition">Opiniones de Pacientes</a>
+        <a href="#ubicacion" class="hover:text-medical-600 transition">Cómo Llegar</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="flex items-center gap-3">
+        <a href="#cotizador" class="hidden sm:inline-flex items-center gap-2 bg-medical-600 hover:bg-medical-700 text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-md shadow-medical-600/25 hover:shadow-lg hover:shadow-medical-600/35 transition transform active:scale-95">
+          <i class="fa-solid fa-calendar-plus"></i>
+          <span>Agendar mi Cita</span>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=525513924669&text=Hola!%20Me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n%20en%20PodoMedicaMx" target="_blank" class="inline-flex lg:hidden items-center justify-center w-10 h-10 rounded-xl bg-emerald-500 text-white hover:bg-emerald-600 transition shadow">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-b from-white via-medical-50/40 to-slate-100 py-16 sm:py-24 border-b border-slate-200 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Copy -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-medical-50 border border-medical-200 text-medical-800 text-xs font-bold tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            ESPECIALISTAS EN CUIDADO INTEGRAL DEL PIE &middot; COLONIA FEDERAL CDMX
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
+            Camina sin dolor. <br class="hidden sm:inline">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-medical-600 to-sky-600">Salud, comodidad y descanso</span> <br class="hidden sm:inline">
+            para tus pies.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Atención profesional y sin dolor para <strong>uñas encarnadas (espiculotomía), quiropodia completa, hongos (onicomicosis), callosidades y pie diabético</strong>. Instrumental 100% esterilizado en autoclave bajo estrictas normas de bioseguridad.
+          </p>
+
+          <!-- Highlights Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 max-w-xl mx-auto lg:mx-0">
+            <div class="bg-white p-3.5 rounded-xl border border-slate-200 custom-shadow flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-medical-100 text-medical-700 flex items-center justify-center font-bold text-lg">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <div class="text-left">
+                <div class="font-bold text-slate-900 text-sm leading-tight">Sin Dolor</div>
+                <div class="text-xs text-slate-500">Técnica no invasiva</div>
+              </div>
+            </div>
+
+            <div class="bg-white p-3.5 rounded-xl border border-slate-200 custom-shadow flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-lg">
+                <i class="fa-solid fa-pump-medical"></i>
+              </div>
+              <div class="text-left">
+                <div class="font-bold text-slate-900 text-sm leading-tight">100% Estéril</div>
+                <div class="text-xs text-slate-500">Grado quirúrgico</div>
+              </div>
+            </div>
+
+            <div class="bg-white p-3.5 rounded-xl border border-slate-200 custom-shadow col-span-2 sm:col-span-1 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-lg">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="text-left">
+                <div class="font-bold text-slate-900 text-sm leading-tight">4.9 / 5.0</div>
+                <div class="text-xs text-slate-500">Opiniones Google</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#cotizador" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-medical-600 hover:bg-medical-700 text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg shadow-medical-600/30 hover:shadow-medical-600/40 transition transform active:scale-95">
+              <span>Calcular Costo & Agendar Cita</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=525513924669&text=Hola%20PodoMedicaMx!%20Quisiera%20pedir%20informes%20de%20cita%20y%20horarios" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 font-semibold text-base px-6 py-4 rounded-xl transition">
+              <i class="fa-brands fa-whatsapp text-emerald-600 text-lg"></i>
+              <span>WhatsApp Directo</span>
+            </a>
+          </div>
+
+          <!-- Doctor In Charge Reference -->
+          <div class="flex items-center justify-center lg:justify-start gap-3 text-xs text-slate-500 pt-2 border-t border-slate-200">
+            <i class="fa-solid fa-user-doctor text-medical-600 text-base"></i>
+            <span>Responsable Podológico: <strong>Pdgo. H. Isbek Noriega I.</strong> &middot; Cuidado ético, humano y profesional.</span>
+          </div>
+
+        </div>
+
+        <!-- Right: Clinic Photo -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <div class="absolute -top-6 -right-6 w-72 h-72 bg-sky-200/40 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 group">
+              <img src="img/hero-podologia.jpg" alt="Consulta podológica en PodoMedicaMx" class="w-full h-[470px] object-cover group-hover:scale-105 transition duration-500">
+              
+              <!-- Floating Card in Hero -->
+              <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-slate-200/80 custom-shadow">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-display font-bold text-slate-900 text-base">Servicio Podológico Integral</span>
+                  <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                    Alivio Garantizado
+                  </span>
+                </div>
+                <p class="text-xs text-slate-600">
+                  Evaluamos la salud de tus pies, presión arterial y pulsos para un diagnóstico certero.
+                </p>
+              </div>
+            </div>
+
+            <!-- Side Badge -->
+            <div class="absolute -bottom-6 -left-6 bg-white p-3.5 rounded-xl border border-slate-200 shadow-xl hidden sm:flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-medical-50 text-medical-600 flex items-center justify-center font-bold text-lg">
+                <i class="fa-solid fa-shield-virus"></i>
+              </div>
+              <div class="text-xs">
+                <div class="font-bold text-slate-900">Protocolo Sanitario Riguroso</div>
+                <div class="text-slate-500">Autoclave & Material Descartable</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Servicios Podológicos -->
+  <section id="servicios" class="py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-medical-600 font-bold text-xs uppercase tracking-widest bg-medical-50 px-3.5 py-1 rounded-full border border-medical-100">
+          Tratamientos Especializados
+        </span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-slate-950 tracking-tight">
+          Cuidado Integral para Cada Afección Podal
+        </h2>
+        <p class="text-slate-600 text-base">
+          Tratamientos seguros diseñados para aliviar molestias de inmediato y prevenir complicaciones a largo plazo.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Service 1: Quiropodia -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 service-card flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-medical-600 text-white rounded-xl flex items-center justify-center text-xl mb-4 shadow-md shadow-medical-600/20">
+              <i class="fa-solid fa-scissors"></i>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Quiropodia Preventiva</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Historia clínica, toma de signos, corte anatómico de láminas ungueales, limpieza profunda de canales, desbridación indolora de callosidades e hidratación podal.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 mb-4">
+              <li><i class="fa-solid fa-check text-medical-600 mr-1.5"></i> Corte recto sin bordes cortantes</li>
+              <li><i class="fa-solid fa-check text-medical-600 mr-1.5"></i> Eliminación de durezas y asperezas</li>
+              <li><i class="fa-solid fa-check text-medical-600 mr-1.5"></i> Loción refrescante y aceites esenciales</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs text-slate-500">Sesión completa</span>
+            <span class="font-bold text-medical-700 text-base">Desde $350 MXN</span>
+          </div>
+        </div>
+
+        <!-- Service 2: Uña Encarnada -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 service-card flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-red-600 text-white rounded-xl flex items-center justify-center text-xl mb-4 shadow-md shadow-red-600/20">
+              <i class="fa-solid fa-bandage"></i>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Uña Encarnada (Espiculotomía)</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Alivio inmediato del dolor. Se extrae única y exclusivamente la espícula incrustada sin dañar el resto del dedo. Incluye curación y seguimiento aséptico.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 mb-4">
+              <li><i class="fa-solid fa-check text-red-600 mr-1.5"></i> Extracción precisa y alivio en el acto</li>
+              <li><i class="fa-solid fa-check text-red-600 mr-1.5"></i> Anestesia local aplicada si se amerita</li>
+              <li><i class="fa-solid fa-check text-red-600 mr-1.5"></i> Técnica conservadora sin mutilación</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs text-slate-500">Por canal ungueal</span>
+            <span class="font-bold text-medical-700 text-base">Desde $450 MXN</span>
+          </div>
+        </div>
+
+        <!-- Service 3: Hongos / Onicomicosis -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 service-card flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-medical-700 text-white rounded-xl flex items-center justify-center text-xl mb-4 shadow-md shadow-medical-700/20">
+              <i class="fa-solid fa-bacterium"></i>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Tratamiento para Hongos</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Diagnóstico y saneamiento de onicomicosis (uñas amarillas, engrosadas o quebradizas) y pie de atleta. Desbastado mecánico y terapia antimicótica tópica.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 mb-4">
+              <li><i class="fa-solid fa-check text-medical-600 mr-1.5"></i> Desbastado y eliminación de tejido fúngico</li>
+              <li><i class="fa-solid fa-check text-medical-600 mr-1.5"></i> Fármacos tópicos de alta efectividad</li>
+              <li><i class="fa-solid fa-check text-medical-600 mr-1.5"></i> Desinfección preventiva de calzado</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs text-slate-500">Saneamiento y aplicación</span>
+            <span class="font-bold text-medical-700 text-base">Desde $400 MXN</span>
+          </div>
+        </div>
+
+        <!-- Service 4: Pie Diabético -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 service-card flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-emerald-600 text-white rounded-xl flex items-center justify-center text-xl mb-4 shadow-md shadow-emerald-600/20">
+              <i class="fa-solid fa-notes-medical"></i>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Atención a Pie Diabético</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Cuidado ultra minucioso enfocado en prevenir úlceras y lesiones. Revisión de sensibilidad, hidratación con cremas de grado médico y corte seguro.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 mb-4">
+              <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Monitoreo vascular y de pulsos</li>
+              <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Prevención de fisuras y maceraciones</li>
+              <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Guía personalizada de cuidado diario</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs text-slate-500">Revisión y profilaxis</span>
+            <span class="font-bold text-medical-700 text-base">Desde $400 MXN</span>
+          </div>
+        </div>
+
+        <!-- Service 5: Masaje Relajante & Podo-Spa -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 service-card flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-sky-600 text-white rounded-xl flex items-center justify-center text-xl mb-4 shadow-md shadow-sky-600/20">
+              <i class="fa-solid fa-spa"></i>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Masaje Relajante & Podo-Spa</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              30 minutos de masaje descontracturante con aceites esenciales puros, música ambiental con sonidos de la naturaleza, exfoliación profunda y aromaterapia.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 mb-4">
+              <li><i class="fa-solid fa-check text-sky-600 mr-1.5"></i> Alivio de pesadez y fascitis plantar</li>
+              <li><i class="fa-solid fa-check text-sky-600 mr-1.5"></i> Exfoliación podal e hidratación intensiva</li>
+              <li><i class="fa-solid fa-check text-sky-600 mr-1.5"></i> Difusor de aromaterapia relajante</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs text-slate-500">30 min de bienestar</span>
+            <span class="font-bold text-medical-700 text-base">Promo: $320 MXN</span>
+          </div>
+        </div>
+
+        <!-- Service 6: Talones Agrietados & Callosidades -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 service-card flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-medical-800 text-white rounded-xl flex items-center justify-center text-xl mb-4 shadow-md shadow-medical-800/20">
+              <i class="fa-solid fa-hand-dots"></i>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Talones Agrietados e Hiperqueratosis</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Pulido mecánico de durezas, eliminación de resequedad extrema y sellado dérmico con cremas a base de urea para evitar grietas sangrantes o dolorosas.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 mb-4">
+              <li><i class="fa-solid fa-check text-medical-600 mr-1.5"></i> Piel suave y renovada al instante</li>
+              <li><i class="fa-solid fa-check text-medical-600 mr-1.5"></i> Cierre de grietas en talón y planta</li>
+              <li><i class="fa-solid fa-check text-medical-600 mr-1.5"></i> Tratamiento de sudoración excesiva</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs text-slate-500">Tratamiento reparador</span>
+            <span class="font-bold text-medical-700 text-base">Desde $300 MXN</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section: Protocolo Clínico & Bioseguridad -->
+  <section id="proceso" class="py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Image grid -->
+        <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <div class="rounded-2xl overflow-hidden shadow-md border-2 border-white">
+              <img src="img/quiropodia-preventiva.jpg" alt="Instrumental podológico esterilizado" class="w-full h-56 object-cover hover:scale-105 transition duration-300">
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-md border-2 border-white">
+              <img src="img/consultorio-esteril.jpg" alt="Consultorio médico higiénico" class="w-full h-44 object-cover hover:scale-105 transition duration-300">
+            </div>
+          </div>
+          <div class="space-y-4 pt-8">
+            <div class="rounded-2xl overflow-hidden shadow-md border-2 border-white">
+              <img src="img/unas-encarnadas.jpg" alt="Cuidado podológico especializado" class="w-full h-44 object-cover hover:scale-105 transition duration-300">
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-md border-2 border-white">
+              <img src="img/masaje-spa-podal.jpg" alt="Relajación podal y aromaterapia" class="w-full h-56 object-cover hover:scale-105 transition duration-300">
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Process list -->
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-medical-600 font-bold text-xs uppercase tracking-widest bg-medical-100 px-3 py-1 rounded-full border border-medical-200">
+            Tu Tranquilidad Es Nuestra Prioridad
+          </span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
+            ¿Por qué elegir PodoMedicaMx?
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Un consultorio concebido para ofrecerte una experiencia médica cálida, higiénica y reconfortante.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200 custom-shadow">
+              <div class="w-10 h-10 rounded-lg bg-medical-50 text-medical-600 font-display font-bold flex items-center justify-center text-lg shrink-0">
+                <i class="fa-solid fa-pump-medical"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-base">Esterilización de Grado Quirúrgico</h4>
+                <p class="text-xs sm:text-sm text-slate-600 mt-0.5">Cada set de instrumental pasa por autoclave y se abre frente al paciente en bolsa sellada con testigo de esterilización. Cero riesgo de contaminación cruzada.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200 custom-shadow">
+              <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 font-display font-bold flex items-center justify-center text-lg shrink-0">
+                <i class="fa-solid fa-stethoscope"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-base">Valoración Médica Inicial Incluida</h4>
+                <p class="text-xs sm:text-sm text-slate-600 mt-0.5">Toma de presión arterial, saturación de oxígeno, revisión biomecánica de la pisada y elaboración de historial clínico detallado.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200 custom-shadow">
+              <div class="w-10 h-10 rounded-lg bg-medical-50 text-medical-600 font-display font-bold flex items-center justify-center text-lg shrink-0">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-base">Puntualidad Absoluta (Solo con Cita)</h4>
+                <p class="text-xs sm:text-sm text-slate-600 mt-0.5">Sin salas de espera llenas ni prisas. Tu espacio está reservado exclusivamente para ti con la dedicación de tiempo que tus pies merecen.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Section: Cotizador de Citas & WhatsApp -->
+  <section id="cotizador" class="py-20 bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14 space-y-3">
+        <span class="text-medical-600 font-bold text-xs uppercase tracking-widest bg-medical-50 px-3.5 py-1 rounded-full border border-medical-100">
+          Transparencia y Claridad
+        </span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
+          Cotizador Podológico en Vivo
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          Elige el servicio que requieres, agrega complementos si lo deseas y solicita tu horario preferido directo a WhatsApp.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Controls Left -->
+        <div class="lg:col-span-7 bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 custom-shadow space-y-6">
+          
+          <!-- Step 1: Principal Service -->
+          <div>
+            <label class="block text-sm font-bold text-slate-900 uppercase tracking-wider mb-3">
+              1. Selecciona el Servicio Principal:
+            </label>
+            <div class="grid sm:grid-cols-2 gap-3" id="services-container">
+              
+              <!-- Option 1: Quiropodia -->
+              <label class="relative flex flex-col p-4 rounded-xl border-2 border-medical-500 bg-medical-50/50 cursor-pointer transition hover:border-medical-600">
+                <input type="radio" name="pod-service" value="350" data-name="Servicio de Quiropodia Completa" data-price="350" checked class="hidden" onchange="calculateQuote()">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-slate-900 text-sm">Quiropodia Completa</span>
+                  <span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-medical-100 text-medical-800 uppercase">Recomendado</span>
+                </div>
+                <span class="text-xs text-slate-500 mb-2">Corte correcto, desbridación de callos, hidratación y revisión.</span>
+                <span class="font-display text-xl font-bold text-medical-700">$350 MXN</span>
+              </label>
+
+              <!-- Option 2: Uña Encarnada -->
+              <label class="relative flex flex-col p-4 rounded-xl border-2 border-slate-200 bg-white cursor-pointer transition hover:border-medical-500">
+                <input type="radio" name="pod-service" value="450" data-name="Atención a Uña Encarnada (Espiculotomía)" data-price="450" class="hidden" onchange="calculateQuote()">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-slate-900 text-sm">Uña Encarnada</span>
+                  <span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-red-100 text-red-800 uppercase">Alivio Inmediato</span>
+                </div>
+                <span class="text-xs text-slate-500 mb-2">Extracción exclusiva de espícula, curación y anestesia si aplica.</span>
+                <span class="font-display text-xl font-bold text-slate-900">$450 MXN</span>
+              </label>
+
+              <!-- Option 3: Hongos / Onicomicosis -->
+              <label class="relative flex flex-col p-4 rounded-xl border-2 border-slate-200 bg-white cursor-pointer transition hover:border-medical-500">
+                <input type="radio" name="pod-service" value="400" data-name="Tratamiento de Hongos (Onicomicosis)" data-price="400" class="hidden" onchange="calculateQuote()">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-slate-900 text-sm">Tratamiento de Hongos</span>
+                  <span class="text-xs text-slate-400">Onicomicosis</span>
+                </div>
+                <span class="text-xs text-slate-500 mb-2">Desbastado mecánico, saneamiento y antimicótico tópico.</span>
+                <span class="font-display text-xl font-bold text-slate-900">$400 MXN</span>
+              </label>
+
+              <!-- Option 4: Pie Diabético -->
+              <label class="relative flex flex-col p-4 rounded-xl border-2 border-slate-200 bg-white cursor-pointer transition hover:border-medical-500">
+                <input type="radio" name="pod-service" value="400" data-name="Cuidado Preventivo de Pie Diabético" data-price="400" class="hidden" onchange="calculateQuote()">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-slate-900 text-sm">Pie Diabético</span>
+                  <span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 uppercase">Preventivo</span>
+                </div>
+                <span class="text-xs text-slate-500 mb-2">Revisión de pulsos, corte no lesivo y humectación clínica.</span>
+                <span class="font-display text-xl font-bold text-slate-900">$400 MXN</span>
+              </label>
+
+              <!-- Option 5: Masaje Relajante -->
+              <label class="relative flex flex-col p-4 rounded-xl border-2 border-slate-200 bg-white cursor-pointer transition hover:border-medical-500 col-span-1 sm:col-span-2">
+                <input type="radio" name="pod-service" value="320" data-name="Masaje Podal Relajante & Podo-Spa (30 Min)" data-price="320" class="hidden" onchange="calculateQuote()">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-slate-900 text-sm">Masaje Podal Relajante & Podo-Spa (30 Minutos)</span>
+                  <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-sky-100 text-sky-800 uppercase">Promo Bienestar</span>
+                </div>
+                <span class="text-xs text-slate-500 mb-1">Aceites esenciales, música con sonidos de la naturaleza, aromaterapia con difusor y exfoliación podal profunda.</span>
+                <span class="font-display text-xl font-bold text-slate-900">$320 MXN</span>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Step 2: Extras / Complementos -->
+          <div>
+            <label class="block text-sm font-bold text-slate-900 uppercase tracking-wider mb-3">
+              2. Procedimientos o Complementos Opcionales:
+            </label>
+            <div class="space-y-2.5">
+              <label class="flex items-center justify-between p-3 rounded-xl bg-white border border-slate-200 cursor-pointer hover:bg-medical-50/40 transition">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" id="extra-ozono" value="80" data-name="Desinfección de Calzado con Ozono/UV" class="w-4 h-4 text-medical-600 rounded border-slate-300 focus:ring-medical-500" onchange="calculateQuote()">
+                  <div>
+                    <span class="text-sm font-semibold text-slate-900">Desinfección de Calzado con Ozono / Luz UV</span>
+                    <span class="block text-xs text-slate-500">Elimina el 99.9% de hongos y bacterias de tus zapatos</span>
+                  </div>
+                </div>
+                <span class="text-sm font-bold text-slate-800">+$80 MXN</span>
+              </label>
+
+              <label class="flex items-center justify-between p-3 rounded-xl bg-white border border-slate-200 cursor-pointer hover:bg-medical-50/40 transition">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" id="extra-talones" value="120" data-name="Tratamiento Profundo de Talones Agrietados" class="w-4 h-4 text-medical-600 rounded border-slate-300 focus:ring-medical-500" onchange="calculateQuote()">
+                  <div>
+                    <span class="text-sm font-semibold text-slate-900">Pulido e Hidratación Intensiva de Talones Agrietados</span>
+                    <span class="block text-xs text-slate-500">Cierre de fisuras con pomada regeneradora a base de urea</span>
+                  </div>
+                </div>
+                <span class="text-sm font-bold text-slate-800">+$120 MXN</span>
+              </label>
+
+              <label class="flex items-center justify-between p-3 rounded-xl bg-white border border-slate-200 cursor-pointer hover:bg-medical-50/40 transition">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" id="extra-segunda-espicula" value="180" data-name="Atención a Canal Ungueal Adicional" class="w-4 h-4 text-medical-600 rounded border-slate-300 focus:ring-medical-500" onchange="calculateQuote()">
+                  <div>
+                    <span class="text-sm font-semibold text-slate-900">Atención a 2º Canal Ungueal / Otra Uña Encarnada</span>
+                    <span class="block text-xs text-slate-500">Si presentas molestia en ambos lados o en ambos pies</span>
+                  </div>
+                </div>
+                <span class="text-sm font-bold text-slate-800">+$180 MXN</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 3: Turno / Día -->
+          <div>
+            <label class="block text-sm font-bold text-slate-900 uppercase tracking-wider mb-2">
+              3. ¿Qué día y horario te acomoda mejor?
+            </label>
+            <select id="schedule-select" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-800 focus:ring-2 focus:ring-medical-500 focus:border-medical-500" onchange="calculateQuote()">
+              <option value="Lunes a Jueves (Turno Vespertino: 12:00 PM - 9:00 PM)">📅 Lunes a Jueves (12:00 PM a 9:00 PM)</option>
+              <option value="Miércoles o Viernes (Turno Matutino: 10:00 AM - 2:00 PM)">🌅 Miércoles o Viernes (10:00 AM a 2:00 PM)</option>
+              <option value="Viernes (Turno Tarde: 2:00 PM - 9:00 PM)">🌙 Viernes (2:00 PM a 9:00 PM)</option>
+              <option value="Sábado (10:00 AM - 7:00 PM)">⚡ Sábado (10:00 AM a 7:00 PM)</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Summary Sticky Card Right -->
+        <div class="lg:col-span-5 sticky top-28 bg-slate-900 text-white p-6 sm:p-8 rounded-2xl shadow-xl border border-slate-800 space-y-6">
+          
+          <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+            <div>
+              <span class="text-xs uppercase font-bold text-sky-400 tracking-wider">Presupuesto Estimado</span>
+              <h3 class="font-display text-2xl font-bold uppercase text-white">Tu Cita Médica</h3>
+            </div>
+            <div class="w-10 h-10 rounded-xl bg-medical-500/20 text-sky-400 flex items-center justify-center text-xl">
+              <i class="fa-solid fa-file-invoice-dollar"></i>
+            </div>
+          </div>
+
+          <div class="space-y-3 text-sm">
+            
+            <div class="flex justify-between items-start gap-2">
+              <span class="text-slate-300" id="summary-service-name">Servicio de Quiropodia Completa</span>
+              <span class="font-bold text-white shrink-0" id="summary-service-price">$350 MXN</span>
+            </div>
+
+            <div id="summary-extras" class="space-y-1.5 pt-2 border-t border-slate-800/80 text-xs text-slate-300">
+              <div class="text-slate-500 italic">Sin complementos adicionales seleccionados</div>
+            </div>
+
+            <div class="pt-3 border-t border-slate-800 flex justify-between items-center text-xs text-slate-400">
+              <span>Preferencia de horario:</span>
+              <span class="font-medium text-slate-200 text-right truncate max-w-[200px]" id="summary-schedule">Lunes a Jueves</span>
+            </div>
+
+          </div>
+
+          <!-- Total Calculation -->
+          <div class="pt-4 border-t-2 border-dashed border-slate-800 flex items-baseline justify-between">
+            <span class="text-xs uppercase font-bold text-slate-400 tracking-wider">Total Estimado:</span>
+            <div class="text-right">
+              <span class="font-display text-3xl sm:text-4xl font-bold text-sky-400" id="summary-total">$350</span>
+              <span class="text-xs text-slate-400 block font-sans">Pago en consultorio (Efectivo / Tarjeta / Transferencia)</span>
+            </div>
+          </div>
+
+          <!-- WhatsApp Button -->
+          <div class="space-y-3 pt-2">
+            <a id="whatsapp-btn" href="#" target="_blank" class="w-full inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-base px-6 py-4 rounded-xl shadow-lg shadow-emerald-500/25 transition transform active:scale-95 text-center">
+              <i class="fa-brands fa-whatsapp text-2xl"></i>
+              <span>Solicitar Cita por WhatsApp</span>
+            </a>
+            <p class="text-[11px] text-slate-400 text-center leading-tight">
+              <i class="fa-solid fa-shield-check text-emerald-400 mr-1"></i> Confirmación rápida. Te respondemos con los horarios disponibles.
+            </p>
+          </div>
+
+          <!-- Payment Methods Accepted -->
+          <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+            <span>Aceptamos:</span>
+            <div class="flex items-center gap-2 text-slate-300">
+              <i class="fa-solid fa-money-bill-wave text-emerald-400" title="Efectivo"></i> Efectivo &middot;
+              <i class="fa-solid fa-credit-card text-sky-400" title="Tarjeta"></i> Tarjetas &middot;
+              <i class="fa-solid fa-mobile-screen text-indigo-400" title="Transferencia"></i> SPEI
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section: Opiniones Reales de Pacientes -->
+  <section id="testimonios" class="py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold">
+          <i class="fa-solid fa-star text-amber-500"></i> Calificación 4.9 en Google Maps
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
+          La Opinión de Nuestros Pacientes
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          Agradecemos a cada paciente que hace de PodoMedicaMx su consultorio podológico de primera opción.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 custom-shadow flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-400 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-sm italic leading-relaxed">
+              "Llevaba semanas con un dolor terrible en el dedo gordo por una uña encarnada y me daba pánico ir al podólogo por miedo a que me doliera más. El podólogo Isbek fue sumamente cuidadoso y paciente, no sentí absolutamente nada y salí caminando sin dolor. ¡100% recomendado!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-6 border-t border-slate-100 mt-6">
+            <div class="w-10 h-10 rounded-full bg-medical-100 text-medical-800 font-bold flex items-center justify-center text-sm">
+              LR
+            </div>
+            <div>
+              <div class="font-bold text-slate-900 text-sm">Leticia R.</div>
+              <div class="text-xs text-slate-500">Paciente de Col. Federal &middot; Venustiano Carranza</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 custom-shadow flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-400 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-sm italic leading-relaxed">
+              "Llevé a mi papá que es paciente diabético para su corte de uñas y revisión. La atención fue impecable: le tomaron la presión, le revisaron la sensibilidad y el instrumental estaba perfectamente esterilizado frente a nosotros. Te da muchísima confianza."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-6 border-t border-slate-100 mt-6">
+            <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center text-sm">
+              GA
+            </div>
+            <div>
+              <div class="font-bold text-slate-900 text-sm">Gerardo A.</div>
+              <div class="text-xs text-slate-500">Atención a Pie Diabético</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 custom-shadow flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-400 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-sm italic leading-relaxed">
+              "El servicio de quiropodia más el masaje con aromaterapia de 30 minutos es una maravilla. Paso todo el día de pie en mi trabajo y mis pies quedaron descansados, suaves y sin callosidades. Además está súper cerca de la estación Gómez Farías."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-6 border-t border-slate-100 mt-6">
+            <div class="w-10 h-10 rounded-full bg-sky-100 text-sky-800 font-bold flex items-center justify-center text-sm">
+              MV
+            </div>
+            <div>
+              <div class="font-bold text-slate-900 text-sm">Mónica V.</div>
+              <div class="text-xs text-slate-500">Quiropodia & Podo-Spa</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section: Preguntas Frecuentes (FAQ Accordion) -->
+  <section class="py-20 bg-white border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+        <span class="text-medical-600 font-bold text-xs uppercase tracking-widest bg-medical-50 px-3.5 py-1 rounded-full border border-medical-100">
+          Preguntas Frecuentes
+        </span>
+        <h2 class="font-display text-3xl font-bold text-slate-900 tracking-tight">
+          Resolvemos tus Inquietudes
+        </h2>
+      </div>
+
+      <div class="space-y-3" id="faq-accordion">
+        
+        <!-- FAQ 1 -->
+        <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
+          <button class="w-full p-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-100/70 transition" onclick="toggleFaq(this)">
+            <span>¿Duele el procedimiento para sacar una uña encarnada?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-200"></i>
+          </button>
+          <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed hidden">
+            No. Utilizamos técnicas de espiculotomía mínimamente invasivas y con instrumentos milimétricos de precisión. Nuestro objetivo es retirar únicamente la pequeña astilla que genera la presión y el dolor sin lastimar el dedo. Si la zona presenta inflamación severa, aplicamos anestésico local para garantizar tu completa comodidad.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
+          <button class="w-full p-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-100/70 transition" onclick="toggleFaq(this)">
+            <span>¿Por qué es indispensable agendar con previa cita?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-200"></i>
+          </button>
+          <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed hidden">
+            Por disposición sanitaria y respeto a tu tiempo. Al trabajar con previa cita evitamos aglomeraciones en la sala de espera, desinfectamos exhaustivamente la unidad podológica entre paciente y paciente, y te garantizamos que tu consulta iniciará puntualmente con toda nuestra atención.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
+          <button class="w-full p-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-100/70 transition" onclick="toggleFaq(this)">
+            <span>¿Cuánto dura una sesión de quiropodia preventiva?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-200"></i>
+          </button>
+          <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed hidden">
+            Una sesión habitual toma entre 40 y 50 minutos. Esto incluye la historia clínica inicial, revisión integral, corte anatómico de láminas, desbridación de durezas, exfoliación, hidratación y aplicación de loción refrescante.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
+          <button class="w-full p-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-100/70 transition" onclick="toggleFaq(this)">
+            <span>¿Cómo puedo saber si tengo hongos o si solo es un golpe?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-200"></i>
+          </button>
+          <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed hidden">
+            En tu valoración clínica revisamos la consistencia, coloración, engrosamiento y desprendimiento de la lámina ungueal. En caso de sospecha fúngica, desbastamos el tejido dañado y te orientamos con el tratamiento tópico más efectivo para erradicar el hongo desde la raíz.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
+          <button class="w-full p-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-100/70 transition" onclick="toggleFaq(this)">
+            <span>¿Qué métodos de pago aceptan en el consultorio?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-200"></i>
+          </button>
+          <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed hidden">
+            Aceptamos pago en efectivo, tarjeta de débito, tarjeta de crédito y transferencias bancarias directas (SPEI) al finalizar tu procedimiento.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section: Ubicación & Mapa -->
+  <section id="ubicacion" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Info -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-medical-600 font-bold text-xs uppercase tracking-widest bg-medical-100 px-3 py-1 rounded-full border border-medical-200">
+            Excelente Ubicación y Accesibilidad
+          </span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
+            Ven a PodoMedicaMx
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Estamos convenientemente ubicados en la Colonia Federal, a solo unos pasos de la estación del Metro Gómez Farías y de Calzada Ignacio Zaragoza.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+              <div class="w-10 h-10 rounded-lg bg-medical-600 text-white flex items-center justify-center shrink-0 text-lg">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="text-sm">
+                <div class="font-bold text-slate-900">Dirección del Consultorio:</div>
+                <div class="text-slate-600">Calle Gobierno Del Distrito #83, Col. Federal, Alcaldía Venustiano Carranza, C.P. 15700, Ciudad de México.</div>
+                <div class="text-xs text-medical-700 font-semibold mt-1">
+                  🚇 A 1 cuadra de Metro Gómez Farías (Línea 1 Rosa)
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+              <div class="w-10 h-10 rounded-lg bg-slate-800 text-white flex items-center justify-center shrink-0 text-lg">
+                <i class="fa-regular fa-clock"></i>
+              </div>
+              <div class="text-sm">
+                <div class="font-bold text-slate-900">Horarios de Consulta (Previa Cita):</div>
+                <div class="text-slate-600"><strong>Lunes a Jueves:</strong> 12:00 PM – 9:00 PM</div>
+                <div class="text-slate-600"><strong>Miércoles y Viernes:</strong> 10:00 AM – 9:00 PM</div>
+                <div class="text-slate-600"><strong>Sábados:</strong> 10:00 AM – 7:00 PM &middot; <strong>Domingos:</strong> Cerrado</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200">
+              <div class="w-10 h-10 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0 text-lg">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="text-sm">
+                <div class="font-bold text-slate-900">Citas & Consultas Directas:</div>
+                <a href="https://api.whatsapp.com/send?phone=525513924669" target="_blank" class="text-emerald-700 font-bold hover:underline">
+                  +52 55 1392 4669
+                </a>
+                <div class="text-xs text-slate-500">Escríbenos o llámanos para reservar tu turno.</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Right: Map -->
+        <div class="lg:col-span-7">
+          <div class="rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-slate-100 h-[420px]">
+            <iframe 
+              src="https://maps.google.com/maps?q=Calle+Gobierno+Del+Distrito+83,+Federal,+Venustiano+Carranza,+15700+Ciudad+de+M%C3%A9xico,+CDMX&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-medical-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
+            <i class="fa-solid fa-socks"></i>
+          </div>
+          <div>
+            <span class="font-display text-xl font-bold tracking-tight text-white block leading-none">
+              PodoMedicaMX
+            </span>
+            <span class="text-xs text-sky-400 font-bold uppercase tracking-wider">
+              Consultorio Podológico &middot; Venustiano Carranza CDMX
+            </span>
+          </div>
+        </div>
+
+        <div class="text-xs text-slate-500">
+          Gobierno Del Distrito #83, Col. Federal, CDMX &middot; Tel: +52 55 1392 4669 <br>
+          &copy; 2026 PodoMedicaMx. Todos los derechos reservados.
+        </div>
+
+        <div class="flex items-center gap-4 text-base">
+          <a href="https://api.whatsapp.com/send?phone=525513924669" target="_blank" class="w-9 h-9 rounded-full bg-slate-900 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="#cotizador" class="w-9 h-9 rounded-full bg-slate-900 hover:bg-medical-600 text-slate-300 hover:text-white flex items-center justify-center transition">
+            <i class="fa-solid fa-calendar-check"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://api.whatsapp.com/send?phone=525513924669&text=Hola%20PodoMedicaMx!%20Deseo%20agendar%20una%20cita%20podol%C3%B3gica" target="_blank" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-3.5 rounded-full shadow-2xl hover:scale-105 transition transform group">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+    <span class="font-bold text-sm hidden sm:inline tracking-wide">Agendar Cita por WhatsApp</span>
+  </a>
+
+  <!-- Script for Interactive Calculator & Accordion -->
+  <script>
+    function calculateQuote() {
+      // Get selected main service
+      const selectedService = document.querySelector('input[name="pod-service"]:checked');
+      const servicePrice = parseInt(selectedService.value, 10);
+      const serviceName = selectedService.getAttribute('data-name');
+
+      // Update styling of service cards
+      document.querySelectorAll('input[name="pod-service"]').forEach(radio => {
+        const card = radio.closest('label');
+        if (radio.checked) {
+          card.classList.add('border-medical-500', 'bg-medical-50/50');
+          card.classList.remove('border-slate-200', 'bg-white');
+        } else {
+          card.classList.remove('border-medical-500', 'bg-medical-50/50');
+          card.classList.add('border-slate-200', 'bg-white');
+        }
+      });
+
+      // Update summary plan name and price
+      document.getElementById('summary-service-name').textContent = serviceName;
+      document.getElementById('summary-service-price').textContent = `$${servicePrice.toLocaleString('es-MX')} MXN`;
+
+      // Get extras
+      const extras = [
+        document.getElementById('extra-ozono'),
+        document.getElementById('extra-talones'),
+        document.getElementById('extra-segunda-espicula')
+      ];
+
+      let extrasTotal = 0;
+      let extrasSelected = [];
+
+      extras.forEach(item => {
+        if (item && item.checked) {
+          const price = parseInt(item.value, 10);
+          extrasTotal += price;
+          extrasSelected.push({
+            name: item.getAttribute('data-name'),
+            price: price
+          });
+        }
+      });
+
+      // Update extras in summary
+      const extrasContainer = document.getElementById('summary-extras');
+      if (extrasSelected.length === 0) {
+        extrasContainer.innerHTML = '<div class="text-slate-500 italic">Sin complementos adicionales seleccionados</div>';
+      } else {
+        extrasContainer.innerHTML = extrasSelected.map(ex => `
+          <div class="flex justify-between items-center text-slate-300">
+            <span>&bull; ${ex.name}</span>
+            <span class="font-semibold text-slate-200">+$${ex.price} MXN</span>
+          </div>
+        `).join('');
+      }
+
+      // Schedule
+      const scheduleSelect = document.getElementById('schedule-select');
+      document.getElementById('summary-schedule').textContent = scheduleSelect.value;
+
+      // Grand Total
+      const grandTotal = servicePrice + extrasTotal;
+      document.getElementById('summary-total').textContent = `$${grandTotal.toLocaleString('es-MX')} MXN`;
+
+      // Prepare WhatsApp link
+      let message = `🦶 *¡Hola PodoMedicaMx!* Me interesa agendar una cita podológica en su consultorio:%0A%0A`;
+      message += `📋 *Procedimiento principal:* ${encodeURIComponent(serviceName)} ($${servicePrice} MXN)%0A`;
+      
+      if (extrasSelected.length > 0) {
+        message += `➕ *Complementos adicionales:*%0A`;
+        extrasSelected.forEach(ex => {
+          message += `   - ${encodeURIComponent(ex.name)} (+$${ex.price} MXN)%0A`;
+        });
+      }
+      message += `⏰ *Preferencia de horario:* ${encodeURIComponent(scheduleSelect.value)}%0A`;
+      message += `💰 *Total estimado:* $${grandTotal.toLocaleString('es-MX')} MXN%0A%0A`;
+      message += `¿Qué horarios tienen disponibles para asistir a Calle Gobierno Del Distrito #83? ¡Muchas gracias!`;
+
+      const whatsappBtn = document.getElementById('whatsapp-btn');
+      whatsappBtn.href = `https://api.whatsapp.com/send?phone=525513924669&text=${message}`;
+    }
+
+    // Toggle FAQ Accordion
+    function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('i');
+      
+      const isOpen = !content.classList.contains('hidden');
+      
+      // Close all
+      document.querySelectorAll('#faq-accordion > div > div').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('#faq-accordion button i').forEach(ic => ic.style.transform = 'rotate(0deg)');
+      
+      if (!isOpen) {
+        content.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    // Init on load
+    document.addEventListener('DOMContentLoaded', () => {
+      calculateQuote();
+    });
+  </script>
+
+</body>
+</html>
