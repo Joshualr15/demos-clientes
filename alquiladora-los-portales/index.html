@@ -1,0 +1,2171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alquiladora Los Portales | Renta de Mobiliario, Carpas y Salas Lounge CDMX</title>
+  <meta name="description" content="Renta de sillas Tiffany, mesas redondas, carpas elegantes, salas lounge y vajilla para eventos en Benito Juárez, Coyoacán y toda CDMX. Cotiza por WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #B45309;
+      --primary-hover: #92400E;
+      --primary-light: #FEF3C7;
+      --secondary: #0F172A;
+      --secondary-light: #1E293B;
+      --accent: #D97706;
+      --whatsapp: #25D366;
+      --whatsapp-hover: #1EBE5D;
+      --bg-light: #FFFDF7;
+      --bg-card: #FFFFFF;
+      --bg-subtle: #F8FAFC;
+      --text-main: #0F172A;
+      --text-muted: #475569;
+      --text-light: #64748B;
+      --border: #E2E8F0;
+      --border-accent: #FDE68A;
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+      --shadow-md: 0 4px 20px -2px rgba(15, 23, 42, 0.08);
+      --shadow-lg: 0 12px 30px -4px rgba(15, 23, 42, 0.12);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--secondary);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Top bar */
+    .top-bar {
+      background: var(--secondary);
+      color: #F8FAFC;
+      font-size: 0.85rem;
+      padding: 8px 0;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .top-bar-links {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .top-bar-links a {
+      color: #E2E8F0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+
+    .top-bar-links a:hover {
+      color: #FBBF24;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+      border-bottom: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .navbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 78px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--accent), var(--primary));
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 800;
+      font-size: 1.3rem;
+      box-shadow: 0 4px 12px rgba(217, 119, 6, 0.28);
+    }
+
+    .brand-text h1 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--secondary);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-text span {
+      font-size: 0.75rem;
+      color: var(--primary);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-menu a {
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+
+    .nav-menu a:hover {
+      color: var(--primary);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), var(--primary));
+      color: white;
+      box-shadow: 0 4px 14px rgba(180, 83, 9, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(180, 83, 9, 0.4);
+      color: white;
+    }
+
+    .btn-whatsapp {
+      background: var(--whatsapp);
+      color: white;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+    }
+
+    .btn-whatsapp:hover {
+      background: var(--whatsapp-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+      color: white;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--secondary);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-subtle);
+      border-color: #CBD5E1;
+      transform: translateY(-2px);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 60px 0 80px;
+      background: radial-gradient(circle at 10% 20%, #FFFBEB 0%, #FFFDF7 90%);
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: var(--primary-light);
+      color: var(--primary-hover);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--secondary);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+    }
+
+    .hero-title span {
+      background: linear-gradient(135deg, var(--accent), var(--primary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 32px;
+      max-width: 580px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(226, 232, 240, 0.8);
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .trust-item svg {
+      color: #10B981;
+      flex-shrink: 0;
+    }
+
+    .hero-image-wrap {
+      position: relative;
+    }
+
+    .hero-image-main {
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      border: 6px solid white;
+    }
+
+    .hero-image-main img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .hero-image-main:hover img {
+      transform: scale(1.03);
+    }
+
+    .floating-card {
+      position: absolute;
+      bottom: -20px;
+      left: -20px;
+      background: white;
+      padding: 18px 24px;
+      border-radius: var(--radius-md);
+      box-shadow: 0 16px 36px rgba(15, 23, 42, 0.15);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      z-index: 2;
+    }
+
+    .floating-badge-icon {
+      width: 48px;
+      height: 48px;
+      background: #FEF3C7;
+      color: #B45309;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+
+    .floating-card-text p {
+      font-size: 0.78rem;
+      color: var(--text-light);
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    .floating-card-text h4 {
+      font-size: 1.15rem;
+      color: var(--secondary);
+    }
+
+    /* Quick stats */
+    .stats-bar {
+      background: white;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 36px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    /* Section styles */
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 54px;
+    }
+
+    .section-badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      background: var(--primary-light);
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: 2.3rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Catalog Cards */
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .catalog-card {
+      background: white;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .catalog-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: #CBD5E1;
+    }
+
+    .card-img-wrap {
+      height: 220px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .catalog-card:hover .card-img-wrap img {
+      transform: scale(1.08);
+    }
+
+    .card-badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(4px);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+    }
+
+    .card-body {
+      padding: 24px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-body h3 {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+      color: var(--secondary);
+    }
+
+    .card-body p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin-bottom: 18px;
+      flex-grow: 1;
+    }
+
+    .card-features {
+      list-style: none;
+      margin-bottom: 20px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+
+    .card-features li {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-features li svg {
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    .card-action {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-price {
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    .card-price strong {
+      font-size: 1.15rem;
+      color: var(--secondary);
+    }
+
+    /* Calculator Section */
+    .calculator-section {
+      background: #FAF6ED;
+      border-top: 1px solid #EFE6D6;
+      border-bottom: 1px solid #EFE6D6;
+      position: relative;
+    }
+
+    .calc-box {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid #E5E7EB;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+    }
+
+    .calc-step {
+      margin-bottom: 26px;
+    }
+
+    .calc-step label {
+      display: block;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--secondary);
+      margin-bottom: 10px;
+    }
+
+    .option-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pill-btn {
+      padding: 10px 18px;
+      border: 2px solid var(--border);
+      border-radius: var(--radius-full);
+      background: white;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .pill-btn:hover {
+      border-color: var(--accent);
+      color: var(--primary);
+    }
+
+    .pill-btn.active {
+      border-color: var(--primary);
+      background: var(--primary-light);
+      color: var(--primary-hover);
+      box-shadow: 0 2px 8px rgba(180, 83, 9, 0.15);
+    }
+
+    .calc-addons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .addon-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: #FDFDFD;
+    }
+
+    .addon-item:hover {
+      background: #F8FAFC;
+      border-color: #CBD5E1;
+    }
+
+    .addon-item.selected {
+      border-color: var(--primary);
+      background: #FFFDF5;
+    }
+
+    .addon-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--secondary);
+    }
+
+    .addon-info input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--primary);
+      cursor: pointer;
+    }
+
+    .addon-price {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .calc-summary {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .summary-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .summary-list {
+      list-style: none;
+      margin-bottom: 24px;
+      font-size: 0.92rem;
+    }
+
+    .summary-list li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      color: var(--text-muted);
+    }
+
+    .summary-list li strong {
+      color: var(--secondary);
+    }
+
+    .summary-total {
+      padding-top: 18px;
+      border-top: 2px dashed var(--border);
+      margin-bottom: 24px;
+    }
+
+    .total-label {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    .total-amount {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--primary);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .total-note {
+      font-size: 0.78rem;
+      color: var(--text-light);
+      margin-top: 4px;
+    }
+
+    /* Packages Section */
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .package-card {
+      background: white;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      padding: 34px 28px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .package-card.popular {
+      border: 2px solid var(--primary);
+      box-shadow: var(--shadow-lg);
+      transform: scale(1.03);
+    }
+
+    .package-badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--primary);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 16px;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .package-header {
+      text-align: center;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .package-name {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+
+    .package-capacity {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 14px;
+    }
+
+    .package-price {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--secondary);
+    }
+
+    .package-price span {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-light);
+    }
+
+    .package-features {
+      list-style: none;
+      margin-bottom: 30px;
+      flex-grow: 1;
+    }
+
+    .package-features li {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .package-features li svg {
+      color: #10B981;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    /* Benefits section */
+    .benefits-section {
+      background: white;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .benefit-item {
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+    }
+
+    .benefit-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--primary-light);
+      color: var(--primary);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+    }
+
+    .benefit-item h3 {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+    }
+
+    .benefit-item p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Reviews */
+    .reviews-section {
+      background: #FDFBF7;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .review-card {
+      background: white;
+      border-radius: var(--radius-md);
+      padding: 30px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .review-stars {
+      color: #F59E0B;
+      font-size: 1.1rem;
+      margin-bottom: 14px;
+    }
+
+    .review-text {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-style: italic;
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    .reviewer {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .reviewer-avatar {
+      width: 44px;
+      height: 44px;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-weight: 700;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+
+    .reviewer-info h4 {
+      font-size: 0.95rem;
+      color: var(--secondary);
+    }
+
+    .reviewer-info p {
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+
+    /* Location / Contact section */
+    .contact-section {
+      background: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: stretch;
+    }
+
+    .contact-info-card {
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    .contact-text h4 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+      color: var(--secondary);
+    }
+
+    .contact-text p, .contact-text a {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    .contact-text a:hover {
+      color: var(--primary);
+    }
+
+    .map-frame {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      height: 100%;
+      min-height: 380px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .map-frame iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 380px;
+      border: 0;
+    }
+
+    /* FAQ */
+    .faq-section {
+      background: #F8FAFC;
+    }
+
+    .faq-grid {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .faq-item {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 22px 26px;
+    }
+
+    .faq-item h3 {
+      font-size: 1.05rem;
+      color: var(--secondary);
+      margin-bottom: 8px;
+    }
+
+    .faq-item p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* CTA Banner */
+    .cta-banner {
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+      color: white;
+      padding: 70px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .cta-banner h2 {
+      color: white;
+      font-size: 2.4rem;
+      margin-bottom: 16px;
+    }
+
+    .cta-banner p {
+      color: #CBD5E1;
+      font-size: 1.1rem;
+      max-width: 620px;
+      margin: 0 auto 32px;
+    }
+
+    .cta-banner .btn-whatsapp {
+      padding: 16px 36px;
+      font-size: 1.05rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #0B1120;
+      color: #94A3B8;
+      padding: 50px 0 24px;
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col h4 {
+      color: white;
+      font-size: 1rem;
+      margin-bottom: 18px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      color: #94A3B8;
+      transition: color 0.2s;
+    }
+
+    .footer-col ul li a:hover {
+      color: #FBBF24;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #1E293B;
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.85rem;
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25D366;
+      color: white;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+      z-index: 999;
+      transition: all 0.3s ease;
+      animation: pulse-wa 2s infinite;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+      color: white;
+    }
+
+    .floating-whatsapp svg {
+      width: 34px;
+      height: 34px;
+      fill: currentColor;
+    }
+
+    @keyframes pulse-wa {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+      }
+      70% {
+        box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+      .catalog-grid, .packages-grid, .benefits-grid, .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .calc-grid, .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .package-card.popular {
+        transform: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+      .hero-title {
+        font-size: 2.2rem;
+      }
+      .catalog-grid, .packages-grid, .benefits-grid, .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .top-bar-inner {
+        justify-content: center;
+        text-align: center;
+      }
+      .calc-box {
+        padding: 24px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div>
+        <span>📍 Municipio Libre #176-A, Col. Portales Norte, Benito Juárez, CDMX</span>
+      </div>
+      <div class="top-bar-links">
+        <a href="tel:5556052882">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Tel: (55) 5605 2882
+        </a>
+        <a href="https://wa.me/525559483611?text=Hola%20Alquiladora%20Los%20Portales,%20quisiera%20cotizar%20mobiliario%20para%20un%20evento" target="_blank" rel="noopener">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/></svg>
+          WhatsApp: (55) 5948 3611
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="brand">
+        <div class="brand-icon">P</div>
+        <div class="brand-text">
+          <h1>Los Portales</h1>
+          <span>Alquiladora para Eventos</span>
+        </div>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#calculadora">Calculadora</a></li>
+        <li><a href="#paquetes">Paquetes</a></li>
+        <li><a href="#ventajas">¿Por qué Nosotros?</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="https://wa.me/525559483611?text=Hola%20Alquiladora%20Los%20Portales,%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" class="btn btn-whatsapp">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/></svg>
+        Cotizar en WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          ✨ Mobiliario Impecable & Cobertura Total en CDMX
+        </div>
+        <h1 class="hero-title">
+          Renta de Mobiliario, <span>Carpas Elegantes</span> y Salas Lounge para Eventos
+        </h1>
+        <p class="hero-subtitle">
+          Sillas Tiffany, mesas vestidas, carpas impermeables con iluminación y vajilla de gala. Puntualidad absoluta en entrega y recolección para que disfrutes tu fiesta sin preocupaciones.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/525559483611?text=Hola,%20quisiera%20cotizar%20mobiliario%20para%20un%20evento%20en%20CDMX" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/></svg>
+            Pedir Cotización WhatsApp
+          </a>
+          <a href="#calculadora" class="btn btn-secondary">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+            Calcular Presupuesto Online
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+            <span>Entrega Puntual Garantizada</span>
+          </div>
+          <div class="trust-item">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+            <span>Mobiliario 100% Limpio y Cuidado</span>
+          </div>
+          <div class="trust-item">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+            <span>Atención Benito Juárez, Coyoacán y CDMX</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-main">
+          <img src="img/hero-alquiladora.jpg" alt="Mobiliario elegante para eventos Alquiladora Los Portales">
+        </div>
+        <div class="floating-card">
+          <div class="floating-badge-icon">⭐</div>
+          <div class="floating-card-text">
+            <p>Experiencia Comprobada</p>
+            <h4>+18 Años en CDMX</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats bar -->
+  <div class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">+18</div>
+        <div class="stat-label">Años de Trayectoria</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">+4,800</div>
+        <div class="stat-label">Eventos Realizados</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Compromiso en Puntualidad</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">16</div>
+        <div class="stat-label">Alcaldías de Cobertura</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Catálogo de Productos -->
+  <section id="catalogo" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Nuestro Catálogo</span>
+        <h2 class="section-title">Equipo y Mobiliario de Primera Calidad</h2>
+        <p class="section-desc">Cuidamos cada detalle de nuestro mobiliario: mantelería lavada y planchada, sillas sin raspones y carpas impecables.</p>
+      </div>
+
+      <div class="catalog-grid">
+        <!-- 1. Sillas Tiffany y Versalles -->
+        <div class="catalog-card">
+          <div class="card-img-wrap">
+            <img src="img/sillas-tiffany.jpg" alt="Sillas Tiffany elegantes para eventos">
+            <span class="card-badge">Más Solicitado</span>
+          </div>
+          <div class="card-body">
+            <h3>Sillas Tiffany & Versalles</h3>
+            <p>Disponibles en blanco, dorado, plata y chocolate. Incluyen cojín tapizado de alta densidad para máxima comodidad de tus invitados.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Cojín blanco o negro incluido
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Madera o resina reforzada
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Acabados impecables sin despostillar
+              </li>
+            </ul>
+            <div class="card-action">
+              <div class="card-price">Desde <strong>$25 MXN</strong> / pieza</div>
+              <a href="https://wa.me/525559483611?text=Hola,%20me%20interesa%20rentar%20Sillas%20Tiffany" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">Cotizar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Mesas de Banquete y Mantelería -->
+        <div class="catalog-card">
+          <div class="card-img-wrap">
+            <img src="img/mesas-banquete.jpg" alt="Mesas redondas y tablones vestidos">
+            <span class="card-badge">Básicos</span>
+          </div>
+          <div class="card-body">
+            <h3>Mesas Redondas & Tablones</h3>
+            <p>Mesas redondas para 10 personas, tablones rectangulares y mesas cuadradas estilo imperial con mantelería de lujo en múltiples colores.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Mantel base blanco, hueso o negro
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Cubre mantel o camino de mesa a elegir
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Estructura firme y nivelada
+              </li>
+            </ul>
+            <div class="card-action">
+              <div class="card-price">Desde <strong>$85 MXN</strong> / mesa vestida</div>
+              <a href="https://wa.me/525559483611?text=Hola,%20me%20interesa%20rentar%20Mesas%20y%20Manteleria" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">Cotizar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Carpas Elegantes y Toldos -->
+        <div class="catalog-card">
+          <div class="card-img-wrap">
+            <img src="img/carpas-elegantes.jpg" alt="Carpas elegantes para jardín y azotea">
+            <span class="card-badge">Especialidad</span>
+          </div>
+          <div class="card-body">
+            <h3>Carpas Elegantes & Plisadas</h3>
+            <p>Estructuras de uso rudo impermeables en medidas 4x4m, 6x6m, 6x12m y 10x20m. Opciones con cielo plisado, candiles e iluminación vintage.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Lona blackout 100% impermeable
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Cortinas laterales transparentes o lisas
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Montaje y anclaje profesional seguro
+              </li>
+            </ul>
+            <div class="card-action">
+              <div class="card-price">Desde <strong>$800 MXN</strong> / carpa</div>
+              <a href="https://wa.me/525559483611?text=Hola,%20quisiera%20cotizar%20una%20Carpa%20para%20evento" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">Cotizar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Salas Lounge Modernas -->
+        <div class="catalog-card">
+          <div class="card-img-wrap">
+            <img src="img/salas-lounge.jpg" alt="Salas lounge modernas para eventos CDMX">
+            <span class="card-badge">Tendencia</span>
+          </div>
+          <div class="card-body">
+            <h3>Salas Lounge & Coctel</h3>
+            <p>Salas lounge en tactopiel blanco de 8 a 10 personas con mesa de centro iluminada LED con control de color. Dale un toque VIP a tu evento.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Mesa iluminada LED recargable
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Cojines decorativos en variedad de colores
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Periqueras de madera y vintage disponibles
+              </li>
+            </ul>
+            <div class="card-action">
+              <div class="card-price">Desde <strong>$600 MXN</strong> / set completo</div>
+              <a href="https://wa.me/525559483611?text=Hola,%20me%20interesa%20rentar%20Salas%20Lounge" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">Cotizar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Vajilla, Cristalería y Plaque -->
+        <div class="catalog-card">
+          <div class="card-img-wrap">
+            <img src="img/vajilla-cristaleria.jpg" alt="Vajilla fina y cristalería para banquetes">
+            <span class="card-badge">Banquetes</span>
+          </div>
+          <div class="card-body">
+            <h3>Vajilla, Copas & Cubiertos</h3>
+            <p>Vajilla de porcelana blanca (trinche, hondo, postre), cubertería de acero pulido y copas de cristal (agua, vino tinto, flauta para brindis).</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Limpia, emplayada y lista para montar
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Cucharas, tenedores y cuchillos reforzados
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Chafers bufeteros y percheros
+              </li>
+            </ul>
+            <div class="card-action">
+              <div class="card-price">Desde <strong>$18 MXN</strong> / servicio pers.</div>
+              <a href="https://wa.me/525559483611?text=Hola,%20quisiera%20rentar%20Vajilla%20y%20Cristaleria" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">Cotizar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Calentadores y Accesorios -->
+        <div class="catalog-card">
+          <div class="card-img-wrap">
+            <img src="img/hero-alquiladora.jpg" alt="Calentadores de hongo para exterior y accesorios">
+            <span class="card-badge">Complementos</span>
+          </div>
+          <div class="card-body">
+            <h3>Calentadores & Accesorios</h3>
+            <p>Calentadores para jardín o terraza tipo hongo o pirámide con tanque de gas incluido, percheros metálicos, hieleras gigantes y pistas de baile.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Tanque de gas con carga completa
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Ideal para eventos nocturnos o en terraza
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Hieleras de 100L y barras móviles
+              </li>
+            </ul>
+            <div class="card-action">
+              <div class="card-price">Desde <strong>$550 MXN</strong> / calentador</div>
+              <a href="https://wa.me/525559483611?text=Hola,%20me%20interesa%20rentar%20Calentadores%20de%20Exterior" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">Cotizar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Calculator Section -->
+  <section id="calculadora" class="section calculator-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Herramienta Interactiva</span>
+        <h2 class="section-title">Calcula el Presupuesto de tu Evento</h2>
+        <p class="section-desc">Selecciona el número de personas, estilo de sillas y complementos. Al terminar, envía tu cotización pre-llenada directo por WhatsApp.</p>
+      </div>
+
+      <div class="calc-box">
+        <div class="calc-grid">
+          
+          <div class="calc-controls">
+            <!-- Step 1: Capacidad -->
+            <div class="calc-step">
+              <label>1. Número de Invitados:</label>
+              <div class="option-pills" id="pillsCapacity">
+                <button type="button" class="pill-btn" data-capacity="30" data-tables="3">30 Personas</button>
+                <button type="button" class="pill-btn active" data-capacity="50" data-tables="5">50 Personas</button>
+                <button type="button" class="pill-btn" data-capacity="80" data-tables="8">80 Personas</button>
+                <button type="button" class="pill-btn" data-capacity="100" data-tables="10">100 Personas</button>
+                <button type="button" class="pill-btn" data-capacity="150" data-tables="15">150 Personas</button>
+              </div>
+            </div>
+
+            <!-- Step 2: Tipo de Silla -->
+            <div class="calc-step">
+              <label>2. Modelo de Silla:</label>
+              <div class="option-pills" id="pillsChairs">
+                <button type="button" class="pill-btn" data-chair-type="plegable" data-chair-price="12">Plegable Acojinada ($12 c/u)</button>
+                <button type="button" class="pill-btn active" data-chair-type="tiffany" data-chair-price="25">Tiffany Gala c/Cojín ($25 c/u)</button>
+                <button type="button" class="pill-btn" data-chair-type="versalles" data-chair-price="35">Versalles Imperial ($35 c/u)</button>
+              </div>
+            </div>
+
+            <!-- Step 3: Agregados -->
+            <div class="calc-step">
+              <label>3. Servicios Adicionales:</label>
+              <div class="calc-addons">
+                <label class="addon-item" id="addonTentLabel">
+                  <div class="addon-info">
+                    <input type="checkbox" id="addonTent" value="1200">
+                    <span>Carpa Elegante Impermeable con Iluminación</span>
+                  </div>
+                  <span class="addon-price">+$1,200</span>
+                </label>
+
+                <label class="addon-item" id="addonLoungeLabel">
+                  <div class="addon-info">
+                    <input type="checkbox" id="addonLounge" value="650">
+                    <span>Sala Lounge Blanca con Mesa Centro LED</span>
+                  </div>
+                  <span class="addon-price">+$650</span>
+                </label>
+
+                <label class="addon-item" id="addonVajillaLabel">
+                  <div class="addon-info">
+                    <input type="checkbox" id="addonVajilla" data-per-person="18">
+                    <span>Vajilla de Gala & Cristalería (Platos, copas, cubiertos)</span>
+                  </div>
+                  <span class="addon-price">+$18/persona</span>
+                </label>
+
+                <label class="addon-item" id="addonHeaterLabel">
+                  <div class="addon-info">
+                    <input type="checkbox" id="addonHeater" value="600">
+                    <span>Calentador de Gas Tipo Hongo para Jardín</span>
+                  </div>
+                  <span class="addon-price">+$600</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Summary & WhatsApp Button -->
+          <div class="calc-summary">
+            <div>
+              <h3 class="summary-title">Resumen de tu Cotización</h3>
+              <ul class="summary-list">
+                <li><span>Capacidad seleccionada:</span> <strong id="sumCapacity">50 personas</strong></li>
+                <li><span>Mesas redondas vestidas:</span> <strong id="sumTables">5 mesas (10 pers.)</strong></li>
+                <li><span>Tipo de sillería:</span> <strong id="sumChair">Tiffany Gala ($25 c/u)</strong></li>
+                <li><span>Subtotal Mobiliario:</span> <strong id="sumMobPrice">$1,675 MXN</strong></li>
+                <li id="rowTent" style="display:none;"><span>Carpa elegante:</span> <strong>+$1,200 MXN</strong></li>
+                <li id="rowLounge" style="display:none;"><span>Sala Lounge LED:</span> <strong>+$650 MXN</strong></li>
+                <li id="rowVajilla" style="display:none;"><span>Vajilla & Copas:</span> <strong id="sumVajillaPrice">+$900 MXN</strong></li>
+                <li id="rowHeater" style="display:none;"><span>Calentador exterior:</span> <strong>+$600 MXN</strong></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="summary-total">
+                <div class="total-label">Inversión Estimada:</div>
+                <div class="total-amount" id="totalPrice">$1,675 MXN</div>
+                <div class="total-note">Incluye montaje básico y recolección programada en CDMX.</div>
+              </div>
+
+              <a id="btnSendQuote" href="#" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width: 100%;">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/></svg>
+                Enviar esta Cotización por WhatsApp
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paquetes Listos para Usar -->
+  <section id="paquetes" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Paquetes Populares</span>
+        <h2 class="section-title">Soluciones Todo Incluido con Descuento</h2>
+        <p class="section-desc">Diseñados para los formatos de fiesta más comunes en CDMX. Ahorra tiempo y asegura la mejor tarifa.</p>
+      </div>
+
+      <div class="packages-grid">
+        <!-- Paquete 1: 30 Personas -->
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-name">Paquete Familiar</h3>
+            <div class="package-capacity">Ideal para 30 personas</div>
+            <div class="package-price">$950 <span>MXN</span></div>
+          </div>
+          <ul class="package-features">
+            <li>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              3 Mesas redondas o tablones
+            </li>
+            <li>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              30 Sillas acojinadas plegables
+            </li>
+            <li>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              Manteles completos + cubremantel a elegir
+            </li>
+            <li>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              Entrega y recogida en CDMX
+            </li>
+          </ul>
+          <a href="https://wa.me/525559483611?text=Hola,%20me%20interesa%20contratar%20el%20Paquete%20Familiar%20de%2030%20Personas%20($950)" target="_blank" rel="noopener" class="btn btn-secondary">
+            Apartar Paquete
+          </a>
+        </div>
+
+        <!-- Paquete 2: 50 Personas Tiffany (Popular) -->
+        <div class="package-card popular">
+          <span class="package-badge">El Más Vendido</span>
+          <div class="package-header">
+            <h3 class="package-name">Paquete Gala Tiffany</h3>
+            <div class="package-capacity">Para 50 personas con distinción</div>
+            <div class="package-price">$1,850 <span>MXN</span></div>
+          </div>
+          <ul class="package-features">
+            <li>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              5 Mesas redondas para 10 personas
+            </li>
+            <li>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              50 Sillas Tiffany con cojín suave
+            </li>
+            <li>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              Mantelería fina de tergal (blanco/color)
+            </li>
+            <li>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              1 Mesa adicional para pastel o regalos
+            </li>
+            <li>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              Asesoría de acomodo en tu espacio
+            </li>
+          </ul>
+          <a href="https://wa.me/525559483611?text=Hola,%20me%20gustar%C3%ADa%20apartar%20el%20Paquete%20Gala%20Tiffany%20de%2050%20Personas%20($1,850)" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            Apartar con WhatsApp
+          </a>
+        </div>
+
+        <!-- Paquete 3: 100 Personas Gran Fiesta -->
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-name">Paquete Gran Fiesta</h3>
+            <div class="package-capacity">Para 100 personas completo</div>
+            <div class="package-price">$4,400 <span>MXN</span></div>
+          </div>
+          <ul class="package-features">
+            <li>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              10 Mesas redondas vestidas de gala
+            </li>
+            <li>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              100 Sillas Tiffany (color a elección)
+            </li>
+            <li>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              1 Carpa amplia 6x12m instalada
+            </li>
+            <li>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              1 Sala Lounge blanca con mesa LED
+            </li>
+            <li>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              Flete y montaje preferencial incluido
+            </li>
+          </ul>
+          <a href="https://wa.me/525559483611?text=Hola,%20quisiera%20cotizar%20el%20Paquete%20Gran%20Fiesta%20100%20personas%20con%20Carpa" target="_blank" rel="noopener" class="btn btn-secondary">
+            Apartar Paquete
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Por Qué Elegirnos -->
+  <section id="ventajas" class="section benefits-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Garantía Los Portales</span>
+        <h2 class="section-title">¿Por Qué Confiar en Nosotros?</h2>
+        <p class="section-desc">Sabemos el estrés que representa organizar un evento. Nuestro trabajo es que el mobiliario sea la parte más fácil y confiable de tu día.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-icon">⏰</div>
+          <h3>Puntualidad Religiosa</h3>
+          <p>Llegamos con anticipación acordada para que el montaje esté listo antes de que empiece la comida o los invitados toquen la puerta.</p>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">✨</div>
+          <h3>Mobiliario Impecable</h3>
+          <p>Supervisamos cada silla y mantel antes de cargarlo. Nada de cojines sucios, telas quemadas o estructuras cojas.</p>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">📍</div>
+          <h3>Ubicación Estratégica</h3>
+          <p>Nuestra bodega central en Portales Norte nos permite llegar en minutos a Benito Juárez, Coyoacán, Tlalpan y colonias aledañas.</p>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">💬</div>
+          <h3>Cotizaciones Rápidas y Claras</h3>
+          <p>Te enviamos desglose completo por WhatsApp en minutos sin letras chiquitas ni sobreprecios el día de la entrega.</p>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">🛡️</div>
+          <h3>Montaje Seguro y Firme</h3>
+          <p>Nuestras carpas se anclan con contrapesos y cuerdas especiales para resistir vientos o lluvias inesperadas de CDMX.</p>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">🤝</div>
+          <h3>Atención Amable y Personal</h3>
+          <p>Somos un negocio familiar comprometido con tu satisfacción. Te asesoramos en cantidad de mesas y distribución óptima.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opiniones de Clientes -->
+  <section id="opiniones" class="section reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Opiniones Reales</span>
+        <h2 class="section-title">Lo Que Dicen Quienes Ya Celebraron con Nosotros</h2>
+        <p class="section-desc">Opiniones de clientes particulares y organizadores de eventos en Ciudad de México.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Excelente servicio para la primera comunión de mi hijo. Las sillas Tiffany estaban blanquitas, limpias y los manteles planchados. Llegaron dos horas antes de lo previsto. Muy recomendables."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">MC</div>
+            <div class="reviewer-info">
+              <h4>Mariana Corona</h4>
+              <p>Colonia Del Valle, Benito Juárez</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Rentamos la carpa de 6x12 y dos salas lounge para una fiesta en azotea. Quedó espectacular, la carpa aguantó perfecto una lluvia fuerte y los chicos que montaron fueron súper amables y eficientes."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">RO</div>
+            <div class="reviewer-info">
+              <h4>Rodrigo Ortiz</h4>
+              <p>Colonia Portales Sur, CDMX</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Tienen precios muy honestos y te atienden rápido por WhatsApp. Me resolvieron un pedido de urgencia para 80 personas en menos de 24 horas. Los tengo guardados como mi alquiladora de cabecera."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">GL</div>
+            <div class="reviewer-info">
+              <h4>Gabriela Lozano</h4>
+              <p>Coyoacán Centro, CDMX</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto y Ubicación -->
+  <section id="contacto" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Visítanos o Escríbenos</span>
+        <h2 class="section-title">Estamos Listos para Atenderte</h2>
+        <p class="section-desc">Pide tu cotización por WhatsApp, llámanos directo a bodega o visítanos en Portales Norte.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div class="contact-text">
+                <h4>Dirección de Bodega</h4>
+                <p>Municipio Libre #176-A, Col. Portales Norte, Alcaldía Benito Juárez, C.P. 03300, Ciudad de México.</p>
+                <p style="font-size: 0.82rem; color: #64748B; margin-top: 4px;">(A unos pasos de Calz. de Tlalpan y Parque de los Venados)</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/></svg>
+              </div>
+              <div class="contact-text">
+                <h4>WhatsApp Directo</h4>
+                <p><a href="https://wa.me/525559483611" target="_blank" rel="noopener"><strong>(55) 5948 3611</strong> (Clic para abrir chat)</a></p>
+                <p><a href="https://wa.me/525523164481" target="_blank" rel="noopener">Línea secundaria: (55) 2316 4481</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </div>
+              <div class="contact-text">
+                <h4>Teléfono Fijo de Oficina</h4>
+                <p><a href="tel:5556052882"><strong>(55) 5605 2882</strong></a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div class="contact-text">
+                <h4>Horario de Atención</h4>
+                <p>Lunes a Sábado: 9:00 hrs – 19:00 hrs</p>
+                <p>Domingos: Entregas y desmontajes programados</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 14px;">
+            <a href="https://wa.me/525559483611?text=Hola,%20quisiera%20solicitar%20informaci%C3%B3n%20para%20un%20evento" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width: 100%;">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/></svg>
+              Contactar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="map-frame">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.784405904576!2d-99.14815482394964!3d19.37127118189445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff04c10ab871%3A0x673dbb89327cb707!2sMunicipio%20Libre%20176%2C%20Portales%20Nte.%2C%20Benito%20Ju%C3%A1rez%2C%2003300%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Resolvemos tus Dudas</span>
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>¿Con cuánta anticipación debo reservar mi pedido?</h3>
+          <p>Recomendamos apartar con al menos 5 a 10 días de anticipación para garantizar disponibilidad de modelos específicos (especialmente sillas Tiffany o carpas grandes para fines de semana). En casos de urgencia también atendemos pedidos de un día para otro sujeto a existencia.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>¿Cómo se realiza el pago del servicio?</h3>
+          <p>Para apartar la fecha se solicita un anticipo del 30% a 50% vía transferencia bancaria o en efectivo en nuestra oficina. El saldo restante se liquida al momento de recibir el mobiliario montado y a tu completa satisfacción.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>¿Qué incluye el servicio de renta de carpas?</h3>
+          <p>Incluye transporte a tu domicilio en CDMX, montaje con estacas o contrapesos seguros, revisión de estructura impermeable y desmontaje al finalizar el evento o al día siguiente según lo pactado.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>¿Tienen cobertura fuera de la Alcaldía Benito Juárez?</h3>
+          <p>Sí, cubrimos todas las alcaldías de la CDMX (Coyoacán, Tlalpan, Cuauhtémoc, Miguel Hidalgo, Álvaro Obregón, Iztapalapa, Venustiano Carranza, etc.) y municipios conurbados del Estado de México previa cotización de flete.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <div class="cta-banner">
+    <div class="container">
+      <h2>¿Planeando una Boda, Bautizo, Cumpleaños o Reunión?</h2>
+      <p>Cuéntanos la fecha y lugar de tu fiesta y recibe una propuesta económica personalizada en menos de 5 minutos.</p>
+      <a href="https://wa.me/525559483611?text=Hola%20Alquiladora%20Los%20Portales,%20quisiera%20cotizar%20mobiliario%20para%20un%20evento" target="_blank" rel="noopener" class="btn btn-whatsapp">
+        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/></svg>
+        Cotizar Mi Evento por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand" style="margin-bottom: 14px;">
+            <div class="brand-icon" style="width: 36px; height: 36px; font-size: 1.1rem;">P</div>
+            <div class="brand-text">
+              <h2 style="color: white; font-size: 1.15rem;">Los Portales</h2>
+              <span style="color: #FBBF24;">Alquiladora para Eventos</span>
+            </div>
+          </div>
+          <p style="font-size: 0.88rem; line-height: 1.6; color: #94A3B8;">Renta de mobiliario, carpas elegantes, mesas vestidas, salas lounge y equipo para eventos sociales, corporativos y particulares en Ciudad de México.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#catalogo">Catálogo de Productos</a></li>
+            <li><a href="#calculadora">Calculadora Online</a></li>
+            <li><a href="#paquetes">Paquetes Especiales</a></li>
+            <li><a href="#opiniones">Opiniones de Clientes</a></li>
+            <li><a href="#contacto">Contacto & Bodega</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#catalogo">Sillas Tiffany & Versalles</a></li>
+            <li><a href="#catalogo">Mesas Redondas Vestidas</a></li>
+            <li><a href="#catalogo">Carpas Impermeables con Luz</a></li>
+            <li><a href="#catalogo">Salas Lounge Blancas</a></li>
+            <li><a href="#catalogo">Vajilla y Cristalería de Gala</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto Inmediato</h4>
+          <ul>
+            <li>📍 Municipio Libre #176-A, Portales Norte, CDMX</li>
+            <li>📞 Fijo: (55) 5605 2882</li>
+            <li>💬 WhatsApp: +52 55 5948 3611</li>
+            <li>✉️ Correo: losportales11@hotmail.com</li>
+            <li>⏰ Lun-Sáb: 9:00 - 19:00 hrs</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alquiladora Los Portales. Todos los derechos reservados. Ciudad de México.</p>
+        <p>Puntualidad, elegancia y servicio en cada evento.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/525559483611?text=Hola%20Alquiladora%20Los%20Portales,%20me%20gustar%C3%ADa%20pedir%20una%20cotizaci%C3%B3n" class="floating-whatsapp" target="_blank" rel="noopener" title="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zM17.47 14.38c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.67-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.51s1.07 2.91 1.22 3.11c.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/></svg>
+  </a>
+
+  <!-- Interactive Calculator JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Elements
+      const pillsCapacity = document.querySelectorAll('#pillsCapacity .pill-btn');
+      const pillsChairs = document.querySelectorAll('#pillsChairs .pill-btn');
+      
+      const addonTent = document.getElementById('addonTent');
+      const addonLounge = document.getElementById('addonLounge');
+      const addonVajilla = document.getElementById('addonVajilla');
+      const addonHeater = document.getElementById('addonHeater');
+
+      const addonTentLabel = document.getElementById('addonTentLabel');
+      const addonLoungeLabel = document.getElementById('addonLoungeLabel');
+      const addonVajillaLabel = document.getElementById('addonVajillaLabel');
+      const addonHeaterLabel = document.getElementById('addonHeaterLabel');
+
+      const sumCapacity = document.getElementById('sumCapacity');
+      const sumTables = document.getElementById('sumTables');
+      const sumChair = document.getElementById('sumChair');
+      const sumMobPrice = document.getElementById('sumMobPrice');
+      
+      const rowTent = document.getElementById('rowTent');
+      const rowLounge = document.getElementById('rowLounge');
+      const rowVajilla = document.getElementById('rowVajilla');
+      const rowHeater = document.getElementById('rowHeater');
+      const sumVajillaPrice = document.getElementById('sumVajillaPrice');
+
+      const totalPriceEl = document.getElementById('totalPrice');
+      const btnSendQuote = document.getElementById('btnSendQuote');
+
+      // State
+      let currentCapacity = 50;
+      let currentTables = 5;
+      let currentChairType = 'Tiffany Gala';
+      let currentChairPrice = 25;
+
+      const TABLE_PRICE = 85; // Mesa vestida
+
+      function updateCalculator() {
+        // Calculate base furniture
+        const chairsCost = currentCapacity * currentChairPrice;
+        const tablesCost = currentTables * TABLE_PRICE;
+        const mobTotal = chairsCost + tablesCost;
+
+        let total = mobTotal;
+
+        // Check addons
+        let tentCost = 0;
+        if (addonTent.checked) {
+          tentCost = parseInt(addonTent.value, 10);
+          rowTent.style.display = 'flex';
+          addonTentLabel.classList.add('selected');
+          total += tentCost;
+        } else {
+          rowTent.style.display = 'none';
+          addonTentLabel.classList.remove('selected');
+        }
+
+        let loungeCost = 0;
+        if (addonLounge.checked) {
+          loungeCost = parseInt(addonLounge.value, 10);
+          rowLounge.style.display = 'flex';
+          addonLoungeLabel.classList.add('selected');
+          total += loungeCost;
+        } else {
+          rowLounge.style.display = 'none';
+          addonLoungeLabel.classList.remove('selected');
+        }
+
+        let vajillaCost = 0;
+        if (addonVajilla.checked) {
+          const perPers = parseInt(addonVajilla.getAttribute('data-per-person'), 10);
+          vajillaCost = currentCapacity * perPers;
+          rowVajilla.style.display = 'flex';
+          sumVajillaPrice.textContent = `+$${vajillaCost.toLocaleString('es-MX')} MXN`;
+          addonVajillaLabel.classList.add('selected');
+          total += vajillaCost;
+        } else {
+          rowVajilla.style.display = 'none';
+          addonVajillaLabel.classList.remove('selected');
+        }
+
+        let heaterCost = 0;
+        if (addonHeater.checked) {
+          heaterCost = parseInt(addonHeater.value, 10);
+          rowHeater.style.display = 'flex';
+          addonHeaterLabel.classList.add('selected');
+          total += heaterCost;
+        } else {
+          rowHeater.style.display = 'none';
+          addonHeaterLabel.classList.remove('selected');
+        }
+
+        // Update Summary DOM
+        sumCapacity.textContent = `${currentCapacity} personas`;
+        sumTables.textContent = `${currentTables} mesas (10 pers.)`;
+        sumChair.textContent = `${currentChairType} ($${currentChairPrice} c/u)`;
+        sumMobPrice.textContent = `$${mobTotal.toLocaleString('es-MX')} MXN`;
+        totalPriceEl.textContent = `$${total.toLocaleString('es-MX')} MXN`;
+
+        // Generate WhatsApp link
+        let message = `Hola Alquiladora Los Portales, coticé en su sitio web para un evento de *${currentCapacity} personas*:\n`;
+        message += `• ${currentTables} mesas redondas con mantelería\n`;
+        message += `• ${currentCapacity} sillas modelo ${currentChairType}\n`;
+        if (addonTent.checked) message += `• 1 Carpa Elegante con iluminación\n`;
+        if (addonLounge.checked) message += `• 1 Sala Lounge Blanca con mesa LED\n`;
+        if (addonVajilla.checked) message += `• Vajilla y cristalería para ${currentCapacity} personas\n`;
+        if (addonHeater.checked) message += `• 1 Calentador de exterior tipo hongo\n`;
+        message += `\n*Presupuesto Estimado:* $${total.toLocaleString('es-MX')} MXN\n¿Tienen disponibilidad y cómo puedo apartar fecha?`;
+
+        const encoded = encodeURIComponent(message);
+        btnSendQuote.href = `https://wa.me/525559483611?text=${encoded}`;
+      }
+
+      // Listeners for Capacity pills
+      pillsCapacity.forEach(pill => {
+        pill.addEventListener('click', () => {
+          pillsCapacity.forEach(p => p.classList.remove('active'));
+          pill.classList.add('active');
+          currentCapacity = parseInt(pill.getAttribute('data-capacity'), 10);
+          currentTables = parseInt(pill.getAttribute('data-tables'), 10);
+          updateCalculator();
+        });
+      });
+
+      // Listeners for Chair pills
+      pillsChairs.forEach(pill => {
+        pill.addEventListener('click', () => {
+          pillsChairs.forEach(p => p.classList.remove('active'));
+          pill.classList.add('active');
+          const type = pill.getAttribute('data-chair-type');
+          if (type === 'plegable') currentChairType = 'Plegable Acojinada';
+          else if (type === 'tiffany') currentChairType = 'Tiffany Gala';
+          else if (type === 'versalles') currentChairType = 'Versalles Imperial';
+
+          currentChairPrice = parseInt(pill.getAttribute('data-chair-price'), 10);
+          updateCalculator();
+        });
+      });
+
+      // Listeners for Addons
+      [addonTent, addonLounge, addonVajilla, addonHeater].forEach(checkbox => {
+        checkbox.addEventListener('change', updateCalculator);
+      });
+
+      // Initial run
+      updateCalculator();
+    });
+  </script>
+</body>
+</html>
