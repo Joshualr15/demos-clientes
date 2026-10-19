@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>260 Biker Garage | Taller Mecánico Especializado en Motos & BMW en Nápoles CDMX</title>
+  <meta name="description" content="Taller mecánico de motos en Nápoles, Benito Juárez CDMX. Especialistas en BMW Motorrad, KTM, Yamaha, Ducati y multimarca. Servicios mayores, menores, escáner, frenos y refacciones originales.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: Barlow (precisión motorsport) & Plus Jakarta Sans (claridad moderna) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;0,800;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Barlow"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            biker: {
+              navy: '#0F172A',
+              blue: '#1D4ED8',      // BMW M-Sport Racing Blue
+              blueHover: '#1E40AF',
+              amber: '#D97706',     // High-octane amber
+              orange: '#EA580C',
+              bgSoft: '#F8FAFC',
+              cardBorder: '#E2E8F0',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .biker-shadow {
+      box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
+    }
+    .lift-hover {
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .lift-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 35px -10px rgba(29, 78, 216, 0.15);
+    }
+  </style>
+</head>
+
+<body class="bg-biker-bgSoft text-slate-800 font-sans antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-slate-950 text-slate-200 text-xs py-2.5 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+        <span class="font-bold text-blue-400 tracking-wide uppercase">Taller Activo en Nápoles:</span>
+        <span class="text-slate-300">Citas para mantenimiento preventivo, escáner y frenos de lunes a sábado</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <span class="hidden md:inline text-slate-400"><i class="fa-solid fa-location-dot text-amber-500 mr-1.5"></i>Calle Carolina #55, Col. Nápoles, Benito Juárez, CDMX</span>
+        <a href="https://wa.me/525527542348?text=Hola,%20me%20gustar%C3%ADa%20agendar%20un%20servicio%20para%20mi%20moto" target="_blank" class="font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1.5 transition">
+          <i class="fa-brands fa-whatsapp text-emerald-400"></i> WhatsApp: 55 2754 2348
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-slate-900 to-biker-blue flex items-center justify-center text-amber-400 shadow-md group-hover:scale-105 transition duration-200">
+          <i class="fa-solid fa-motorcycle text-2xl"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-display font-extrabold text-2xl tracking-tight text-slate-900 italic">260 BIKER GARAGE</span>
+            <span class="bg-blue-100 text-biker-blue text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider border border-blue-200">Nápoles</span>
+          </div>
+          <p class="text-xs text-slate-500 font-medium">Especialistas en BMW Motorrad & Multimarca</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="#servicios" class="hover:text-biker-blue transition">Servicios</a>
+        <a href="#especialidad" class="hover:text-biker-blue transition">BMW & Alta Gama</a>
+        <a href="#cotizador" class="hover:text-biker-blue transition">Cotizador Exprés</a>
+        <a href="#taller" class="hover:text-biker-blue transition">Ubicación & Citas</a>
+        <a href="#opiniones" class="hover:text-biker-blue transition">Reseñas Bikers</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="tel:+525527542348" class="hidden sm:inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-900 text-sm font-bold py-2.5 px-4 rounded-xl transition border border-slate-200">
+          <i class="fa-solid fa-phone text-biker-blue"></i>
+          <span>Llamar</span>
+        </a>
+        <a href="https://wa.me/525527542348?text=Hola%20260%20Biker%20Garage,%20quiero%20cotizar%20el%20servicio%20de%20mi%20moto.%20%C2%BFTienen%20disponibilidad?" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold py-2.5 px-4 sm:px-5 rounded-xl shadow-md shadow-emerald-600/20 transition transform hover:-translate-y-0.5">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span class="hidden md:inline">Agendar por WhatsApp</span>
+          <span class="md:hidden">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-white pt-10 pb-16 lg:py-20 overflow-hidden border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Left Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-biker-blue text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-wrench text-blue-600"></i>
+            Mecánicos Certificados &bull; Motul, Liqui Moly & Refacciones OEM
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.08] italic">
+            Tu moto en manos de verdaderos apasionados. <br>
+            <span class="text-biker-blue not-italic">Servicio de alta precisión</span> en la Col. Nápoles.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+            Taller mecánico multimarca especializado en BMW Motorrad, KTM, Ducati, Yamaha y cilindradas medias y altas. Mantenimientos mayores, diagnóstico por escáner OBD, frenos, horquillas y puesta a punto con transparencia absoluta y sin sorpresas.
+          </p>
+
+          <!-- Key Badges Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+            <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center text-biker-blue font-bold shrink-0">
+                <i class="fa-solid fa-laptop-medical"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">Escáner OBD</p>
+                <p class="text-[11px] text-slate-500">Service Reset BMW / KTM</p>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 font-bold shrink-0">
+                <i class="fa-solid fa-oil-can"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">Aceites 100% Sintéticos</p>
+                <p class="text-[11px] text-slate-500">Motul 7100 & Liqui Moly</p>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl flex items-center gap-3 col-span-2 sm:col-span-1">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-700 font-bold shrink-0">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">Cero Vicios</p>
+                <p class="text-[11px] text-slate-500">Te entregamos piezas viejas</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <a href="https://wa.me/525527542348?text=Hola%20260%20Biker%20Garage,%20quiero%20agendar%20cita%20para%20mantenimiento%20de%20mi%20moto." target="_blank" class="inline-flex justify-center items-center gap-3 bg-biker-blue hover:bg-biker-blueHover text-white font-display font-bold text-lg py-4 px-7 rounded-xl shadow-lg shadow-blue-700/25 transition transform hover:-translate-y-0.5">
+              <i class="fa-brands fa-whatsapp text-2xl"></i>
+              <span>Agendar Cita en Taller</span>
+            </a>
+
+            <a href="#cotizador" class="inline-flex justify-center items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-900 font-display font-bold text-lg py-4 px-6 rounded-xl border border-slate-300 transition">
+              <i class="fa-solid fa-calculator text-amber-600"></i>
+              <span>Calcular Servicio</span>
+            </a>
+          </div>
+
+          <!-- Trust Subtext -->
+          <div class="flex items-center gap-4 pt-3 border-t border-slate-200 text-sm">
+            <div class="flex text-amber-400 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-xs">
+              <strong class="text-slate-900 font-bold">4.9 / 5.0</strong> en la comunidad biker de CDMX &bull; Calle Carolina #55, Col. Nápoles (frente a Plaza México)
+            </p>
+          </div>
+        </div>
+
+        <!-- Hero Visual Image Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Decorative Accent Backdrop -->
+            <div class="absolute -top-3 -right-3 w-full h-full rounded-2xl bg-gradient-to-tr from-biker-blue to-slate-900 transform rotate-2 opacity-80"></div>
+            
+            <div class="relative bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
+              <img src="img/hero-motos.jpg" alt="Taller mecánico de motos 260 Biker Garage Nápoles" class="w-full h-80 object-cover">
+              
+              <div class="p-6 bg-white space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Taller Especializado</span>
+                  <span class="text-xs bg-emerald-50 text-emerald-800 font-bold px-2 py-0.5 rounded-md border border-emerald-200 flex items-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Cajones de Servicio Listos
+                  </span>
+                </div>
+                <h3 class="font-display font-bold text-slate-900 text-xl italic">260 BIKER GARAGE &bull; NÁPOLES</h3>
+                <p class="text-xs text-slate-600">Atención profesional para BMW serie GS / R / C, KTM Duke & Adventure, Yamaha MT y motos de ruta o ciudad.</p>
+                
+                <div class="pt-3 flex items-center justify-between text-xs text-slate-500 border-t border-slate-100">
+                  <span><i class="fa-solid fa-check-double text-biker-blue mr-1"></i> Diagnóstico computarizado</span>
+                  <span><i class="fa-solid fa-clock text-biker-blue mr-1"></i> Entregas el mismo día</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating mini-badge -->
+            <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl border border-slate-200 flex items-center gap-3.5 max-w-[260px]">
+              <div class="w-11 h-11 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center font-bold text-xl shrink-0">
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+              <div>
+                <p class="text-xs font-extrabold text-slate-900">Checklist 25 Puntos</p>
+                <p class="text-[11px] text-slate-500">Revisión completa de seguridad incluida en cada afinación</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialization Banner -->
+  <section id="especialidad" class="bg-slate-900 text-white py-10 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="space-y-1 text-center md:text-left">
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Especialidad de la Casa</span>
+        <h2 class="font-display text-2xl sm:text-3xl font-extrabold italic">Expertos en BMW Motorrad & Motos Europeas / Japonesas</h2>
+        <p class="text-slate-300 text-xs sm:text-sm">G310R &bull; G310GS &bull; F750GS &bull; F850GS &bull; R1200GS &bull; R1250GS &bull; C400X &bull; KTM Duke &bull; Yamaha MT</p>
+      </div>
+      <div class="shrink-0 flex items-center gap-3">
+        <div class="p-3 bg-white/10 rounded-xl border border-white/20 text-center">
+          <p class="text-xs text-slate-400">Ahorro vs Agencia</p>
+          <p class="font-display text-xl font-bold text-emerald-400">Hasta 50%</p>
+        </div>
+        <div class="p-3 bg-white/10 rounded-xl border border-white/20 text-center">
+          <p class="text-xs text-slate-400">Calidad</p>
+          <p class="font-display text-xl font-bold text-amber-400">OEM / Original</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid Section -->
+  <section id="servicios" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-biker-blue text-xs font-bold uppercase tracking-wider bg-blue-100 px-3 py-1 rounded-full border border-blue-200">Nuestros Servicios de Taller</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight italic">
+          Mantenimiento Integral para que Ruedes Seguro
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-3">
+          Desde un cambio de aceite preventivo hasta reparaciones mecánicas y eléctricas mayores con refacciones de equipo original.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Service 1: Afinación y Mantenimiento -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 biker-shadow lift-hover flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5">
+              <img src="img/motor-afinacion.jpg" alt="Afinación y servicio mayor de motos" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Mantenimiento Esencial</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-slate-900 mb-2 italic">Afinación Mayor & Menor</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Cambio de aceite sintético (Motul 7100 o Liqui Moly Street/Offroad), filtro de aceite K&N u OEM, bujías de iridio NGK, limpieza y calibración de cuerpo de aceleración e inyectores.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Lavado de filtro de aire o reemplazo</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Ajuste y lubricación de chicotes</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Revisión de compresión y holgura</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-base font-bold text-slate-900">$650 MXN</strong></span>
+            <a href="https://wa.me/525527542348?text=Hola,%20me%20interesa%20cotizar%20afinaci%C3%B3n%20para%20mi%20moto." target="_blank" class="text-xs font-bold text-biker-blue hover:text-blue-800 flex items-center gap-1">
+              Cotizar servicio <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2: Escáner y Diagnóstico OBD -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 biker-shadow lift-hover flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5">
+              <img src="img/diagnostico-escaner.jpg" alt="Escáner para motos BMW y multimarca" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Electrónica & Sensores</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-slate-900 mb-2 italic">Escáner & Service Reset</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Lectura y borrado de códigos de falla (check engine), reseteo de intervalo de servicio en tablero (llave de mantenimiento para BMW, KTM y Ducati) y calibración de actuadores electrónicos.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Diagnóstico de sensores ABS y control de tracción</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Test de voltaje y estado de batería</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Informe técnico detallado de salud de la moto</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-base font-bold text-slate-900">$350 MXN</strong></span>
+            <a href="https://wa.me/525527542348?text=Hola,%20requiero%20un%20escaneo%20computarizado%20y%20reseteo%20de%20testigo%20de%20servicio." target="_blank" class="text-xs font-bold text-biker-blue hover:text-blue-800 flex items-center gap-1">
+              Agendar escáner <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3: Frenos y Sistema de Seguridad -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 biker-shadow lift-hover flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5">
+              <img src="img/frenos-suspension.jpg" alt="Frenos y suspensión de motos" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-red-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-red-600">Seguridad Crítica</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-slate-900 mb-2 italic">Frenos & Suspensión</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Cambio de balatas orgánicas, cerámicas y sinterizadas (Brembo, EBC, Ferodo). Purgado y reemplazo de líquido de frenos DOT 4/5.1 por vacío. Mantenimiento y cambio de retenes en barras de suspensión.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Revisión de discos contra alabeo y desgaste</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Servicio a horquillas invertidas y convencionales</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Calibración de precarga y rebote</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-base font-bold text-slate-900">$450 MXN</strong></span>
+            <a href="https://wa.me/525527542348?text=Hola,%20necesito%20cambio%20de%20balatas/servicio%20de%20frenos%20para%20mi%20moto." target="_blank" class="text-xs font-bold text-biker-blue hover:text-blue-800 flex items-center gap-1">
+              Cotizar frenos <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4: Transmisión & Kit de Arrastre -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 biker-shadow lift-hover flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5 bg-gradient-to-tr from-slate-900 to-slate-800 flex items-center justify-center text-white text-center p-6">
+              <div>
+                <i class="fa-solid fa-link text-5xl text-amber-400 mb-2"></i>
+                <p class="text-xs font-bold uppercase tracking-wider text-slate-300">Tracción Confiable</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-slate-700"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-700">Transmisión</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-slate-900 mb-2 italic">Kit de Arrastre & Bandas</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Instalación y corte de cadenas reforzadas con O-Ring / X-Ring (DID, RK, Regina). Reemplazo de piñón de ataque y corona (sprocket). Cambio de bandas y dados/rodillos en variadores de scooters.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Alineación láser de la rueda trasera</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Tensión exacta con especificación de fábrica</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Lubricación con cera sintética para cadenas</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Mano de obra desde <strong class="text-base font-bold text-slate-900">$350 MXN</strong></span>
+            <a href="https://wa.me/525527542348?text=Hola,%20quiero%20cotizar%20cambio%20de%20kit%20de%20arrastre/cadena." target="_blank" class="text-xs font-bold text-biker-blue hover:text-blue-800 flex items-center gap-1">
+              Cotizar arrastre <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 5: Mecánica de Motor & Embrague -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 biker-shadow lift-hover flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5">
+              <img src="img/taller-mecanica.jpg" alt="Mecánica mayor y embrague de motos" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-purple-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-purple-700">Mecánica Mayor</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-slate-900 mb-2 italic">Embrague & Mecánica Mayor</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Cambio de pastas y discos de embrague (clutch), ajuste de juego libre, empaques de motor, ajuste de punterías y válvulas con galgas de precisión, y reparación de fugas de aceite o anticongelante.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Calibración de punterías en frío</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Reemplazo de bomba de agua y termostato</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Pruebas de dinamómetro y rodamiento</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Diagnóstico desde <strong class="text-base font-bold text-slate-900">$400 MXN</strong></span>
+            <a href="https://wa.me/525527542348?text=Hola,%20mi%20moto%20tiene%20un%20problema%20mec%C3%A1nico/embrague,%20quiero%20llevarla%20a%20revisi%C3%B3n." target="_blank" class="text-xs font-bold text-biker-blue hover:text-blue-800 flex items-center gap-1">
+              Solicitar cita <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 6: Accesorios & Luces LED -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 biker-shadow lift-hover flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5">
+              <img src="img/biker-lifestyle.jpg" alt="Instalación de accesorios exploradoras y defensas para moto" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Equipamiento Adventure</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-slate-900 mb-2 italic">Accesorios & Luces Auxiliares</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Instalación profesional de faros auxiliares LED / exploradoras con relevador y switch independiente, defensas tubulares (crash bars), sliders anticaída, soportes de maletas y puertos USB.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Cableado protegido con termofit y fusible</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Sin cortes a arnés original para no invalidar garantías</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Instalación de intercomunicadores y bases para GPS</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Instalación desde <strong class="text-base font-bold text-slate-900">$350 MXN</strong></span>
+            <a href="https://wa.me/525527542348?text=Hola,%20quiero%20instalar%20accesorios/exploradoras%20LED%20en%20mi%20moto." target="_blank" class="text-xs font-bold text-biker-blue hover:text-blue-800 flex items-center gap-1">
+              Consultar accesorios <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Maintenance Calculator -->
+  <section id="cotizador" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-biker-blue text-xs font-bold uppercase tracking-wider bg-blue-100 px-3 py-1 rounded-full border border-blue-200">Cotizador Interactivo de Servicio</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight italic">
+          Calcula el Servicio de tu Moto al Instante
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Selecciona la cilindrada de tu motocicleta y el tipo de mantenimiento para conocer tu presupuesto estimado.
+        </p>
+      </div>
+
+      <div class="bg-slate-50 rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xl">
+        <form id="bikeCalcForm" class="space-y-8" onsubmit="event.preventDefault(); updateBikeCalc();">
+          
+          <!-- Step 1: Bike Category -->
+          <div>
+            <label class="block font-display font-bold text-slate-900 text-base mb-3 italic">
+              1. Selecciona la cilindrada o segmento de tu moto:
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              
+              <label class="relative flex flex-col p-4 bg-white rounded-xl border-2 border-slate-200 hover:border-biker-blue cursor-pointer transition has-[:checked]:border-biker-blue has-[:checked]:bg-blue-50/40">
+                <input type="radio" name="motoType" value="baja" data-base="650" data-label="Baja Cilindrada (125cc a 250cc)" checked class="peer sr-only" onchange="updateBikeCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <i class="fa-solid fa-motorcycle text-xl text-biker-blue"></i>
+                  <span class="text-xs font-bold text-slate-700">Desde $650</span>
+                </div>
+                <span class="font-display font-bold text-slate-900 text-base italic">125cc a 250cc</span>
+                <span class="text-[11px] text-slate-500">Trabajo, Scooters & Urbanas</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-white rounded-xl border-2 border-slate-200 hover:border-biker-blue cursor-pointer transition has-[:checked]:border-biker-blue has-[:checked]:bg-blue-50/40">
+                <input type="radio" name="motoType" value="media" data-base="950" data-label="Media Cilindrada (300cc a 500cc - BMW G310, KTM 390)" class="peer sr-only" onchange="updateBikeCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <i class="fa-solid fa-motorcycle text-xl text-biker-blue"></i>
+                  <span class="text-xs font-bold text-slate-700">Desde $950</span>
+                </div>
+                <span class="font-display font-bold text-slate-900 text-base italic">300cc a 500cc</span>
+                <span class="text-[11px] text-slate-500">BMW G310, KTM 390, MT-03</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-white rounded-xl border-2 border-slate-200 hover:border-biker-blue cursor-pointer transition has-[:checked]:border-biker-blue has-[:checked]:bg-blue-50/40">
+                <input type="radio" name="motoType" value="alta" data-base="1450" data-label="Alta Cilindrada (600cc a 900cc - F750GS, MT-09, Z900)" class="peer sr-only" onchange="updateBikeCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <i class="fa-solid fa-motorcycle text-xl text-biker-blue"></i>
+                  <span class="text-xs font-bold text-slate-700">Desde $1,450</span>
+                </div>
+                <span class="font-display font-bold text-slate-900 text-base italic">600cc a 900cc</span>
+                <span class="text-[11px] text-slate-500">BMW F750/850, MT-09, Z900</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-white rounded-xl border-2 border-slate-200 hover:border-biker-blue cursor-pointer transition has-[:checked]:border-biker-blue has-[:checked]:bg-blue-50/40">
+                <input type="radio" name="motoType" value="maxi" data-base="1950" data-label="Maxi Trail / 1000cc+ (BMW R1200/1250GS, Multistrada)" class="peer sr-only" onchange="updateBikeCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <i class="fa-solid fa-motorcycle text-xl text-biker-blue"></i>
+                  <span class="text-xs font-bold text-slate-700">Desde $1,950</span>
+                </div>
+                <span class="font-display font-bold text-slate-900 text-base italic">1000cc+ / Maxi Trail</span>
+                <span class="text-[11px] text-slate-500">BMW R1200/1250GS, Africa Twin</span>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Step 2: Service Level & Add-ons -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block font-display font-bold text-slate-900 text-base mb-2 italic">
+                2. Nivel de Mantenimiento:
+              </label>
+              <select id="serviceLevelSelect" class="w-full bg-white border-2 border-slate-200 rounded-xl p-3 text-sm text-slate-800 font-medium focus:outline-none focus:border-biker-blue" onchange="updateBikeCalc()">
+                <option value="0" data-label="Servicio Menor Preventivo">Servicio Menor (Aceite sintético + filtro + check 25 puntos)</option>
+                <option value="600" data-label="Servicio Mayor Completo">Servicio Mayor (+ $600: bujías, lavado cuerpo aceleración, frenos, arrastre)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block font-display font-bold text-slate-900 text-base mb-2 italic">
+                3. Servicios Adicionales:
+              </label>
+              <select id="extraSelect" class="w-full bg-white border-2 border-slate-200 rounded-xl p-3 text-sm text-slate-800 font-medium focus:outline-none focus:border-biker-blue" onchange="updateBikeCalc()">
+                <option value="0" data-label="Ninguno adicional">Ninguno adicional</option>
+                <option value="250" data-label="Escáner OBD & Service Reset">Diagnóstico Escáner OBD & Reset de Testigo (+ $250)</option>
+                <option value="350" data-label="Purga y Líquido de Frenos DOT 4/5.1">Cambio y purgado de líquido de frenos (+ $350)</option>
+                <option value="550" data-label="Escáner + Purgado de Frenos">Paquete Escáner + Purgado de Frenos (+ $550)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Output Box -->
+          <div class="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-900 text-white rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+            <div class="space-y-2 text-center md:text-left">
+              <span class="inline-block bg-blue-500/20 text-blue-300 border border-blue-500/30 text-xs font-bold px-3 py-1 rounded-full uppercase">
+                Presupuesto Estimado Transparente
+              </span>
+              <p class="text-xs text-slate-300" id="calcSummary">Baja Cilindrada (125cc a 250cc) &bull; Servicio Menor</p>
+              <div class="flex items-baseline justify-center md:justify-start gap-2">
+                <span class="text-xs text-slate-400">Total aproximado:</span>
+                <span class="font-display text-4xl sm:text-5xl font-extrabold text-amber-400 italic" id="calcPriceDisplay">$650 MXN</span>
+              </div>
+              <p class="text-[11px] text-slate-400 flex items-center justify-center md:justify-start gap-1.5">
+                <i class="fa-solid fa-circle-check text-emerald-400"></i> Aceites 100% sintéticos sellados en tu presencia. Te entregamos las refacciones sustituidas.
+              </p>
+            </div>
+
+            <div class="w-full md:w-auto shrink-0 flex flex-col sm:flex-row gap-3">
+              <a id="calcWhatsAppBtn" href="#" target="_blank" class="w-full sm:w-auto text-center inline-flex justify-center items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-display font-bold text-base py-3.5 px-6 rounded-xl shadow-lg shadow-emerald-700/40 transition transform hover:-translate-y-0.5">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                <span>Apartar Cita por WhatsApp</span>
+              </a>
+              <a href="tel:+525527542348" class="w-full sm:w-auto text-center inline-flex justify-center items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-display font-bold text-base py-3.5 px-5 rounded-xl border border-slate-700 transition">
+                <i class="fa-solid fa-phone text-blue-400"></i>
+                <span>Llamar al Taller</span>
+              </a>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Location & Workshop Details -->
+  <section id="taller" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-5 space-y-5">
+          <span class="text-biker-blue text-xs font-bold uppercase tracking-wider bg-blue-100 px-3 py-1 rounded-full border border-blue-200">Ubicación Estratégica en CDMX</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight italic">
+            En el Corazón de la Colonia Nápoles
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Estamos ubicados en <strong class="text-slate-900">Calle Carolina #55</strong>, a pocos metros de la Monumental Plaza México y del Estadio Ciudad de los Deportes, con fácil acceso desde Viaducto Río Becerra, Insurgentes Sur y Patriotismo.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-motorcycle text-biker-blue text-lg"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900">Cajones y Elevadores Hidráulicos</h4>
+                  <p class="text-[11px] text-slate-500">Trabajamos tu moto de forma segura sin recargarla en muros</p>
+                </div>
+              </div>
+              <span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200 shrink-0">Equipado</span>
+            </div>
+
+            <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-toolbox text-biker-blue text-lg"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900">Torquímetro en Cada Tornillo</h4>
+                  <p class="text-[11px] text-slate-500">Apretamos tapones y birlos con torque de manual para no barrer cuerdas</p>
+                </div>
+              </div>
+              <span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200 shrink-0">Precisión</span>
+            </div>
+
+            <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-file-invoice text-biker-blue text-lg"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900">Historial de Mantenimientos</h4>
+                  <p class="text-[11px] text-slate-500">Llevamos registro de kilometraje y próximos servicios recomendados</p>
+                </div>
+              </div>
+              <span class="text-xs font-extrabold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200 shrink-0">Control</span>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://wa.me/525527542348?text=Hola,%20%C2%BFen%20qu%C3%A9%20horario%20puedo%20pasar%20a%20dejar%20mi%20moto?" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-slate-900 hover:text-biker-blue transition">
+              <i class="fa-brands fa-whatsapp text-emerald-500 text-base"></i> Contáctanos al 55 2754 2348 para consultar disponibilidad de recepción
+            </a>
+          </div>
+        </div>
+
+        <!-- Location Box & Map -->
+        <div class="lg:col-span-7">
+          <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 biker-shadow space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+              <div>
+                <span class="text-xs font-bold text-biker-blue uppercase tracking-wider">Taller Mecánico Especializado</span>
+                <h3 class="font-display font-bold text-2xl text-slate-900 italic">260 BIKER GARAGE</h3>
+              </div>
+              <div class="flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                <i class="fa-solid fa-check"></i> Abierto de Lunes a Sábado
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-700">
+              <div class="p-3 bg-slate-50 rounded-xl space-y-1">
+                <span class="text-slate-400 font-semibold uppercase text-[10px]">Dirección del Taller:</span>
+                <p class="font-bold text-slate-900">Calle Carolina #55, Col. Nápoles</p>
+                <p class="text-slate-500">Alcaldía Benito Juárez, C.P. 03840, CDMX</p>
+              </div>
+
+              <div class="p-3 bg-slate-50 rounded-xl space-y-1">
+                <span class="text-slate-400 font-semibold uppercase text-[10px]">Teléfono / WhatsApp:</span>
+                <p class="font-bold text-slate-900">55 2754 2348</p>
+                <p class="text-slate-500">Alt: 55 2075 3717</p>
+              </div>
+
+              <div class="p-3 bg-slate-50 rounded-xl space-y-1">
+                <span class="text-slate-400 font-semibold uppercase text-[10px]">Horarios de Atención:</span>
+                <p class="font-bold text-slate-900">Lunes a Viernes: 9:30 AM - 6:30 PM</p>
+                <p class="text-slate-500">Sábados: 10:00 AM - 3:00 PM</p>
+              </div>
+
+              <div class="p-3 bg-slate-50 rounded-xl space-y-1">
+                <span class="text-slate-400 font-semibold uppercase text-[10px]">Marcas Atendidas:</span>
+                <p class="font-bold text-slate-900">BMW, KTM, Ducati, Yamaha, Honda</p>
+                <p class="text-slate-500">Kawasaki, Suzuki, Royal Enfield y Scooters</p>
+              </div>
+            </div>
+
+            <!-- Google Maps Embed -->
+            <div class="rounded-xl overflow-hidden border border-slate-200 h-64 bg-slate-100 relative">
+              <iframe 
+                title="Ubicación 260 Biker Garage Nápoles"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.1465228186105!2d-99.1804245!3d19.3942008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff6f0b484055%3A0xc3f1503e9196b0ee!2sCarolina%2055%2C%20N%C3%A1poles%2C%20Benito%20Ju%C3%A1rez%2C%2003840%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx" 
+                class="w-full h-full border-0" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Real Customer Reviews -->
+  <section id="opiniones" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-biker-blue text-xs font-bold uppercase tracking-wider bg-blue-100 px-3 py-1 rounded-full border border-blue-200">Opiniones de la Comunidad Biker</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight italic">
+          Lo que Dicen Quienes Ya Rodaron con Nosotros
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-3">
+          Comentarios de motociclistas que confían el mantenimiento y seguridad de sus motos en 260 Biker Garage.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+              "Llevé mi BMW G310GS a servicio mayor y me ahorré la mitad de lo que me cobraba la agencia en Santa Fe. Le metieron Motul sintético, cambiaron filtro original y me borraron la llave de servicio del tablero. Muy recomendables."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-200 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-slate-900 text-amber-400 font-bold flex items-center justify-center text-xs">AG</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Alejandro Garza</p>
+              <p class="text-[10px] text-slate-500">BMW G310GS &bull; Benito Juárez</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+              "Tengo una KTM Duke 390 que se calentaba y fallaba en baja. La escanearon, detectaron que el bulbo de temperatura estaba dañado, limpiaron el cuerpo de aceleración y quedó impecable. Da gusto encontrar mecánicos honestos."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-200 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-biker-blue text-white font-bold flex items-center justify-center text-xs">DM</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Daniel Morales</p>
+              <p class="text-[10px] text-slate-500">KTM Duke 390 &bull; Nápoles</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+              "Me cambiaron el kit de arrastre completo y balatas delanteras Brembo en mi Yamaha MT-07. Me gustó que me enviaron fotos por WhatsApp de cada paso y me entregaron las refacciones viejas. Atención de 10."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-200 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-slate-800 text-white font-bold flex items-center justify-center text-xs">JS</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Jorge Salinas</p>
+              <p class="text-[10px] text-slate-500">Yamaha MT-07 &bull; Del Valle</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+              "Instalaron exploradoras y defensas en mi BMW F750GS antes de salir a carretera a Oaxaca. Todo cableado con relevador sin tocar cables originales. Rodé más de 1,200 km sin ningún detalle. Excelente taller."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-200 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-amber-600 text-white font-bold flex items-center justify-center text-xs">MR</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Mauricio Rivas</p>
+              <p class="text-[10px] text-slate-500">BMW F750GS &bull; Condesa</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Final CTA Callout -->
+  <section class="py-16 bg-slate-900 text-white text-center relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 relative z-10 space-y-6">
+      <span class="inline-block bg-blue-500/20 text-blue-300 border border-blue-500/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+        Agenda tu Mantenimiento
+      </span>
+      <h2 class="font-display text-3xl sm:text-5xl font-extrabold tracking-tight italic">
+        No Dejes la Seguridad de tu Moto a la Suerte.
+      </h2>
+      <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto">
+        Aparta tu cita por WhatsApp indicando marca, modelo y kilometraje para tener tus refacciones listas al llegar a nuestro taller.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <a href="https://wa.me/525527542348?text=Hola%20260%20Biker%20Garage,%20quiero%20agendar%20cita%20para%20mantenimiento%20de%20mi%20moto." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-display font-bold text-lg py-4 px-8 rounded-xl shadow-xl transition transform hover:-translate-y-0.5">
+          <i class="fa-brands fa-whatsapp text-2xl"></i>
+          <span>Agendar por WhatsApp al 55 2754 2348</span>
+        </a>
+        <a href="tel:+525527542348" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-display font-bold text-lg py-4 px-8 rounded-xl border border-white/20 backdrop-blur-sm transition">
+          <i class="fa-solid fa-phone text-blue-400"></i>
+          <span>Llamar al Taller</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-10 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-amber-400 font-bold">
+          <i class="fa-solid fa-motorcycle"></i>
+        </div>
+        <div>
+          <p class="font-display font-bold text-slate-900 text-base italic">260 BIKER GARAGE NÁPOLES</p>
+          <p class="text-slate-500">Carolina #55, Col. Nápoles, Benito Juárez, CDMX &bull; Tel: 55 2754 2348</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-5 text-slate-600 font-medium">
+        <a href="#servicios" class="hover:text-biker-blue transition">Servicios</a>
+        <a href="#especialidad" class="hover:text-biker-blue transition">BMW Motorrad</a>
+        <a href="#cotizador" class="hover:text-biker-blue transition">Cotizador Exprés</a>
+        <a href="#taller" class="hover:text-biker-blue transition">Ubicación</a>
+        <a href="https://wa.me/525527542348" target="_blank" class="hover:text-emerald-600 transition">WhatsApp Directo</a>
+      </div>
+
+      <p class="text-slate-400 text-center md:text-right">
+        &copy; 2026 260 Biker Garage. Todos los derechos reservados.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- Sticky Bottom Emergency Bar (Mobile Only) -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 sm:hidden shadow-2xl flex items-center gap-2">
+    <a href="tel:+525527542348" class="flex-1 bg-slate-800 text-white text-center font-display font-bold py-3 px-2 rounded-xl text-xs flex items-center justify-center gap-2 shadow-md">
+      <i class="fa-solid fa-phone"></i> Llamar
+    </a>
+    <a href="https://wa.me/525527542348?text=Hola,%20me%20gustar%C3%ADa%20cotizar%20el%20servicio%20de%20mi%20moto." target="_blank" class="flex-1 bg-emerald-600 text-white text-center font-display font-bold py-3 px-2 rounded-xl text-xs flex items-center justify-center gap-2 shadow-md">
+      <i class="fa-brands fa-whatsapp text-base"></i> Cotizar WhatsApp
+    </a>
+  </div>
+
+  <!-- Calculator Script -->
+  <script>
+    function updateBikeCalc() {
+      const selectedMoto = document.querySelector('input[name="motoType"]:checked');
+      const basePrice = parseInt(selectedMoto.getAttribute('data-base')) || 650;
+      const motoLabel = selectedMoto.getAttribute('data-label') || 'Motocicleta';
+
+      const serviceLevelSelect = document.getElementById('serviceLevelSelect');
+      const serviceExtra = parseInt(serviceLevelSelect.value) || 0;
+      const serviceLabel = serviceLevelSelect.options[serviceLevelSelect.selectedIndex].getAttribute('data-label');
+
+      const extraSelect = document.getElementById('extraSelect');
+      const extraPrice = parseInt(extraSelect.value) || 0;
+      const extraLabel = extraSelect.options[extraSelect.selectedIndex].getAttribute('data-label');
+
+      const total = basePrice + serviceExtra + extraPrice;
+
+      document.getElementById('calcPriceDisplay').innerText = '$' + total.toLocaleString('es-MX') + ' MXN';
+
+      let summary = motoLabel.split('(')[0].trim() + ' &bull; ' + serviceLabel;
+      if (extraPrice > 0) {
+        summary += ' (+ ' + extraLabel + ')';
+      }
+      document.getElementById('calcSummary').innerHTML = summary;
+
+      let msg = 'Hola 260 Biker Garage, coticé en su página web:\n' +
+        '• Segmento: ' + motoLabel + '\n' +
+        '• Tipo de Servicio: ' + serviceLabel + '\n';
+      
+      if (extraPrice > 0) {
+        msg += '• Adicional: ' + extraLabel + '\n';
+      }
+
+      msg += '• Total estimado: $' + total.toLocaleString('es-MX') + ' MXN\n\n' +
+        '¿Qué día de esta semana tienen espacio disponible para llevar mi moto?';
+
+      document.getElementById('calcWhatsAppBtn').href = 'https://wa.me/525527542348?text=' + encodeURIComponent(msg);
+    }
+
+    // Init
+    document.addEventListener('DOMContentLoaded', updateBikeCalc);
+  </script>
+
+</body>
+</html>
