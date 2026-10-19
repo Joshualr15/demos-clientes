@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carpintería Alcocer | Muebles a la Medida & Cocinas Integrales en Coyoacán CDMX</title>
+  <meta name="description" content="Taller de carpintería fina y ebanistería en Coyoacán, CDMX. Fabricación de cocinas integrales, clósets, vestidores, puertas y centros de TV a la medida. Cotiza por WhatsApp.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: DM Serif Display & Plus Jakarta Sans (Tipografía artesanal y elegante) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"DM Serif Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            wood: {
+              50: '#fbf8f4',
+              100: '#f5ede3',
+              200: '#ebd9c5',
+              600: '#b45309',
+              700: '#92400e',
+              800: '#78350f',
+              900: '#451a03',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .custom-shadow {
+      box-shadow: 0 10px 30px -5px rgba(120, 53, 15, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+    }
+    .wood-card {
+      transition: all 0.28s ease;
+    }
+    .wood-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 35px -10px rgba(120, 53, 15, 0.14);
+    }
+  </style>
+</head>
+
+<body class="bg-stone-50 text-stone-800 font-sans antialiased selection:bg-amber-800 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-stone-900 text-stone-300 text-xs py-2.5 px-4 border-b border-stone-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-700 text-amber-50 uppercase tracking-wide">
+          <i class="fa-solid fa-compass-drafting text-[10px]"></i> Asesoría y Medición a Domicilio en CDMX
+        </span>
+        <span class="text-stone-300 hidden md:inline">📍 Taller en Coyoacán, CDMX &middot; Fabricación Residencial y Comercial</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <span class="text-stone-400 hidden lg:inline"><i class="fa-regular fa-clock text-amber-500 mr-1"></i> Lun a Sáb 8:00 AM – 7:00 PM</span>
+        <a href="https://api.whatsapp.com/send?phone=525588037097&text=Hola%20Carpinter%C3%ADa%20Alcocer!%20Me%20interesa%20cotizar%20un%20proyecto%20de%20muebles%20a%20la%20medida" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-bold flex items-center gap-1.5 transition">
+          <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp: 55 8803 7097
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 custom-shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 bg-wood-800 rounded-xl flex items-center justify-center text-amber-100 shadow-md shadow-wood-900/20 group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-hammer text-xl"></i>
+        </div>
+        <div>
+          <span class="font-serif text-2xl font-normal tracking-tight text-stone-900 block leading-none">
+            Carpintería <span class="text-wood-700 italic">Alcocer</span>
+          </span>
+          <span class="text-[11px] uppercase tracking-wider text-stone-500 font-semibold">
+            Muebles a la Medida &middot; Coyoacán CDMX
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-stone-700">
+        <a href="#proyectos" class="hover:text-wood-700 transition">Catálogo de Proyectos</a>
+        <a href="#maderas" class="hover:text-wood-700 transition">Materiales & Acabados</a>
+        <a href="#cotizador" class="hover:text-wood-700 transition">Cotizador en Vivo</a>
+        <a href="#proceso" class="hover:text-wood-700 transition">Cómo Trabajamos</a>
+        <a href="#opiniones" class="hover:text-wood-700 transition">Clientes Satisfechos</a>
+        <a href="#taller" class="hover:text-wood-700 transition">Ubicación</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="flex items-center gap-3">
+        <a href="#cotizador" class="hidden sm:inline-flex items-center gap-2 bg-wood-800 hover:bg-wood-900 text-amber-50 font-semibold text-sm px-5 py-2.5 rounded-xl shadow-md shadow-wood-900/20 hover:shadow-lg hover:shadow-wood-900/30 transition transform active:scale-95">
+          <i class="fa-solid fa-ruler-combined text-xs"></i>
+          <span>Cotizar Proyecto</span>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=525588037097&text=Hola!%20Quisiera%20pedir%20informes%20para%20un%20mueble%20en%20Carpinter%C3%ADa%20Alcocer" target="_blank" class="inline-flex lg:hidden items-center justify-center w-10 h-10 rounded-xl bg-emerald-500 text-white hover:bg-emerald-600 transition shadow">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-b from-white via-wood-50/60 to-stone-100 py-16 sm:py-24 border-b border-stone-200 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Copy -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-wood-100 border border-wood-200 text-wood-900 text-xs font-semibold tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-amber-600 animate-pulse"></span>
+            TALLER DE EBANISTERÍA Y CARPINTERÍA FINA EN COYOACÁN
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-stone-900 leading-[1.15]">
+            Muebles hechos a la medida de tu espacio, <br class="hidden sm:inline">
+            <span class="italic text-wood-800">con la calidez de la madera real.</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-stone-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-sans">
+            Diseñamos, fabricamos e instalamos <strong>cocinas integrales modernas, clósets y vestidores, centros de entretenimiento y puertas sólidas</strong>. Maderas finas seleccionadas, herrajes de cierre suave y acabados de precisión que duran toda la vida.
+          </p>
+
+          <!-- Highlights Pills -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 max-w-xl mx-auto lg:mx-0">
+            <div class="bg-white p-3.5 rounded-xl border border-stone-200 custom-shadow flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-amber-100 text-wood-800 flex items-center justify-center font-bold text-lg">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <div class="text-left">
+                <div class="font-bold text-stone-900 text-sm leading-tight">100% a Medida</div>
+                <div class="text-xs text-stone-500">Aprovecha cada rincón</div>
+              </div>
+            </div>
+
+            <div class="bg-white p-3.5 rounded-xl border border-stone-200 custom-shadow flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-lg">
+                <i class="fa-solid fa-tree"></i>
+              </div>
+              <div class="text-left">
+                <div class="font-bold text-stone-900 text-sm leading-tight">Maderas Nobles</div>
+                <div class="text-xs text-stone-500">Parota, Encino, Nogal</div>
+              </div>
+            </div>
+
+            <div class="bg-white p-3.5 rounded-xl border border-stone-200 custom-shadow col-span-2 sm:col-span-1 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-lg">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="text-left">
+                <div class="font-bold text-stone-900 text-sm leading-tight">4.9 / 5.0</div>
+                <div class="text-xs text-stone-500">Opiniones de Clientes</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#cotizador" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-wood-800 hover:bg-wood-900 text-amber-50 font-bold text-base px-8 py-4 rounded-xl shadow-lg shadow-wood-900/25 hover:shadow-wood-900/35 transition transform active:scale-95">
+              <span>Calcular Presupuesto Estimado</span>
+              <i class="fa-solid fa-arrow-down text-sm"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=525588037097&text=Hola%20Carpinter%C3%ADa%20Alcocer!%20Me%20gustar%C3%ADa%20solicitar%20una%20visita%20de%20medici%C3%B3n" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-stone-50 text-stone-800 border border-stone-300 font-semibold text-base px-6 py-4 rounded-xl transition">
+              <i class="fa-brands fa-whatsapp text-emerald-600 text-lg"></i>
+              <span>WhatsApp Directo</span>
+            </a>
+          </div>
+
+          <div class="flex items-center justify-center lg:justify-start gap-3 text-xs text-stone-500 pt-2 border-t border-stone-200">
+            <i class="fa-solid fa-shield-check text-wood-700 text-base"></i>
+            <span>Garantía de fabricación en estructura y herrajes. Instalación limpia y puntual en tu hogar.</span>
+          </div>
+
+        </div>
+
+        <!-- Right: Photo -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <div class="absolute -top-6 -right-6 w-72 h-72 bg-amber-200/50 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-stone-900 group">
+              <img src="img/hero-carpinteria.jpg" alt="Cocina integral a la medida fabricada por Carpintería Alcocer" class="w-full h-[470px] object-cover group-hover:scale-105 transition duration-500">
+              
+              <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-stone-200/80 custom-shadow">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-serif text-lg font-normal text-stone-900">Cocinas & Clósets sobre Diseño</span>
+                  <span class="text-xs font-bold text-wood-800 bg-wood-100 px-2.5 py-0.5 rounded-full border border-wood-200">
+                    Acabado Fino
+                  </span>
+                </div>
+                <p class="text-xs text-stone-600">
+                  Herrajes soft-close de cierre lento, iluminación integrada y resistencia a la humedad.
+                </p>
+              </div>
+            </div>
+
+            <!-- Floating Mini Badge -->
+            <div class="absolute -bottom-6 -left-6 bg-white p-3.5 rounded-xl border border-stone-200 shadow-xl hidden sm:flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-wood-100 text-wood-800 flex items-center justify-center font-bold text-lg">
+                <i class="fa-solid fa-pen-ruler"></i>
+              </div>
+              <div class="text-xs">
+                <div class="font-bold text-stone-900">Renders & Planos 3D</div>
+                <div class="text-stone-500">Visualiza antes de fabricar</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Catálogo de Proyectos -->
+  <section id="proyectos" class="py-20 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-wood-700 font-bold text-xs uppercase tracking-widest bg-wood-100 px-3.5 py-1 rounded-full border border-wood-200">
+          Líneas de Fabricación
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-stone-900 tracking-tight">
+          Muebles que Transforman tu Hogar
+        </h2>
+        <p class="text-stone-600 text-base font-sans">
+          Cada pieza se diseña al milímetro adaptándose a la arquitectura de tus habitaciones, gustos estéticos y presupuesto.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Cocinas -->
+        <div class="bg-stone-50 rounded-2xl border border-stone-200 overflow-hidden wood-card flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="img/cocinas-integrales.jpg" alt="Cocina integral de madera a la medida" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-wood-800 font-bold text-xs px-2.5 py-1 rounded-md shadow-sm">
+                A la Medida
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl font-normal text-stone-900 mb-2">Cocinas Integrales Modernas</h3>
+              <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                Módulos inferiores y aéreos, alacenas extraíbles, cubiertas de cuarzo o granito, y herrajes ocultos de alta resistencia a vapores y grasa.
+              </p>
+              <ul class="text-xs text-stone-500 space-y-1.5">
+                <li><i class="fa-solid fa-check text-wood-700 mr-1.5"></i> MDF hidrófugo sellado contra humedad</li>
+                <li><i class="fa-solid fa-check text-wood-700 mr-1.5"></i> Gavetas con cierre suave soft-close</li>
+                <li><i class="fa-solid fa-check text-wood-700 mr-1.5"></i> Isla y barras desayunadoras en madera sólida</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-stone-200/80 mt-2 flex items-center justify-between">
+            <span class="text-xs text-stone-500">Proyecto base</span>
+            <span class="font-bold text-wood-800 text-base">Desde $18,500 MXN</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Clósets -->
+        <div class="bg-stone-50 rounded-2xl border border-stone-200 overflow-hidden wood-card flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="img/closets-vestidores.jpg" alt="Clósets y vestidores walk-in closet" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-wood-800 font-bold text-xs px-2.5 py-1 rounded-md shadow-sm">
+                Más Solicitado
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl font-normal text-stone-900 mb-2">Clósets & Vestidores Walk-In</h3>
+              <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                Distribución inteligente de espacio: zapateras deslizables, pantaloneros, cajoneras aterciopeladas para accesorios e iluminación cálida LED.
+              </p>
+              <ul class="text-xs text-stone-500 space-y-1.5">
+                <li><i class="fa-solid fa-check text-wood-700 mr-1.5"></i> Maleteros superiores de gran fondo</li>
+                <li><i class="fa-solid fa-check text-wood-700 mr-1.5"></i> Puertas corredizas o abatibles silenciosas</li>
+                <li><i class="fa-solid fa-check text-wood-700 mr-1.5"></i> Melaminas texturizadas sincronizadas al tacto</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-stone-200/80 mt-2 flex items-center justify-between">
+            <span class="text-xs text-stone-500">Por metro lineal</span>
+            <span class="font-bold text-wood-800 text-base">Desde $14,200 MXN</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Centros de Entretenimiento -->
+        <div class="bg-stone-50 rounded-2xl border border-stone-200 overflow-hidden wood-card flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="img/centros-tv-muebles.jpg" alt="Muros ranurados y centros de entretenimiento TV" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-wood-800 font-bold text-xs px-2.5 py-1 rounded-md shadow-sm">
+                Tendencia 2026
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl font-normal text-stone-900 mb-2">Muros de TV & Palillería Fina</h3>
+              <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                Paneles ranurados en madera natural, consolas flotantes con ocultamiento total de cables y repisas iluminadas para piezas de arte.
+              </p>
+              <ul class="text-xs text-stone-500 space-y-1.5">
+                <li><i class="fa-solid fa-check text-wood-700 mr-1.5"></i> Palillería en encino americano o tzalam</li>
+                <li><i class="fa-solid fa-check text-wood-700 mr-1.5"></i> Puertas con pistón neumático o push-to-open</li>
+                <li><i class="fa-solid fa-check text-wood-700 mr-1.5"></i> Tiras de luz LED empotrada difusa</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-stone-200/80 mt-2 flex items-center justify-between">
+            <span class="text-xs text-stone-500">Mueble + Panel</span>
+            <span class="font-bold text-wood-800 text-base">Desde $8,800 MXN</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Section: Cotizador de Muebles a la Medida -->
+  <section id="cotizador" class="py-20 bg-stone-50 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14 space-y-3">
+        <span class="text-wood-700 font-bold text-xs uppercase tracking-widest bg-wood-100 px-3.5 py-1 rounded-full border border-wood-200">
+          Transparencia y Precisión
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-stone-900 tracking-tight">
+          Cotizador Estimado de Carpintería
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base font-sans">
+          Selecciona el tipo de mobiliario que deseas, añade detalles opcionales y solicita tu visita de levantamiento a domicilio sin compromiso.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Controls Left -->
+        <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl border border-stone-200 custom-shadow space-y-6">
+          
+          <!-- Step 1: Tipo de Proyecto -->
+          <div>
+            <label class="block text-sm font-bold text-stone-900 uppercase tracking-wider mb-3 font-sans">
+              1. Selecciona el Tipo de Mobiliario Principal:
+            </label>
+            <div class="grid sm:grid-cols-2 gap-3" id="furniture-container">
+              
+              <!-- Option 1: Cocina Integral -->
+              <label class="relative flex flex-col p-4 rounded-xl border-2 border-wood-700 bg-wood-50/60 cursor-pointer transition hover:border-wood-800">
+                <input type="radio" name="proyecto-tipo" value="18500" data-name="Cocina Integral a la Medida" data-price="18500" checked class="hidden" onchange="calculateWoodQuote()">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-stone-900 text-sm">Cocina Integral</span>
+                  <span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-100 text-wood-800 uppercase">Principal</span>
+                </div>
+                <span class="text-xs text-stone-500 mb-2 font-sans">Módulos inferiores, aéreos y torre para electrodomésticos.</span>
+                <span class="font-serif text-xl font-normal text-wood-800">$18,500 MXN</span>
+              </label>
+
+              <!-- Option 2: Clóset o Vestidor -->
+              <label class="relative flex flex-col p-4 rounded-xl border-2 border-stone-200 bg-white cursor-pointer transition hover:border-wood-600">
+                <input type="radio" name="proyecto-tipo" value="14200" data-name="Clóset o Vestidor Walk-In" data-price="14200" class="hidden" onchange="calculateWoodQuote()">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-stone-900 text-sm">Clóset / Vestidor</span>
+                  <span class="text-xs text-stone-400">Personalizado</span>
+                </div>
+                <span class="text-xs text-stone-500 mb-2 font-sans">Zapatera, cajones soft-close, maletero y percheros dobles.</span>
+                <span class="font-serif text-xl font-normal text-stone-900">$14,200 MXN</span>
+              </label>
+
+              <!-- Option 3: Centro de TV & Muro Palillería -->
+              <label class="relative flex flex-col p-4 rounded-xl border-2 border-stone-200 bg-white cursor-pointer transition hover:border-wood-600">
+                <input type="radio" name="proyecto-tipo" value="8800" data-name="Centro de TV con Muro de Palillería" data-price="8800" class="hidden" onchange="calculateWoodQuote()">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-stone-900 text-sm">Muro TV & Palillería</span>
+                  <span class="text-xs text-stone-400">Sala / Recámara</span>
+                </div>
+                <span class="text-xs text-stone-500 mb-2 font-sans">Panel decorativo ranurado y consola suspendida.</span>
+                <span class="font-serif text-xl font-normal text-stone-900">$8,800 MXN</span>
+              </label>
+
+              <!-- Option 4: Puerta Principal Sólida -->
+              <label class="relative flex flex-col p-4 rounded-xl border-2 border-stone-200 bg-white cursor-pointer transition hover:border-wood-600">
+                <input type="radio" name="proyecto-tipo" value="7500" data-name="Puerta Principal de Madera Sólida" data-price="7500" class="hidden" onchange="calculateWoodQuote()">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-stone-900 text-sm">Puerta de Madera Sólida</span>
+                  <span class="text-xs text-stone-400">Exterior/Interior</span>
+                </div>
+                <span class="text-xs text-stone-500 mb-2 font-sans">Encino o Parota con marco ancho y chapa de seguridad.</span>
+                <span class="font-serif text-xl font-normal text-stone-900">$7,500 MXN</span>
+              </label>
+
+              <!-- Option 5: Mesa Comedor Parota -->
+              <label class="relative flex flex-col p-4 rounded-xl border-2 border-stone-200 bg-white cursor-pointer transition hover:border-wood-600 col-span-1 sm:col-span-2">
+                <input type="radio" name="proyecto-tipo" value="9800" data-name="Mesa o Comedor en Madera Maciza de Parota" data-price="9800" class="hidden" onchange="calculateWoodQuote()">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-stone-900 text-sm">Mesa de Comedor en Madera Maciza (Parota / Nogal)</span>
+                  <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-wood-100 text-wood-800 uppercase">Pieza de Autor</span>
+                </div>
+                <span class="text-xs text-stone-500 mb-1 font-sans">Cubierta en tablón de parota viva con base metálica en herrería negra mate o patas de madera maciza.</span>
+                <span class="font-serif text-xl font-normal text-stone-900">$9,800 MXN</span>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Step 2: Extras y Acabados Premium -->
+          <div>
+            <label class="block text-sm font-bold text-stone-900 uppercase tracking-wider mb-3 font-sans">
+              2. Acabados y Aditamentos Opcionales:
+            </label>
+            <div class="space-y-2.5">
+              <label class="flex items-center justify-between p-3 rounded-xl bg-stone-50 border border-stone-200 cursor-pointer hover:bg-wood-50/40 transition">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" id="extra-led" value="1400" data-name="Iluminación LED Cálida Oculta" class="w-4 h-4 text-wood-700 rounded border-stone-300 focus:ring-wood-600" onchange="calculateWoodQuote()">
+                  <div>
+                    <span class="text-sm font-semibold text-stone-900">Iluminación LED Cálida Integrada</span>
+                    <span class="block text-xs text-stone-500 font-sans">Canaleta oculta de aluminio con difusor y sensor táctil</span>
+                  </div>
+                </div>
+                <span class="text-sm font-bold text-stone-800 font-serif">+$1,400 MXN</span>
+              </label>
+
+              <label class="flex items-center justify-between p-3 rounded-xl bg-stone-50 border border-stone-200 cursor-pointer hover:bg-wood-50/40 transition">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" id="extra-herrajes" value="1200" data-name="Herrajes Soft-Close Premium" class="w-4 h-4 text-wood-700 rounded border-stone-300 focus:ring-wood-600" onchange="calculateWoodQuote()">
+                  <div>
+                    <span class="text-sm font-semibold text-stone-900">Kit de Bisagras & Correderas Soft-Close</span>
+                    <span class="block text-xs text-stone-500 font-sans">Cierre lento silencioso que prolonga la vida útil del mueble</span>
+                  </div>
+                </div>
+                <span class="text-sm font-bold text-stone-800 font-serif">+$1,200 MXN</span>
+              </label>
+
+              <label class="flex items-center justify-between p-3 rounded-xl bg-stone-50 border border-stone-200 cursor-pointer hover:bg-wood-50/40 transition">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" id="extra-granito" value="4500" data-name="Cubierta de Cuarzo o Granito Natural" class="w-4 h-4 text-wood-700 rounded border-stone-300 focus:ring-wood-600" onchange="calculateWoodQuote()">
+                  <div>
+                    <span class="text-sm font-semibold text-stone-900">Cubierta de Cuarzo / Granito Natural para Cocina</span>
+                    <span class="block text-xs text-stone-500 font-sans">Resistente a calor directo, manchas y rayones</span>
+                  </div>
+                </div>
+                <span class="text-sm font-bold text-stone-800 font-serif">+$4,500 MXN</span>
+              </label>
+
+              <label class="flex items-center justify-between p-3 rounded-xl bg-stone-50 border border-stone-200 cursor-pointer hover:bg-wood-50/40 transition">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" id="extra-gola" value="950" data-name="Perfil Gola Oculto (Sin Jaladeras)" class="w-4 h-4 text-wood-700 rounded border-stone-300 focus:ring-wood-600" onchange="calculateWoodQuote()">
+                  <div>
+                    <span class="text-sm font-semibold text-stone-900">Diseño Minimalista Perfil Gola (Sin Jaladeras Visibles)</span>
+                    <span class="block text-xs text-stone-500 font-sans">Líneas limpias y modernas en acabado negro o aluminio</span>
+                  </div>
+                </div>
+                <span class="text-sm font-bold text-stone-800 font-serif">+$950 MXN</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 3: Alcaldía / Zona para Medición -->
+          <div>
+            <label class="block text-sm font-bold text-stone-900 uppercase tracking-wider mb-2 font-sans">
+              3. ¿En qué zona de la CDMX se realizaría la instalación?
+            </label>
+            <select id="zone-select" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-4 py-3 text-sm text-stone-800 focus:ring-2 focus:ring-wood-600 focus:border-wood-600 font-sans" onchange="calculateWoodQuote()">
+              <option value="Coyoacán / Tlalpan / Benito Juárez">🏡 Coyoacán / Tlalpan / Benito Juárez (Zona Sur Centro)</option>
+              <option value="Álvaro Obregón / Cuajimalpa / Santa Fe">🌲 Álvaro Obregón / Santa Fe / Cuajimalpa (Zona Poniente)</option>
+              <option value="Cuauhtémoc / Miguel Hidalgo / Polanco / Roma">🏙️ Cuauhtémoc / Miguel Hidalgo (Roma, Condesa, Polanco)</option>
+              <option value="Iztapalapa / Iztacalco / Venustiano Carranza">📍 Iztacalco / Iztapalapa / Oriente CDMX</option>
+              <option value="Naucalpan / Huixquilucan / Zona Metropolitana">🚗 Área Metropolitana / Estado de México</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Summary Sticky Card Right -->
+        <div class="lg:col-span-5 sticky top-28 bg-stone-900 text-stone-100 p-6 sm:p-8 rounded-2xl shadow-xl border border-stone-800 space-y-6">
+          
+          <div class="flex items-center justify-between border-b border-stone-800 pb-4">
+            <div>
+              <span class="text-xs uppercase font-bold text-amber-400 tracking-wider font-sans">Presupuesto Preliminar</span>
+              <h3 class="font-serif text-2xl font-normal text-white">Tu Mueble a la Medida</h3>
+            </div>
+            <div class="w-10 h-10 rounded-xl bg-wood-800 text-amber-300 flex items-center justify-center text-xl">
+              <i class="fa-solid fa-scroll"></i>
+            </div>
+          </div>
+
+          <div class="space-y-3 text-sm font-sans">
+            
+            <div class="flex justify-between items-start gap-2">
+              <span class="text-stone-300" id="summary-wood-name">Cocina Integral a la Medida</span>
+              <span class="font-serif text-base text-amber-200 shrink-0 font-normal" id="summary-wood-price">$18,500 MXN</span>
+            </div>
+
+            <div id="summary-extras" class="space-y-1.5 pt-2 border-t border-stone-800/80 text-xs text-stone-300">
+              <div class="text-stone-500 italic">Sin acabados adicionales seleccionados</div>
+            </div>
+
+            <div class="pt-3 border-t border-stone-800 flex justify-between items-center text-xs text-stone-400">
+              <span>Zona de instalación:</span>
+              <span class="font-medium text-stone-200 text-right truncate max-w-[210px]" id="summary-zone">Coyoacán / Sur</span>
+            </div>
+
+          </div>
+
+          <!-- Total Calculation -->
+          <div class="pt-4 border-t-2 border-dashed border-stone-800 flex items-baseline justify-between font-sans">
+            <span class="text-xs uppercase font-bold text-stone-400 tracking-wider">Total Estimado:</span>
+            <div class="text-right">
+              <span class="font-serif text-3xl sm:text-4xl font-normal text-amber-400" id="summary-total">$18,500</span>
+              <span class="text-xs text-stone-400 block font-sans">Incluye fabricación e instalación profesional</span>
+            </div>
+          </div>
+
+          <!-- WhatsApp Button -->
+          <div class="space-y-3 pt-2">
+            <a id="whatsapp-btn" href="#" target="_blank" class="w-full inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-base px-6 py-4 rounded-xl shadow-lg shadow-emerald-500/25 transition transform active:scale-95 text-center font-sans">
+              <i class="fa-brands fa-whatsapp text-2xl"></i>
+              <span>Solicitar Visita & Cotización</span>
+            </a>
+            <p class="text-[11px] text-stone-400 text-center leading-tight font-sans">
+              <i class="fa-solid fa-calendar-check text-emerald-400 mr-1"></i> Agendamos tu visita de medición en Coyoacán y CDMX.
+            </p>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="pt-4 border-t border-stone-800 grid grid-cols-2 gap-2 text-[11px] text-stone-400 font-sans">
+            <div class="flex items-center gap-1.5">
+              <i class="fa-solid fa-check text-amber-400"></i> Diseños personalizados
+            </div>
+            <div class="flex items-center gap-1.5">
+              <i class="fa-solid fa-check text-amber-400"></i> Instalación garantizada
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section: Maderas y Acabados -->
+  <section id="maderas" class="py-20 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Image grid -->
+        <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <div class="rounded-2xl overflow-hidden shadow-md border-2 border-stone-100">
+              <img src="img/maderas-acabados.jpg" alt="Vetas y textura de madera de parota" class="w-full h-56 object-cover hover:scale-105 transition duration-300">
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-md border-2 border-stone-100">
+              <img src="img/centros-tv-muebles.jpg" alt="Detalle de ensamble y carpintería fina" class="w-full h-44 object-cover hover:scale-105 transition duration-300">
+            </div>
+          </div>
+          <div class="space-y-4 pt-8">
+            <div class="rounded-2xl overflow-hidden shadow-md border-2 border-stone-100">
+              <img src="img/taller-ebanista.jpg" alt="Herramientas y taller de ebanistería" class="w-full h-44 object-cover hover:scale-105 transition duration-300">
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-md border-2 border-stone-100">
+              <img src="img/cocinas-integrales.jpg" alt="Acabados en poliuretano y melamina" class="w-full h-56 object-cover hover:scale-105 transition duration-300">
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Copy -->
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-wood-700 font-bold text-xs uppercase tracking-widest bg-wood-100 px-3.5 py-1 rounded-full border border-wood-200">
+            Calidad de los Materiales
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-normal text-stone-900 tracking-tight leading-snug">
+            Maderas Seleccionadas & <br>
+            <span class="italic text-wood-800">Acabados de Larga Duración</span>
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base leading-relaxed font-sans">
+            En Carpintería Alcocer no usamos aglomerados frágiles de baja densidad. Combinamos tableros hidrófugos de alta resistencia con chapas naturales y maderas sólidas mexicanas tratadas contra humedad e insectos.
+          </p>
+
+          <div class="space-y-4 pt-2 font-sans">
+            
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-stone-50 border border-stone-200 custom-shadow">
+              <div class="w-10 h-10 rounded-lg bg-wood-100 text-wood-800 flex items-center justify-center text-lg shrink-0">
+                <i class="fa-solid fa-tree"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-base">Parota, Encino, Nogal & Tzalam</h4>
+                <p class="text-xs sm:text-sm text-stone-600 mt-0.5">Vetas vivas y carácter natural para cubiertas, frentes de cajón, mesas de centro y puertas principales de alto impacto.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-stone-50 border border-stone-200 custom-shadow">
+              <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center text-lg shrink-0">
+                <i class="fa-solid fa-shield-virus"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-base">Selladores & Poliuretanos No Tóxicos</h4>
+                <p class="text-xs sm:text-sm text-stone-600 mt-0.5">Acabados mate, semimate o al alto brillo que repelen el agua, fáciles de limpiar con un paño húmedo y libres de aromas molestos.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-stone-50 border border-stone-200 custom-shadow">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center text-lg shrink-0">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-base">Herrajes de Alto Ciclo (Soft-Close)</h4>
+                <p class="text-xs sm:text-sm text-stone-600 mt-0.5">Mecanismos hidráulicos probados para miles de aperturas sin descalibrarse ni rechinar con el uso diario.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section: Opiniones Reales de Clientes -->
+  <section id="opiniones" class="py-20 bg-stone-50 border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 border border-amber-200 text-amber-900 text-xs font-bold font-sans">
+          <i class="fa-solid fa-star text-amber-600"></i> Calificación 4.9 de Clientes en Coyoacán & CDMX
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-stone-900 tracking-tight">
+          La Opinión de Quienes ya Disfrutan sus Muebles
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base font-sans">
+          La satisfacción de nuestros clientes y la precisión de cada instalación son nuestra mejor carta de recomendación.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 font-sans">
+        
+        <!-- Review 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 custom-shadow flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-500 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-stone-700 text-sm italic leading-relaxed">
+              "Nos fabricaron la cocina integral completa en nuestro departamento en Coyoacán. El aprovechamiento del espacio fue increíble, los cajones con cierre lento son súper suaves y el acabado mate luce muy elegante. Cumplieron con la fecha exacta que nos dieron."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-6 border-t border-stone-100 mt-6">
+            <div class="w-10 h-10 rounded-full bg-wood-800 text-amber-100 font-bold flex items-center justify-center text-sm">
+              VC
+            </div>
+            <div>
+              <div class="font-bold text-stone-900 text-sm">Valeria C.</div>
+              <div class="text-xs text-stone-500">Cocina Integral &middot; Del Carmen, Coyoacán</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 custom-shadow flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-500 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-stone-700 text-sm italic leading-relaxed">
+              "Excelente trabajo en nuestro vestidor principal y un muro de TV con palillería en encino. Cuidaron cada detalle de los empalmes y dejaron el lugar impecable después de la instalación. Muy recomendables por su seriedad y calidad de madera."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-6 border-t border-stone-100 mt-6">
+            <div class="w-10 h-10 rounded-full bg-stone-900 text-white font-bold flex items-center justify-center text-sm">
+              RM
+            </div>
+            <div>
+              <div class="font-bold text-stone-900 text-sm">Roberto M.</div>
+              <div class="text-xs text-stone-500">Vestidor & Panel TV &middot; San Ángel</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 custom-shadow flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-500 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-stone-700 text-sm italic leading-relaxed">
+              "La mesa de parota que nos hicieron es la protagonista de nuestra casa. Veta impresionante, acabado al tacto suave y patas muy sólidas. El trato fue directo y muy profesional desde que vinieron a medir."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-6 border-t border-stone-100 mt-6">
+            <div class="w-10 h-10 rounded-full bg-wood-700 text-white font-bold flex items-center justify-center text-sm">
+              AT
+            </div>
+            <div>
+              <div class="font-bold text-stone-900 text-sm">Adriana T.</div>
+              <div class="text-xs text-stone-500">Comedor en Parota Maciza &middot; Benito Juárez</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section: Preguntas Frecuentes (FAQ Accordion) -->
+  <section class="py-20 bg-white border-b border-stone-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+        <span class="text-wood-700 font-bold text-xs uppercase tracking-widest bg-wood-100 px-3.5 py-1 rounded-full border border-wood-200 font-sans">
+          Resolvemos tus Dudas
+        </span>
+        <h2 class="font-serif text-3xl font-normal text-stone-900 tracking-tight">
+          Preguntas Frecuentes
+        </h2>
+      </div>
+
+      <div class="space-y-3 font-sans" id="faq-accordion">
+        
+        <!-- FAQ 1 -->
+        <div class="bg-stone-50 rounded-xl border border-stone-200 overflow-hidden">
+          <button class="w-full p-5 text-left font-bold text-stone-900 flex justify-between items-center hover:bg-stone-100/70 transition" onclick="toggleFaq(this)">
+            <span>¿Cómo es el proceso desde la cotización hasta la entrega?</span>
+            <i class="fa-solid fa-chevron-down text-stone-400 text-xs transition-transform duration-200"></i>
+          </button>
+          <div class="px-5 pb-5 text-stone-600 text-sm leading-relaxed hidden">
+            1) Nos envías medidas aproximadas o fotos de tu espacio por WhatsApp. 2) Te compartimos una propuesta de presupuesto inicial. 3) Si estás de acuerdo, agendamos una visita técnica para toma de medidas exactas y muestras físicas de maderas y colores. 4) Fabricamos en nuestro taller y agendamos el día de instalación en tu domicilio.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-stone-50 rounded-xl border border-stone-200 overflow-hidden">
+          <button class="w-full p-5 text-left font-bold text-stone-900 flex justify-between items-center hover:bg-stone-100/70 transition" onclick="toggleFaq(this)">
+            <span>¿Cuánto tiempo tarda la fabricación de una cocina o clóset?</span>
+            <i class="fa-solid fa-chevron-down text-stone-400 text-xs transition-transform duration-200"></i>
+          </button>
+          <div class="px-5 pb-5 text-stone-600 text-sm leading-relaxed hidden">
+            El tiempo de fabricación promedio para un clóset o centro de entretenimiento es de 10 a 18 días hábiles. Para cocinas integrales completas con cubiertas de granito o cuarzo suele tomar de 15 a 25 días hábiles. La instalación en sitio se realiza habitualmente en 1 a 2 días hábiles.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-stone-50 rounded-xl border border-stone-200 overflow-hidden">
+          <button class="w-full p-5 text-left font-bold text-stone-900 flex justify-between items-center hover:bg-stone-100/70 transition" onclick="toggleFaq(this)">
+            <span>¿Tienen servicio de visita a domicilio para medir?</span>
+            <i class="fa-solid fa-chevron-down text-stone-400 text-xs transition-transform duration-200"></i>
+          </button>
+          <div class="px-5 pb-5 text-stone-600 text-sm leading-relaxed hidden">
+            Sí. Realizamos visitas de medición en Coyoacán, Benito Juárez, Tlalpan, Álvaro Obregón, Cuauhtémoc, Miguel Hidalgo y municipios conurbados de la CDMX. Llevamos muestrarios físicos para que elijas maderas, tonos y texturas directamente bajo la luz de tu casa.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-stone-50 rounded-xl border border-stone-200 overflow-hidden">
+          <button class="w-full p-5 text-left font-bold text-stone-900 flex justify-between items-center hover:bg-stone-100/70 transition" onclick="toggleFaq(this)">
+            <span>¿Qué garantía ofrecen en sus muebles?</span>
+            <i class="fa-solid fa-chevron-down text-stone-400 text-xs transition-transform duration-200"></i>
+          </button>
+          <div class="px-5 pb-5 text-stone-600 text-sm leading-relaxed hidden">
+            Todos nuestros proyectos cuentan con garantía por escrito en estructura, ensamble y funcionamiento de herrajes. Si requieres algún ajuste fino posterior a la instalación, lo atendemos sin costo adicional.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="bg-stone-50 rounded-xl border border-stone-200 overflow-hidden">
+          <button class="w-full p-5 text-left font-bold text-stone-900 flex justify-between items-center hover:bg-stone-100/70 transition" onclick="toggleFaq(this)">
+            <span>¿Cuáles son las formas de pago?</span>
+            <i class="fa-solid fa-chevron-down text-stone-400 text-xs transition-transform duration-200"></i>
+          </button>
+          <div class="px-5 pb-5 text-stone-600 text-sm leading-relaxed hidden">
+            Trabajamos habitualmente con un 50% de anticipo al firmar contrato e iniciar la compra de materiales y fabricación, y el 50% restante al concluir la instalación a tu entera satisfacción. Aceptamos transferencias bancarias (SPEI) y efectivo.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section: Taller & Ubicación -->
+  <section id="taller" class="py-20 bg-stone-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Info -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-wood-700 font-bold text-xs uppercase tracking-widest bg-wood-100 px-3.5 py-1 rounded-full border border-wood-200 font-sans">
+            Taller en Coyoacán
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-normal text-stone-900 tracking-tight">
+            Ven a Conocernos o Escríbenos
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base leading-relaxed font-sans">
+            Nuestro taller artesanal se encuentra ubicado en Coyoacán, Ciudad de México, con capacidad de producción y montaje en toda la metrópoli.
+          </p>
+
+          <div class="space-y-4 pt-2 font-sans">
+            
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-stone-200 shadow-sm">
+              <div class="w-10 h-10 rounded-lg bg-wood-800 text-amber-100 flex items-center justify-center shrink-0 text-lg">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="text-sm">
+                <div class="font-bold text-stone-900">Ubicación del Taller:</div>
+                <div class="text-stone-600">Calle 1-B Mz 03, Lt 15, Col. Adolfo Ruíz Cortínez, Alcaldía Coyoacán, C.P. 04630, Ciudad de México.</div>
+                <div class="text-xs text-wood-700 font-semibold mt-1">
+                  📐 Atención en taller y visitas de medición en toda la CDMX.
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-stone-200 shadow-sm">
+              <div class="w-10 h-10 rounded-lg bg-stone-900 text-white flex items-center justify-center shrink-0 text-lg">
+                <i class="fa-regular fa-clock"></i>
+              </div>
+              <div class="text-sm">
+                <div class="font-bold text-stone-900">Horario de Atención:</div>
+                <div class="text-stone-600"><strong>Lunes a Sábado:</strong> 8:00 AM – 7:00 PM</div>
+                <div class="text-xs text-stone-500">Atención personalizada y cotizaciones continuas vía WhatsApp.</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200">
+              <div class="w-10 h-10 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0 text-lg">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="text-sm">
+                <div class="font-bold text-stone-900">WhatsApp & Teléfono Directo:</div>
+                <a href="https://api.whatsapp.com/send?phone=525588037097" target="_blank" class="text-emerald-700 font-bold block hover:underline text-base mt-0.5">
+                  📱 +52 55 8803 7097
+                </a>
+                <div class="text-xs text-stone-500">Envíanos tus ideas o fotos de referencia para cotizar de inmediato.</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Right: Map -->
+        <div class="lg:col-span-7">
+          <div class="rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-stone-100 h-[420px]">
+            <iframe 
+              src="https://maps.google.com/maps?q=Calle+1-B+Mz+03,+Adolfo+Ru%C3%ADz+Cort%C3%ADnez,+Coyoac%C3%A1n,+04630+Ciudad+de+M%C3%A9xico,+CDMX&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-950 text-stone-400 py-12 border-t border-stone-800 text-sm font-sans">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-wood-800 rounded-lg flex items-center justify-center text-amber-100 font-bold text-lg">
+            <i class="fa-solid fa-hammer"></i>
+          </div>
+          <div>
+            <span class="font-serif text-xl text-white block leading-none">
+              Carpintería Alcocer
+            </span>
+            <span class="text-xs text-amber-400 font-bold uppercase tracking-wider">
+              Muebles a la Medida &middot; Coyoacán CDMX
+            </span>
+          </div>
+        </div>
+
+        <div class="text-xs text-stone-500">
+          Calle 1-B Mz 03, Col. Adolfo Ruíz Cortínez, Coyoacán, CDMX &middot; Tel: +52 55 8803 7097 <br>
+          &copy; 2026 Carpintería Alcocer. Todos los derechos reservados.
+        </div>
+
+        <div class="flex items-center gap-4 text-base">
+          <a href="https://api.whatsapp.com/send?phone=525588037097" target="_blank" class="w-9 h-9 rounded-full bg-stone-900 hover:bg-emerald-600 text-stone-300 hover:text-white flex items-center justify-center transition">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="#cotizador" class="w-9 h-9 rounded-full bg-stone-900 hover:bg-wood-700 text-stone-300 hover:text-white flex items-center justify-center transition">
+            <i class="fa-solid fa-ruler-combined"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://api.whatsapp.com/send?phone=525588037097&text=Hola%20Carpinter%C3%ADa%20Alcocer!%20Deseo%20cotizar%20un%20mueble%20a%20la%20medida" target="_blank" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-3.5 rounded-full shadow-2xl hover:scale-105 transition transform group">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+    <span class="font-bold text-sm hidden sm:inline tracking-wide font-sans">Cotizar por WhatsApp</span>
+  </a>
+
+  <!-- Script for Interactive Calculator & Accordion -->
+  <script>
+    function calculateWoodQuote() {
+      // Get selected project
+      const selectedProject = document.querySelector('input[name="proyecto-tipo"]:checked');
+      const projectPrice = parseInt(selectedProject.value, 10);
+      const projectName = selectedProject.getAttribute('data-name');
+
+      // Update styling of cards
+      document.querySelectorAll('input[name="proyecto-tipo"]').forEach(radio => {
+        const card = radio.closest('label');
+        if (radio.checked) {
+          card.classList.add('border-wood-700', 'bg-wood-50/60');
+          card.classList.remove('border-stone-200', 'bg-white');
+        } else {
+          card.classList.remove('border-wood-700', 'bg-wood-50/60');
+          card.classList.add('border-stone-200', 'bg-white');
+        }
+      });
+
+      // Update summary project name and price
+      document.getElementById('summary-wood-name').textContent = projectName;
+      document.getElementById('summary-wood-price').textContent = `$${projectPrice.toLocaleString('es-MX')} MXN`;
+
+      // Get extras
+      const extras = [
+        document.getElementById('extra-led'),
+        document.getElementById('extra-herrajes'),
+        document.getElementById('extra-granito'),
+        document.getElementById('extra-gola')
+      ];
+
+      let extrasTotal = 0;
+      let extrasSelected = [];
+
+      extras.forEach(item => {
+        if (item && item.checked) {
+          const price = parseInt(item.value, 10);
+          extrasTotal += price;
+          extrasSelected.push({
+            name: item.getAttribute('data-name'),
+            price: price
+          });
+        }
+      });
+
+      // Update extras in summary
+      const extrasContainer = document.getElementById('summary-extras');
+      if (extrasSelected.length === 0) {
+        extrasContainer.innerHTML = '<div class="text-stone-500 italic font-sans">Sin acabados adicionales seleccionados</div>';
+      } else {
+        extrasContainer.innerHTML = extrasSelected.map(ex => `
+          <div class="flex justify-between items-center text-stone-300 font-sans">
+            <span>&bull; ${ex.name}</span>
+            <span class="font-semibold text-amber-200">+$${ex.price.toLocaleString('es-MX')} MXN</span>
+          </div>
+        `).join('');
+      }
+
+      // Zone
+      const zoneSelect = document.getElementById('zone-select');
+      document.getElementById('summary-zone').textContent = zoneSelect.value;
+
+      // Grand Total
+      const grandTotal = projectPrice + extrasTotal;
+      document.getElementById('summary-total').textContent = `$${grandTotal.toLocaleString('es-MX')} MXN`;
+
+      // Prepare WhatsApp link
+      let message = `🪵 *¡Hola Carpintería Alcocer!* Me interesa cotizar un proyecto de muebles a la medida para mi hogar:%0A%0A`;
+      message += `📐 *Proyecto seleccionado:* ${encodeURIComponent(projectName)} ($${projectPrice.toLocaleString('es-MX')} MXN)%0A`;
+      
+      if (extrasSelected.length > 0) {
+        message += `✨ *Acabados y aditamentos:*%0A`;
+        extrasSelected.forEach(ex => {
+          message += `   - ${encodeURIComponent(ex.name)} (+$${ex.price.toLocaleString('es-MX')} MXN)%0A`;
+        });
+      }
+      message += `📍 *Ubicación / Zona:* ${encodeURIComponent(zoneSelect.value)}%0A`;
+      message += `💰 *Presupuesto estimado:* $${grandTotal.toLocaleString('es-MX')} MXN%0A%0A`;
+      message += `¿Podríamos agendar una visita técnica para toma de medidas y ver muestras de acabados? ¡Gracias!`;
+
+      const whatsappBtn = document.getElementById('whatsapp-btn');
+      whatsappBtn.href = `https://api.whatsapp.com/send?phone=525588037097&text=${message}`;
+    }
+
+    // Toggle FAQ Accordion
+    function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('i');
+      
+      const isOpen = !content.classList.contains('hidden');
+      
+      // Close all
+      document.querySelectorAll('#faq-accordion > div > div').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('#faq-accordion button i').forEach(ic => ic.style.transform = 'rotate(0deg)');
+      
+      if (!isOpen) {
+        content.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    // Init on load
+    document.addEventListener('DOMContentLoaded', () => {
+      calculateWoodQuote();
+    });
+  </script>
+
+</body>
+</html>
