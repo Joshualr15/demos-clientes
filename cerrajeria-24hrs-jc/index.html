@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cerrajería 24hrs JC | Cerrajero Automotriz y Residencial Urgente en CDMX</title>
+  <meta name="description" content="Servicio de cerrajería urgente 24 horas en CDMX. Apertura de autos sin daños, llaves con chip, apertura de casas y cerraduras de alta seguridad. Llegamos en 20-30 min en Benito Juárez, Miguel Hidalgo, Cuauhtémoc y toda la CDMX.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: Montserrat (seguridad, robustez y confianza) & Plus Jakarta Sans (claridad y lectura ágil) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Montserrat"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              navy: '#0F2942',
+              navyDark: '#0A1C2E',
+              blue: '#1D4ED8',
+              amber: '#D97706',
+              amberLight: '#F59E0B',
+              emergency: '#DC2626',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .shadow-soft {
+      box-shadow: 0 10px 30px -5px rgba(15, 41, 66, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+    }
+    .shadow-hover {
+      transition: all 0.25s ease-in-out;
+    }
+    .shadow-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 35px -10px rgba(15, 41, 66, 0.14);
+    }
+    @keyframes pulse-dot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.5; }
+    }
+    .live-dot {
+      animation: pulse-dot 1.8s infinite ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50/50 text-slate-800 font-sans antialiased selection:bg-amber-500 selection:text-white">
+
+  <!-- Top Emergency Announcement Bar -->
+  <div class="bg-brand-navyDark text-slate-200 text-xs py-2.5 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 live-dot"></span>
+        <span class="font-semibold text-emerald-400 tracking-wide uppercase">Unidades Móviles Activas Ahora Mismo:</span>
+        <span class="text-slate-300">Tiempo estimado de arribo: 20 a 30 minutos en Benito Juárez y zonas aledañas</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <span class="hidden md:inline text-slate-400"><i class="fa-solid fa-location-dot text-amber-500 mr-1.5"></i>Calle 10 #54, San Pedro de los Pinos, CDMX</span>
+        <a href="tel:+525570638842" class="font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1.5 transition">
+          <i class="fa-solid fa-phone text-xs"></i> 55 7063 8842
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo / Brand Title -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-navy to-brand-navyDark flex items-center justify-center text-amber-400 shadow-md group-hover:scale-105 transition duration-200">
+          <i class="fa-solid fa-key text-2xl"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-display font-extrabold text-xl tracking-tight text-brand-navy">CERRAJERÍA JC</span>
+            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider border border-amber-300">24 Horas</span>
+          </div>
+          <p class="text-xs text-slate-500 font-medium">Automotriz &bull; Residencial &bull; CDMX</p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="#servicios" class="hover:text-amber-600 transition">Servicios</a>
+        <a href="#automotriz" class="hover:text-amber-600 transition">Cerrajería Automotriz</a>
+        <a href="#residencial" class="hover:text-amber-600 transition">Residencial & Chapas</a>
+        <a href="#cotizador" class="hover:text-amber-600 transition">Cotizador Exprés</a>
+        <a href="#cobertura" class="hover:text-amber-600 transition">Zonas CDMX</a>
+        <a href="#opiniones" class="hover:text-amber-600 transition">Opiniones</a>
+      </nav>
+
+      <!-- CTA Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="tel:+525570638842" class="hidden sm:inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-brand-navy text-sm font-bold py-2.5 px-4 rounded-xl transition border border-slate-300">
+          <i class="fa-solid fa-phone text-amber-600"></i>
+          <span>Llamar Urgente</span>
+        </a>
+        <a href="https://wa.me/525570638842?text=Hola,%20necesito%20un%20servicio%20de%20cerrajer%C3%ADa%20urgente%20en%20CDMX.%20%C2%BFPueden%20apoyarme?" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold py-2.5 px-4 sm:px-5 rounded-xl shadow-md shadow-emerald-600/20 transition transform hover:-translate-y-0.5">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span class="hidden md:inline">WhatsApp 24/7</span>
+          <span class="md:hidden">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-white pt-10 pb-16 lg:py-20 overflow-hidden border-b border-slate-200/70">
+    <div class="absolute inset-0 bg-gradient-to-b from-amber-50/30 via-slate-50/50 to-white pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-100/90 border border-amber-300 text-amber-900 text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-shield-halved text-amber-600"></i>
+            Técnicos Certificados &bull; Llegada en 20-30 Minutos
+          </div>
+
+          <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-navy tracking-tight leading-[1.15]">
+            ¿Te quedaste fuera de tu auto o casa? <br>
+            <span class="text-amber-600">Abrimos sin dañar</span> las 24 Horas en CDMX.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+            Atención de urgencia inmediata para autos de todas las marcas, llaves con chip extraviadas, departamentos y cambio de cerraduras de alta seguridad. Ubicados en San Pedro de los Pinos con cobertura express en Benito Juárez, Cuauhtémoc, Miguel Hidalgo y toda la CDMX.
+          </p>
+
+          <!-- Key Guarantees Badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 pb-2">
+            <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 font-bold shrink-0">
+                <i class="fa-solid fa-car-side"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">Cero Daños</p>
+                <p class="text-[11px] text-slate-500">Herramienta ganzúa Lishi</p>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center text-brand-navy font-bold shrink-0">
+                <i class="fa-solid fa-stopwatch"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">20-30 Minutos</p>
+                <p class="text-[11px] text-slate-500">Unidades móviles rápidas</p>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl flex items-center gap-3 col-span-2 sm:col-span-1">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-700 font-bold shrink-0">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">Precio Justo</p>
+                <p class="text-[11px] text-slate-500">Cotización previa sin trucos</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <a href="tel:+525570638842" class="inline-flex justify-center items-center gap-3 bg-brand-emergency hover:bg-red-700 text-white font-display font-bold text-base py-4 px-7 rounded-xl shadow-lg shadow-red-600/30 transition transform hover:-translate-y-0.5">
+              <i class="fa-solid fa-phone-volume text-xl animate-bounce"></i>
+              <span>Llamar al Cerrajero Ahora</span>
+            </a>
+
+            <a href="#cotizador" class="inline-flex justify-center items-center gap-2 bg-slate-100 hover:bg-slate-200 text-brand-navy font-display font-bold text-base py-4 px-6 rounded-xl border border-slate-300 transition">
+              <i class="fa-solid fa-calculator text-amber-600"></i>
+              <span>Calcular Precio Estimado</span>
+            </a>
+          </div>
+
+          <!-- Rating Proof -->
+          <div class="flex items-center gap-4 pt-3 border-t border-slate-200 text-sm">
+            <div class="flex text-amber-400 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-xs">
+              <strong class="text-slate-900 font-bold">5.0 / 5.0</strong> en Google Maps &bull; Más de 10 años auxiliando conductores y familias en CDMX
+            </p>
+          </div>
+        </div>
+
+        <!-- Hero Visual Image Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Decorative Accent Backdrop -->
+            <div class="absolute -top-4 -left-4 w-full h-full rounded-2xl bg-gradient-to-tr from-amber-400 to-amber-200 transform rotate-1 opacity-70"></div>
+            
+            <div class="relative bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
+              <img src="img/hero-cerrajeria.jpg" alt="Cerrajería Automotriz Urgente CDMX" class="w-full h-80 object-cover">
+              
+              <div class="p-5 bg-white space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Unidad Móvil de Emergencia</span>
+                  <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-md flex items-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Disponible 24/7
+                  </span>
+                </div>
+                <h3 class="font-display font-bold text-slate-900 text-base">Cerrajería 24hrs JC &bull; San Pedro de los Pinos</h3>
+                <p class="text-xs text-slate-600">Equipados con programadores de transponder OBD2, duplicadoras láser computarizadas y ganzúas de precisión.</p>
+                
+                <div class="pt-2 flex items-center justify-between text-xs text-slate-500 border-t border-slate-100">
+                  <span><i class="fa-solid fa-clock text-amber-500 mr-1"></i> 24h / 365 días</span>
+                  <span><i class="fa-solid fa-shield text-amber-500 mr-1"></i> Trabajo Garantizado</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating mini-card -->
+            <div class="absolute -bottom-6 -left-6 bg-white p-3.5 rounded-xl shadow-xl border border-slate-200 flex items-center gap-3 max-w-[240px]">
+              <div class="w-10 h-10 rounded-full bg-amber-500 text-white flex items-center justify-center font-bold text-base shrink-0">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <div>
+                <p class="text-xs font-extrabold text-slate-900">Urgencias en CDMX</p>
+                <p class="text-[11px] text-slate-500">Respuesta inmediata por WhatsApp</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Emergency Banner / Immediate Action -->
+  <section class="bg-amber-500 py-6 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-white">
+      <div class="flex items-center gap-4 text-center md:text-left">
+        <div class="w-12 h-12 rounded-xl bg-amber-600/60 flex items-center justify-center text-white text-2xl shrink-0">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+        <div>
+          <h2 class="font-display text-lg sm:text-xl font-bold leading-tight">¿Tienes una emergencia en este momento?</h2>
+          <p class="text-amber-100 text-xs sm:text-sm">Envíanos tu ubicación por WhatsApp y un cerrajero en moto o unidad móvil sale de inmediato.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 w-full md:w-auto">
+        <a href="https://wa.me/525570638842?text=URGENTE:%20Necesito%20un%20cerrajero%20ahora%20mismo.%20Les%20comparto%20mi%20ubicaci%C3%B3n." target="_blank" class="w-full md:w-auto text-center bg-brand-navy hover:bg-slate-900 text-white font-display font-bold text-sm py-3 px-6 rounded-xl shadow-md transition">
+          <i class="fa-brands fa-whatsapp text-emerald-400 mr-2 text-base"></i> Mandar Ubicación Ahora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="servicios" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-amber-600 text-xs font-bold uppercase tracking-wider bg-amber-100/80 px-3 py-1 rounded-full border border-amber-200">Nuestros Servicios Especializados</span>
+        <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-navy mt-3 tracking-tight">
+          Soluciones Rápidas y Profesionales de Cerrajería
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-3">
+          Ya sea que perdiste tus llaves, las dejaste dentro de la cajuela o necesitas blindar la entrada de tu hogar, te brindamos atención experta sin daños a tus propiedades.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        
+        <!-- Service 1: Cerrajería Automotriz -->
+        <div id="automotriz" class="bg-white rounded-2xl p-6 border border-slate-200 shadow-soft shadow-hover flex flex-col justify-between">
+          <div>
+            <div class="h-44 rounded-xl overflow-hidden mb-5">
+              <img src="img/apertura-automotriz.jpg" alt="Apertura de autos sin daños" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Automotriz Urgente</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Apertura de Autos sin Daño</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Apertura técnica y limpia para sedanes, SUVs, camionetas y cajuelas bloqueadas. Utilizamos cuñas neumáticas protegidas y ganzúas automotrices para no rayar pintura, no doblar marcos ni romper sellos de hermeticidad.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Todas las marcas nacionales e importadas</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Desbloqueo de cajuelas independientes</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Apertura sin forzar la cerradura original</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-sm font-bold text-brand-navy">$450 MXN</strong></span>
+            <a href="https://wa.me/525570638842?text=Hola,%20requiero%20apertura%20de%20auto%20sin%20da%C3%B1os.%20%C2%BFCu%C3%A1nto%20tardan%20en%20llegar?" target="_blank" class="text-xs font-bold text-amber-600 hover:text-amber-700 flex items-center gap-1">
+              Solicitar ahora <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2: Llaves con Chip & Transponder -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-soft shadow-hover flex flex-col justify-between">
+          <div>
+            <div class="h-44 rounded-xl overflow-hidden mb-5">
+              <img src="img/duplicado-chips.jpg" alt="Duplicado y programación de llaves con chip" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Electrónica & Chip</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Llaves con Chip & Controles</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Corte y programación computarizada de llaves con transponder, llaves de presencia (smart key), mandos a distancia y switch de encendido cuando perdiste todas tus llaves. Mucho más rápido y hasta 60% más económico que la agencia.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Reposición desde cero (all keys lost)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Duplicados preventivos con carcasa nueva</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Desactivación de llaves extraviadas</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-sm font-bold text-brand-navy">$850 MXN</strong></span>
+            <a href="https://wa.me/525570638842?text=Hola,%20me%20interesa%20la%20programaci%C3%B3n%20de%20una%20llave%20con%20chip%20para%20mi%20auto.%20%C2%BFQu%C3%A9%20costo%20tiene?" target="_blank" class="text-xs font-bold text-amber-600 hover:text-amber-700 flex items-center gap-1">
+              Cotizar chip <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3: Cerrajería Residencial & Comercial -->
+        <div id="residencial" class="bg-white rounded-2xl p-6 border border-slate-200 shadow-soft shadow-hover flex flex-col justify-between">
+          <div>
+            <div class="h-44 rounded-xl overflow-hidden mb-5">
+              <img src="img/cerrajeria-residencial.jpg" alt="Apertura residencial y cambio de chapas" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Hogar & Negocios</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Apertura Residencial 24 Horas</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              ¿Olvidaste las llaves adentro o se rompió la llave en el cerrojo? Abrimos puertas principales de departamentos, casas, portones y locales comerciales a cualquier hora del día o noche de forma limpia.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Extracción de llaves rotas en cilindros</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Desbloqueo de cerrojos y chapas trabadas</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Atención a condominios y comercios</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-sm font-bold text-brand-navy">$400 MXN</strong></span>
+            <a href="https://wa.me/525570638842?text=Hola,%20me%20qued%C3%A9%20afuera%20de%20mi%20casa/departamento.%20%C2%BFPueden%20venir%20a%20abrir?" target="_blank" class="text-xs font-bold text-amber-600 hover:text-amber-700 flex items-center gap-1">
+              Abrir puerta <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4: Chapas de Alta Seguridad -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-soft shadow-hover flex flex-col justify-between">
+          <div>
+            <div class="h-44 rounded-xl overflow-hidden mb-5">
+              <img src="img/alta-seguridad.jpg" alt="Instalación de cerraduras de alta seguridad y smart locks" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-purple-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-purple-600">Blindaje & Protección</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Cerraduras de Alta Seguridad</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Instalación y cambio inmediato de cerrojos de sobreponer, cilindros antiganza, cerraduras tetra, multipunto y chapas digitales biométricas para proteger a tu familia y patrimonio contra intrusiones.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Marcas líderes: Phillips, Yale, Tover, Mul-T-Lock</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Cerraduras digitales con huella y código</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Cilindros con llave de puntos incopiables</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-sm font-bold text-brand-navy">$650 MXN</strong></span>
+            <a href="https://wa.me/525570638842?text=Hola,%20quiero%20cambiar/instalar%20una%20cerradura%20de%20alta%20seguridad.%20%C2%BFQu%C3%A9%20opciones%20tienen?" target="_blank" class="text-xs font-bold text-amber-600 hover:text-amber-700 flex items-center gap-1">
+              Ver opciones <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 5: Iguala de Llaves & Amaestramiento -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-soft shadow-hover flex flex-col justify-between">
+          <div>
+            <div class="h-44 rounded-xl overflow-hidden mb-5">
+              <img src="img/taller-herramientas.jpg" alt="Amaestramiento de cerraduras y taller de cerrajería" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-slate-700"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-700">Taller & Copias</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Igualamiento & Amaestramiento</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Configuramos todas las cerraduras de tu casa u oficina para que abran con una sola llave maestra, eliminando pesados manojos de llaves. Cambio de combinación interno para inutilizar llaves de inquilinos anteriores.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Una sola llave para zaguán, entrada y recámaras</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Cambio de combinación tras cambio de inquilino</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Duplicados de precisión al instante</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-sm font-bold text-brand-navy">$500 MXN</strong></span>
+            <a href="https://wa.me/525570638842?text=Hola,%20me%20interesa%20igualar%20las%20cerraduras%20de%20mi%20inmueble.%20%C2%BFC%C3%B3mo%20se%20cotiza?" target="_blank" class="text-xs font-bold text-amber-600 hover:text-amber-700 flex items-center gap-1">
+              Cotizar igualamiento <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 6: Cajas Fuertes & Blindajes -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-soft shadow-hover flex flex-col justify-between">
+          <div>
+            <div class="h-44 rounded-xl overflow-hidden mb-5 bg-gradient-to-br from-brand-navy to-slate-900 flex items-center justify-center p-6 text-center text-white">
+              <div>
+                <i class="fa-solid fa-vault text-5xl text-amber-400 mb-2"></i>
+                <p class="text-xs font-bold tracking-wider uppercase text-slate-300">Seguridad Especializada</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Cajas Fuertes</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Apertura de Cajas Fuertes</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Servicio técnico confidencial para apertura, cambio de clave y recuperación de combinación en cajas de seguridad mecánicas y digitales para oficinas, consultorios y residencias particulares.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Cajas digitales con teclado bloqueado o sin batería</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Cajas de combinación mecánica de disco</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Absoluta discreción y profesionalismo</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-sm font-bold text-brand-navy">$950 MXN</strong></span>
+            <a href="https://wa.me/525570638842?text=Hola,%20requiero%20asistencia%20con%20una%20caja%20fuerte.%20%C2%BFPueden%20cotizarme?" target="_blank" class="text-xs font-bold text-amber-600 hover:text-amber-700 flex items-center gap-1">
+              Consultar servicio <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Urgent Quote Calculator -->
+  <section id="cotizador" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-amber-600 text-xs font-bold uppercase tracking-wider bg-amber-100/80 px-3 py-1 rounded-full border border-amber-200">Cotizador Interactivo Inmediato</span>
+        <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-navy mt-3 tracking-tight">
+          Cotiza tu Servicio en 30 Segundos
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Selecciona tu situación, zona de CDMX y nivel de urgencia para obtener un estimado claro y contactar de inmediato al técnico.
+        </p>
+      </div>
+
+      <div class="bg-slate-50 rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xl">
+        <form id="calculatorForm" class="space-y-8" onsubmit="event.preventDefault(); updateCalculator();">
+          
+          <!-- Step 1: Service Type -->
+          <div>
+            <label class="block font-display font-bold text-brand-navy text-sm sm:text-base mb-3">
+              1. Selecciona el servicio que requieres:
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              
+              <label class="relative flex flex-col p-4 bg-white rounded-xl border-2 border-slate-200 hover:border-amber-500 cursor-pointer transition has-[:checked]:border-amber-500 has-[:checked]:bg-amber-50/30">
+                <input type="radio" name="service" value="auto" data-price="450" data-label="Apertura de Auto sin Daño" checked class="peer sr-only" onchange="updateCalculator()">
+                <div class="flex items-center justify-between mb-2">
+                  <i class="fa-solid fa-car text-xl text-amber-600"></i>
+                  <span class="text-xs font-bold text-slate-700">$450 MXN</span>
+                </div>
+                <span class="text-xs font-bold text-slate-900">Apertura de Auto</span>
+                <span class="text-[11px] text-slate-500">Llaves adentro, cajuela o seguro trabado</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-white rounded-xl border-2 border-slate-200 hover:border-amber-500 cursor-pointer transition has-[:checked]:border-amber-500 has-[:checked]:bg-amber-50/30">
+                <input type="radio" name="service" value="chip" data-price="850" data-label="Llave con Chip / Programación" class="peer sr-only" onchange="updateCalculator()">
+                <div class="flex items-center justify-between mb-2">
+                  <i class="fa-solid fa-microchip text-xl text-amber-600"></i>
+                  <span class="text-xs font-bold text-slate-700">$850 MXN</span>
+                </div>
+                <span class="text-xs font-bold text-slate-900">Llave con Chip / Smart Key</span>
+                <span class="text-[11px] text-slate-500">Duplicado o extravío total con programación</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-white rounded-xl border-2 border-slate-200 hover:border-amber-500 cursor-pointer transition has-[:checked]:border-amber-500 has-[:checked]:bg-amber-50/30">
+                <input type="radio" name="service" value="casa" data-price="400" data-label="Apertura de Casa o Departamento" class="peer sr-only" onchange="updateCalculator()">
+                <div class="flex items-center justify-between mb-2">
+                  <i class="fa-solid fa-house-lock text-xl text-amber-600"></i>
+                  <span class="text-xs font-bold text-slate-700">$400 MXN</span>
+                </div>
+                <span class="text-xs font-bold text-slate-900">Apertura Residencial</span>
+                <span class="text-[11px] text-slate-500">Puertas principales, portones y cerrojos</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-white rounded-xl border-2 border-slate-200 hover:border-amber-500 cursor-pointer transition has-[:checked]:border-amber-500 has-[:checked]:bg-amber-50/30">
+                <input type="radio" name="service" value="chapa" data-price="650" data-label="Instalación Cerradura Alta Seguridad" class="peer sr-only" onchange="updateCalculator()">
+                <div class="flex items-center justify-between mb-2">
+                  <i class="fa-solid fa-shield-halved text-xl text-amber-600"></i>
+                  <span class="text-xs font-bold text-slate-700">$650 MXN</span>
+                </div>
+                <span class="text-xs font-bold text-slate-900">Chapa Alta Seguridad</span>
+                <span class="text-[11px] text-slate-500">Instalación o cambio de cilindro antiganza</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-white rounded-xl border-2 border-slate-200 hover:border-amber-500 cursor-pointer transition has-[:checked]:border-amber-500 has-[:checked]:bg-amber-50/30">
+                <input type="radio" name="service" value="igualar" data-price="500" data-label="Igualamiento de Cerraduras a una Llave" class="peer sr-only" onchange="updateCalculator()">
+                <div class="flex items-center justify-between mb-2">
+                  <i class="fa-solid fa-arrows-split-up-and-left text-xl text-amber-600"></i>
+                  <span class="text-xs font-bold text-slate-700">$500 MXN</span>
+                </div>
+                <span class="text-xs font-bold text-slate-900">Igualamiento / Amaestrado</span>
+                <span class="text-[11px] text-slate-500">Abre todas tus puertas con una sola llave</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-white rounded-xl border-2 border-slate-200 hover:border-amber-500 cursor-pointer transition has-[:checked]:border-amber-500 has-[:checked]:bg-amber-50/30">
+                <input type="radio" name="service" value="caja" data-price="950" data-label="Apertura de Caja Fuerte" class="peer sr-only" onchange="updateCalculator()">
+                <div class="flex items-center justify-between mb-2">
+                  <i class="fa-solid fa-vault text-xl text-amber-600"></i>
+                  <span class="text-xs font-bold text-slate-700">$950 MXN</span>
+                </div>
+                <span class="text-xs font-bold text-slate-900">Caja Fuerte / Blindaje</span>
+                <span class="text-[11px] text-slate-500">Apertura técnica y cambio de combinación</span>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Step 2: Time & Urgency -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block font-display font-bold text-brand-navy text-sm mb-2">
+                2. Nivel de Urgencia / Horario:
+              </label>
+              <select id="urgencySelect" class="w-full bg-white border-2 border-slate-200 rounded-xl p-3 text-sm text-slate-800 font-medium focus:outline-none focus:border-amber-500" onchange="updateCalculator()">
+                <option value="0" data-label="Inmediata (Llegada en 20-30 min)">🚨 Inmediato (Técnico en camino en 20-30 min)</option>
+                <option value="0" data-label="Programado durante el día">📅 Servicio programado para hoy</option>
+                <option value="150" data-label="Nocturno / Madrugada (24 hrs)">🌙 Nocturno / Madrugada (Servicio de guardia)</option>
+              </select>
+            </div>
+
+            <!-- Step 3: Zone in CDMX -->
+            <div>
+              <label class="block font-display font-bold text-brand-navy text-sm mb-2">
+                3. Zona o Alcaldía en CDMX:
+              </label>
+              <select id="zoneSelect" class="w-full bg-white border-2 border-slate-200 rounded-xl p-3 text-sm text-slate-800 font-medium focus:outline-none focus:border-amber-500" onchange="updateCalculator()">
+                <option value="0" data-zone="Benito Juárez (San Pedro de los Pinos, Nápoles, Del Valle, Narvarte)">Benito Juárez (San Pedro de los Pinos, Nápoles, Del Valle, Narvarte)</option>
+                <option value="0" data-zone="Miguel Hidalgo / Cuauhtémoc (Polanco, Condesa, Roma, Anzures)">Miguel Hidalgo / Cuauhtémoc (Polanco, Condesa, Roma, Anzures)</option>
+                <option value="50" data-zone="Coyoacán / Álvaro Obregón / San Ángel">Coyoacán / Álvaro Obregón / San Ángel</option>
+                <option value="70" data-zone="Poniente / Santa Fe / Cuajimalpa">Poniente / Santa Fe / Cuajimalpa</option>
+                <option value="80" data-zone="Sur / Tlalpan / Coapa / Perisur">Sur / Tlalpan / Coapa / Perisur</option>
+                <option value="100" data-zone="Norte / Oriente / Iztapalapa / GAM">Norte / Oriente / Iztapalapa / GAM</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Live Calculator Result Box -->
+          <div class="bg-gradient-to-br from-brand-navy to-brand-navyDark text-white rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg">
+            <div class="space-y-2 text-center md:text-left">
+              <span class="inline-block bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-bold px-3 py-1 rounded-full uppercase">
+                Estimado Transparente
+              </span>
+              <p class="text-xs text-slate-300" id="calcSummary">Apertura de Auto sin Daño en Benito Juárez</p>
+              <div class="flex items-baseline justify-center md:justify-start gap-2">
+                <span class="text-xs text-slate-400">Inversión aprox:</span>
+                <span class="font-display text-3xl sm:text-4xl font-extrabold text-amber-400" id="totalPriceDisplay">$450 MXN</span>
+              </div>
+              <p class="text-[11px] text-slate-400 flex items-center justify-center md:justify-start gap-1.5">
+                <i class="fa-solid fa-circle-check text-emerald-400"></i> Incluye garantía de cero daños y cotización previa sin sorpresas.
+              </p>
+            </div>
+
+            <div class="w-full md:w-auto shrink-0 flex flex-col sm:flex-row gap-3">
+              <a id="calcWhatsAppBtn" href="#" target="_blank" class="w-full sm:w-auto text-center inline-flex justify-center items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-display font-bold text-sm py-3.5 px-6 rounded-xl shadow-lg shadow-emerald-700/40 transition transform hover:-translate-y-0.5">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Confirmar por WhatsApp</span>
+              </a>
+              <a href="tel:+525570638842" class="w-full sm:w-auto text-center inline-flex justify-center items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-display font-bold text-sm py-3.5 px-5 rounded-xl border border-slate-700 transition">
+                <i class="fa-solid fa-phone text-amber-400"></i>
+                <span>Llamar Ahora</span>
+              </a>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CDMX Coverage & Response Times -->
+  <section id="cobertura" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-5 space-y-5">
+          <span class="text-amber-600 text-xs font-bold uppercase tracking-wider bg-amber-100/80 px-3 py-1 rounded-full border border-amber-200">Base Fija & Unidades Móviles</span>
+          <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-brand-navy tracking-tight">
+            Cobertura Exprés en Minutos a Todo el Valle de México
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Nuestra matriz física está ubicada estratégicamente en <strong class="text-slate-900">San Pedro de los Pinos</strong>, permitiendo desplazarnos en minutos a través de vialidades clave como Viaducto, Periférico, Patriotismo, Revolución, Insurgentes y División del Norte.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-location-crosshairs text-amber-600 text-lg"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900">Benito Juárez & Cuauhtémoc</h4>
+                  <p class="text-[11px] text-slate-500">San Pedro de los Pinos, Nápoles, Roma, Condesa, Del Valle</p>
+                </div>
+              </div>
+              <span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200 shrink-0">15 - 25 min</span>
+            </div>
+
+            <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-location-crosshairs text-amber-600 text-lg"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900">Miguel Hidalgo & Álvaro Obregón</h4>
+                  <p class="text-[11px] text-slate-500">Polanco, San Jerónimo, San Ángel, Las Águilas, Santa Fe</p>
+                </div>
+              </div>
+              <span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200 shrink-0">20 - 30 min</span>
+            </div>
+
+            <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-location-crosshairs text-amber-600 text-lg"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900">Coyoacán, Tlalpan & Resto CDMX</h4>
+                  <p class="text-[11px] text-slate-500">Pedregal, Villa Coapa, Insurgentes Sur y oriente de la ciudad</p>
+                </div>
+              </div>
+              <span class="text-xs font-extrabold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200 shrink-0">30 - 45 min</span>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="tel:+525570638842" class="inline-flex items-center gap-2 text-sm font-bold text-brand-navy hover:text-amber-600 transition">
+              <i class="fa-solid fa-phone text-amber-500"></i> ¿Dudas sobre tu colonia? Llámanos al 55 7063 8842
+            </a>
+          </div>
+        </div>
+
+        <!-- Location Details Card -->
+        <div class="lg:col-span-7">
+          <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-soft space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+              <div>
+                <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Taller & Local Físico</span>
+                <h3 class="font-display font-bold text-xl text-brand-navy">Cerrajería 24hrs JC</h3>
+              </div>
+              <div class="flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                <i class="fa-solid fa-door-open"></i> Abierto 24 Horas
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-700">
+              <div class="p-3 bg-slate-50 rounded-xl space-y-1">
+                <span class="text-slate-400 font-semibold uppercase text-[10px]">Dirección Matriz:</span>
+                <p class="font-bold text-slate-900">Calle 10 #54, San Pedro de los Pinos</p>
+                <p class="text-slate-500">Alcaldía Benito Juárez, C.P. 03800, CDMX</p>
+              </div>
+
+              <div class="p-3 bg-slate-50 rounded-xl space-y-1">
+                <span class="text-slate-400 font-semibold uppercase text-[10px]">Líneas de Atención:</span>
+                <p class="font-bold text-slate-900">Tel: 55 7063 8842</p>
+                <p class="text-slate-500">WhatsApp: +52 55 7063 8842</p>
+              </div>
+
+              <div class="p-3 bg-slate-50 rounded-xl space-y-1">
+                <span class="text-slate-400 font-semibold uppercase text-[10px]">Métodos de Pago:</span>
+                <p class="font-bold text-slate-900">Efectivo, Transferencia & Tarjeta</p>
+                <p class="text-slate-500">Cobro terminal bancaria en sitio</p>
+              </div>
+
+              <div class="p-3 bg-slate-50 rounded-xl space-y-1">
+                <span class="text-slate-400 font-semibold uppercase text-[10px]">Facturación:</span>
+                <p class="font-bold text-slate-900">Factura Fiscal CFDI</p>
+                <p class="text-slate-500">Emitimos factura si lo requieres</p>
+              </div>
+            </div>
+
+            <!-- Google Map Embed Box -->
+            <div class="rounded-xl overflow-hidden border border-slate-200 h-64 bg-slate-100 relative">
+              <iframe 
+                title="Ubicación Cerrajería 24hrs JC"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.5359737150117!2d-99.1895697!3d19.3891461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff787834ad59%3A0x7d0a793a38fa5d5!2sC.%2010%2054%2C%20San%20Pedro%20de%20los%20Pinos%2C%20Benito%20Ju%C3%A1rez%2C%2003800%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx" 
+                class="w-full h-full border-0" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Real Customer Reviews -->
+  <section id="opiniones" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-amber-600 text-xs font-bold uppercase tracking-wider bg-amber-100/80 px-3 py-1 rounded-full border border-amber-200">Reseñas Verificadas de Clientes</span>
+        <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-navy mt-3 tracking-tight">
+          La Tranquilidad de Contratar a Cerrajeros Confiables
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-3">
+          Opiniones reales de automovilistas y residentes que confiaron en nuestro servicio en situaciones de urgencia en la CDMX.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+              "Me quedé con las llaves adentro del carro un domingo a las 11 pm en Nápoles. Llegaron en 25 minutos y abrieron mi Seat Ibiza sin un solo rayón. Súper profesionales y el precio muy justo comparado con otros cerrajeros abusivos."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-200 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-brand-navy text-amber-400 font-bold flex items-center justify-center text-xs">RM</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Lic. Rodrigo Montes</p>
+              <p class="text-[10px] text-slate-500">Col. Nápoles, Benito Juárez</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+              "Perdí mi llave con chip de una camioneta Mazda CX-5. En la agencia me cobraban una fortuna y tardaban 15 días. Don JC vino con el escáner computarizado, me talló la llave y la programó en 40 minutos. Excelente servicio."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-200 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-amber-600 text-white font-bold flex items-center justify-center text-xs">MV</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Dra. Mariana Velázquez</p>
+              <p class="text-[10px] text-slate-500">San Pedro de los Pinos, CDMX</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+              "Se rompió la llave adentro de la chapa de mi departamento de noche. Vinieron rápido, extrajeron el fragmento y me instalaron una cerradura de alta seguridad con 5 llaves de punto. Muy confiables y limpios para trabajar."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-200 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center text-xs">CM</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Ing. Carlos Morales</p>
+              <p class="text-[10px] text-slate-500">Del Valle Sur, CDMX</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+              "Excelente atención. Necesitaba duplicados para toda la oficina y cambiar la combinación de un portón eléctrico. Servicio rápido, puntual, amable y facturado sin ningún problema. 100% recomendados."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-200 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-purple-600 text-white font-bold flex items-center justify-center text-xs">SC</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Sofía Cárdenas</p>
+              <p class="text-[10px] text-slate-500">Condesa, Cuauhtémoc</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ Accordion -->
+  <section class="py-16 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center mb-10">
+        <span class="text-amber-600 text-xs font-bold uppercase tracking-wider bg-amber-100/80 px-3 py-1 rounded-full border border-amber-200">Preguntas Frecuentes</span>
+        <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-brand-navy mt-3 tracking-tight">
+          Resolvemos tus Dudas al Instante
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <details class="group bg-white rounded-xl border border-slate-200 p-4 transition open:shadow-sm">
+          <summary class="font-display font-bold text-slate-900 text-sm cursor-pointer list-none flex items-center justify-between">
+            <span>¿Realmente no dañan mi auto ni doblan el marco de la puerta?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            Garantizado al 100%. No utilizamos varillas improvisadas ni técnicas agresivas que puedan deformar las molduras o rayar la pintura. Trabajamos con cuñas de aire neumáticas de grado automotriz y ganzúas decodificadoras Lishi que abren el cilindro original exactamente como lo haría tu llave.
+          </p>
+        </details>
+
+        <details class="group bg-white rounded-xl border border-slate-200 p-4 transition open:shadow-sm">
+          <summary class="font-display font-bold text-slate-900 text-sm cursor-pointer list-none flex items-center justify-between">
+            <span>¿Cuánto tardan en llegar a mi ubicación si estoy varado?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            En alcaldías como Benito Juárez, Cuauhtémoc, Miguel Hidalgo y Álvaro Obregón, nuestro tiempo promedio de arribo es de 20 a 30 minutos gracias a nuestras unidades móviles en moto y camioneta de servicio.
+          </p>
+        </details>
+
+        <details class="group bg-white rounded-xl border border-slate-200 p-4 transition open:shadow-sm">
+          <summary class="font-display font-bold text-slate-900 text-sm cursor-pointer list-none flex items-center justify-between">
+            <span>¿Qué necesito presentar para que abran mi auto o domicilio?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            Por la seguridad de todos los vecinos y propietarios, solicitamos una identificación oficial vigente (INE/licencia) y comprobar la posesión o arrendamiento del vehículo o inmueble (tarjeta de circulación, comprobante de domicilio o llaves en el interior una vez abierta la puerta).
+          </p>
+        </details>
+
+        <details class="group bg-white rounded-xl border border-slate-200 p-4 transition open:shadow-sm">
+          <summary class="font-display font-bold text-slate-900 text-sm cursor-pointer list-none flex items-center justify-between">
+            <span>¿Atienden domingos, festivos y en la madrugada?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            Sí, tenemos personal de guardia activo los 365 días del año las 24 horas del día. Las emergencias no tienen horario y nosotros siempre estamos disponibles para auxiliarte.
+          </p>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Final CTA Callout -->
+  <section class="py-16 bg-gradient-to-br from-brand-navy via-brand-navyDark to-slate-950 text-white text-center relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 relative z-10 space-y-6">
+      <span class="inline-block bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+        Atención Urgente Garantizada
+      </span>
+      <h2 class="font-display text-2xl sm:text-4xl font-extrabold tracking-tight">
+        No Te Quedes Afuera. <br>Llámanos y Estaremos Contigo en Minutos.
+      </h2>
+      <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto">
+        Atendemos emergencias automotrices y residenciales en San Pedro de los Pinos, Benito Juárez y toda la CDMX.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <a href="tel:+525570638842" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-emergency hover:bg-red-700 text-white font-display font-bold text-base py-4 px-8 rounded-xl shadow-xl transition transform hover:-translate-y-0.5">
+          <i class="fa-solid fa-phone-volume text-xl animate-pulse"></i>
+          <span>Llamar al 55 7063 8842</span>
+        </a>
+        <a href="https://wa.me/525570638842?text=Hola,%20tengo%20una%20emergencia%20de%20cerrajer%C3%ADa.%20%C2%BFPueden%20auxiliarme?" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-display font-bold text-base py-4 px-8 rounded-xl shadow-xl transition transform hover:-translate-y-0.5">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          <span>Enviar WhatsApp 24/7</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-10 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-brand-navy flex items-center justify-center text-amber-400 font-bold">
+          <i class="fa-solid fa-key"></i>
+        </div>
+        <div>
+          <p class="font-display font-bold text-slate-900 text-sm">Cerrajería 24hrs JC Residencial y Automotriz</p>
+          <p class="text-slate-500">Calle 10 #54, San Pedro de los Pinos, Benito Juárez, CDMX &bull; Tel: 55 7063 8842</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-5 text-slate-600 font-medium">
+        <a href="#servicios" class="hover:text-amber-600 transition">Servicios</a>
+        <a href="#cobertura" class="hover:text-amber-600 transition">Cobertura CDMX</a>
+        <a href="#cotizador" class="hover:text-amber-600 transition">Cotizador Exprés</a>
+        <a href="tel:+525570638842" class="hover:text-amber-600 transition">Llamar 24 Horas</a>
+      </div>
+
+      <p class="text-slate-400 text-center md:text-right">
+        &copy; 2026 Cerrajería 24hrs JC. Todos los derechos reservados.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- Sticky Bottom Emergency Bar (Mobile Only) -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 sm:hidden shadow-2xl flex items-center gap-2">
+    <a href="tel:+525570638842" class="flex-1 bg-brand-emergency text-white text-center font-display font-bold py-3 px-2 rounded-xl text-xs flex items-center justify-center gap-2 shadow-md">
+      <i class="fa-solid fa-phone"></i> Llamar Urgente
+    </a>
+    <a href="https://wa.me/525570638842?text=Hola,%20necesito%20un%20cerrajero%20urgente%20en%20CDMX.%20%C2%BFPueden%20apoyarme?" target="_blank" class="flex-1 bg-emerald-600 text-white text-center font-display font-bold py-3 px-2 rounded-xl text-xs flex items-center justify-center gap-2 shadow-md">
+      <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp 24/7
+    </a>
+  </div>
+
+  <!-- Calculator Script -->
+  <script>
+    function updateCalculator() {
+      const selectedService = document.querySelector('input[name="service"]:checked');
+      const basePrice = parseInt(selectedService.getAttribute('data-price')) || 450;
+      const serviceName = selectedService.getAttribute('data-label') || 'Servicio de Cerrajería';
+
+      const urgencySelect = document.getElementById('urgencySelect');
+      const urgencyExtra = parseInt(urgencySelect.value) || 0;
+      const urgencyText = urgencySelect.options[urgencySelect.selectedIndex].getAttribute('data-label');
+
+      const zoneSelect = document.getElementById('zoneSelect');
+      const zoneExtra = parseInt(zoneSelect.value) || 0;
+      const zoneText = zoneSelect.options[zoneSelect.selectedIndex].getAttribute('data-zone');
+
+      const total = basePrice + urgencyExtra + zoneExtra;
+
+      document.getElementById('totalPriceDisplay').innerText = '$' + total.toLocaleString('es-MX') + ' MXN';
+      document.getElementById('calcSummary').innerText = serviceName + ' en ' + zoneText.split('(')[0].trim() + ' (' + urgencyText + ')';
+
+      const message = encodeURIComponent(
+        'Hola Cerrajería JC, coticé en su página web:\n' +
+        '• Servicio: ' + serviceName + '\n' +
+        '• Zona: ' + zoneText + '\n' +
+        '• Horario/Urgencia: ' + urgencyText + '\n' +
+        '• Estimado: $' + total + ' MXN\n\n' +
+        '¿Tienen técnico disponible para atenderme?'
+      );
+
+      document.getElementById('calcWhatsAppBtn').href = 'https://wa.me/525570638842?text=' + message;
+    }
+
+    // Initialize on load
+    document.addEventListener('DOMContentLoaded', updateCalculator);
+  </script>
+
+</body>
+</html>
