@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela de Manejo Valle CDMX | Cursos Estándar & Automático con Doble Pedal</title>
+    <meta name="description" content="Aprende a manejar sin miedo con instructores pacientes en CDMX. Cursos en autos estándar y automático con doble pedal de seguridad. Servicio a domicilio en GAM. ¡Cotiza aquí!">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        },
+                        amberbrand: {
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Syne', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-100 selection:text-brand-900">
+
+    <!-- Top Announcement Bar -->
+    <header class="bg-slate-900 text-white text-xs sm:text-sm py-2 px-4 shadow-sm border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1 bg-amberbrand-500/20 text-amber-300 text-xs px-2.5 py-0.5 rounded-full font-semibold border border-amber-400/30">
+                    <i class="fa-solid fa-star text-amber-400"></i> Calificación 5.0 ⭐⭐⭐⭐⭐ (+120 Alumnos)
+                </span>
+                <span class="hidden md:inline text-slate-300">
+                    <i class="fa-solid fa-shield-halved mr-1 text-blue-400"></i> Autos con Doble Pedal de Seguridad • Servicio a Domicilio en GAM y CDMX
+                </span>
+            </div>
+            <div class="flex items-center gap-4 text-xs sm:text-sm">
+                <a href="https://maps.google.com/?q=Camino+de+la+Secretaria+29+Campestre+Aragon+Gustavo+A+Madero+CDMX" target="_blank" class="hover:text-blue-300 transition-colors hidden sm:inline-flex items-center gap-1 text-slate-300">
+                    <i class="fa-solid fa-location-dot text-amber-400"></i> Camino de la Secretaría #29, Campestre Aragón, CDMX
+                </a>
+                <a href="https://wa.me/525519066274" target="_blank" class="hover:text-amber-300 font-semibold inline-flex items-center gap-1.5 bg-brand-600/30 hover:bg-brand-600/50 text-blue-300 px-3 py-1 rounded-full transition-all border border-blue-500/30">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i> 55 1906 6274
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar (100% Light Mode) -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-600 to-blue-800 flex items-center justify-center text-white text-2xl shadow-md group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-car-rear"></i>
+                    </div>
+                    <div>
+                        <span class="font-display font-extrabold text-2xl tracking-tight text-slate-900 group-hover:text-brand-600 transition-colors">
+                            Manejo Valle
+                        </span>
+                        <span class="block text-[11px] font-bold text-brand-700 tracking-wider uppercase">
+                            Escuela de Manejo • CDMX
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
+                    <a href="#cursos" class="hover:text-brand-600 transition-colors">Cursos</a>
+                    <a href="#metodo" class="hover:text-brand-600 transition-colors">Doble Pedal</a>
+                    <a href="#galeria" class="hover:text-brand-600 transition-colors">Galería</a>
+                    <a href="#por-que-valle" class="hover:text-brand-600 transition-colors">¿Por qué nosotros?</a>
+                    <a href="#cotizador" class="hover:text-brand-600 transition-colors text-brand-600 flex items-center gap-1.5">
+                        <i class="fa-solid fa-calculator text-brand-500"></i> Cotizador Online
+                    </a>
+                    <a href="#opiniones" class="hover:text-brand-600 transition-colors">Reseñas</a>
+                    <a href="#contacto" class="hover:text-brand-600 transition-colors">Ubicación</a>
+                </div>
+
+                <!-- Action Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="#cotizador" class="inline-flex items-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-700 border border-brand-200 font-bold px-4 py-2.5 rounded-xl text-sm transition-all shadow-xs">
+                        <i class="fa-solid fa-calculator"></i> Cotizar Curso
+                    </a>
+                    <a href="https://wa.me/525519066274?text=Hola%20Escuela%20de%20Manejo%20Valle%2C%20quisiera%20pedir%20informes%20para%20un%20curso%20de%20conducci%C3%B3n." target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-brand-600 to-blue-700 hover:from-brand-700 hover:to-blue-800 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all shadow-md shadow-brand-500/20 hover:scale-[1.02]">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Iniciar Clases
+                    </a>
+                </div>
+
+                <!-- Mobile menu toggle button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-3">
+            <a href="#cursos" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">Cursos Disponibles</a>
+            <a href="#metodo" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">Sistema Doble Pedal</a>
+            <a href="#galeria" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">Galería de Clases</a>
+            <a href="#por-que-valle" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">¿Por qué Escuela Valle?</a>
+            <a href="#cotizador" class="block px-3 py-2 rounded-lg text-base font-semibold text-brand-600 bg-brand-50">🚗 Calculadora de Cursos</a>
+            <a href="#opiniones" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">Opiniones de Alumnos</a>
+            <a href="#contacto" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">Ubicación y Contacto</a>
+            <div class="pt-2">
+                <a href="https://wa.me/525519066274?text=Hola%20Escuela%20de%20Manejo%20Valle%2C%20quisiera%20inscribirme%20a%20un%20curso." target="_blank" class="w-full block text-center bg-brand-600 text-white font-bold py-3 rounded-xl shadow-md">
+                    <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp Inmediato
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (100% Light Mode) -->
+    <section class="relative overflow-hidden pt-8 pb-16 lg:py-20 bg-gradient-to-b from-blue-50/70 via-slate-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Content Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white border border-brand-200 shadow-xs px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-brand-800">
+                        <span class="w-2.5 h-2.5 rounded-full bg-blue-500 animate-ping"></span>
+                        <span>🚗 Escuela de Conducción en GAM • 5.0 ⭐⭐⭐⭐⭐ (+120 Alumnos)</span>
+                    </div>
+
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12]">
+                        Pierde el miedo al volante y domina las calles <span class="bg-gradient-to-r from-brand-600 to-blue-600 bg-clip-text text-transparent">con total seguridad</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        En <strong>Escuela de Manejo Valle</strong> te enseñamos con paciencia absoluta, sin gritos ni presiones. Cursos prácticos en autos estándar o automáticos equipados con <span class="font-semibold text-slate-800">doble pedal de seguridad</span>. Pasamos por ti a la puerta de tu domicilio en Gustavo A. Madero y zonas aledañas.
+                    </p>
+
+                    <!-- Trust Checklist -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-left">
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-slate-200/90 shadow-xs">
+                            <div class="w-7 h-7 rounded-lg bg-blue-100 text-brand-700 flex items-center justify-center text-sm font-bold shrink-0">
+                                <i class="fa-solid fa-house-chimney-user"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-bold text-slate-700">Servicio a Domicilio</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-slate-200/90 shadow-xs">
+                            <div class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center text-sm font-bold shrink-0">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-bold text-slate-700">Autos Doble Pedal</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-slate-200/90 shadow-xs col-span-2 sm:col-span-1">
+                            <div class="w-7 h-7 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center text-sm font-bold shrink-0">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-bold text-slate-700">Cero Gritos / Anti-Nervios</span>
+                        </div>
+                    </div>
+
+                    <!-- Call To Actions -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
+                        <a href="#cotizador" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-600 via-blue-600 to-indigo-700 hover:from-brand-700 hover:to-indigo-800 text-white font-extrabold text-base px-8 py-4 rounded-2xl shadow-lg shadow-brand-600/25 hover:shadow-xl hover:scale-[1.02] transition-all">
+                            <i class="fa-solid fa-calculator text-lg"></i>
+                            <span>Calcular Costo de Mi Curso</span>
+                        </a>
+                        <a href="https://wa.me/525519066274?text=Hola%20Escuela%20de%20Manejo%20Valle%2C%20quisiera%20saber%20qu%C3%A9%20horarios%20tienen%20disponibles." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-white hover:bg-slate-50 text-slate-800 border-2 border-slate-200 hover:border-brand-500 font-bold text-base px-6 py-4 rounded-2xl shadow-xs hover:shadow transition-all">
+                            <i class="fa-brands fa-whatsapp text-emerald-500 text-xl"></i>
+                            <span>Consultar en WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <!-- Rating Proof -->
+                    <div class="flex items-center justify-center lg:justify-start gap-4 pt-4 border-t border-slate-200">
+                        <div class="flex items-center text-amber-400 text-base">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="ml-2 font-extrabold text-slate-900 text-sm">5.0 / 5.0</span>
+                        </div>
+                        <p class="text-xs text-slate-500 font-medium">
+                            En más de 120 opiniones reales de alumnos en Google Maps
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Visual Column -->
+                <div class="lg:col-span-5 relative">
+                    <!-- Subtle Glow Blobs -->
+                    <div class="absolute -top-6 -right-6 w-72 h-72 bg-blue-200/50 rounded-full blur-3xl pointer-events-none"></div>
+                    <div class="absolute -bottom-6 -left-6 w-72 h-72 bg-amber-200/40 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <!-- Main Image Card -->
+                    <div class="relative bg-white p-3 rounded-3xl shadow-2xl border border-slate-200/90">
+                        <div class="relative rounded-2xl overflow-hidden aspect-[4/4.5] group">
+                            <img src="img/hero-manejo.jpg" alt="Alumna aprendiendo a manejar con seguridad en Escuela Valle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+                            
+                            <!-- Floating Tag Inside Image -->
+                            <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3.5 rounded-xl border border-white/80 shadow-lg flex items-center justify-between">
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Doble Pedal de Seguridad</p>
+                                    <p class="text-sm font-extrabold text-slate-900">El instructor tiene control total del freno</p>
+                                </div>
+                                <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded-full font-bold flex items-center gap-1">
+                                    <i class="fa-solid fa-shield text-emerald-600"></i> 100% Seguro
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Top Badge -->
+                        <div class="absolute -top-4 -left-4 bg-white shadow-xl border border-slate-100 rounded-2xl p-3 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-blue-100 text-brand-600 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-gear"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase">A tu ritmo</p>
+                                <p class="text-xs font-extrabold text-slate-800">Estándar o Automático</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Bottom Badge -->
+                        <div class="absolute -bottom-4 -right-4 bg-white shadow-xl border border-slate-100 rounded-2xl p-3 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-id-card"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase">SEMOVI</p>
+                                <p class="text-xs font-extrabold text-slate-800">Te preparamos para tu Licencia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics Ribbon -->
+    <section class="py-8 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-slate-100">
+                <div class="pt-2 md:pt-0">
+                    <p class="font-display text-3xl sm:text-4xl font-extrabold text-brand-600">+3,800</p>
+                    <p class="text-xs sm:text-sm font-semibold text-slate-600 mt-1">Alumnos Graduados con Éxito</p>
+                </div>
+                <div class="pt-2 md:pt-0">
+                    <p class="font-display text-3xl sm:text-4xl font-extrabold text-amberbrand-500">5.0 ★</p>
+                    <p class="text-xs sm:text-sm font-semibold text-slate-600 mt-1">Calificación en Google Maps</p>
+                </div>
+                <div class="pt-2 md:pt-0">
+                    <p class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900">100%</p>
+                    <p class="text-xs sm:text-sm font-semibold text-slate-600 mt-1">Paciencia y Cero Gritos</p>
+                </div>
+                <div class="pt-2 md:pt-0">
+                    <p class="font-display text-3xl sm:text-4xl font-extrabold text-emerald-600">A Domicilio</p>
+                    <p class="text-xs sm:text-sm font-semibold text-slate-600 mt-1">Pasamos por ti a tu Casa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos Disponibles -->
+    <section id="cursos" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-graduation-cap"></i> Programas de Formación Vial
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Cursos diseñados para cada nivel de experiencia
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Aprende paso a paso con clases 100% prácticas desde el primer minuto en vialidades reales.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Course 1: Básico -->
+                <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-blue-100 text-brand-600 flex items-center justify-center text-xl font-bold group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                            6h
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-slate-900">Curso Básico Inicial</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            3 sesiones de 2 horas. Para personas que nunca han manejado. Control de clutch, acelerador, frenado suave, espejos y vueltas en calles tranquilas.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 pt-2 border-t border-slate-100">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-500"></i> Posición al volante y pedales</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-500"></i> Estacionamiento básico en batería</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-500"></i> Salidas suaves sin apagones</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#cotizador" class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-brand-50 text-slate-800 hover:text-brand-700 font-bold text-xs transition-colors">
+                            Cotizar Básico <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 2: Intermedio -->
+                <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl font-bold group-hover:bg-amber-500 group-hover:text-white transition-colors">
+                            8h
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-slate-900">Curso Intermedio</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            4 sesiones de 2 horas. Incorporación al tráfico real, cambio de carril con espejos, glorietas, semáforos concurridos y subidas en pendiente.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 pt-2 border-t border-slate-100">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> Control en pendientes y topes</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> Estacionamiento en cordón</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> Manejo en avenidas principales</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#cotizador" class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-amber-50 text-slate-800 hover:text-amber-700 font-bold text-xs transition-colors">
+                            Cotizar Intermedio <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 3: Intensivo Completo (Recomendado) -->
+                <div class="bg-white rounded-3xl p-6 border-2 border-brand-600 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brand-600 text-white text-[10px] font-extrabold px-3 py-1 rounded-bl-xl tracking-wider uppercase">
+                        Más Popular
+                    </div>
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-blue-100 text-brand-600 flex items-center justify-center text-xl font-bold group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                            10h
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-slate-900">Intensivo Completo</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            5 sesiones de 2 horas. El curso definitivo. Domina el tráfico pesado de CDMX, vías rápidas, maniobras difíciles de reversa y manejo defensivo.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 pt-2 border-t border-slate-100">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-600"></i> Vías rápidas e incorporaciones</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-600"></i> Práctica de estacionamiento en reversa</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-600"></i> Preparación para examen SEMOVI</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#cotizador" class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs transition-colors shadow-xs">
+                            Cotizar Intensivo <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 4: Anti-Nervios Master -->
+                <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl font-bold group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                            12h
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-slate-900">Master Anti-Nervios</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            6 sesiones de 2 horas. Especial para personas con amaxofobia (miedo o pánico a manejar) o malas experiencias previas. Ritmo progresivo y refuerzo emocional.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 pt-2 border-t border-slate-100">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-600"></i> Técnicas de relajación al volante</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-600"></i> Práctica en tu ruta diaria habitual</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-600"></i> Seguridad total para viajar solo</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#cotizador" class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-indigo-50 text-slate-800 hover:text-indigo-700 font-bold text-xs transition-colors">
+                            Cotizar Master <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sistema Doble Pedal (Confianza Absoluta) -->
+    <section id="metodo" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">
+                        <i class="fa-solid fa-shield-halved"></i> Seguridad Garantizada
+                    </span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                        ¿Por qué es imposible que choques durante tus clases con nosotros?
+                    </h2>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        El miedo número uno de todo alumno es perder el control del vehículo. En Escuela de Manejo Valle todos nuestros vehículos cuentan con <strong>sistema de doble pedal certificado</strong> del lado del copiloto.
+                    </p>
+
+                    <div class="space-y-3 pt-2">
+                        <div class="p-4 rounded-2xl bg-blue-50/70 border border-brand-200 flex items-start gap-3.5">
+                            <div class="w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">El instructor tiene el control auxiliar en todo momento</h4>
+                                <p class="text-xs sm:text-sm text-slate-600">Si te distraes o te pones nervioso, el instructor frena o desembraga de inmediato con sus pedales auxiliares.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-blue-50/70 border border-brand-200 flex items-start gap-3.5">
+                            <div class="w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Paciencia infinita sin gritos familiares</h4>
+                                <p class="text-xs sm:text-sm text-slate-600">Aprender con tu papá, esposo o amigo suele generar estrés y peleas. Nuestros instructores están capacitados en pedagogía vial.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-blue-50/70 border border-brand-200 flex items-start gap-3.5">
+                            <div class="w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Servicio Puerta a Puerta sin Costo Extra</h4>
+                                <p class="text-xs sm:text-sm text-slate-600">Te recogemos en tu domicilio en la zona de GAM y zonas limítrofes, y te regresamos a la puerta al terminar tu clase.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual: Instructor in car -->
+                <div class="lg:col-span-6 relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 aspect-[4/4.5] group">
+                        <img src="img/instructor-clase.jpg" alt="Instructor de manejo explicando controles del auto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Clases y Momentos -->
+    <section id="galeria" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-camera"></i> Clases Reales
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Experiencia práctica que genera conductores seguros
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Maniobras reales, situaciones cotidianas y la confianza que necesitas para manejar solo.
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/hero-manejo.jpg" alt="Alumna conduciendo con confianza" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Control al Volante
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Postura y Agarre Seguro (10 y 2)</h4>
+                        <p class="text-xs text-slate-500 mt-1">Aprende la técnica correcta para virar sin cruzar los brazos.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/palanca-estandar.jpg" alt="Manejo en transmisión estándar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Transmisión Estándar
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Coordinación de Clutch y Cambios</h4>
+                        <p class="text-xs text-slate-500 mt-1">Siente el punto de corte del embrague sin tirones ni que se apague.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/espejos-estacionar.jpg" alt="Uso de espejos retrovisores" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Estacionamiento
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Puntos de Referencia para Estacionar</h4>
+                        <p class="text-xs text-slate-500 mt-1">Estaciona en batería o paralelo al primer intento sin golpear banquetas.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/ciudad-trafico.jpg" alt="Tráfico de la ciudad" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Tráfico Real
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Incorporación a Avenidas Principales</h4>
+                        <p class="text-xs text-slate-500 mt-1">Calcula distancias y velocidades para cambiar de carril con seguridad.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/instructor-clase.jpg" alt="Instructor profesional y paciente" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Acompañamiento
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Instrucción Clara y Respetuosa</h4>
+                        <p class="text-xs text-slate-500 mt-1">Cada maniobra se explica con tiempo y calma antes de ejecutarla.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/alumno-feliz.jpg" alt="Alumno feliz con su licencia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Meta Cumplida
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Conductores Seguros e Independientes</h4>
+                        <p class="text-xs text-slate-500 mt-1">Viaja a tu trabajo, escuela o carretera con total tranquilidad.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COTIZADOR INTERACTIVO (ALTA CONVERSIÓN) -->
+    <section id="cotizador" class="py-20 bg-gradient-to-b from-blue-50/80 via-slate-100 to-white relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <span class="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-brand-800 bg-brand-200/80 px-4 py-1.5 rounded-full shadow-xs">
+                    <i class="fa-solid fa-calculator"></i> Calculadora de Cursos Online
+                </span>
+                <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
+                    Cotiza tu curso de manejo en segundos
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Elige si deseas aprender en auto estándar o automático, la cantidad de horas y extras opcionales. Recibe tu presupuesto con servicio a domicilio incluido.
+                </p>
+            </div>
+
+            <!-- Main Interactive Calculator Box -->
+            <div class="bg-white rounded-3xl shadow-2xl border border-slate-200/90 overflow-hidden">
+                <div class="grid lg:grid-cols-12">
+                    
+                    <!-- Left: Configuration Inputs (7 cols) -->
+                    <div class="lg:col-span-7 p-6 sm:p-10 space-y-8">
+                        
+                        <!-- Step 1: Select Transmission Type -->
+                        <div>
+                            <label class="block text-sm font-extrabold text-slate-800 mb-3 flex items-center justify-between">
+                                <span>1. Selecciona el Tipo de Transmisión:</span>
+                                <span class="text-xs font-semibold text-brand-600">Paso 1 de 3</span>
+                            </label>
+                            <div class="grid grid-cols-2 gap-3" id="transOptions">
+                                <button type="button" data-trans="estandar" class="trans-btn active-trans p-4 rounded-2xl border-2 text-left transition-all border-brand-600 bg-brand-50 text-slate-900">
+                                    <i class="fa-solid fa-gear text-brand-600 text-xl block mb-1"></i>
+                                    <p class="font-bold text-sm">Estándar (Manual)</p>
+                                    <p class="text-xs text-slate-500">Clutch, cambios y control total</p>
+                                </button>
+
+                                <button type="button" data-trans="automatico" class="trans-btn p-4 rounded-2xl border-2 text-left transition-all border-slate-200 hover:border-slate-300 bg-white text-slate-900">
+                                    <i class="fa-solid fa-gauge-high text-slate-400 text-xl block mb-1"></i>
+                                    <p class="font-bold text-sm">Automático</p>
+                                    <p class="text-xs text-slate-500">Sencillo, ideal para el tráfico</p>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Course Package -->
+                        <div>
+                            <label class="block text-sm font-extrabold text-slate-800 mb-3 flex items-center justify-between">
+                                <span>2. Selecciona la Duración del Curso:</span>
+                                <span class="text-xs font-semibold text-brand-600">Paso 2 de 3</span>
+                            </label>
+                            <div class="space-y-3" id="coursePackageOptions">
+                                
+                                <button type="button" data-price="1650" data-hours="6 Horas (3 días de 2h)" data-label="Básico Inicial (6h)" class="pkg-btn w-full p-4 rounded-2xl border-2 text-left transition-all border-slate-200 hover:border-slate-300 bg-white text-slate-900 flex items-center justify-between">
+                                    <div class="space-y-0.5">
+                                        <p class="font-bold text-sm text-slate-900">Curso Básico Inicial (6 Horas)</p>
+                                        <p class="text-xs text-slate-500">3 sesiones de 2 hrs • Para perder el miedo y controlar pedales</p>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md shrink-0 ml-2">$1,650 MXN</span>
+                                </button>
+
+                                <button type="button" data-price="2100" data-hours="8 Horas (4 días de 2h)" data-label="Intermedio Completo (8h)" class="pkg-btn w-full p-4 rounded-2xl border-2 text-left transition-all border-slate-200 hover:border-slate-300 bg-white text-slate-900 flex items-center justify-between">
+                                    <div class="space-y-0.5">
+                                        <p class="font-bold text-sm text-slate-900">Curso Intermedio (8 Horas)</p>
+                                        <p class="text-xs text-slate-500">4 sesiones de 2 hrs • Incorporación al tráfico y estacionamiento</p>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md shrink-0 ml-2">$2,100 MXN</span>
+                                </button>
+
+                                <button type="button" data-price="2550" data-hours="10 Horas (5 días de 2h)" data-label="Intensivo Maestro (10h)" class="pkg-btn active-pkg w-full p-4 rounded-2xl border-2 text-left transition-all border-brand-600 bg-brand-50/70 text-slate-900 flex items-center justify-between">
+                                    <div class="space-y-0.5">
+                                        <div class="flex items-center gap-2">
+                                            <span class="font-bold text-sm text-slate-900">Curso Intensivo (10 Horas)</span>
+                                            <span class="bg-amber-100 text-amber-800 text-[10px] font-extrabold px-2 py-0.5 rounded-full">Recomendado</span>
+                                        </div>
+                                        <p class="text-xs text-slate-500">5 sesiones de 2 hrs • Vías rápidas, pendientes pronunciadas y reversa</p>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-brand-700 bg-white px-2.5 py-1 rounded-md border border-brand-200 shrink-0 ml-2">$2,550 MXN</span>
+                                </button>
+
+                                <button type="button" data-price="2990" data-hours="12 Horas (6 días de 2h)" data-label="Master Anti-Nervios (12h)" class="pkg-btn w-full p-4 rounded-2xl border-2 text-left transition-all border-slate-200 hover:border-slate-300 bg-white text-slate-900 flex items-center justify-between">
+                                    <div class="space-y-0.5">
+                                        <p class="font-bold text-sm text-slate-900">Master Anti-Nervios (12 Horas)</p>
+                                        <p class="text-xs text-slate-500">6 sesiones de 2 hrs • Seguridad total, tu ruta diaria y cero estrés</p>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md shrink-0 ml-2">$2,990 MXN</span>
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Extras / Modalities -->
+                        <div>
+                            <label class="block text-sm font-extrabold text-slate-800 mb-3 flex items-center justify-between">
+                                <span>3. Adicionales de Especialización (Opcional):</span>
+                                <span class="text-xs font-semibold text-brand-600">Paso 3 de 3</span>
+                            </label>
+                            <div class="space-y-2.5">
+                                <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 bg-emerald-50/60 border-emerald-200">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fa-solid fa-circle-check text-emerald-600 text-lg"></i>
+                                        <div>
+                                            <p class="text-xs sm:text-sm font-bold text-slate-900">Servicio a Domicilio en GAM y zonas CDMX</p>
+                                            <p class="text-[11px] text-slate-500">El instructor pasa por ti y te regresa a tu hogar</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-emerald-700 uppercase">¡Incluido!</span>
+                                </label>
+
+                                <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" id="extraPendientes" class="extra-check w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500" value="250">
+                                        <div>
+                                            <p class="text-xs sm:text-sm font-bold text-slate-800">Taller Intensivo de Subidas y Pendientes</p>
+                                            <p class="text-[11px] text-slate-500">Arranque con freno de mano en subidas sin irte hacia atrás</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-slate-800">+$250 MXN</span>
+                                </label>
+
+                                <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" id="extraViasRapidas" class="extra-check w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500" value="300">
+                                        <div>
+                                            <p class="text-xs sm:text-sm font-bold text-slate-800">Módulo de Vías Rápidas (Circuito / Insurgentes)</p>
+                                            <p class="text-[11px] text-slate-500">Pérdida de miedo a velocidades de 60-80 km/h y glorietas</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-slate-800">+$300 MXN</span>
+                                </label>
+
+                                <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" id="extraSemovi" class="extra-check w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500" value="200">
+                                        <div>
+                                            <p class="text-xs sm:text-sm font-bold text-slate-800">Guía y Asesoría para Licencia SEMOVI</p>
+                                            <p class="text-[11px] text-slate-500">Simulación del examen teórico y práctico oficial de CDMX</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-slate-800">+$200 MXN</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right: Live Quote Summary & WhatsApp Trigger (5 cols) -->
+                    <div class="lg:col-span-5 bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white p-6 sm:p-10 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-slate-800">
+                        <div>
+                            <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+                                <span class="font-display font-bold text-lg text-white">Resumen de Tu Curso</span>
+                                <span class="text-xs font-semibold bg-brand-500/20 text-blue-300 border border-brand-500/30 px-2.5 py-1 rounded-full">
+                                    Presupuesto en Vivo
+                                </span>
+                            </div>
+
+                            <div class="space-y-3.5 text-xs sm:text-sm">
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Transmisión:</span>
+                                    <span id="summaryTrans" class="font-semibold text-white">Estándar (Manual)</span>
+                                </div>
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Paquete:</span>
+                                    <span id="summaryPkg" class="font-semibold text-white">Intensivo Maestro (10h)</span>
+                                </div>
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Duración:</span>
+                                    <span id="summaryHours" class="font-semibold text-white">10 Horas (5 días de 2h)</span>
+                                </div>
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Servicio a Domicilio:</span>
+                                    <span class="font-bold text-emerald-400">Gratis (Incluido)</span>
+                                </div>
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Adicionales:</span>
+                                    <span id="summaryExtras" class="font-semibold text-white">$0 MXN</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-8 border-t border-slate-800 mt-8 space-y-6">
+                            <div>
+                                <p class="text-xs uppercase tracking-wider text-slate-400 font-bold">Inversión Total:</p>
+                                <div class="flex items-baseline gap-2 mt-1">
+                                    <span id="summaryTotal" class="font-display text-4xl sm:text-5xl font-extrabold text-blue-400">$2,550</span>
+                                    <span class="text-sm font-semibold text-slate-400">MXN</span>
+                                </div>
+                                <p class="text-[11px] text-slate-400 mt-1.5 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-shield-check text-emerald-400"></i> Autos con doble pedal y seguro de cobertura amplia
+                                </p>
+                            </div>
+
+                            <!-- WhatsApp Direct Reserve Button -->
+                            <a id="btnWhatsappQuote" href="#" target="_blank" class="w-full inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-600 via-blue-600 to-indigo-600 hover:from-brand-700 hover:to-indigo-700 text-white font-extrabold text-base py-4 px-6 rounded-2xl shadow-xl shadow-blue-950/40 hover:scale-[1.02] transition-all text-center">
+                                <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+                                <span>Agendar Horario en WhatsApp</span>
+                            </a>
+                            <p class="text-[11px] text-center text-slate-400">
+                                Al dar clic se abrirá WhatsApp con el desglose de tu curso listo para apartar tus días.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Opiniones Reales de Alumnos -->
+    <section id="opiniones" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-amber-700 bg-amber-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-star text-amber-500"></i> Calificación 5.0 en Google Maps
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Lo que dicen nuestros alumnos que ya manejan solos
+                </h2>
+                <p class="text-slate-600 text-base">
+                    La paciencia y empatía de nuestros instructores es lo que más destacan en sus opiniones.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-xs flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic leading-relaxed">
+                            "Tenía 35 años y jamás me había atrevido a tocar un carro por miedo a chocar. El profesor fue súper paciente, jamás me levantó la voz y con el doble pedal me sentí 100% segura. En una semana ya estaba manejando al trabajo. ¡Los mejores!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 font-extrabold flex items-center justify-center text-sm">
+                            GL
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900 text-sm">Gabriela López</p>
+                            <p class="text-xs text-slate-500">Curso Básico Automático • Campestre Aragón</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-xs flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic leading-relaxed">
+                            "Excelente servicio. Pasaban puntualmente por mí a mi casa en GAM. Aprendí en estándar y me enseñaron trucos infalibles para estacionarme en cordón y no irme para atrás en las subidas. Tramité mi licencia sin problemas."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-700 font-extrabold flex items-center justify-center text-sm">
+                            MR
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900 text-sm">Miguel Ángel Ramírez</p>
+                            <p class="text-xs text-slate-500">Curso Intensivo Estándar (10h)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-xs flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic leading-relaxed">
+                            "Mi esposo intentó enseñarme y solo terminamos peleados. Contraté a Escuela Valle y fue el dinero mejor invertido. El instructor tiene muchísima pedagogía para explicar y te da una tranquilidad increíble."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+                        <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-700 font-extrabold flex items-center justify-center text-sm">
+                            LT
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900 text-sm">Lucía Torres</p>
+                            <p class="text-xs text-slate-500">Curso Anti-Nervios (12h)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 space-y-2">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-circle-question"></i> Resolvemos tus Preguntas
+                </span>
+                <h2 class="font-display text-3xl font-extrabold text-slate-900">Preguntas Frecuentes</h2>
+            </div>
+
+            <div class="space-y-3" id="faqAccordion">
+                
+                <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden transition-all">
+                    <button type="button" class="faq-btn w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50">
+                        <span>¿El instructor realmente pasa por mí a mi domicilio?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        ¡Sí! Contamos con cobertura a domicilio en la alcaldía Gustavo A. Madero y zonas aledañas de CDMX y límites de Edomex. El instructor llega a tu casa o trabajo, inicias tu clase desde ahí y te regresa al mismo punto.
+                    </div>
+                </div>
+
+                <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden transition-all">
+                    <button type="button" class="faq-btn w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50">
+                        <span>¿A partir de qué edad se puede tomar el curso de manejo?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        Aceptamos alumnos a partir de los 15 años cumplidos (con autorización de los padres para trámite de permiso de menor) hasta adultos mayores sin límite de edad.
+                    </div>
+                </div>
+
+                <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden transition-all">
+                    <button type="button" class="faq-btn w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50">
+                        <span>¿Qué pasa si cometo un error o me pongo muy nervioso durante la clase?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        Para eso existe el doble pedal auxiliar: el instructor tiene el control inmediato de los frenos y embrague para evitar cualquier incidente. Además, nuestros instructores se caracterizan por una paciencia absoluta y técnicas para calmar la ansiedad.
+                    </div>
+                </div>
+
+                <div class="border border-slate-200 bg-white rounded-2xl overflow-hidden transition-all">
+                    <button type="button" class="faq-btn w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50">
+                        <span>¿Ayudan con el trámite de la licencia de conducir SEMOVI?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        Te brindamos toda la asesoría respecto a la documentación requerida, el agendamiento de citas en módulos oficiales de SEMOVI y simulamos los exámenes teóricos y prácticos para que apruebes con facilidad.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación y Mapa -->
+    <section id="contacto" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Info Card -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">
+                        <i class="fa-solid fa-map-pin"></i> Base de Operaciones
+                    </span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                        Ubicación y Cobertura
+                    </h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Nuestra base principal se encuentra en Campestre Aragón, Gustavo A. Madero, con servicio a domicilio en colonias como Aragón, Lindavista, Casas Alemán, San Juan de Aragón, Tepeyac y zonas limítrofes.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-3.5 p-4 bg-slate-50 rounded-2xl border border-slate-200 shadow-xs">
+                            <div class="w-10 h-10 rounded-xl bg-blue-100 text-brand-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase">Dirección</p>
+                                <p class="text-sm font-bold text-slate-800">Camino de la Secretaría #29, Col. Campestre Aragón, Gustavo A. Madero, C.P. 07530, CDMX</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 p-4 bg-slate-50 rounded-2xl border border-slate-200 shadow-xs">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase">WhatsApp & Citas</p>
+                                <p class="text-sm font-bold text-slate-800">+52 55 1906 6274 / +52 55 6840 3492</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 p-4 bg-slate-50 rounded-2xl border border-slate-200 shadow-xs">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase">Horario de Clases</p>
+                                <p class="text-sm font-bold text-slate-800">Lunes a Domingo: 07:00 AM a 07:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                        <a href="https://maps.google.com/?q=Camino+de+la+Secretaria+29+Campestre+Aragon+Gustavo+A+Madero+CDMX" target="_blank" class="inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-black text-white font-bold px-5 py-3 rounded-xl text-sm transition-all shadow-sm">
+                            <i class="fa-solid fa-location-arrow text-blue-400"></i> Abrir en Google Maps
+                        </a>
+                        <a href="https://wa.me/525519066274?text=Hola%20Escuela%20de%20Manejo%20Valle%2C%20quisiera%20agendar%20mi%20curso%20a%20domicilio." target="_blank" class="inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-bold px-5 py-3 rounded-xl text-sm transition-all shadow-sm">
+                            <i class="fa-brands fa-whatsapp"></i> Inscribirme por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="lg:col-span-7 bg-slate-50 p-3 rounded-3xl shadow-xl border border-slate-200">
+                    <div class="w-full h-[400px] rounded-2xl overflow-hidden">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Camino+de+la+Secretaria+29+Campestre+Aragon+Gustavo+A+Madero+CDMX&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Footer Banner -->
+    <section class="py-12 bg-gradient-to-r from-slate-950 via-slate-900 to-brand-950 text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+            <h2 class="font-display text-3xl sm:text-4xl font-extrabold tracking-tight">
+                ¿Listo para independizarte y manejar tu propio auto?
+            </h2>
+            <p class="text-slate-300 text-base max-w-2xl mx-auto">
+                No pospongas más tu meta. Con solo 2 horas al día, en una semana estarás conduciendo con seguridad.
+            </p>
+            <div class="pt-2">
+                <a href="https://wa.me/525519066274?text=Hola%20Escuela%20de%20Manejo%20Valle%2C%20quiero%20empezar%20mi%20curso%20de%20manejo." target="_blank" class="inline-flex items-center gap-3 bg-amberbrand-500 hover:bg-amber-400 text-slate-950 font-extrabold text-base px-8 py-4 rounded-2xl shadow-xl hover:scale-105 transition-all">
+                    <i class="fa-brands fa-whatsapp text-2xl text-slate-950"></i>
+                    <span>Contactar por WhatsApp Ahora</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12 text-slate-500 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                
+                <div class="space-y-3 md:col-span-2">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-xl bg-brand-600 text-white flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-car-rear"></i>
+                        </div>
+                        <span class="font-display font-extrabold text-xl text-slate-900">Escuela de Manejo Valle</span>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed max-w-sm">
+                        Cursos profesionales de conducción en la Ciudad de México. Autos equipados con doble pedal de seguridad, servicio a domicilio y método anti-nervios para principiantes.
+                    </p>
+                </div>
+
+                <div class="space-y-2">
+                    <p class="font-bold text-slate-900 uppercase tracking-wider text-xs">Cursos & Programas</p>
+                    <ul class="space-y-1.5 text-xs">
+                        <li><a href="#cursos" class="hover:text-brand-600">Curso Básico (6h)</a></li>
+                        <li><a href="#cursos" class="hover:text-brand-600">Curso Intermedio (8h)</a></li>
+                        <li><a href="#cursos" class="hover:text-brand-600">Intensivo Completo (10h)</a></li>
+                        <li><a href="#cotizador" class="hover:text-brand-600 font-bold text-brand-600">Cotizador en Línea</a></li>
+                        <li><a href="#metodo" class="hover:text-brand-600">Sistema Doble Pedal</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-2">
+                    <p class="font-bold text-slate-900 uppercase tracking-wider text-xs">Contacto & Base</p>
+                    <p class="text-xs">Camino de la Secretaría #29, Campestre Aragón, GAM, CDMX</p>
+                    <p class="text-xs font-bold text-slate-800">WhatsApp: +52 55 1906 6274</p>
+                    <p class="text-xs font-bold text-slate-800">Tel: +52 55 6840 3492</p>
+                    <p class="text-xs">Lun a Dom: 07:00 - 19:00 hrs</p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+                <p>© 2026 Escuela de Manejo Valle CDMX. Propuesta de Plataforma Digital Exclusiva.</p>
+                <div class="flex items-center gap-4">
+                    <a href="#top" class="hover:text-brand-600 font-semibold flex items-center gap-1">
+                        Subir al inicio <i class="fa-solid fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Desktop Button -->
+    <a href="https://wa.me/525519066274?text=Hola%20Escuela%20de%20Manejo%20Valle%2C%20quisiera%20pedir%20informes%20para%20un%20curso." target="_blank" class="hidden sm:flex fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl items-center justify-center gap-2 group transition-all duration-300 hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 font-bold text-sm px-0 group-hover:px-2">
+            Pedir Informes por WhatsApp
+        </span>
+    </a>
+
+    <!-- Mobile Bottom Bar -->
+    <div class="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 p-2.5 flex items-center gap-2 shadow-lg">
+        <a href="#cotizador" class="flex-1 bg-slate-100 text-slate-800 text-center font-bold text-xs py-2.5 rounded-xl border border-slate-200">
+            <i class="fa-solid fa-calculator mr-1 text-brand-600"></i> Cotizar
+        </a>
+        <a id="mobileBtnWa" href="https://wa.me/525519066274?text=Hola%20Escuela%20de%20Manejo%20Valle%2C%20quisiera%20inscribirme%20a%20un%20curso." target="_blank" class="flex-[1.5] bg-brand-600 text-white text-center font-bold text-xs py-2.5 rounded-xl shadow-md">
+            <i class="fa-brands fa-whatsapp text-white mr-1 text-sm"></i> WhatsApp Cursos
+        </a>
+    </div>
+
+    <!-- JavaScript for Calculator & Interactive UI -->
+    <script>
+        // State
+        const state = {
+            transmission: 'estandar',
+            transmissionLabel: 'Estándar (Manual)',
+            basePrice: 2550,
+            pkgLabel: 'Intensivo Maestro (10h)',
+            hoursLabel: '10 Horas (5 días de 2h)',
+            extraPendientes: false,
+            extraViasRapidas: false,
+            extraSemovi: false
+        };
+
+        // DOM Elements
+        const transBtns = document.querySelectorAll('.trans-btn');
+        const pkgBtns = document.querySelectorAll('.pkg-btn');
+        const extraPendientes = document.getElementById('extraPendientes');
+        const extraViasRapidas = document.getElementById('extraViasRapidas');
+        const extraSemovi = document.getElementById('extraSemovi');
+
+        // Summary DOM
+        const summaryTrans = document.getElementById('summaryTrans');
+        const summaryPkg = document.getElementById('summaryPkg');
+        const summaryHours = document.getElementById('summaryHours');
+        const summaryExtras = document.getElementById('summaryExtras');
+        const summaryTotal = document.getElementById('summaryTotal');
+        const btnWhatsappQuote = document.getElementById('btnWhatsappQuote');
+        const mobileBtnWa = document.getElementById('mobileBtnWa');
+
+        // Transmission Selection
+        transBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                transBtns.forEach(b => {
+                    b.classList.remove('active-trans', 'border-brand-600', 'bg-brand-50');
+                    b.classList.add('border-slate-200', 'bg-white');
+                    const icon = b.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('text-brand-600');
+                        icon.classList.add('text-slate-400');
+                    }
+                });
+                btn.classList.add('active-trans', 'border-brand-600', 'bg-brand-50');
+                btn.classList.remove('border-slate-200', 'bg-white');
+                const activeIcon = btn.querySelector('i');
+                if (activeIcon) {
+                    activeIcon.classList.remove('text-slate-400');
+                    activeIcon.classList.add('text-brand-600');
+                }
+
+                state.transmission = btn.dataset.trans;
+                state.transmissionLabel = btn.querySelector('p.font-bold').textContent;
+                updateCalculation();
+            });
+        });
+
+        // Package Selection
+        pkgBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                pkgBtns.forEach(b => {
+                    b.classList.remove('active-pkg', 'border-brand-600', 'bg-brand-50/70');
+                    b.classList.add('border-slate-200', 'bg-white');
+                });
+                btn.classList.add('active-pkg', 'border-brand-600', 'bg-brand-50/70');
+                btn.classList.remove('border-slate-200', 'bg-white');
+
+                state.basePrice = parseFloat(btn.dataset.price);
+                state.pkgLabel = btn.dataset.label;
+                state.hoursLabel = btn.dataset.hours;
+                updateCalculation();
+            });
+        });
+
+        // Extras Checkboxes
+        [extraPendientes, extraViasRapidas, extraSemovi].forEach(chk => {
+            chk.addEventListener('change', () => {
+                updateCalculation();
+            });
+        });
+
+        function updateCalculation() {
+            let extras = 0;
+            let extrasList = [];
+
+            if (extraPendientes.checked) {
+                extras += 250;
+                extrasList.push('Subidas con Freno de Mano ($250)');
+            }
+            if (extraViasRapidas.checked) {
+                extras += 300;
+                extrasList.push('Vías Rápidas ($300)');
+            }
+            if (extraSemovi.checked) {
+                extras += 200;
+                extrasList.push('Asesoría Licencia SEMOVI ($200)');
+            }
+
+            const total = state.basePrice + extras;
+
+            // Update Summary UI
+            summaryTrans.textContent = state.transmissionLabel;
+            summaryPkg.textContent = state.pkgLabel;
+            summaryHours.textContent = state.hoursLabel;
+            summaryExtras.textContent = `$${extras.toLocaleString()} MXN`;
+            summaryTotal.textContent = `$${total.toLocaleString()}`;
+
+            // Build WhatsApp Message
+            const extrasStr = extrasList.length > 0 ? extrasList.join(', ') : 'Ninguno';
+
+            const waMsg = `Hola Escuela de Manejo Valle, coticé un curso de conducción en su sitio web:%0A%0A` +
+                          `🚗 Transmisión: ${encodeURIComponent(state.transmissionLabel)}%0A` +
+                          `📅 Curso: ${encodeURIComponent(state.pkgLabel)} (${encodeURIComponent(state.hoursLabel)})%0A` +
+                          `🏠 Servicio a Domicilio: Incluido en GAM / CDMX%0A` +
+                          `✨ Extras: ${encodeURIComponent(extrasStr)}%0A` +
+                          `💰 Total Estimado: $${total.toLocaleString()} MXN%0A%0A` +
+                          `¿Qué horarios tienen disponibles esta semana para iniciar mis clases?`;
+
+            btnWhatsappQuote.href = `https://wa.me/525519066274?text=${waMsg}`;
+            if (mobileBtnWa) {
+                mobileBtnWa.href = `https://wa.me/525519066274?text=${waMsg}`;
+            }
+        }
+
+        // Initialize Calculator
+        updateCalculation();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // FAQ Accordion
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const isOpen = !content.classList.contains('hidden');
+
+                // Close all
+                document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+                document.querySelectorAll('.faq-btn i').forEach(i => i.classList.remove('rotate-180'));
+
+                if (!isOpen) {
+                    content.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
