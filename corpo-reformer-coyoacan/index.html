@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corpo Reformer Studio Coyoacán | Clases de Pilates Reformer & Bienestar</title>
+  <meta name="description" content="Estudio boutique de Pilates Reformer en Coyoacán, CDMX. Grupos reducidos de máximo 8 personas, camas Allegro profesionales e instructoras certificadas. Agenda tu clase muestra en Héroes del 47.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: Playfair Display (elegante, estética y estilizada) & Plus Jakarta Sans (fresca y legible) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            corpo: {
+              sage: '#4D7C0F',      // Verde salvia botánico
+              darkSage: '#365314',
+              softSage: '#ECFCCB',
+              rose: '#BE123C',      // Rosa terracota cálido
+              linen: '#FAF9F6',     // Fondo lino ultra suave
+              sand: '#F5F5F0',
+              charcoal: '#1C1917',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .studio-shadow {
+      box-shadow: 0 10px 30px -5px rgba(54, 83, 20, 0.07), 0 4px 6px -4px rgba(0, 0, 0, 0.02);
+    }
+    .studio-card {
+      transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .studio-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 35px -10px rgba(54, 83, 20, 0.14);
+    }
+  </style>
+</head>
+
+<body class="bg-corpo-linen text-corpo-charcoal font-sans antialiased selection:bg-corpo-sage selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-corpo-charcoal text-slate-200 text-xs py-2.5 px-4 border-b border-stone-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
+        <span class="font-semibold text-emerald-300 uppercase tracking-wider">Estudio Abierto en Coyoacán:</span>
+        <span class="text-stone-300">Grupos reducidos de 6 a 8 alumnas &bull; Aceptamos TotalPass y Wellhub</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <span class="hidden md:inline text-stone-400"><i class="fa-solid fa-location-dot text-emerald-400 mr-1.5"></i>Calle Héroes del 47 #104, San Mateo, Coyoacán, CDMX</span>
+        <a href="https://wa.me/525518462031?text=Hola,%20quisiera%20pedir%20informes%20para%20una%20clase%20muestra%20de%20Pilates%20Reformer" target="_blank" class="font-bold text-emerald-300 hover:text-white flex items-center gap-1.5 transition">
+          <i class="fa-brands fa-whatsapp text-emerald-400"></i> WhatsApp: 55 1846 2031
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200/80 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-2xl bg-corpo-darkSage flex items-center justify-center text-corpo-softSage shadow-md group-hover:scale-105 transition duration-200">
+          <i class="fa-solid fa-spa text-2xl"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-display font-extrabold text-2xl tracking-tight text-corpo-charcoal italic">CORPO</span>
+            <span class="bg-corpo-softSage text-corpo-darkSage text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider border border-lime-300">Reformer</span>
+          </div>
+          <p class="text-xs text-stone-500 font-medium">Pilates Studio &bull; Coyoacán CDMX</p>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-stone-700">
+        <a href="#modalidades" class="hover:text-corpo-sage transition">Modalidades</a>
+        <a href="#beneficios" class="hover:text-corpo-sage transition">El Método Reformer</a>
+        <a href="#cotizador" class="hover:text-corpo-sage transition">Paquetes & Precios</a>
+        <a href="#estudio" class="hover:text-corpo-sage transition">Ubicación & Estudio</a>
+        <a href="#opiniones" class="hover:text-corpo-sage transition">Experiencias</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="tel:+525518462031" class="hidden sm:inline-flex items-center gap-2 bg-stone-100 hover:bg-stone-200 text-stone-800 text-sm font-bold py-2.5 px-4 rounded-xl transition border border-stone-200">
+          <i class="fa-solid fa-phone text-corpo-sage"></i>
+          <span>Llamar</span>
+        </a>
+        <a href="https://wa.me/525518462031?text=Hola%20Corpo%20Reformer,%20quiero%20reservar%20mi%20clase%20muestra.%20%C2%BFQu%C3%A9%20horarios%20tienen%20disponibles?" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold py-2.5 px-4 sm:px-5 rounded-xl shadow-md shadow-emerald-700/20 transition transform hover:-translate-y-0.5">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span class="hidden md:inline">Clase Muestra $200</span>
+          <span class="md:hidden">Clase Muestra</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-white pt-10 pb-16 lg:py-20 overflow-hidden border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Left Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-lime-100 border border-lime-300 text-corpo-darkSage text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-feather text-corpo-sage"></i>
+            Fuerza Consciente &bull; Cero Impacto Articular &bull; Postura Impecable
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-corpo-charcoal tracking-tight leading-[1.12]">
+            Esculpe tu cuerpo, alinea tu postura y <br>
+            <span class="text-corpo-sage italic">reconecta con tu fuerza</span> en Coyoacán.
+          </h1>
+
+          <p class="text-base sm:text-lg text-stone-600 leading-relaxed max-w-2xl">
+            Clases de Pilates Reformer con camas de precisión Allegro en un ambiente íntimo y luminoso. Diseñado para tonificar abdomen profundo, glúteos y espalda, mejorando la flexibilidad y aliviando dolores posturales bajo la guía de instructoras certificadas.
+          </p>
+
+          <!-- Key Highlights Badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+            <div class="bg-corpo-linen border border-stone-200 p-3.5 rounded-xl flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-lime-100 flex items-center justify-center text-corpo-darkSage font-bold shrink-0">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-stone-900">Grupos Pequeños</p>
+                <p class="text-[11px] text-stone-500">Máximo 8 alumnas</p>
+              </div>
+            </div>
+
+            <div class="bg-corpo-linen border border-stone-200 p-3.5 rounded-xl flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center text-amber-800 font-bold shrink-0">
+                <i class="fa-solid fa-fire"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-stone-900">Tonificación Real</p>
+                <p class="text-[11px] text-stone-500">Resistencia de resortes</p>
+              </div>
+            </div>
+
+            <div class="bg-corpo-linen border border-stone-200 p-3.5 rounded-xl flex items-center gap-3 col-span-2 sm:col-span-1">
+              <div class="w-10 h-10 rounded-lg bg-rose-100 flex items-center justify-center text-rose-800 font-bold shrink-0">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-stone-900">Cero Dolor Lumbar</p>
+                <p class="text-[11px] text-stone-500">Protege articulaciones</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <a href="https://wa.me/525518462031?text=Hola%20Corpo%20Reformer,%20quiero%20agendar%20mi%20clase%20muestra%20de%20primer%20ingreso." target="_blank" class="inline-flex justify-center items-center gap-3 bg-corpo-darkSage hover:bg-stone-900 text-white font-display font-bold text-lg py-4 px-7 rounded-xl shadow-lg shadow-emerald-950/20 transition transform hover:-translate-y-0.5">
+              <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+              <span>Agendar Clase Muestra ($200 MXN)</span>
+            </a>
+
+            <a href="#cotizador" class="inline-flex justify-center items-center gap-2 bg-stone-100 hover:bg-stone-200 text-corpo-charcoal font-display font-bold text-lg py-4 px-6 rounded-xl border border-stone-300 transition">
+              <i class="fa-solid fa-calendar-check text-corpo-sage"></i>
+              <span>Ver Paquetes & Horarios</span>
+            </a>
+          </div>
+
+          <!-- Social Proof -->
+          <div class="flex items-center gap-4 pt-3 border-t border-stone-200 text-sm">
+            <div class="flex text-amber-500 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-stone-600 text-xs">
+              <strong class="text-stone-900 font-bold">4.9 / 5.0</strong> en valoraciones &bull; Compatible con TotalPass y Wellhub en Coyoacán
+            </p>
+          </div>
+        </div>
+
+        <!-- Hero Visual Image Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Decorative Backdrop -->
+            <div class="absolute -top-3 -right-3 w-full h-full rounded-3xl bg-gradient-to-tr from-corpo-sage to-lime-200 transform rotate-2 opacity-70"></div>
+            
+            <div class="relative bg-white rounded-3xl overflow-hidden shadow-2xl border border-stone-200">
+              <img src="img/hero-pilates.jpg" alt="Clase de Pilates Reformer en Coyoacán" class="w-full h-80 object-cover">
+              
+              <div class="p-6 bg-white space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-stone-500 uppercase tracking-wider">Estudio Boutique</span>
+                  <span class="text-xs bg-lime-100 text-corpo-darkSage font-bold px-2.5 py-0.5 rounded-full border border-lime-200 flex items-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Camas Reformer Allegro
+                  </span>
+                </div>
+                <h3 class="font-display font-bold text-stone-900 text-xl italic">Corpo Reformer Studio &bull; Coyoacán</h3>
+                <p class="text-xs text-stone-600">Sesiones dinámicas donde cada movimiento involucra respiración, control muscular y elongación profunda de la columna.</p>
+                
+                <div class="pt-3 flex items-center justify-between text-xs text-stone-500 border-t border-stone-100">
+                  <span><i class="fa-solid fa-sparkles text-corpo-sage mr-1"></i> Corrección postural 1 a 1</span>
+                  <span><i class="fa-solid fa-clock text-corpo-sage mr-1"></i> Sesiones de 50 minutos</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating mini-badge -->
+            <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-stone-200 flex items-center gap-3.5 max-w-[260px]">
+              <div class="w-11 h-11 rounded-xl bg-corpo-darkSage text-corpo-softSage flex items-center justify-center font-bold text-xl shrink-0">
+                <i class="fa-solid fa-person-walking"></i>
+              </div>
+              <div>
+                <p class="text-xs font-extrabold text-stone-900">Salud Postural</p>
+                <p class="text-[11px] text-stone-500">Alivia tensiones de cuello y espalda baja desde tu primera semana</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modalities Section -->
+  <section id="modalidades" class="py-16 sm:py-20 bg-corpo-linen border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-corpo-sage text-xs font-bold uppercase tracking-wider bg-lime-100 px-3 py-1 rounded-full border border-lime-200">Nuestras Clases</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-corpo-charcoal mt-3 tracking-tight italic">
+          Modalidades para Cada Nivel y Objetivo
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base mt-3">
+          Tanto si nunca te has subido a una cama Reformer como si buscas un reto cardiovascular y muscular exigente, tenemos la clase ideal para ti.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Class 1: Reformer Flow -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 studio-shadow studio-card flex flex-col justify-between">
+          <div>
+            <div class="h-44 rounded-xl overflow-hidden mb-5">
+              <img src="img/reformer-flow.jpg" alt="Reformer Flow Pilates Coyoacan" class="w-full h-full object-cover">
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-corpo-sage mb-1 block">Para todos los niveles</span>
+            <h3 class="font-display text-xl font-bold text-corpo-charcoal mb-2 italic">Reformer Flow</h3>
+            <p class="text-stone-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Fluidez, control y respiración. Una secuencia armoniosa que estira las cadenas musculares, mejora la alineación de la pelvis y fortalece el core de forma suave pero profunda.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-stone-100 flex items-center justify-between text-xs">
+            <span class="text-stone-500 font-medium"><i class="fa-regular fa-clock mr-1 text-corpo-sage"></i> 50 min</span>
+            <span class="font-bold text-corpo-darkSage">Intensidad Media</span>
+          </div>
+        </div>
+
+        <!-- Class 2: Reformer Burn -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 studio-shadow studio-card flex flex-col justify-between">
+          <div>
+            <div class="h-44 rounded-xl overflow-hidden mb-5">
+              <img src="img/reformer-burn.jpg" alt="Reformer Burn tonificación Pilates" class="w-full h-full object-cover">
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-rose-700 mb-1 block">Fuerza & Esculpir</span>
+            <h3 class="font-display text-xl font-bold text-corpo-charcoal mb-2 italic">Reformer Burn</h3>
+            <p class="text-stone-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Enfocada en tonificar glúteos, abdomen, brazos y piernas mediante repeticiones controladas y cambios dinámicos de resortes. Alta quema calórica con impacto nulo en rodillas.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-stone-100 flex items-center justify-between text-xs">
+            <span class="text-stone-500 font-medium"><i class="fa-regular fa-clock mr-1 text-corpo-sage"></i> 50 min</span>
+            <span class="font-bold text-rose-700">Intensidad Alta</span>
+          </div>
+        </div>
+
+        <!-- Class 3: Stretch & Spine -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 studio-shadow studio-card flex flex-col justify-between">
+          <div>
+            <div class="h-44 rounded-xl overflow-hidden mb-5">
+              <img src="img/bienestar-postura.jpg" alt="Stretch and Spine cuidado de espalda Pilates" class="w-full h-full object-cover">
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-teal-700 mb-1 block">Terapéutico & Alivio</span>
+            <h3 class="font-display text-xl font-bold text-corpo-charcoal mb-2 italic">Stretch & Spine</h3>
+            <p class="text-stone-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Descompresión de vértebras y liberación miofascial. Especial para personas con estrés acumulado, escoliosis leve, dolor ciático o muchas horas sentadas frente a la computadora.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-stone-100 flex items-center justify-between text-xs">
+            <span class="text-stone-500 font-medium"><i class="fa-regular fa-clock mr-1 text-corpo-sage"></i> 50 min</span>
+            <span class="font-bold text-teal-700">Restaurativo</span>
+          </div>
+        </div>
+
+        <!-- Class 4: Privada 1 a 1 -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 studio-shadow studio-card flex flex-col justify-between">
+          <div>
+            <div class="h-44 rounded-xl overflow-hidden mb-5">
+              <img src="img/estudio-reformer.jpg" alt="Sesión privada personalizada Pilates Coyoacan" class="w-full h-full object-cover">
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-700 mb-1 block">100% Personalizado</span>
+            <h3 class="font-display text-xl font-bold text-corpo-charcoal mb-2 italic">Sesión Privada 1 a 1</h3>
+            <p class="text-stone-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Atención exclusiva de la instructora para ti sola. Rutinas adaptadas a lesiones específicas, acondicionamiento prenatal o metas deportivas avanzadas a tu propio ritmo.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-stone-100 flex items-center justify-between text-xs">
+            <span class="text-stone-500 font-medium"><i class="fa-regular fa-clock mr-1 text-corpo-sage"></i> 55 min</span>
+            <span class="font-bold text-amber-800">Privado 1 a 1</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Method & Why Reformer -->
+  <section id="beneficios" class="py-16 sm:py-20 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-corpo-sage text-xs font-bold uppercase tracking-wider bg-lime-100 px-3 py-1 rounded-full border border-lime-200">¿Por Qué Elegir la Cama Reformer?</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-corpo-charcoal tracking-tight italic">
+            El Secreto de una Silueta Fuerte, Larga y Saludable
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+            A diferencia de los entrenamientos tradicionales con pesas o saltos, la cama Reformer utiliza un sistema de resortes y poleas que asiste y desafía tu cuerpo simultáneamente. Trabajas contra tu propia resistencia de forma progresiva.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3.5">
+              <div class="w-9 h-9 rounded-xl bg-lime-100 text-corpo-darkSage flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-stone-900 text-base italic">Activación del "Powerhouse"</h4>
+                <p class="text-xs text-stone-600 leading-relaxed">Trabaja el transverso abdominal, suelo pélvico y diafragma para conseguir un vientre firme y una cintura estilizada.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-9 h-9 rounded-xl bg-lime-100 text-corpo-darkSage flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-stone-900 text-base italic">Mayor Amplitud Articular</h4>
+                <p class="text-xs text-stone-600 leading-relaxed">Los movimientos guiados por correas permiten elongar tendones y ligamentos sin tirones bruscos, ganando flexibilidad duradera.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-9 h-9 rounded-xl bg-lime-100 text-corpo-darkSage flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-stone-900 text-base italic">Instructoras Pendientes de Ti</h4>
+                <p class="text-xs text-stone-600 leading-relaxed">No estás perdida entre 30 personas. Tu instructora ajusta tus hombros, cuida tus lumbares y personaliza la carga en cada ejercicio.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="relative rounded-3xl overflow-hidden shadow-xl border border-stone-200">
+            <img src="img/clase-grupal.jpg" alt="Ambiente de clase grupal en Corpo Reformer Studio" class="w-full h-96 object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+              <div class="text-white space-y-1">
+                <span class="text-xs font-bold uppercase tracking-wider text-lime-300">San Mateo &bull; Coyoacán</span>
+                <p class="font-display font-bold text-xl italic">Espacio luminoso, limpio y con aroma a aceites esenciales para desconectar del ritmo acelerado de la CDMX.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Package Calculator -->
+  <section id="cotizador" class="py-16 sm:py-20 bg-corpo-linen border-b border-stone-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-corpo-sage text-xs font-bold uppercase tracking-wider bg-lime-100 px-3 py-1 rounded-full border border-lime-200">Planes & Membresías</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-corpo-charcoal mt-3 tracking-tight italic">
+          Elige tu Paquete y Aparta tu Horario
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base mt-2">
+          Sin cuotas de inscripción ocultas. Precios claros para que entrenes a tu propio ritmo.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-stone-200 shadow-xl">
+        <form id="pilatesForm" class="space-y-8" onsubmit="event.preventDefault(); updatePilatesCalc();">
+          
+          <!-- Step 1: Package Choice -->
+          <div>
+            <label class="block font-display font-bold text-stone-900 text-lg mb-3 italic">
+              1. Selecciona tu plan de clases:
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              
+              <label class="relative flex flex-col p-4 bg-stone-50 rounded-2xl border-2 border-stone-200 hover:border-corpo-sage cursor-pointer transition has-[:checked]:border-corpo-darkSage has-[:checked]:bg-lime-50/40">
+                <input type="radio" name="paquete" value="muestra" data-price="200" data-name="Clase Muestra Primer Ingreso" checked class="peer sr-only" onchange="updatePilatesCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs bg-lime-100 text-corpo-darkSage font-bold px-2 py-0.5 rounded-full">Bienvenida</span>
+                  <span class="text-sm font-bold text-stone-800">$200 MXN</span>
+                </div>
+                <span class="font-display font-bold text-stone-900 text-base italic">Clase Muestra</span>
+                <span class="text-[11px] text-stone-500">Conoce el estudio y prueba la cama Reformer</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-stone-50 rounded-2xl border-2 border-stone-200 hover:border-corpo-sage cursor-pointer transition has-[:checked]:border-corpo-darkSage has-[:checked]:bg-lime-50/40">
+                <input type="radio" name="paquete" value="pack4" data-price="950" data-name="Paquete 4 Clases al Mes (1x semana)" class="peer sr-only" onchange="updatePilatesCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs text-stone-500 font-semibold">1 vez por semana</span>
+                  <span class="text-sm font-bold text-stone-800">$950 MXN</span>
+                </div>
+                <span class="font-display font-bold text-stone-900 text-base italic">Paquete 4 Clases</span>
+                <span class="text-[11px] text-stone-500">Ideal como complemento a otra disciplina</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-stone-50 rounded-2xl border-2 border-stone-200 hover:border-corpo-sage cursor-pointer transition has-[:checked]:border-corpo-darkSage has-[:checked]:bg-lime-50/40">
+                <input type="radio" name="paquete" value="pack8" data-price="1650" data-name="Paquete 8 Clases al Mes (2x semana - Más Popular)" class="peer sr-only" onchange="updatePilatesCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">Más Popular</span>
+                  <span class="text-sm font-bold text-stone-800">$1,650 MXN</span>
+                </div>
+                <span class="font-display font-bold text-stone-900 text-base italic">Paquete 8 Clases</span>
+                <span class="text-[11px] text-stone-500">2 veces por semana: cambios visibles en 1 mes</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-stone-50 rounded-2xl border-2 border-stone-200 hover:border-corpo-sage cursor-pointer transition has-[:checked]:border-corpo-darkSage has-[:checked]:bg-lime-50/40">
+                <input type="radio" name="paquete" value="pack12" data-price="2250" data-name="Paquete 12 Clases al Mes (3x semana)" class="peer sr-only" onchange="updatePilatesCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs text-stone-500 font-semibold">3 veces por semana</span>
+                  <span class="text-sm font-bold text-stone-800">$2,250 MXN</span>
+                </div>
+                <span class="font-display font-bold text-stone-900 text-base italic">Paquete 12 Clases</span>
+                <span class="text-[11px] text-stone-500">Frecuencia constante para máxima tonificación</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-stone-50 rounded-2xl border-2 border-stone-200 hover:border-corpo-sage cursor-pointer transition has-[:checked]:border-corpo-darkSage has-[:checked]:bg-lime-50/40">
+                <input type="radio" name="paquete" value="ilimitado" data-price="2850" data-name="Pase Ilimitado Mensual All Access" class="peer sr-only" onchange="updatePilatesCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs bg-rose-100 text-rose-800 font-bold px-2 py-0.5 rounded-full">All Access</span>
+                  <span class="text-sm font-bold text-stone-800">$2,850 MXN</span>
+                </div>
+                <span class="font-display font-bold text-stone-900 text-base italic">Pase Ilimitado</span>
+                <span class="text-[11px] text-stone-500">Acceso libre de lunes a domingo a cualquier clase</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-stone-50 rounded-2xl border-2 border-stone-200 hover:border-corpo-sage cursor-pointer transition has-[:checked]:border-corpo-darkSage has-[:checked]:bg-lime-50/40">
+                <input type="radio" name="paquete" value="privada" data-price="550" data-name="Sesión Particular Privada 1 a 1" class="peer sr-only" onchange="updatePilatesCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs text-stone-500 font-semibold">Personalizada</span>
+                  <span class="text-sm font-bold text-stone-800">$550 MXN</span>
+                </div>
+                <span class="font-display font-bold text-stone-900 text-base italic">Clase Privada 1 a 1</span>
+                <span class="text-[11px] text-stone-500">Instructora dedicada exclusivamente a tus objetivos</span>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Step 2: Schedule & Goals -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block font-display font-bold text-stone-900 text-base mb-2 italic">
+                2. Horario de tu preferencia:
+              </label>
+              <select id="horarioSelect" class="w-full bg-stone-50 border-2 border-stone-200 rounded-xl p-3 text-sm text-stone-800 font-medium focus:outline-none focus:border-corpo-darkSage" onchange="updatePilatesCalc()">
+                <option value="Matutino (7:00 AM - 11:00 AM)">☀️ Matutino (7:00 AM a 11:00 AM)</option>
+                <option value="Mediodía (12:00 PM - 3:00 PM)">☕ Mediodía (12:00 PM a 3:00 PM)</option>
+                <option value="Vespertino / Noche (5:00 PM - 8:30 PM)">🌙 Tarde / Noche (5:00 PM a 8:30 PM)</option>
+                <option value="Fin de Semana (Sáb y Dom 8:00 AM - 1:00 PM)">🌿 Fin de Semana (Sábados y Domingos)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block font-display font-bold text-stone-900 text-base mb-2 italic">
+                3. Tu objetivo principal:
+              </label>
+              <select id="metaSelect" class="w-full bg-stone-50 border-2 border-stone-200 rounded-xl p-3 text-sm text-stone-800 font-medium focus:outline-none focus:border-corpo-darkSage" onchange="updatePilatesCalc()">
+                <option value="Tonificación & Firmeza (Reformer Burn)">🔥 Tonificación & Quema (Reformer Burn)</option>
+                <option value="Postura & Flexibilidad (Reformer Flow)">✨ Postura, Elasticidad & Core (Reformer Flow)</option>
+                <option value="Alivio de Dolores de Espalda & Cero Impacto">🌱 Cuidado de Columna & Alivio Lumbar</option>
+                <option value="Pilates Prenatal / Postparto">🤰 Pilates Prenatal o Recuperación Postparto</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Result Display Box -->
+          <div class="bg-gradient-to-br from-corpo-charcoal via-stone-900 to-stone-950 text-white rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+            <div class="space-y-2 text-center md:text-left">
+              <span class="inline-block bg-lime-400/20 text-lime-300 border border-lime-400/30 text-xs font-bold px-3 py-1 rounded-full uppercase">
+                Plan Seleccionado
+              </span>
+              <p class="text-xs text-stone-300" id="calcPlanSummary">Clase Muestra Primer Ingreso en Horario Matutino</p>
+              <div class="flex items-baseline justify-center md:justify-start gap-2">
+                <span class="text-xs text-stone-400">Inversión:</span>
+                <span class="font-display text-4xl sm:text-5xl font-extrabold text-lime-300 italic" id="calcPriceDisplay">$200 MXN</span>
+              </div>
+              <p class="text-[11px] text-stone-400 flex items-center justify-center md:justify-start gap-1.5">
+                <i class="fa-solid fa-circle-check text-emerald-400"></i> No cobramos membresía de inscripción. Camas higienizadas entre cada clase.
+              </p>
+            </div>
+
+            <div class="w-full md:w-auto shrink-0 flex flex-col sm:flex-row gap-3">
+              <a id="calcWhatsAppBtn" href="#" target="_blank" class="w-full sm:w-auto text-center inline-flex justify-center items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-display font-bold text-base py-3.5 px-6 rounded-xl shadow-lg shadow-emerald-700/40 transition transform hover:-translate-y-0.5">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                <span>Apartar Lugar por WhatsApp</span>
+              </a>
+              <a href="tel:+525518462031" class="w-full sm:w-auto text-center inline-flex justify-center items-center gap-2 bg-stone-800 hover:bg-stone-700 text-white font-display font-bold text-base py-3.5 px-5 rounded-xl border border-stone-700 transition">
+                <i class="fa-solid fa-phone text-lime-400"></i>
+                <span>Llamar al Estudio</span>
+              </a>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Location & Studio Details -->
+  <section id="estudio" class="py-16 sm:py-20 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-5 space-y-5">
+          <span class="text-corpo-sage text-xs font-bold uppercase tracking-wider bg-lime-100 px-3 py-1 rounded-full border border-lime-200">Ubicación & Estudio</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-corpo-charcoal tracking-tight italic">
+            Tu Santuario de Bienestar en San Mateo, Coyoacán
+          </h2>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Estamos ubicados en <strong class="text-stone-900">Calle Héroes del 47 #104</strong>, una calle tranquila de Coyoacán con fácil estacionamiento y conectividad inmediata desde Calzada de Tlalpan, Av. Río Churubusco y División del Norte.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <div class="p-3.5 bg-stone-50 rounded-xl border border-stone-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-square-parking text-corpo-sage text-lg"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-stone-900">Estacionamiento Fácil</h4>
+                  <p class="text-[11px] text-stone-500">Calle residencial amplia y segura para aparcar tu auto</p>
+                </div>
+              </div>
+              <span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200 shrink-0">Tranquilo</span>
+            </div>
+
+            <div class="p-3.5 bg-stone-50 rounded-xl border border-stone-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-spray-can-sparkles text-corpo-sage text-lg"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-stone-900">Desinfección Protocolaria</h4>
+                  <p class="text-[11px] text-stone-500">Camas y manerales sanitizados con antiséptico al terminar cada sesión</p>
+                </div>
+              </div>
+              <span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200 shrink-0">Higiene 100%</span>
+            </div>
+
+            <div class="p-3.5 bg-stone-50 rounded-xl border border-stone-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-id-card text-corpo-sage text-lg"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-stone-900">TotalPass & Wellhub</h4>
+                  <p class="text-[11px] text-stone-500">Valida tus check-ins corporativos directo en nuestra recepción</p>
+                </div>
+              </div>
+              <span class="text-xs font-extrabold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200 shrink-0">Afiliados</span>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://wa.me/525518462031?text=Hola,%20quisiera%20saber%20c%C3%B3mo%20llegar%20al%20estudio%20o%20hacer%20check-in%20con%20TotalPass." target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-corpo-charcoal hover:text-corpo-sage transition">
+              <i class="fa-brands fa-whatsapp text-emerald-500 text-base"></i> Escríbenos al 55 1846 2031 para confirmar tu horario de clase
+            </a>
+          </div>
+        </div>
+
+        <!-- Location Box & Map -->
+        <div class="lg:col-span-7">
+          <div class="bg-stone-50 rounded-2xl p-6 sm:p-8 border border-stone-200 studio-shadow space-y-6">
+            <div class="flex items-center justify-between border-b border-stone-200 pb-4">
+              <div>
+                <span class="text-xs font-bold text-corpo-sage uppercase tracking-wider">Estudio de Pilates Reformer</span>
+                <h3 class="font-display font-bold text-2xl text-corpo-charcoal italic">Corpo Reformer Studio</h3>
+              </div>
+              <div class="flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                <i class="fa-solid fa-door-open"></i> Clases Activas
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-stone-700">
+              <div class="p-3 bg-white rounded-xl space-y-1 border border-stone-200">
+                <span class="text-stone-400 font-semibold uppercase text-[10px]">Dirección:</span>
+                <p class="font-bold text-stone-900">Calle Héroes del 47 #104</p>
+                <p class="text-stone-500">Col. San Mateo, Coyoacán, C.P. 04120, CDMX</p>
+              </div>
+
+              <div class="p-3 bg-white rounded-xl space-y-1 border border-stone-200">
+                <span class="text-stone-400 font-semibold uppercase text-[10px]">Reservas & WhatsApp:</span>
+                <p class="font-bold text-stone-900">+52 55 1846 2031</p>
+                <p class="text-stone-500">Atención personalizada diaria</p>
+              </div>
+
+              <div class="p-3 bg-white rounded-xl space-y-1 border border-stone-200">
+                <span class="text-stone-400 font-semibold uppercase text-[10px]">Horarios de Clase:</span>
+                <p class="font-bold text-stone-900">Lunes a Viernes: 7:00 AM - 8:30 PM</p>
+                <p class="text-stone-500">Sábados y Domingos: 8:00 AM - 1:00 PM</p>
+              </div>
+
+              <div class="p-3 bg-white rounded-xl space-y-1 border border-stone-200">
+                <span class="text-stone-400 font-semibold uppercase text-[10px]">Qué Necesitas Traer:</span>
+                <p class="font-bold text-stone-900">Calcetines antiderrapantes (grip)</p>
+                <p class="text-stone-500">Ropa deportiva cómoda y agua</p>
+              </div>
+            </div>
+
+            <!-- Google Maps Embed -->
+            <div class="rounded-xl overflow-hidden border border-stone-200 h-64 bg-stone-100 relative">
+              <iframe 
+                title="Ubicación Corpo Reformer Studio Coyoacán"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.9534123512395!2d-99.1466031!3d19.3524108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fe30e66a3d6d%3A0x6b63f58a36ef19a1!2sH%C3%A9roes%20del%2047%20104%2C%20San%20Mateo%2C%20Coyoac%C3%A1n%2C%2004120%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx" 
+                class="w-full h-full border-0" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Real Reviews Section -->
+  <section id="opiniones" class="py-16 sm:py-20 bg-corpo-linen border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-corpo-sage text-xs font-bold uppercase tracking-wider bg-lime-100 px-3 py-1 rounded-full border border-lime-200">Opiniones de Nuestras Alumnas</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-corpo-charcoal mt-3 tracking-tight italic">
+          Historias de Transformación y Bienestar
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base mt-3">
+          Experiencias reales de quienes hicieron de Corpo Reformer su cita favorita de la semana en Coyoacán.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-stone-700 leading-relaxed italic mb-4">
+              "Llevo 3 meses viniendo 2 veces por semana y el cambio en mi postura y abdomen es impresionante. Yo tenía una hernia discal y me daba miedo lastimarme, pero las maestras cuidan cada detalle de tu postura."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-stone-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-corpo-darkSage text-corpo-softSage font-bold flex items-center justify-center text-xs">VL</div>
+            <div>
+              <p class="text-xs font-bold text-stone-900">Valeria Lozada</p>
+              <p class="text-[10px] text-stone-500">San Mateo, Coyoacán</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-stone-700 leading-relaxed italic mb-4">
+              "El estudio es hermoso, súper limpio y relajante. Me encanta que solo somos 6 personas por clase, no te sientes apretada y la instructora realmente te ayuda a sentir el músculo correcto en cada resorte."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-stone-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-corpo-sage text-white font-bold flex items-center justify-center text-xs">MC</div>
+            <div>
+              <p class="text-xs font-bold text-stone-900">Mariana Cantú</p>
+              <p class="text-[10px] text-stone-500">Parque San Andrés, CDMX</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-stone-700 leading-relaxed italic mb-4">
+              "La clase de Reformer Burn es un quemón delicioso de piernas y glúteos sin nada de dolor en las rodillas. Vengo por TotalPass y es de los estudios mejor calificados del sur de la ciudad."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-stone-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-rose-700 text-white font-bold flex items-center justify-center text-xs">SP</div>
+            <div>
+              <p class="text-xs font-bold text-stone-900">Sofía Padrón</p>
+              <p class="text-[10px] text-stone-500">Del Carmen, Coyoacán</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-stone-700 leading-relaxed italic mb-4">
+              "Tomé la clase muestra de $200 pesos sin saber si me iba a gustar y salí enamorada. Las camas se deslizan suave, la música es perfecta y el ambiente es de total respeto y amabilidad. 100% recomendado."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-stone-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-stone-800 text-amber-300 font-bold flex items-center justify-center text-xs">LG</div>
+            <div>
+              <p class="text-xs font-bold text-stone-900">Lucía Gutiérrez</p>
+              <p class="text-[10px] text-stone-500">Churubusco, CDMX</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Final Call to Action -->
+  <section class="py-16 bg-corpo-darkSage text-white text-center relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 relative z-10 space-y-6">
+      <span class="inline-block bg-white/20 text-lime-200 border border-white/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">
+        Reserva tu Lugar
+      </span>
+      <h2 class="font-display text-3xl sm:text-5xl font-extrabold tracking-tight italic">
+        Tu Cuerpo Merece Sentirse Fuerte, Ligero y en Armonía.
+      </h2>
+      <p class="text-lime-100 text-sm sm:text-base max-w-xl mx-auto">
+        Prueba tu primera sesión en cama Reformer por solo $200 pesos. Envíanos un WhatsApp y te asignamos tu cama en el horario que mejor te acomode.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <a href="https://wa.me/525518462031?text=Hola%20Corpo%20Reformer,%20quiero%20reservar%20mi%20cama%20para%20clase%20muestra%20de%20$200." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-white hover:bg-stone-100 text-corpo-darkSage font-display font-bold text-lg py-4 px-8 rounded-2xl shadow-xl transition transform hover:-translate-y-0.5">
+          <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+          <span>Reservar Cama por WhatsApp</span>
+        </a>
+        <a href="tel:+525518462031" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-display font-bold text-lg py-4 px-8 rounded-2xl border border-white/20 backdrop-blur-sm transition">
+          <i class="fa-solid fa-phone text-lime-300"></i>
+          <span>Llamar al 55 1846 2031</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-stone-200 py-10 text-xs text-stone-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-corpo-darkSage flex items-center justify-center text-corpo-softSage font-bold text-lg">
+          <i class="fa-solid fa-spa"></i>
+        </div>
+        <div>
+          <p class="font-display font-bold text-stone-900 text-base italic">Corpo Reformer Studio Coyoacán</p>
+          <p class="text-stone-500">Héroes del 47 #104, San Mateo, Coyoacán, CDMX &bull; Tel: 55 1846 2031</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-5 text-stone-600 font-medium">
+        <a href="#modalidades" class="hover:text-corpo-sage transition">Modalidades</a>
+        <a href="#beneficios" class="hover:text-corpo-sage transition">El Método</a>
+        <a href="#cotizador" class="hover:text-corpo-sage transition">Paquetes</a>
+        <a href="#estudio" class="hover:text-corpo-sage transition">Ubicación</a>
+        <a href="https://wa.me/525518462031" target="_blank" class="hover:text-emerald-600 transition">WhatsApp Directo</a>
+      </div>
+
+      <p class="text-stone-400 text-center md:text-right">
+        &copy; 2026 Corpo Reformer Studio. Todos los derechos reservados.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Quick Action Bar -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-stone-200 p-3 sm:hidden shadow-2xl flex items-center gap-2">
+    <a href="tel:+525518462031" class="flex-1 bg-stone-800 text-white text-center font-display font-bold py-3 px-2 rounded-xl text-xs flex items-center justify-center gap-2 shadow-md">
+      <i class="fa-solid fa-phone"></i> Llamar
+    </a>
+    <a href="https://wa.me/525518462031?text=Hola,%20me%20gustar%C3%ADa%20pedir%20informes%20de%20las%20clases%20de%20Pilates%20Reformer." target="_blank" class="flex-1 bg-emerald-600 text-white text-center font-display font-bold py-3 px-2 rounded-xl text-xs flex items-center justify-center gap-2 shadow-md">
+      <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
+    </a>
+  </div>
+
+  <!-- Calculator Script -->
+  <script>
+    function updatePilatesCalc() {
+      const selectedPlan = document.querySelector('input[name="paquete"]:checked');
+      const basePrice = parseInt(selectedPlan.getAttribute('data-price')) || 200;
+      const planName = selectedPlan.getAttribute('data-name') || 'Clase Muestra';
+
+      const horarioSelect = document.getElementById('horarioSelect');
+      const horarioText = horarioSelect.value;
+
+      const metaSelect = document.getElementById('metaSelect');
+      const metaText = metaSelect.value;
+
+      document.getElementById('calcPriceDisplay').innerText = '$' + basePrice.toLocaleString('es-MX') + ' MXN';
+      document.getElementById('calcPlanSummary').innerText = planName + ' en ' + horarioText.split('(')[0].trim() + ' (' + metaText.split('(')[0].trim() + ')';
+
+      let msg = 'Hola Corpo Reformer Studio, me gustaría agendar:\n' +
+        '• Plan: ' + planName + '\n' +
+        '• Horario preferido: ' + horarioText + '\n' +
+        '• Mi objetivo: ' + metaText + '\n' +
+        '• Costo: $' + basePrice.toLocaleString('es-MX') + ' MXN\n\n' +
+        '¿Tienen disponibilidad en esa franja de horarios esta semana?';
+
+      document.getElementById('calcWhatsAppBtn').href = 'https://wa.me/525518462031?text=' + encodeURIComponent(msg);
+    }
+
+    // Init
+    document.addEventListener('DOMContentLoaded', updatePilatesCalc);
+  </script>
+
+</body>
+</html>
