@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podología L&H Coyoacán | Especialistas en Uña Enterrada & Salud del Pie</title>
+  <meta name="description" content="Clínica podológica en Coyoacán, CDMX. Tratamiento indoloro de uña enterrada (onicocriptosis), hongos, pie diabético y quiropodia clínica con instrumental 100% esterilizado en autoclave. Citas en Av. Heroica Escuela Naval Militar.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: Plus Jakarta Sans (médica, confiable y moderna) & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Plus Jakarta Sans"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif'],
+          },
+          colors: {
+            pod: {
+              teal: '#0891B2',      // Cyan médico tranquilizante
+              darkTeal: '#0E7490',
+              softTeal: '#ECFEFF',
+              emerald: '#059669',   // Verde salud
+              softGreen: '#F0FDF4',
+              navy: '#0F172A',
+              bgSoft: '#F8FAFC',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .pod-shadow {
+      box-shadow: 0 10px 30px -5px rgba(8, 145, 178, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
+    }
+    .pod-card {
+      transition: all 0.26s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .pod-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 35px -10px rgba(8, 145, 178, 0.15);
+    }
+  </style>
+</head>
+
+<body class="bg-pod-bgSoft text-slate-800 font-sans antialiased selection:bg-cyan-600 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-slate-900 text-slate-200 text-xs py-2.5 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+        <span class="font-semibold text-cyan-300 uppercase tracking-wide">Clínica Podológica Activa:</span>
+        <span class="text-slate-300">Instrumental 100% esterilizado en autoclave &bull; Atención con o sin cita</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <span class="hidden md:inline text-slate-400"><i class="fa-solid fa-location-dot text-cyan-400 mr-1.5"></i>Av. Heroica Escuela Naval Militar #454, San Francisco Culhuacán, Coyoacán</span>
+        <a href="https://wa.me/525539678006?text=Hola,%20quisiera%20pedir%20informes%20para%20una%20consulta%20podol%C3%B3gica" target="_blank" class="font-bold text-cyan-300 hover:text-white flex items-center gap-1.5 transition">
+          <i class="fa-brands fa-whatsapp text-emerald-400"></i> WhatsApp: 55 3967 8006
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-pod-darkTeal to-cyan-500 flex items-center justify-center text-white shadow-md group-hover:scale-105 transition duration-200">
+          <i class="fa-solid fa-socks text-2xl"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-display font-extrabold text-xl tracking-tight text-slate-900">PODOLOGÍA L&H</span>
+            <span class="bg-cyan-100 text-pod-darkTeal text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider border border-cyan-200">Coyoacán</span>
+          </div>
+          <p class="text-xs text-slate-500 font-medium">Salud Integral del Pie &bull; Naval Militar CDMX</p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
+        <a href="#servicios" class="hover:text-pod-teal transition">Tratamientos</a>
+        <a href="#esterilizacion" class="hover:text-pod-teal transition">Bioseguridad & Autoclave</a>
+        <a href="#cotizador" class="hover:text-pod-teal transition">Cotizador de Consulta</a>
+        <a href="#ubicacion" class="hover:text-pod-teal transition">Ubicación & Citas</a>
+        <a href="#opiniones" class="hover:text-pod-teal transition">Pacientes</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="tel:+525539678006" class="hidden sm:inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-bold py-2.5 px-4 rounded-xl transition border border-slate-200">
+          <i class="fa-solid fa-phone text-pod-teal"></i>
+          <span>Llamar</span>
+        </a>
+        <a href="https://wa.me/525539678006?text=Hola%20Podolog%C3%ADa%20L&H,%20tengo%20molestia%20en%20un%20pie%20y%20quiero%20agendar%20cita.%20%C2%BFTienen%20disponibilidad?" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold py-2.5 px-4 sm:px-5 rounded-xl shadow-md shadow-emerald-600/20 transition transform hover:-translate-y-0.5">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span class="hidden md:inline">Agendar por WhatsApp</span>
+          <span class="md:hidden">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-white pt-10 pb-16 lg:py-20 overflow-hidden border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Left Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-100/80 border border-cyan-300 text-pod-darkTeal text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-heart-pulse text-pod-teal"></i>
+            Atención Clínica &bull; Sin Dolor &bull; Alivio Inmediato
+          </div>
+
+          <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.18]">
+            Vuelve a caminar sin dolor. <br>
+            <span class="text-pod-darkTeal">Especialistas en salud del pie</span> en Coyoacán.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+            Solución médica y definitiva para uñas encarnadas (onicocriptosis), hongos, callosidades y pie diabético. Atención ética, suave y profesional con instrumental 100% esterilizado en autoclave hospitalario para tu total tranquilidad.
+          </p>
+
+          <!-- Badges Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+            <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-cyan-100 flex items-center justify-center text-pod-darkTeal font-bold shrink-0">
+                <i class="fa-solid fa-shield-virus"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">Autoclave Médico</p>
+                <p class="text-[11px] text-slate-500">Asepsia hospitalaria</p>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-700 font-bold shrink-0">
+                <i class="fa-solid fa-feather"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">Técnica Suave</p>
+                <p class="text-[11px] text-slate-500">Extracción sin dolor</p>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl flex items-center gap-3 col-span-2 sm:col-span-1">
+              <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-700 font-bold shrink-0">
+                <i class="fa-solid fa-kit-medical"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">Pie Diabético</p>
+                <p class="text-[11px] text-slate-500">Cuidado preventivo</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <a href="https://wa.me/525539678006?text=Hola%20Podolog%C3%ADa%20L&H,%20quiero%20agendar%20una%20consulta%20por%20favor." target="_blank" class="inline-flex justify-center items-center gap-3 bg-pod-darkTeal hover:bg-cyan-900 text-white font-display font-bold text-base py-4 px-7 rounded-xl shadow-lg shadow-cyan-950/20 transition transform hover:-translate-y-0.5">
+              <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+              <span>Agendar Consulta por WhatsApp</span>
+            </a>
+
+            <a href="#cotizador" class="inline-flex justify-center items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-900 font-display font-bold text-base py-4 px-6 rounded-xl border border-slate-300 transition">
+              <i class="fa-solid fa-calculator text-pod-teal"></i>
+              <span>Calcular Tratamiento</span>
+            </a>
+          </div>
+
+          <!-- Rating proof -->
+          <div class="flex items-center gap-4 pt-3 border-t border-slate-200 text-sm">
+            <div class="flex text-amber-400 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-xs">
+              <strong class="text-slate-900 font-bold">4.9 / 5.0</strong> en valoraciones de pacientes &bull; Av. Heroica Escuela Naval Militar #454, Coyoacán
+            </p>
+          </div>
+        </div>
+
+        <!-- Hero Visual Image Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Decorative Accent Backdrop -->
+            <div class="absolute -top-3 -right-3 w-full h-full rounded-2xl bg-gradient-to-tr from-cyan-400 to-pod-darkTeal transform rotate-2 opacity-80"></div>
+            
+            <div class="relative bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
+              <img src="img/hero-podologia.jpg" alt="Consulta podológica en Coyoacán" class="w-full h-80 object-cover">
+              
+              <div class="p-6 bg-white space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Atención Profesional</span>
+                  <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-md border border-emerald-200 flex items-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Consultorio Equipado
+                  </span>
+                </div>
+                <h3 class="font-display font-bold text-slate-900 text-xl">Podología L&H &bull; Naval Militar</h3>
+                <p class="text-xs text-slate-600">Tratamiento integral de onicocriptosis, onicomicosis, callosidades y quiropodia clínica preventiva para toda la familia.</p>
+                
+                <div class="pt-3 flex items-center justify-between text-xs text-slate-500 border-t border-slate-100">
+                  <span><i class="fa-solid fa-check text-pod-teal mr-1"></i> Sin dolor</span>
+                  <span><i class="fa-solid fa-clock text-pod-teal mr-1"></i> Lunes a Sábado</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating mini-badge -->
+            <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl border border-slate-200 flex items-center gap-3.5 max-w-[260px]">
+              <div class="w-11 h-11 rounded-xl bg-pod-darkTeal text-white flex items-center justify-center font-bold text-xl shrink-0">
+                <i class="fa-solid fa-stethoscope"></i>
+              </div>
+              <div>
+                <p class="text-xs font-extrabold text-slate-900">Alivio en Primera Sesión</p>
+                <p class="text-[11px] text-slate-500">Saldrás caminando cómodo y sin punzadas desde tu primer día</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatments & Services Grid -->
+  <section id="servicios" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-pod-darkTeal text-xs font-bold uppercase tracking-wider bg-cyan-100 px-3 py-1 rounded-full border border-cyan-200">Nuestros Tratamientos</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          Cuidado Experto para la Salud de tus Pies
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-3">
+          Cada paciente recibe un diagnóstico minucioso y un tratamiento personalizado con técnicas de mínima invasión.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Treatment 1: Uña Enterrada -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 pod-shadow pod-card flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5">
+              <img src="img/alivio-inmediato.jpg" alt="Tratamiento de uña enterrada sin dolor" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-red-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-red-700">Urgencia & Alivio</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Uña Enterrada (Onicocriptosis)</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Extracción limpia de la espícula encarnada que causa inflamación, pus y dolor punzante al caminar. Utilizamos técnica suave con anestesia tópica local para que no sientas dolor alguno.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Desinflamación y curación inmediata</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Reeducación de la uña con guía ungueal</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Alivio completo desde la primera consulta</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-base font-bold text-slate-900">$450 MXN</strong></span>
+            <a href="https://wa.me/525539678006?text=Hola,%20tengo%20una%20u%C3%B1a%20enterrada%20y%20me%20duele%20mucho,%20%C2%BFme%20pueden%20atender%20hoy?" target="_blank" class="text-xs font-bold text-pod-darkTeal hover:text-cyan-800 flex items-center gap-1">
+              Agendar alivio <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Treatment 2: Quiropodia Integral -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 pod-shadow pod-card flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5">
+              <img src="img/quiropodia-clinica.jpg" alt="Quiropodia clínica completa en Coyoacán" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-cyan-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-cyan-700">Mantenimiento Preventivo</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Quiropodia Clínica Integral</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Corte anatómico recto de todas las uñas con alicate quirúrgico, desbastado de uñas gruesas con micromotor, limpieza de canales laterales, retiro de asperezas, pulido y exfoliación hidratante.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Previene el encarnamiento recurrente</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Retiro de cutícula y pellejitos sin lastimar</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Hidratación profunda con urea médica</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-base font-bold text-slate-900">$380 MXN</strong></span>
+            <a href="https://wa.me/525539678006?text=Hola,%20deseo%20agendar%20un%20servicio%20de%20quiropodia%20cl%C3%ADnica%20integral." target="_blank" class="text-xs font-bold text-pod-darkTeal hover:text-cyan-800 flex items-center gap-1">
+              Agendar quiropodia <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Treatment 3: Pie Diabético -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 pod-shadow pod-card flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5">
+              <img src="img/pie-diabetico.jpg" alt="Cuidado preventivo de pie diabético" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Atención Especializada</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Cuidado del Pie Diabético</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Atención preventiva con instrumental atraumático para personas con diabetes. Evaluación de sensibilidad con monofilamento, inspección de puntos de presión para prevenir úlceras y corte seguro.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Sin cortes ni heridas accidentales</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Detección temprana de callos con riesgo</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Recomendaciones de calzado y calcetines</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-base font-bold text-slate-900">$450 MXN</strong></span>
+            <a href="https://wa.me/525539678006?text=Hola,%20me%20gustar%C3%ADa%20agendar%20revisi%C3%B3n%20para%20un%20paciente%20con%20diabetes." target="_blank" class="text-xs font-bold text-pod-darkTeal hover:text-cyan-800 flex items-center gap-1">
+              Consultar servicio <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Treatment 4: Hongos (Onicomicosis) -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 pod-shadow pod-card flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5 bg-gradient-to-tr from-cyan-900 to-slate-900 flex items-center justify-center text-white text-center p-6">
+              <div>
+                <i class="fa-solid fa-bacterium text-5xl text-cyan-400 mb-2"></i>
+                <p class="text-xs font-bold uppercase tracking-wider text-slate-300">Tratamiento Clínico</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Hongos en Uñas</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Tratamiento para Onicomicosis</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Desbastado mecánico de la uña engrosada y amarillenta para eliminar la colonia de hongos, permitiendo que el antifúngico penetre directamente en el lecho ungueal para que nazca uña sana.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Recupera el color y textura natural</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Tratamiento complementario de pie de atleta</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Seguimiento fotográfico de crecimiento</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-base font-bold text-slate-900">$550 MXN</strong></span>
+            <a href="https://wa.me/525539678006?text=Hola,%20me%20interesa%20iniciar%20tratamiento%20para%20hongos%20en%20las%20u%C3%B1as." target="_blank" class="text-xs font-bold text-pod-darkTeal hover:text-cyan-800 flex items-center gap-1">
+              Iniciar tratamiento <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Treatment 5: Callosidades & Ojos de Pescado -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 pod-shadow pod-card flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5">
+              <img src="img/clinica-consultorio.jpg" alt="Eliminación de callosidades y helomas" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Durezas & Helomas</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Callosidades & Helomas</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Deslaminado profesional de durezas en talones agrietados, metatarsos y eliminación del núcleo de "ojos de pescado" (helomas interdigitales y plantares) que causan dolor al pisar con calzado cerrado.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Eliminación de raíz sin navajas agresivas</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Suavizado y cicatrización de talones</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Recomendación de taloneras y plantillas</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-base font-bold text-slate-900">$350 MXN</strong></span>
+            <a href="https://wa.me/525539678006?text=Hola,%20quiero%20atenderme%20callosidades/durezas%20en%20los%20pies." target="_blank" class="text-xs font-bold text-pod-darkTeal hover:text-cyan-800 flex items-center gap-1">
+              Agendar cita <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Treatment 6: Podología Infantil & Adulto Mayor -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 pod-shadow pod-card flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5">
+              <img src="img/esterilizacion-autoclave.jpg" alt="Esterilización en autoclave y podología geriátrica" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-purple-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-purple-700">Tercera Edad & Niños</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Podología Infantil & Geriátrica</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Atención con infinita paciencia para adultos mayores con movilidad reducida o uñas de extrema dureza, y para niños que juegan fútbol o presentan uñas encarnadas por calzado deportivo apretado.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Trato cálido, humano y comprensivo</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Fácil acceso en planta baja para andaderas</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Descuento especial para adultos mayores</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-base font-bold text-slate-900">$380 MXN</strong></span>
+            <a href="https://wa.me/525539678006?text=Hola,%20quiero%20agendar%20cita%20para%20un%20adulto%20mayor/ni%C3%B1o." target="_blank" class="text-xs font-bold text-pod-darkTeal hover:text-cyan-800 flex items-center gap-1">
+              Agendar atención <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Autoclave Biosecurity Section -->
+  <section id="esterilizacion" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-gradient-to-br from-cyan-950 via-slate-900 to-slate-900 text-white rounded-3xl p-8 sm:p-12 relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-8 space-y-4">
+            <span class="inline-block bg-cyan-400/20 text-cyan-300 border border-cyan-400/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Seguridad Sanitaria Garantizada
+            </span>
+            <h2 class="font-display text-2xl sm:text-4xl font-extrabold tracking-tight">
+              ¿Por qué nunca debes arriesgarte en estéticas o pedicures comunes?
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              En los salones de belleza tradicionales, los cortaúñas y alicates solo se enjuagan con alcohol, transmitiendo hongos, bacterias y virus de un cliente a otro. En <strong class="text-white">Podología L&H</strong> cada instrumental se desinfecta, embolsa individualmente y se esteriliza a vapor bajo presión en autoclave a 134°C.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2 text-xs">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Bolsas estériles abiertas frente a tus ojos</span>
+              <span class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Material desechable de un solo uso</span>
+              <span class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Cumplimiento con normas COFEPRIS</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 text-center lg:text-right">
+            <a href="https://wa.me/525539678006?text=Hola,%20quiero%20agendar%20cita%20segura%20en%20su%20cl%C3%ADnica%20podol%C3%B3gica." target="_blank" class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-display font-bold text-base py-4 px-8 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+              <i class="fa-brands fa-whatsapp text-2xl"></i>
+              <span>Agendar Cita Segura</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Consultation Calculator -->
+  <section id="cotizador" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-pod-darkTeal text-xs font-bold uppercase tracking-wider bg-cyan-100 px-3 py-1 rounded-full border border-cyan-200">Cotizador de Consulta</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          Cotiza tu Consulta al Instante
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Elige el motivo de tu visita y el tipo de paciente para conocer tu costo aproximado antes de acudir.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xl">
+        <form id="podForm" class="space-y-8" onsubmit="event.preventDefault(); updatePodCalc();">
+          
+          <!-- Step 1: Treatment -->
+          <div>
+            <label class="block font-display font-bold text-slate-900 text-base mb-3">
+              1. Selecciona el tratamiento o motivo de consulta:
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              
+              <label class="relative flex flex-col p-4 bg-slate-50 rounded-2xl border-2 border-slate-200 hover:border-pod-teal cursor-pointer transition has-[:checked]:border-pod-darkTeal has-[:checked]:bg-cyan-50/40">
+                <input type="radio" name="treatment" value="quiropodia" data-price="380" data-label="Quiropodia Clínica Integral" checked class="peer sr-only" onchange="updatePodCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <i class="fa-solid fa-socks text-xl text-pod-teal"></i>
+                  <span class="text-xs font-bold text-slate-800">$380 MXN</span>
+                </div>
+                <span class="font-display font-bold text-slate-900 text-base">Quiropodia Integral</span>
+                <span class="text-[11px] text-slate-500">Corte clínico, pulido y exfoliación completa</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-slate-50 rounded-2xl border-2 border-slate-200 hover:border-pod-teal cursor-pointer transition has-[:checked]:border-pod-darkTeal has-[:checked]:bg-cyan-50/40">
+                <input type="radio" name="treatment" value="enterrada" data-price="450" data-label="Uña Enterrada (Onicocriptosis) Alivio Inmediato" class="peer sr-only" onchange="updatePodCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <i class="fa-solid fa-bandage text-xl text-red-600"></i>
+                  <span class="text-xs font-bold text-slate-800">$450 MXN</span>
+                </div>
+                <span class="font-display font-bold text-slate-900 text-base">Uña Enterrada (Urgente)</span>
+                <span class="text-[11px] text-slate-500">Extracción de espícula sin dolor</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-slate-50 rounded-2xl border-2 border-slate-200 hover:border-pod-teal cursor-pointer transition has-[:checked]:border-pod-darkTeal has-[:checked]:bg-cyan-50/40">
+                <input type="radio" name="treatment" value="hongos" data-price="550" data-label="Tratamiento Antimicótico para Hongos (Onicomicosis)" class="peer sr-only" onchange="updatePodCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <i class="fa-solid fa-bacterium text-xl text-emerald-600"></i>
+                  <span class="text-xs font-bold text-slate-800">$550 MXN</span>
+                </div>
+                <span class="font-display font-bold text-slate-900 text-base">Tratamiento para Hongos</span>
+                <span class="text-[11px] text-slate-500">Desbastado mecánico y antifúngico</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-slate-50 rounded-2xl border-2 border-slate-200 hover:border-pod-teal cursor-pointer transition has-[:checked]:border-pod-darkTeal has-[:checked]:bg-cyan-50/40">
+                <input type="radio" name="treatment" value="diabetico" data-price="450" data-label="Cuidado & Valoración de Pie Diabético" class="peer sr-only" onchange="updatePodCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <i class="fa-solid fa-heart-pulse text-xl text-blue-600"></i>
+                  <span class="text-xs font-bold text-slate-800">$450 MXN</span>
+                </div>
+                <span class="font-display font-bold text-slate-900 text-base">Pie Diabético</span>
+                <span class="text-[11px] text-slate-500">Inspección de úlceras y corte seguro</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-slate-50 rounded-2xl border-2 border-slate-200 hover:border-pod-teal cursor-pointer transition has-[:checked]:border-pod-darkTeal has-[:checked]:bg-cyan-50/40">
+                <input type="radio" name="treatment" value="callos" data-price="350" data-label="Eliminación de Callosidades & Ojos de Pescado" class="peer sr-only" onchange="updatePodCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <i class="fa-solid fa-shoe-prints text-xl text-amber-600"></i>
+                  <span class="text-xs font-bold text-slate-800">$350 MXN</span>
+                </div>
+                <span class="font-display font-bold text-slate-900 text-base">Callosidades & Helomas</span>
+                <span class="text-[11px] text-slate-500">Talones agrietados y durezas plantares</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-slate-50 rounded-2xl border-2 border-slate-200 hover:border-pod-teal cursor-pointer transition has-[:checked]:border-pod-darkTeal has-[:checked]:bg-cyan-50/40">
+                <input type="radio" name="treatment" value="pedicure" data-price="400" data-label="Pedicure Clínico Preventivo + Masaje" class="peer sr-only" onchange="updatePodCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <i class="fa-solid fa-spa text-xl text-purple-600"></i>
+                  <span class="text-xs font-bold text-slate-800">$400 MXN</span>
+                </div>
+                <span class="font-display font-bold text-slate-900 text-base">Pedicure Clínico + Masaje</span>
+                <span class="text-[11px] text-slate-500">Relajación podal e hidratación profunda</span>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Step 2: Patient and Addons -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block font-display font-bold text-slate-900 text-base mb-2">
+                2. Tipo de Paciente:
+              </label>
+              <select id="pacienteSelect" class="w-full bg-slate-50 border-2 border-slate-200 rounded-xl p-3 text-sm text-slate-800 font-medium focus:outline-none focus:border-pod-darkTeal" onchange="updatePodCalc()">
+                <option value="Adulto / Primera Vez">Adulto (Primera vez en consulta)</option>
+                <option value="Adulto Mayor (Tercera Edad)">Adulto Mayor / Tercera Edad</option>
+                <option value="Paciente con Diabetes">Paciente Diabético</option>
+                <option value="Niño / Adolescente Deportista">Niño o Joven Deportista</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block font-display font-bold text-slate-900 text-base mb-2">
+                3. Tratamiento Adicional (Opcional):
+              </label>
+              <select id="addonSelect" class="w-full bg-slate-50 border-2 border-slate-200 rounded-xl p-3 text-sm text-slate-800 font-medium focus:outline-none focus:border-pod-darkTeal" onchange="updatePodCalc()">
+                <option value="0" data-label="Ninguno adicional">Ninguno adicional</option>
+                <option value="100" data-label="Curación y Vendaje Especializado">Curación y Vendaje Especial (+ $100)</option>
+                <option value="120" data-label="Hidratación Profunda con Urea">Hidratación con Urea Grado Médico (+ $120)</option>
+                <option value="200" data-label="Curación + Hidratación Profunda">Paquete Curación + Hidratación (+ $200)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Output Box -->
+          <div class="bg-gradient-to-br from-pod-navy via-slate-900 to-slate-950 text-white rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+            <div class="space-y-2 text-center md:text-left">
+              <span class="inline-block bg-cyan-400/20 text-cyan-300 border border-cyan-400/30 text-xs font-bold px-3 py-1 rounded-full uppercase">
+                Estimado de Consulta
+              </span>
+              <p class="text-xs text-slate-300" id="calcTreatmentSummary">Quiropodia Clínica Integral para Adulto</p>
+              <div class="flex items-baseline justify-center md:justify-start gap-2">
+                <span class="text-xs text-slate-400">Total aprox:</span>
+                <span class="font-display text-4xl sm:text-5xl font-extrabold text-cyan-400" id="calcPriceDisplay">$380 MXN</span>
+              </div>
+              <p class="text-[11px] text-slate-400 flex items-center justify-center md:justify-start gap-1.5">
+                <i class="fa-solid fa-circle-check text-emerald-400"></i> Incluye valoración clínica e instrumental esterilizado en bolsa sellada.
+              </p>
+            </div>
+
+            <div class="w-full md:w-auto shrink-0 flex flex-col sm:flex-row gap-3">
+              <a id="calcWhatsAppBtn" href="#" target="_blank" class="w-full sm:w-auto text-center inline-flex justify-center items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-display font-bold text-base py-3.5 px-6 rounded-xl shadow-lg shadow-emerald-700/40 transition transform hover:-translate-y-0.5">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                <span>Apartar Cita por WhatsApp</span>
+              </a>
+              <a href="tel:+525539678006" class="w-full sm:w-auto text-center inline-flex justify-center items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-display font-bold text-base py-3.5 px-5 rounded-xl border border-slate-700 transition">
+                <i class="fa-solid fa-phone text-cyan-400"></i>
+                <span>Llamar al Consultorio</span>
+              </a>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Location & Clinic Details -->
+  <section id="ubicacion" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-5 space-y-5">
+          <span class="text-pod-darkTeal text-xs font-bold uppercase tracking-wider bg-cyan-100 px-3 py-1 rounded-full border border-cyan-200">Consultorio en Coyoacán</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Ubicados en Av. Heroica Escuela Naval Militar
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Estamos ubicados en <strong class="text-slate-900">Av. Heroica Escuela Naval Militar #454</strong>, frente a la colonia Paseos de Taxqueña, con excelente accesibilidad desde Calzada de Tlalpan, Calzada de la Viga, Metro Taxqueña y Santa Ana.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-wheelchair text-pod-teal text-lg"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900">Acceso Cómodo</h4>
+                  <p class="text-[11px] text-slate-500">Ideal para adultos mayores o personas con dolor al caminar</p>
+                </div>
+              </div>
+              <span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200 shrink-0">Accesible</span>
+            </div>
+
+            <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-clock text-pod-teal text-lg"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900">Horarios Flexibles</h4>
+                  <p class="text-[11px] text-slate-500">Atención de lunes a sábado con citas programadas para evitar filas</p>
+                </div>
+              </div>
+              <span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200 shrink-0">Puntual</span>
+            </div>
+
+            <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-credit-card text-pod-teal text-lg"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900">Formas de Pago</h4>
+                  <p class="text-[11px] text-slate-500">Aceptamos efectivo, transferencias bancarias y tarjetas</p>
+                </div>
+              </div>
+              <span class="text-xs font-extrabold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200 shrink-0">Cómodo</span>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://wa.me/525539678006?text=Hola,%20%C2%BFactualmente%20tienen%20citas%20disponibles%20para%20hoy?" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-slate-900 hover:text-pod-darkTeal transition">
+              <i class="fa-brands fa-whatsapp text-emerald-500 text-base"></i> Envíanos mensaje al 55 3967 8006 para apartar tu consulta hoy
+            </a>
+          </div>
+        </div>
+
+        <!-- Location Box & Map -->
+        <div class="lg:col-span-7">
+          <div class="bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 pod-shadow space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+              <div>
+                <span class="text-xs font-bold text-pod-darkTeal uppercase tracking-wider">Consultorio Podológico</span>
+                <h3 class="font-display font-bold text-2xl text-slate-900">Podología L&H Coyoacán</h3>
+              </div>
+              <div class="flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                <i class="fa-solid fa-door-open"></i> Abierto
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-700">
+              <div class="p-3 bg-white rounded-xl space-y-1 border border-slate-200">
+                <span class="text-slate-400 font-semibold uppercase text-[10px]">Dirección:</span>
+                <p class="font-bold text-slate-900">Av. Heroica Escuela Naval Militar #454</p>
+                <p class="text-slate-500">Col. San Francisco Culhuacán, Coyoacán, CDMX</p>
+              </div>
+
+              <div class="p-3 bg-white rounded-xl space-y-1 border border-slate-200">
+                <span class="text-slate-400 font-semibold uppercase text-[10px]">WhatsApp & Citas:</span>
+                <p class="font-bold text-slate-900">+52 55 3967 8006</p>
+                <p class="text-slate-500">Respuesta rápida por mensajería</p>
+              </div>
+
+              <div class="p-3 bg-white rounded-xl space-y-1 border border-slate-200">
+                <span class="text-slate-400 font-semibold uppercase text-[10px]">Horarios de Consulta:</span>
+                <p class="font-bold text-slate-900">Lunes a Viernes: 10:00 AM - 7:00 PM</p>
+                <p class="text-slate-500">Sábados: 10:00 AM - 4:00 PM</p>
+              </div>
+
+              <div class="p-3 bg-white rounded-xl space-y-1 border border-slate-200">
+                <span class="text-slate-400 font-semibold uppercase text-[10px]">Especialidad:</span>
+                <p class="font-bold text-slate-900">Uña encarnada, hongos y pie diabético</p>
+                <p class="text-slate-500">Atención a niños, adultos y adultos mayores</p>
+              </div>
+            </div>
+
+            <!-- Google Maps Embed -->
+            <div class="rounded-xl overflow-hidden border border-slate-200 h-64 bg-slate-100 relative">
+              <iframe 
+                title="Ubicación Podología L&H Coyoacán"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.987625123456!2d-99.1364235!3d19.3482109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fe0901234567%3A0x123456789abcdef!2sAv.%20Heroica%20Escuela%20Naval%20Militar%20454%2C%20San%20Francisco%20Culhuac%C3%A1n%2C%20Coyoac%C3%A1n%2C%2004260%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx" 
+                class="w-full h-full border-0" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Real Patient Reviews -->
+  <section id="opiniones" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-pod-darkTeal text-xs font-bold uppercase tracking-wider bg-cyan-100 px-3 py-1 rounded-full border border-cyan-200">Testimonios de Pacientes</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          La Tranquilidad de Estar en Manos Expertas
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-3">
+          Opiniones reales de pacientes que recuperaron el confort al caminar en Podología L&H.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+              "Llegué con un dolor insoportable en el dedo gordo por una uña encarnada que no me dejaba poner zapato. Me atendieron con mucho cuidado, no me dolió nada la extracción y salí caminando sin punzadas. Excelente servicio."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-pod-darkTeal text-white font-bold flex items-center justify-center text-xs">ER</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Enrique Ramírez</p>
+              <p class="text-[10px] text-slate-500">Paseos de Taxqueña, CDMX</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+              "Traje a mi mamá de 78 años que tiene diabetes. Tienen una paciencia y delicadeza hermosa para cortar sus uñas y revisar sus talones. Además abren las bolsas esterilizadas en tu cara, da muchísima confianza."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-cyan-700 text-white font-bold flex items-center justify-center text-xs">MA</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">María Antonieta Cruz</p>
+              <p class="text-[10px] text-slate-500">San Francisco Culhuacán</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+              "Juego fútbol soccer y traía callosidades y una uña morada que se estaba infectando. Me hicieron una quiropodia clínica completísima y me dejaron los pies nuevos. Vengo cada mes por mantenimiento."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-emerald-700 text-white font-bold flex items-center justify-center text-xs">JV</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Javier Valencia</p>
+              <p class="text-[10px] text-slate-500">Culhuacán CTM, Coyoacán</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+              "Llevaba años batallando con hongos en dos uñas y en otros lados solo me daban pomadas caras que no servían. Aquí me desbastaron la uña y con el tratamiento médico ya me creció limpia. Súper recomendados."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-slate-800 text-cyan-300 font-bold flex items-center justify-center text-xs">GF</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Guadalupe Flores</p>
+              <p class="text-[10px] text-slate-500">Campestre Churubusco, CDMX</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Final Call to Action -->
+  <section class="py-16 bg-gradient-to-tr from-cyan-950 via-pod-darkTeal to-slate-900 text-white text-center relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 relative z-10 space-y-6">
+      <span class="inline-block bg-white/20 text-cyan-200 border border-white/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">
+        Recupera el Confort al Caminar
+      </span>
+      <h2 class="font-display text-3xl sm:text-5xl font-extrabold tracking-tight">
+        No Dejes Pasar el Dolor en tus Pies.
+      </h2>
+      <p class="text-cyan-100 text-sm sm:text-base max-w-xl mx-auto">
+        Aparta tu horario por WhatsApp en minutos y recibe atención clínica delicada, higiénica y profesional en Coyoacán.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <a href="https://wa.me/525539678006?text=Hola%20Podolog%C3%ADa%20L&H,%20quiero%20agendar%20mi%20cita%20por%20favor." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-display font-bold text-base py-4 px-8 rounded-xl shadow-xl transition transform hover:-translate-y-0.5">
+          <i class="fa-brands fa-whatsapp text-2xl"></i>
+          <span>Agendar Cita al 55 3967 8006</span>
+        </a>
+        <a href="tel:+525539678006" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-display font-bold text-base py-4 px-8 rounded-xl border border-white/20 backdrop-blur-sm transition">
+          <i class="fa-solid fa-phone text-cyan-300"></i>
+          <span>Llamar al Consultorio</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-10 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-pod-darkTeal flex items-center justify-center text-white font-bold text-lg">
+          <i class="fa-solid fa-socks"></i>
+        </div>
+        <div>
+          <p class="font-display font-bold text-slate-900 text-base">Podología L&H Coyoacán</p>
+          <p class="text-slate-500">Av. Heroica Escuela Naval Militar #454, San Francisco Culhuacán, CDMX &bull; Tel: 55 3967 8006</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-5 text-slate-600 font-medium">
+        <a href="#servicios" class="hover:text-pod-teal transition">Tratamientos</a>
+        <a href="#esterilizacion" class="hover:text-pod-teal transition">Autoclave</a>
+        <a href="#cotizador" class="hover:text-pod-teal transition">Cotizador Exprés</a>
+        <a href="#ubicacion" class="hover:text-pod-teal transition">Ubicación</a>
+        <a href="https://wa.me/525539678006" target="_blank" class="hover:text-emerald-600 transition">WhatsApp Directo</a>
+      </div>
+
+      <p class="text-slate-400 text-center md:text-right">
+        &copy; 2026 Podología L&H. Todos los derechos reservados.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Quick Action Bar -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 sm:hidden shadow-2xl flex items-center gap-2">
+    <a href="tel:+525539678006" class="flex-1 bg-slate-800 text-white text-center font-display font-bold py-3 px-2 rounded-xl text-xs flex items-center justify-center gap-2 shadow-md">
+      <i class="fa-solid fa-phone"></i> Llamar
+    </a>
+    <a href="https://wa.me/525539678006?text=Hola,%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20podol%C3%B3gica." target="_blank" class="flex-1 bg-emerald-600 text-white text-center font-display font-bold py-3 px-2 rounded-xl text-xs flex items-center justify-center gap-2 shadow-md">
+      <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
+    </a>
+  </div>
+
+  <!-- Calculator Script -->
+  <script>
+    function updatePodCalc() {
+      const selectedTreat = document.querySelector('input[name="treatment"]:checked');
+      const basePrice = parseInt(selectedTreat.getAttribute('data-price')) || 380;
+      const treatName = selectedTreat.getAttribute('data-label') || 'Quiropodia Clínica';
+
+      const pacienteSelect = document.getElementById('pacienteSelect');
+      const pacienteName = pacienteSelect.value;
+
+      const addonSelect = document.getElementById('addonSelect');
+      const addonExtra = parseInt(addonSelect.value) || 0;
+      const addonLabel = addonSelect.options[addonSelect.selectedIndex].getAttribute('data-label');
+
+      const total = basePrice + addonExtra;
+
+      document.getElementById('calcPriceDisplay').innerText = '$' + total.toLocaleString('es-MX') + ' MXN';
+
+      let summary = treatName + ' para ' + pacienteName.split('(')[0].trim();
+      if (addonExtra > 0) {
+        summary += ' (+ ' + addonLabel + ')';
+      }
+      document.getElementById('calcTreatmentSummary').innerText = summary;
+
+      let msg = 'Hola Podología L&H, coticé en su página web:\n' +
+        '• Tratamiento: ' + treatName + '\n' +
+        '• Paciente: ' + pacienteName + '\n';
+      
+      if (addonExtra > 0) {
+        msg += '• Adicional: ' + addonLabel + '\n';
+      }
+
+      msg += '• Total estimado: $' + total.toLocaleString('es-MX') + ' MXN\n\n' +
+        '¿Tendrán espacio disponible esta semana para agendar cita?';
+
+      document.getElementById('calcWhatsAppBtn').href = 'https://wa.me/525539678006?text=' + encodeURIComponent(msg);
+    }
+
+    // Init
+    document.addEventListener('DOMContentLoaded', updatePodCalc);
+  </script>
+
+</body>
+</html>
