@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taquizas Sam | Banquetes & Guisados para Eventos en CDMX</title>
+    <meta name="description" content="Servicio de taquizas a domicilio en cazuelas de barro y trompo al pastor en CDMX. Sabor casero para fiestas, bodas, XV años y reuniones. ¡Cotiza tu evento aquí!">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            800: '#9a3412',
+                            900: '#7c2d12',
+                        },
+                        ambermex: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        greenmex: {
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Syne', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-amber-50/20 text-slate-800 font-sans antialiased selection:bg-brand-100 selection:text-brand-900">
+
+    <!-- Top Announcement Bar -->
+    <header class="bg-brand-900 text-amber-100 text-xs sm:text-sm py-2 px-4 shadow-sm border-b border-brand-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1 bg-ambermex-500/20 text-amber-300 text-xs px-2.5 py-0.5 rounded-full font-semibold border border-amber-400/30">
+                    <i class="fa-solid fa-star text-amber-400"></i> Calificación 4.9 ⭐⭐⭐⭐⭐
+                </span>
+                <span class="hidden md:inline text-amber-200">
+                    <i class="fa-solid fa-fire-burner mr-1 text-orange-400"></i> Cazuelas de Barro Calientitas • Trompo al Pastor • Cobertura en toda la CDMX
+                </span>
+            </div>
+            <div class="flex items-center gap-4 text-xs sm:text-sm">
+                <a href="#contacto" class="hover:text-amber-200 transition-colors hidden sm:inline-flex items-center gap-1 text-amber-200">
+                    <i class="fa-solid fa-location-dot text-orange-400"></i> Leyes de Reforma, Iztapalapa, CDMX
+                </a>
+                <a href="https://wa.me/525515028018" target="_blank" class="hover:text-amber-200 font-semibold inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-amber-300 px-3 py-1 rounded-full transition-all border border-amber-400/30">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i> 55 1502 8018
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar (100% Light Mode) -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-orange-100 shadow-xs transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-600 to-ambermex-600 flex items-center justify-center text-white text-2xl shadow-md group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div>
+                        <span class="font-display font-extrabold text-2xl tracking-tight text-slate-900 group-hover:text-brand-600 transition-colors">
+                            Taquizas Sam
+                        </span>
+                        <span class="block text-[11px] font-bold text-brand-700 tracking-wider uppercase">
+                            Banquetes & Cazuelas • CDMX
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
+                    <a href="#guisados" class="hover:text-brand-600 transition-colors">Guisados</a>
+                    <a href="#pastor" class="hover:text-brand-600 transition-colors">Pastor & Parrillada</a>
+                    <a href="#galeria" class="hover:text-brand-600 transition-colors">Galería</a>
+                    <a href="#por-que-sam" class="hover:text-brand-600 transition-colors">¿Por qué nosotros?</a>
+                    <a href="#cotizador" class="hover:text-brand-600 transition-colors text-brand-600 flex items-center gap-1.5">
+                        <i class="fa-solid fa-calculator text-brand-500"></i> Cotizador Online
+                    </a>
+                    <a href="#opiniones" class="hover:text-brand-600 transition-colors">Reseñas</a>
+                    <a href="#contacto" class="hover:text-brand-600 transition-colors">Contacto</a>
+                </div>
+
+                <!-- Action Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="#cotizador" class="inline-flex items-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-800 border border-brand-200 font-bold px-4 py-2.5 rounded-xl text-sm transition-all shadow-xs">
+                        <i class="fa-solid fa-calculator"></i> Cotizar Fiesta
+                    </a>
+                    <a href="https://wa.me/525515028018?text=Hola%20Taquizas%20Sam%2C%20quisiera%20pedir%20informes%20y%20men%C3%BA%20para%20un%20evento." target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-brand-600 to-ambermex-600 hover:from-brand-700 hover:to-ambermex-700 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all shadow-md shadow-brand-500/20 hover:scale-[1.02]">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Apartar Fecha
+                    </a>
+                </div>
+
+                <!-- Mobile menu toggle button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden border-b border-orange-100 bg-white px-4 pt-2 pb-6 space-y-3">
+            <a href="#guisados" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">Menú de Guisados</a>
+            <a href="#pastor" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">Trompo al Pastor</a>
+            <a href="#galeria" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">Galería de Eventos</a>
+            <a href="#por-que-sam" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">¿Por qué Taquizas Sam?</a>
+            <a href="#cotizador" class="block px-3 py-2 rounded-lg text-base font-semibold text-brand-600 bg-brand-50">🌮 Calculadora de Presupuesto</a>
+            <a href="#opiniones" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">Opiniones de Clientes</a>
+            <a href="#contacto" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-700">Ubicación y Cobertura</a>
+            <div class="pt-2">
+                <a href="https://wa.me/525515028018?text=Hola%20Taquizas%20Sam%2C%20quisiera%20cotizar%20un%20evento." target="_blank" class="w-full block text-center bg-brand-600 text-white font-bold py-3 rounded-xl shadow-md">
+                    <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp Inmediato
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (100% Light Mode) -->
+    <section class="relative overflow-hidden pt-8 pb-16 lg:py-20 bg-gradient-to-b from-orange-50/70 via-amber-50/30 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Content Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white border border-brand-200 shadow-xs px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-brand-900">
+                        <span class="w-2.5 h-2.5 rounded-full bg-orange-500 animate-ping"></span>
+                        <span>🌮 Banquetes & Taquizas a Domicilio en CDMX • 4.9 ⭐⭐⭐⭐⭐</span>
+                    </div>
+
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12]">
+                        El auténtico sazón mexicano en cazuelas de barro <span class="bg-gradient-to-r from-brand-600 to-ambermex-600 bg-clip-text text-transparent">para tu evento</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        En <strong>Taquizas Sam</strong> consentimos a tus invitados con comida calientita y deliciosa servida en tu domicilio, salón o jardín. Guisados tradicionales, trompo al pastor en vivo, tortillas calientes, arroz, frijoles, salsas y taqueros profesionales para que tú solo te dediques a disfrutar.
+                    </p>
+
+                    <!-- Trust Checklist -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-left">
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-orange-100 shadow-xs">
+                            <div class="w-7 h-7 rounded-lg bg-orange-100 text-brand-700 flex items-center justify-center text-sm font-bold shrink-0">
+                                <i class="fa-solid fa-fire-burner"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-bold text-slate-800">Cazuelas Calientes 2h</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-orange-100 shadow-xs">
+                            <div class="w-7 h-7 rounded-lg bg-emerald-100 text-greenmex-700 flex items-center justify-center text-sm font-bold shrink-0">
+                                <i class="fa-solid fa-plate-wheat"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-bold text-slate-800">Todo Incluido</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-orange-100 shadow-xs col-span-2 sm:col-span-1">
+                            <div class="w-7 h-7 rounded-lg bg-amber-100 text-ambermex-700 flex items-center justify-center text-sm font-bold shrink-0">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-bold text-slate-800">Personal de Servicio</span>
+                        </div>
+                    </div>
+
+                    <!-- Call To Actions -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
+                        <a href="#cotizador" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-600 via-orange-600 to-ambermex-600 hover:from-brand-700 hover:to-ambermex-700 text-white font-extrabold text-base px-8 py-4 rounded-2xl shadow-lg shadow-brand-600/25 hover:shadow-xl hover:scale-[1.02] transition-all">
+                            <i class="fa-solid fa-calculator text-lg"></i>
+                            <span>Cotizar Mi Evento Online</span>
+                        </a>
+                        <a href="https://wa.me/525515028018?text=Hola%20Taquizas%20Sam%2C%20quisiera%20conocer%20disponibilidad%20para%20un%20evento." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-white hover:bg-slate-50 text-slate-800 border-2 border-slate-200 hover:border-brand-500 font-bold text-base px-6 py-4 rounded-2xl shadow-xs hover:shadow transition-all">
+                            <i class="fa-brands fa-whatsapp text-emerald-500 text-xl"></i>
+                            <span>Consultar en WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <!-- Rating Proof -->
+                    <div class="flex items-center justify-center lg:justify-start gap-4 pt-4 border-t border-slate-200">
+                        <div class="flex items-center text-amber-400 text-base">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="ml-2 font-extrabold text-slate-900 text-sm">4.9 / 5.0</span>
+                        </div>
+                        <p class="text-xs text-slate-500 font-medium">
+                            En más de 1,500 bodas, XV años, bautizos y reuniones familiares en CDMX
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Visual Column -->
+                <div class="lg:col-span-5 relative">
+                    <!-- Subtle Glow Blobs -->
+                    <div class="absolute -top-6 -right-6 w-72 h-72 bg-orange-200/50 rounded-full blur-3xl pointer-events-none"></div>
+                    <div class="absolute -bottom-6 -left-6 w-72 h-72 bg-amber-200/40 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <!-- Main Image Card -->
+                    <div class="relative bg-white p-3 rounded-3xl shadow-2xl border border-orange-100">
+                        <div class="relative rounded-2xl overflow-hidden aspect-[4/4.5] group">
+                            <img src="img/hero-tacos.jpg" alt="Tacos mexicanos servidos con guisados de Taquizas Sam" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+                            
+                            <!-- Floating Tag Inside Image -->
+                            <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3.5 rounded-xl border border-white/80 shadow-lg flex items-center justify-between">
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Sabor Casero Garantizado</p>
+                                    <p class="text-sm font-extrabold text-slate-900">Tortillas calientes al comal y salsas frescas</p>
+                                </div>
+                                <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded-full font-bold flex items-center gap-1">
+                                    <i class="fa-solid fa-check text-emerald-600"></i> Calientito
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Top Badge -->
+                        <div class="absolute -top-4 -left-4 bg-white shadow-xl border border-slate-100 rounded-2xl p-3 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-bowl-food"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase">Tradición</p>
+                                <p class="text-xs font-extrabold text-slate-800">Cazuelas de Barro</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Bottom Badge -->
+                        <div class="absolute -bottom-4 -right-4 bg-white shadow-xl border border-slate-100 rounded-2xl p-3 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-ambermex-600 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase">A Domicilio</p>
+                                <p class="text-xs font-extrabold text-slate-800">Toda la CDMX y Edomex</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics Ribbon -->
+    <section class="py-8 bg-white border-y border-orange-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-slate-100">
+                <div class="pt-2 md:pt-0">
+                    <p class="font-display text-3xl sm:text-4xl font-extrabold text-brand-600">+1,500</p>
+                    <p class="text-xs sm:text-sm font-semibold text-slate-600 mt-1">Eventos Atendidos con Éxito</p>
+                </div>
+                <div class="pt-2 md:pt-0">
+                    <p class="font-display text-3xl sm:text-4xl font-extrabold text-ambermex-500">4.9 ★</p>
+                    <p class="text-xs sm:text-sm font-semibold text-slate-600 mt-1">Calificación de Anfitriones</p>
+                </div>
+                <div class="pt-2 md:pt-0">
+                    <p class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900">2 Horas</p>
+                    <p class="text-xs sm:text-sm font-semibold text-slate-600 mt-1">De Servicio Continuo y Tacos Ilimitados</p>
+                </div>
+                <div class="pt-2 md:pt-0">
+                    <p class="font-display text-3xl sm:text-4xl font-extrabold text-emerald-600">100%</p>
+                    <p class="text-xs sm:text-sm font-semibold text-slate-600 mt-1">Lo que sobre es para ti</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menú de Guisados y Especialidades -->
+    <section id="guisados" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-spoon"></i> Menú Tradicional
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Nuestros Guisados Estrella en Cazuela de Barro
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Preparados la misma mañana de tu evento con carne de primera calidad y sazón casero inigualable.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-white p-5 rounded-3xl border border-orange-100 shadow-xs hover:shadow-md transition-all">
+                    <div class="w-10 h-10 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center text-lg mb-3">
+                        <i class="fa-solid fa-pepper-hot"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base">Chicharrón en Salsa Verde</h4>
+                    <p class="text-xs text-slate-500 mt-1">Chicharrón prensado o de lonja suave con salsa verde de tomate criollo.</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-3xl border border-orange-100 shadow-xs hover:shadow-md transition-all">
+                    <div class="w-10 h-10 rounded-xl bg-red-100 text-red-600 flex items-center justify-center text-lg mb-3">
+                        <i class="fa-solid fa-drumstick-bite"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base">Tinga de Pollo al Chipotle</h4>
+                    <p class="text-xs text-slate-500 mt-1">Pechuga deshebrada con cebolla caramelizada y ligero toque de chipotle.</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-3xl border border-orange-100 shadow-xs hover:shadow-md transition-all">
+                    <div class="w-10 h-10 rounded-xl bg-amber-100 text-ambermex-700 flex items-center justify-center text-lg mb-3">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base">Rajas con Crema y Elote</h4>
+                    <p class="text-xs text-slate-500 mt-1">Chile poblano asado a fuego directo con granos de elote tierno y crema de rancho.</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-3xl border border-orange-100 shadow-xs hover:shadow-md transition-all">
+                    <div class="w-10 h-10 rounded-xl bg-yellow-100 text-yellow-700 flex items-center justify-center text-lg mb-3">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base">Cochinita Pibil Yucateca</h4>
+                    <p class="text-xs text-slate-500 mt-1">Carne de cerdo horneada con achiote y especias, con cebolla morada curtida.</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-3xl border border-orange-100 shadow-xs hover:shadow-md transition-all">
+                    <div class="w-10 h-10 rounded-xl bg-orange-100 text-brand-700 flex items-center justify-center text-lg mb-3">
+                        <i class="fa-solid fa-cow"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base">Bistec a la Mexicana</h4>
+                    <p class="text-xs text-slate-500 mt-1">Finos cortes de res sofritos con jitomate, cebolla y chile serrano fresco.</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-3xl border border-orange-100 shadow-xs hover:shadow-md transition-all">
+                    <div class="w-10 h-10 rounded-xl bg-stone-100 text-stone-800 flex items-center justify-center text-lg mb-3">
+                        <i class="fa-solid fa-mortar-pestle"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base">Mole Poblano con Pollo</h4>
+                    <p class="text-xs text-slate-500 mt-1">Receta tradicional con pollo deshebrado y ajonjolí tostado.</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-3xl border border-orange-100 shadow-xs hover:shadow-md transition-all">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-100 text-greenmex-700 flex items-center justify-center text-lg mb-3">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base">Nopales con Chorizo</h4>
+                    <p class="text-xs text-slate-500 mt-1">Nopalitos frescos guisados con chorizo artesanal y cebolla asada.</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-3xl border border-orange-100 shadow-xs hover:shadow-md transition-all">
+                    <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-lg mb-3">
+                        <i class="fa-solid fa-bowl-rice"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base">Arroz Rojo & Frijoles Refritos</h4>
+                    <p class="text-xs text-slate-500 mt-1">Las guarniciones obligadas servidas calientitas con totopos crujientes.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Trompo al Pastor & Parrillada -->
+    <section id="pastor" class="py-20 bg-white border-t border-orange-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">
+                        <i class="fa-solid fa-fire"></i> El Favorito de la Noche
+                    </span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                        Trompo al Pastor montado en vivo en tu jardín o salón
+                    </h2>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        Imagina el olor de la carne al pastor dorándose frente a tus invitados con piña asada, cebollitas cambray y taqueros cortando con precisión al vuelo. Una experiencia visual y culinaria inolvidable.
+                    </p>
+
+                    <div class="space-y-3 pt-2">
+                        <div class="p-4 rounded-2xl bg-orange-50/70 border border-orange-200 flex items-start gap-3.5">
+                            <div class="w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Carne 100% pierna de cerdo marinada</h4>
+                                <p class="text-xs sm:text-sm text-slate-600">Receta secreta con chiles secos, achiote, especias y cero exceso de grasa.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-orange-50/70 border border-orange-200 flex items-start gap-3.5">
+                            <div class="w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Taquero profesional sirviendo al momento</h4>
+                                <p class="text-xs sm:text-sm text-slate-600">Tacos ilimitados para tus invitados durante las 2 horas de servicio.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-orange-50/70 border border-orange-200 flex items-start gap-3.5">
+                            <div class="w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Barra completa de acompañamientos</h4>
+                                <p class="text-xs sm:text-sm text-slate-600">Cilantro picado, cebolla, limones jugosos, salsa taquera de chile de árbol y piña miel.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="#cotizador" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-bold px-6 py-3.5 rounded-xl text-sm transition-all shadow-md">
+                            <i class="fa-solid fa-calculator text-amber-300"></i> Cotizar Paquete con Pastor
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual: Trompo image -->
+                <div class="lg:col-span-6 relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border border-orange-100 aspect-[4/4.5] group">
+                        <img src="img/pastor-trompo.jpg" alt="Trompo al pastor montado para eventos en CDMX" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Eventos -->
+    <section id="galeria" class="py-20 bg-slate-50 border-t border-orange-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-camera"></i> Nuestros Montajes
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Calidad y presentación que enamoran a primera vista
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Montajes limpios, mantelería tradicional y puntualidad absoluta para que no te preocupes por nada.
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white rounded-3xl overflow-hidden border border-orange-100 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/cazuelas-guisados.jpg" alt="Montaje de cazuelas de barro calientes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Cazuelas de Barro
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Comida Siempre Caliente</h4>
+                        <p class="text-xs text-slate-500 mt-1">Quemadores de alcohol sólido que conservan la temperatura ideal.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-orange-100 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/salsas-barra.jpg" alt="Barra de salsas caseras y limones" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Barra de Salsas
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Salsas con Sazón Auténtico</h4>
+                        <p class="text-xs text-slate-500 mt-1">Salsa verde de molcajete, roja taquera, chiles toreados y limones.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-orange-100 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/aguas-frescas.jpg" alt="Vitroleros de aguas frescas naturales" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Aguas Frescas
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Horchata con Canela & Jamaica</h4>
+                        <p class="text-xs text-slate-500 mt-1">Servidas en vitroleros con hielo abundante para refrescar la fiesta.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-orange-100 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/hero-tacos.jpg" alt="Tacos al gusto con frijoles y arroz" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Tacos al Gusto
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Variedad para Todos los Gustos</h4>
+                        <p class="text-xs text-slate-500 mt-1">Tus invitados combinan guisados con arroz y frijoles a su gusto.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-orange-100 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/pastor-trompo.jpg" alt="Trompo al pastor dorándose" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Al Pastor
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Show y Sabor en Directo</h4>
+                        <p class="text-xs text-slate-500 mt-1">El taquero corta la carne y la piña al momento para cada comensal.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-orange-100 shadow-xs group hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/evento-fiesta.jpg" alt="Invitados disfrutando la comida en un evento" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                            Fiesta Feliz
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Cero Estrés para el Anfitrión</h4>
+                        <p class="text-xs text-slate-500 mt-1">Nosotros servimos y recogemos la barra; tú atiendes a tus invitados.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COTIZADOR INTERACTIVO (ALTA CONVERSIÓN) -->
+    <section id="cotizador" class="py-20 bg-gradient-to-b from-orange-50/80 via-amber-100/40 to-white relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <span class="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-brand-900 bg-brand-200/80 px-4 py-1.5 rounded-full shadow-xs">
+                    <i class="fa-solid fa-calculator"></i> Calculadora de Presupuesto para Eventos
+                </span>
+                <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
+                    Cotiza tu taquiza en segundos
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Mueve el número de personas, selecciona tu paquete preferido y extras. Obtén el presupuesto al instante con botón directo a WhatsApp.
+                </p>
+            </div>
+
+            <!-- Main Interactive Calculator Box -->
+            <div class="bg-white rounded-3xl shadow-2xl border border-orange-100 overflow-hidden">
+                <div class="grid lg:grid-cols-12">
+                    
+                    <!-- Left: Configuration Inputs (7 cols) -->
+                    <div class="lg:col-span-7 p-6 sm:p-10 space-y-8">
+                        
+                        <!-- Step 1: Number of Guests (Slider) -->
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <label for="guestsSlider" class="text-sm font-extrabold text-slate-800">
+                                    1. Número de Invitados:
+                                </label>
+                                <span class="bg-brand-100 text-brand-800 text-sm font-extrabold px-3.5 py-1 rounded-full border border-brand-200">
+                                    <span id="guestsCount">50</span> Personas
+                                </span>
+                            </div>
+                            <input id="guestsSlider" type="range" min="30" max="200" step="5" value="50" class="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-brand-600">
+                            <div class="flex justify-between text-[11px] text-slate-400 font-semibold mt-1">
+                                <span>30 personas (mínimo)</span>
+                                <span>80 personas</span>
+                                <span>150 personas</span>
+                                <span>200+ personas</span>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Package Selection -->
+                        <div>
+                            <label class="block text-sm font-extrabold text-slate-800 mb-3 flex items-center justify-between">
+                                <span>2. Selecciona el Paquete de Menú:</span>
+                                <span class="text-xs font-semibold text-brand-600">Paso 2 de 3</span>
+                            </label>
+                            <div class="space-y-3" id="packageOptions">
+                                
+                                <button type="button" data-pp="110" data-label="Taquiza Tradicional de Guisados (Cazuelas)" class="pkg-btn active-pkg w-full p-4 rounded-2xl border-2 text-left transition-all border-brand-600 bg-brand-50/70 text-slate-900 flex items-center justify-between">
+                                    <div class="space-y-0.5">
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-bowl-food text-brand-600"></i>
+                                            <span class="font-bold text-sm text-slate-900">Taquiza de Guisados en Cazuela</span>
+                                        </div>
+                                        <p class="text-xs text-slate-500">5 a 6 guisados + Arroz + Frijoles + Salsas + Tortillas + Desechables</p>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-brand-700 bg-white px-2.5 py-1 rounded-md border border-brand-200 shrink-0 ml-2">$110 / pers</span>
+                                </button>
+
+                                <button type="button" data-pp="135" data-label="Trompo al Pastor en Vivo" class="pkg-btn w-full p-4 rounded-2xl border-2 text-left transition-all border-slate-200 hover:border-slate-300 bg-white text-slate-900 flex items-center justify-between">
+                                    <div class="space-y-0.5">
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-fire text-ambermex-600"></i>
+                                            <span class="font-bold text-sm text-slate-900">Trompo al Pastor en Vivo</span>
+                                        </div>
+                                        <p class="text-xs text-slate-500">Trompo montado en tu fiesta + Piña + Cebollitas + Taquero sirviendo</p>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md shrink-0 ml-2">$135 / pers</span>
+                                </button>
+
+                                <button type="button" data-pp="155" data-label="Combo Mixto (Guisados + Pastor en Vivo)" class="pkg-btn w-full p-4 rounded-2xl border-2 text-left transition-all border-slate-200 hover:border-slate-300 bg-white text-slate-900 flex items-center justify-between">
+                                    <div class="space-y-0.5">
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-utensils text-greenmex-600"></i>
+                                            <span class="font-bold text-sm text-slate-900">Combo Mixto (Guisados + Pastor)</span>
+                                            <span class="bg-amber-100 text-ambermex-800 text-[10px] font-extrabold px-2 py-0.5 rounded-full">Más Popular</span>
+                                        </div>
+                                        <p class="text-xs text-slate-500">Cazuelas de guisados + Trompo al pastor en vivo al mismo tiempo</p>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-brand-700 bg-brand-50 px-2.5 py-1 rounded-md border border-brand-200 shrink-0 ml-2">$155 / pers</span>
+                                </button>
+
+                                <button type="button" data-pp="175" data-label="Parrillada al Carbón & Guisados" class="pkg-btn w-full p-4 rounded-2xl border-2 text-left transition-all border-slate-200 hover:border-slate-300 bg-white text-slate-900 flex items-center justify-between">
+                                    <div class="space-y-0.5">
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-drumstick-bite text-red-600"></i>
+                                            <span class="font-bold text-sm text-slate-900">Parrillada al Carbón & Guisados</span>
+                                        </div>
+                                        <p class="text-xs text-slate-500">Bistec, longaniza artesanal, pechuga asada, chiles toreados y cazuelas</p>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md shrink-0 ml-2">$175 / pers</span>
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Add-ons / Extras -->
+                        <div>
+                            <label class="block text-sm font-extrabold text-slate-800 mb-3 flex items-center justify-between">
+                                <span>3. Complementos Opcionales:</span>
+                                <span class="text-xs font-semibold text-brand-600">Paso 3 de 3</span>
+                            </label>
+                            <div class="space-y-2.5">
+                                <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" id="extraAguas" class="extra-check w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500" value="450">
+                                        <div>
+                                            <p class="text-xs sm:text-sm font-bold text-slate-800">Vitroleros de Aguas Frescas (Horchata y Jamaica)</p>
+                                            <p class="text-[11px] text-slate-500">40 Litros naturales con hielo y vasos desechables</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-slate-800">+$450 MXN</span>
+                                </label>
+
+                                <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" id="extraQuesadillas" class="extra-check w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500" value="25">
+                                        <div>
+                                            <p class="text-xs sm:text-sm font-bold text-slate-800">Barra de Quesadillas con Queso Oaxaca al comal</p>
+                                            <p class="text-[11px] text-slate-500">Quesadillas calientes servidas durante todo el evento</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-slate-800">+$25 / pers</span>
+                                </label>
+
+                                <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" id="extraChilaquiles" class="extra-check w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500" value="35">
+                                        <div>
+                                            <p class="text-xs sm:text-sm font-bold text-slate-800">Tornafiesta: Chilaquiles calientitos de madrugada</p>
+                                            <p class="text-[11px] text-slate-500">Con crema, queso fresco y cebolla picada para revivir la fiesta</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs font-extrabold text-slate-800">+$35 / pers</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right: Live Quote Summary & WhatsApp Trigger (5 cols) -->
+                    <div class="lg:col-span-5 bg-gradient-to-br from-brand-950 via-slate-900 to-amber-950 text-white p-6 sm:p-10 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-brand-900">
+                        <div>
+                            <div class="flex items-center justify-between border-b border-brand-800 pb-4 mb-6">
+                                <span class="font-display font-bold text-lg text-white">Presupuesto del Evento</span>
+                                <span class="text-xs font-semibold bg-ambermex-500/20 text-amber-300 border border-ambermex-500/30 px-2.5 py-1 rounded-full">
+                                    Cotización en Vivo
+                                </span>
+                            </div>
+
+                            <div class="space-y-3.5 text-xs sm:text-sm">
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Invitados:</span>
+                                    <span id="summaryGuests" class="font-semibold text-white">50 Personas</span>
+                                </div>
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Paquete elegido:</span>
+                                    <span id="summaryPkg" class="font-semibold text-white">Guisados en Cazuela</span>
+                                </div>
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Costo por persona:</span>
+                                    <span id="summaryPp" class="font-semibold text-white">$110 MXN</span>
+                                </div>
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Tiempo de servicio:</span>
+                                    <span class="font-semibold text-emerald-400">2 Horas Ilimitadas</span>
+                                </div>
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Extras seleccionados:</span>
+                                    <span id="summaryExtras" class="font-semibold text-white">$0 MXN</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-8 border-t border-brand-800 mt-8 space-y-6">
+                            <div>
+                                <p class="text-xs uppercase tracking-wider text-slate-400 font-bold">Total Estimado:</p>
+                                <div class="flex items-baseline gap-2 mt-1">
+                                    <span id="summaryTotal" class="font-display text-4xl sm:text-5xl font-extrabold text-ambermex-400">$5,500</span>
+                                    <span class="text-sm font-semibold text-slate-400">MXN</span>
+                                </div>
+                                <p class="text-[11px] text-slate-400 mt-1.5 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-circle-check text-emerald-400"></i> Incluye desechables, salsas, tortillas y taquero sirviendo
+                                </p>
+                            </div>
+
+                            <!-- WhatsApp Direct Reserve Button -->
+                            <a id="btnWhatsappQuote" href="#" target="_blank" class="w-full inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-600 via-orange-600 to-ambermex-600 hover:from-brand-700 hover:to-ambermex-700 text-white font-extrabold text-base py-4 px-6 rounded-2xl shadow-xl shadow-brand-950/40 hover:scale-[1.02] transition-all text-center">
+                                <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+                                <span>Enviar Cotización a WhatsApp</span>
+                            </a>
+                            <p class="text-[11px] text-center text-slate-400">
+                                Aparta tu fecha con un anticipo mínimo. Liquidación el día de tu evento.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Opiniones Reales de Clientes -->
+    <section id="opiniones" class="py-20 bg-white border-t border-orange-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-ambermex-700 bg-amber-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-star text-amber-500"></i> Calificación 4.9 en Eventos
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Anfitriones satisfechos en toda la CDMX
+                </h2>
+                <p class="text-slate-600 text-base">
+                    La comida rica, abundante y caliente es lo que más nos agradecen en cada fiesta.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-amber-50/30 p-6 sm:p-8 rounded-3xl border border-orange-100 shadow-xs flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic leading-relaxed">
+                            "Los contraté para el bautizo de mi hijo para 80 personas. Llegaron súper puntuales a montar las cazuelas, la comida estaba calientita y la tinga y la cochinita volaron. Todos mis invitados me felicitaron por el sazón."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-orange-100">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-800 font-extrabold flex items-center justify-center text-sm">
+                            LR
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900 text-sm">Lorena Rivas</p>
+                            <p class="text-xs text-slate-500">Bautizo (80 personas) • Benito Juárez</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-amber-50/30 p-6 sm:p-8 rounded-3xl border border-orange-100 shadow-xs flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic leading-relaxed">
+                            "El trompo al pastor en vivo fue el gran éxito de mi fiesta de cumpleaños. El taquero fue amabilísimo y súper rápido para despachar tacos. Las aguas frescas de horchata y jamaica estaban deliciosas. 100% recomendados."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-orange-100">
+                        <div class="w-10 h-10 rounded-full bg-orange-100 text-brand-700 font-extrabold flex items-center justify-center text-sm">
+                            JA
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900 text-sm">Jorge Alberto</p>
+                            <p class="text-xs text-slate-500">Cumpleaños (60 personas) • Coyoacán</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-amber-50/30 p-6 sm:p-8 rounded-3xl border border-orange-100 shadow-xs flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic leading-relaxed">
+                            "Porciones súper generosas y la comida que sobró nos la dejaron empaquetada limpia para nosotros. Los chilaquiles de la tornafiesta fueron una bendición. Muy formales y profesionales con el contrato."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-orange-100">
+                        <div class="w-10 h-10 rounded-full bg-emerald-100 text-greenmex-700 font-extrabold flex items-center justify-center text-sm">
+                            MC
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900 text-sm">Maricarmen Cano</p>
+                            <p class="text-xs text-slate-500">Fiesta Familiar (120 personas) • Iztapalapa</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="py-16 bg-slate-50 border-t border-orange-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 space-y-2">
+                <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-circle-question"></i> Resolvemos tus Preguntas
+                </span>
+                <h2 class="font-display text-3xl font-extrabold text-slate-900">Preguntas Frecuentes</h2>
+            </div>
+
+            <div class="space-y-3" id="faqAccordion">
+                
+                <div class="border border-orange-100 bg-white rounded-2xl overflow-hidden transition-all">
+                    <button type="button" class="faq-btn w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50">
+                        <span>¿Con cuánto tiempo de anticipación debo apartar mi fecha?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        Recomendamos apartar con al menos 1 o 2 semanas de anticipación para eventos en fin de semana (viernes, sábado o domingo). Sin embargo, también atendemos eventos exprés entre semana según la disponibilidad de nuestra agenda.
+                    </div>
+                </div>
+
+                <div class="border border-orange-100 bg-white rounded-2xl overflow-hidden transition-all">
+                    <button type="button" class="faq-btn w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50">
+                        <span>¿Qué pasa con la comida que sobra al terminar el servicio?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        Toda la comida que sobre al terminar las 2 horas de servicio es 100% tuya. Te pedimos tener recipientes o tuppers limpios listos para vaciarte los guisados, arroz, frijoles y salsas para que disfrutes del recalentado.
+                    </div>
+                </div>
+
+                <div class="border border-orange-100 bg-white rounded-2xl overflow-hidden transition-all">
+                    <button type="button" class="faq-btn w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50">
+                        <span>¿Ustedes llevan los quemadores para mantener la comida caliente?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        ¡Por supuesto! Nosotros llevamos las cazuelas de barro con sus bases de herrería y quemadores de alcohol sólido o gas para que los guisados se mantengan calientes y humeantes durante todo el evento.
+                    </div>
+                </div>
+
+                <div class="border border-orange-100 bg-white rounded-2xl overflow-hidden transition-all">
+                    <button type="button" class="faq-btn w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50">
+                        <span>¿Cómo es la forma de pago y anticipo?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        Apartas tu fecha con un anticipo del 20% al 30% mediante transferencia o depósito OXXO. El resto se liquida el día de tu evento en efectivo o transferencia al momento en que nuestro personal llega a montar el servicio.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación y Contacto -->
+    <section id="contacto" class="py-20 bg-white border-t border-orange-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Info Card -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">
+                        <i class="fa-solid fa-map-pin"></i> Base & Cobertura
+                    </span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                        Llegamos a donde sea tu fiesta
+                    </h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Nuestra cocina base se encuentra en Leyes de Reforma 2a Sección, Iztapalapa, pero brindamos servicio a domicilio con vehículos acondicionados en todas las alcaldías de la CDMX y Estado de México.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-3.5 p-4 bg-amber-50/40 rounded-2xl border border-orange-100 shadow-xs">
+                            <div class="w-10 h-10 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase">Base de Operaciones</p>
+                                <p class="text-sm font-bold text-slate-800">Leyes de Reforma 2a Sección, Iztapalapa, C.P. 09310, Ciudad de México</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 p-4 bg-amber-50/40 rounded-2xl border border-orange-100 shadow-xs">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-greenmex-700 flex items-center justify-center shrink-0">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase">WhatsApp & Cotizaciones</p>
+                                <p class="text-sm font-bold text-slate-800">+52 55 1502 8018</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 p-4 bg-amber-50/40 rounded-2xl border border-orange-100 shadow-xs">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-ambermex-700 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase">Horario de Atención</p>
+                                <p class="text-sm font-bold text-slate-800">Lunes a Domingo: 08:00 AM a 10:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                        <a href="https://maps.google.com/?q=Leyes+de+Reforma+2a+Seccion+Iztapalapa+CDMX" target="_blank" class="inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-black text-white font-bold px-5 py-3 rounded-xl text-sm transition-all shadow-sm">
+                            <i class="fa-solid fa-location-arrow text-orange-400"></i> Ver en Google Maps
+                        </a>
+                        <a href="https://wa.me/525515028018?text=Hola%20Taquizas%20Sam%2C%20quisiera%20cotizar%20un%20evento%20a%20domicilio." target="_blank" class="inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-bold px-5 py-3 rounded-xl text-sm transition-all shadow-sm">
+                            <i class="fa-brands fa-whatsapp"></i> Cotizar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="lg:col-span-7 bg-amber-50/40 p-3 rounded-3xl shadow-xl border border-orange-100">
+                    <div class="w-full h-[400px] rounded-2xl overflow-hidden">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Leyes+de+Reforma+2a+Seccion+Iztapalapa+CDMX&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Footer Banner -->
+    <section class="py-12 bg-gradient-to-r from-brand-900 via-slate-900 to-amber-950 text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+            <h2 class="font-display text-3xl sm:text-4xl font-extrabold tracking-tight">
+                ¿Planeas un cumpleaños, bautizo o reunión pronto?
+            </h2>
+            <p class="text-amber-100 text-base max-w-2xl mx-auto">
+                No te compliques cocinando ni lavando trastes. Nosotros nos encargamos de alimentar a tus invitados con el mejor sazón casero de CDMX.
+            </p>
+            <div class="pt-2">
+                <a href="https://wa.me/525515028018?text=Hola%20Taquizas%20Sam%2C%20quisiera%20apartar%20una%20fecha%20para%20un%20evento." target="_blank" class="inline-flex items-center gap-3 bg-ambermex-500 hover:bg-ambermex-400 text-slate-950 font-extrabold text-base px-8 py-4 rounded-2xl shadow-xl hover:scale-105 transition-all">
+                    <i class="fa-brands fa-whatsapp text-2xl text-slate-950"></i>
+                    <span>Apartar Mi Fecha por WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-orange-100 py-12 text-slate-500 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                
+                <div class="space-y-3 md:col-span-2">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-xl bg-brand-600 text-white flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <span class="font-display font-extrabold text-xl text-slate-900">Taquizas Sam</span>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed max-w-sm">
+                        Servicio profesional de taquizas en cazuelas de barro, trompo al pastor en vivo y banquetes a domicilio para todo tipo de celebraciones en la Ciudad de México y Estado de México.
+                    </p>
+                </div>
+
+                <div class="space-y-2">
+                    <p class="font-bold text-slate-900 uppercase tracking-wider text-xs">Menús & Paquetes</p>
+                    <ul class="space-y-1.5 text-xs">
+                        <li><a href="#guisados" class="hover:text-brand-600">Guisados en Cazuela</a></li>
+                        <li><a href="#pastor" class="hover:text-brand-600">Trompo al Pastor</a></li>
+                        <li><a href="#cotizador" class="hover:text-brand-600 font-bold text-brand-600">Cotizador en Línea</a></li>
+                        <li><a href="#galeria" class="hover:text-brand-600">Galería de Montajes</a></li>
+                        <li><a href="#opiniones" class="hover:text-brand-600">Opiniones de Clientes</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-2">
+                    <p class="font-bold text-slate-900 uppercase tracking-wider text-xs">Contacto & Cobertura</p>
+                    <p class="text-xs">Leyes de Reforma 2a Secc, Iztapalapa, CDMX</p>
+                    <p class="text-xs font-bold text-slate-800">WhatsApp: +52 55 1502 8018</p>
+                    <p class="text-xs">Servicio a domicilio en toda la CDMX y Edomex</p>
+                    <p class="text-xs">Lun a Dom: 08:00 - 22:00 hrs</p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-orange-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+                <p>© 2026 Taquizas Sam. Propuesta de Plataforma Digital Exclusiva.</p>
+                <div class="flex items-center gap-4">
+                    <a href="#top" class="hover:text-brand-600 font-semibold flex items-center gap-1">
+                        Subir al inicio <i class="fa-solid fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Desktop Button -->
+    <a href="https://wa.me/525515028018?text=Hola%20Taquizas%20Sam%2C%20quisiera%20cotizar%20un%20evento." target="_blank" class="hidden sm:flex fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl items-center justify-center gap-2 group transition-all duration-300 hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 font-bold text-sm px-0 group-hover:px-2">
+            Cotizar por WhatsApp
+        </span>
+    </a>
+
+    <!-- Mobile Bottom Bar -->
+    <div class="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-orange-100 p-2.5 flex items-center gap-2 shadow-lg">
+        <a href="#cotizador" class="flex-1 bg-amber-50 text-slate-800 text-center font-bold text-xs py-2.5 rounded-xl border border-orange-200">
+            <i class="fa-solid fa-calculator mr-1 text-brand-600"></i> Cotizar
+        </a>
+        <a id="mobileBtnWa" href="https://wa.me/525515028018?text=Hola%20Taquizas%20Sam%2C%20quisiera%20cotizar%20un%20evento." target="_blank" class="flex-[1.5] bg-brand-600 text-white text-center font-bold text-xs py-2.5 rounded-xl shadow-md">
+            <i class="fa-brands fa-whatsapp text-white mr-1 text-sm"></i> WhatsApp Eventos
+        </a>
+    </div>
+
+    <!-- JavaScript for Calculator & Interactive UI -->
+    <script>
+        // State
+        const state = {
+            guests: 50,
+            pricePerPerson: 110,
+            pkgLabel: 'Taquiza de Guisados en Cazuela',
+            extraAguas: false,
+            extraQuesadillas: false,
+            extraChilaquiles: false
+        };
+
+        // DOM Elements
+        const guestsSlider = document.getElementById('guestsSlider');
+        const guestsCount = document.getElementById('guestsCount');
+        const pkgBtns = document.querySelectorAll('.pkg-btn');
+        const extraAguas = document.getElementById('extraAguas');
+        const extraQuesadillas = document.getElementById('extraQuesadillas');
+        const extraChilaquiles = document.getElementById('extraChilaquiles');
+
+        // Summary DOM
+        const summaryGuests = document.getElementById('summaryGuests');
+        const summaryPkg = document.getElementById('summaryPkg');
+        const summaryPp = document.getElementById('summaryPp');
+        const summaryExtras = document.getElementById('summaryExtras');
+        const summaryTotal = document.getElementById('summaryTotal');
+        const btnWhatsappQuote = document.getElementById('btnWhatsappQuote');
+        const mobileBtnWa = document.getElementById('mobileBtnWa');
+
+        // Guests Slider
+        guestsSlider.addEventListener('input', (e) => {
+            state.guests = parseInt(e.target.value);
+            guestsCount.textContent = state.guests;
+            updateCalculation();
+        });
+
+        // Package Selection
+        pkgBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                pkgBtns.forEach(b => {
+                    b.classList.remove('active-pkg', 'border-brand-600', 'bg-brand-50/70');
+                    b.classList.add('border-slate-200', 'bg-white');
+                });
+                btn.classList.add('active-pkg', 'border-brand-600', 'bg-brand-50/70');
+                btn.classList.remove('border-slate-200', 'bg-white');
+
+                state.pricePerPerson = parseFloat(btn.dataset.pp);
+                state.pkgLabel = btn.dataset.label;
+                updateCalculation();
+            });
+        });
+
+        // Extras Checkboxes
+        [extraAguas, extraQuesadillas, extraChilaquiles].forEach(chk => {
+            chk.addEventListener('change', () => {
+                updateCalculation();
+            });
+        });
+
+        function updateCalculation() {
+            const baseFoodTotal = state.guests * state.pricePerPerson;
+
+            let extrasTotal = 0;
+            let extrasList = [];
+
+            if (extraAguas.checked) {
+                extrasTotal += 450;
+                extrasList.push('Aguas Frescas 40L ($450)');
+            }
+            if (extraQuesadillas.checked) {
+                const quesadillasCost = state.guests * 25;
+                extrasTotal += quesadillasCost;
+                extrasList.push(`Barra de Quesadillas ($${quesadillasCost})`);
+            }
+            if (extraChilaquiles.checked) {
+                const chilaquilesCost = state.guests * 35;
+                extrasTotal += chilaquilesCost;
+                extrasList.push(`Tornafiesta Chilaquiles ($${chilaquilesCost})`);
+            }
+
+            const total = baseFoodTotal + extrasTotal;
+
+            // Update Summary UI
+            summaryGuests.textContent = `${state.guests} Personas`;
+            summaryPkg.textContent = state.pkgLabel;
+            summaryPp.textContent = `$${state.pricePerPerson} MXN`;
+            summaryExtras.textContent = `$${extrasTotal.toLocaleString()} MXN`;
+            summaryTotal.textContent = `$${total.toLocaleString()}`;
+
+            // Build WhatsApp Message
+            const extrasStr = extrasList.length > 0 ? extrasList.join(', ') : 'Ninguno';
+
+            const waMsg = `Hola Taquizas Sam, coticé un evento en su sitio web:%0A%0A` +
+                          `👥 Número de Personas: ${state.guests} invitados%0A` +
+                          `🌮 Menú: ${encodeURIComponent(state.pkgLabel)} ($${state.pricePerPerson} p/p)%0A` +
+                          `✨ Extras: ${encodeURIComponent(extrasStr)}%0A` +
+                          `💰 Total Estimado: $${total.toLocaleString()} MXN%0A%0A` +
+                          `¿Tienen disponibilidad de fecha y horario para mi fiesta?`;
+
+            btnWhatsappQuote.href = `https://wa.me/525515028018?text=${waMsg}`;
+            if (mobileBtnWa) {
+                mobileBtnWa.href = `https://wa.me/525515028018?text=${waMsg}`;
+            }
+        }
+
+        // Initialize Calculator
+        updateCalculation();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // FAQ Accordion
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const isOpen = !content.classList.contains('hidden');
+
+                // Close all
+                document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+                document.querySelectorAll('.faq-btn i').forEach(i => i.classList.remove('rotate-180'));
+
+                if (!isOpen) {
+                    content.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
