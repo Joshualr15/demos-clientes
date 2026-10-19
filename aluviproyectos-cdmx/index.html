@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aluviproyectos | Cancelería de Aluminio & Cristal Templado en CDMX</title>
+  <meta name="description" content="Fabricación e instalación de canceles de baño en cristal templado, ventanas de aluminio Eurovent, barandales y domos a la medida en CDMX. Visita técnica y toma de medidas en Santa María la Ribera, Cuauhtémoc y toda la ciudad.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: Plus Jakarta Sans (arquitectónica, limpia y moderna) & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Plus Jakarta Sans"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif'],
+          },
+          colors: {
+            glass: {
+              navy: '#0F172A',
+              slate: '#334155',
+              teal: '#0D9488',
+              accent: '#0284C7',
+              bgSoft: '#F8FAFC',
+              cardBorder: '#E2E8F0',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass-shadow {
+      box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.06), 0 4px 6px -4px rgba(0, 0, 0, 0.02);
+    }
+    .hover-lift {
+      transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .hover-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 35px -10px rgba(15, 23, 42, 0.12);
+    }
+  </style>
+</head>
+
+<body class="bg-glass-bgSoft text-slate-800 font-sans antialiased selection:bg-slate-900 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-slate-950 text-slate-200 text-xs py-2.5 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
+        <span class="font-semibold text-emerald-400 uppercase tracking-wide">Taller Especializado en Vidrio & Aluminio:</span>
+        <span class="text-slate-300">Toma de medidas a domicilio y cotización sin costo en toda la CDMX</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <span class="hidden md:inline text-slate-400"><i class="fa-solid fa-location-dot text-teal-400 mr-1.5"></i>Sor Juana Inés de la Cruz #202, Sta. María la Ribera, CDMX</span>
+        <a href="https://wa.me/5215639638952?text=Hola,%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto%20de%20canceler%C3%ADa" target="_blank" class="font-bold text-teal-300 hover:text-white flex items-center gap-1.5 transition">
+          <i class="fa-brands fa-whatsapp text-emerald-400"></i> WhatsApp: 56 3963 8952
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-xl bg-slate-900 flex items-center justify-center text-teal-400 shadow-md group-hover:scale-105 transition duration-200">
+          <i class="fa-solid fa-table-cells-large text-2xl"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-display font-extrabold text-xl tracking-tight text-slate-900">ALUVIPROYECTOS</span>
+            <span class="bg-slate-100 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider border border-slate-300">CDMX</span>
+          </div>
+          <p class="text-xs text-slate-500 font-medium">Cancelería &bull; Cristal Templado &bull; Diseño a Medida</p>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
+        <a href="#canceles" class="hover:text-teal-600 transition">Canceles de Baño</a>
+        <a href="#ventanas" class="hover:text-teal-600 transition">Ventanas Eurovent</a>
+        <a href="#barandales" class="hover:text-teal-600 transition">Barandales & Domos</a>
+        <a href="#cotizador" class="hover:text-teal-600 transition">Cotizador Exprés</a>
+        <a href="#taller" class="hover:text-teal-600 transition">Taller & Ubicación</a>
+        <a href="#opiniones" class="hover:text-teal-600 transition">Proyectos Realizados</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="tel:+525639638952" class="hidden sm:inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-bold py-2.5 px-4 rounded-xl transition border border-slate-200">
+          <i class="fa-solid fa-phone text-slate-700"></i>
+          <span>Llamar</span>
+        </a>
+        <a href="https://wa.me/5215639638952?text=Hola%20Aluviproyectos,%20quiero%20cotizar%20un%20cancel%20o%20ventanas.%20%C2%BFPueden%20apoyarme?" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold py-2.5 px-4 sm:px-5 rounded-xl shadow-md shadow-emerald-600/20 transition transform hover:-translate-y-0.5">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span class="hidden md:inline">WhatsApp Directo</span>
+          <span class="md:hidden">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-white pt-10 pb-16 lg:py-20 overflow-hidden border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-300 text-slate-800 text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-gem text-teal-600"></i>
+            Cristal Templado 6mm, 9mm y 10mm &bull; Acero Inox 304
+          </div>
+
+          <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.18]">
+            Elegancia, luminosidad y resistencia. <br>
+            <span class="text-teal-600">Cancelería arquitectónica</span> a tu medida en CDMX.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+            Fabricamos canceles de baño corredizos y abatibles en cristal templado con herrajes de alta gama, ventanas acústicas de aluminio línea Eurovent, barandales modernos y domos para transformar tu hogar u oficina con acabados de primera.
+          </p>
+
+          <!-- Key Features Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+            <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-teal-100 flex items-center justify-center text-teal-700 font-bold shrink-0">
+                <i class="fa-solid fa-ruler-combined"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">A la Medida</p>
+                <p class="text-[11px] text-slate-500">Fabricación milimétrica</p>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-slate-200 flex items-center justify-center text-slate-800 font-bold shrink-0">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">Cristal Certificado</p>
+                <p class="text-[11px] text-slate-500">Templado de seguridad</p>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl flex items-center gap-3 col-span-2 sm:col-span-1">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-700 font-bold shrink-0">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">Instalación Limpia</p>
+                <p class="text-[11px] text-slate-500">Garantía por escrito</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <a href="https://wa.me/5215639638952?text=Hola%20Aluviproyectos,%20quiero%20solicitar%20una%20visita%20para%20toma%20de%20medidas%20y%20cotizaci%C3%B3n." target="_blank" class="inline-flex justify-center items-center gap-3 bg-slate-900 hover:bg-slate-800 text-white font-display font-bold text-base py-4 px-7 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+              <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i>
+              <span>Solicitar Toma de Medidas</span>
+            </a>
+
+            <a href="#cotizador" class="inline-flex justify-center items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-900 font-display font-bold text-base py-4 px-6 rounded-xl border border-slate-300 transition">
+              <i class="fa-solid fa-calculator text-teal-600"></i>
+              <span>Cotizador Estimado</span>
+            </a>
+          </div>
+
+          <!-- Trust Subtext -->
+          <div class="flex items-center gap-4 pt-3 border-t border-slate-200 text-sm">
+            <div class="flex text-amber-400 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-xs">
+              <strong class="text-slate-900 font-bold">5.0 / 5.0</strong> en satisfacción de clientes &bull; Herrajes en Negro Mate, Satinado, Cromo y Oro Cepillado
+            </p>
+          </div>
+        </div>
+
+        <!-- Hero Visual Image Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Decorative Accent Backdrop -->
+            <div class="absolute -top-3 -right-3 w-full h-full rounded-2xl bg-gradient-to-tr from-teal-500 to-slate-800 transform rotate-2 opacity-80"></div>
+            
+            <div class="relative bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
+              <img src="img/hero-canceleria.jpg" alt="Canceles de baño de cristal templado en CDMX" class="w-full h-80 object-cover">
+              
+              <div class="p-6 bg-white space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Línea Residencial & Premium</span>
+                  <span class="text-xs bg-teal-50 text-teal-800 font-bold px-2 py-0.5 rounded-md border border-teal-200 flex items-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-teal-500"></span> Calidad Garantizada
+                  </span>
+                </div>
+                <h3 class="font-display font-bold text-slate-900 text-lg">Canceles Serie Bacalar & Glass Light</h3>
+                <p class="text-xs text-slate-600">Cristal templado con biselado suave y sellos de estanqueidad para evitar filtraciones de agua hacia el piso seco.</p>
+                
+                <div class="pt-3 flex items-center justify-between text-xs text-slate-500 border-t border-slate-100">
+                  <span><i class="fa-solid fa-shield text-teal-600 mr-1"></i> Garantía por escrito</span>
+                  <span><i class="fa-solid fa-calendar-check text-teal-600 mr-1"></i> Entregas puntuales</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating mini-card -->
+            <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl border border-slate-200 flex items-center gap-3.5 max-w-[260px]">
+              <div class="w-11 h-11 rounded-xl bg-teal-600 text-white flex items-center justify-center font-bold text-lg shrink-0">
+                <i class="fa-solid fa-droplet-slash"></i>
+              </div>
+              <div>
+                <p class="text-xs font-extrabold text-slate-900">Cero Filtraciones</p>
+                <p class="text-[11px] text-slate-500">Sellado con silicón antihongos de grado arquitectónico</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Product & Service Catalog -->
+  <section id="canceles" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-teal-700 text-xs font-bold uppercase tracking-wider bg-teal-100 px-3 py-1 rounded-full border border-teal-200">Catálogo de Soluciones</span>
+        <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          Diseño y Fabricación con Acabados de Primera
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-3">
+          Cada espacio es único. Diseñamos cancelería a la medida exacta para que tu remodelación o construcción luzca impecable.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Service 1: Canceles de Baño -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 glass-shadow hover-lift flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5">
+              <img src="img/canceles-bano.jpg" alt="Canceles de baño en cristal templado" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-teal-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-teal-700">Más Solicitado</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Canceles de Baño en Cristal Templado</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Sistemas corredizos y abatibles con cristal templado de 6mm, 9mm y 10mm. Sistemas tipo Bacalar, Glass Light y Sliding Dawh con rodamientos ultrasilenciosos y jaladeras ergonómicas.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Herrajes en Acero Inoxidable 304</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Acabados: Negro mate, satinado y cromo</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Tratamiento anticalcáreo opcional</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-base font-bold text-slate-900">$2,850 MXN</strong></span>
+            <a href="https://wa.me/5215639638952?text=Hola,%20me%20interesa%20cotizar%20un%20cancel%20de%20ba%C3%B1o%20de%20cristal%20templado." target="_blank" class="text-xs font-bold text-teal-700 hover:text-teal-800 flex items-center gap-1">
+              Cotizar cancel <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2: Ventanas Eurovent -->
+        <div id="ventanas" class="bg-white rounded-2xl p-6 border border-slate-200 glass-shadow hover-lift flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5">
+              <img src="img/ventanas-aluminio.jpg" alt="Ventanas de aluminio Eurovent y acústicas" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-slate-800"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-700">Aislamiento Acústico</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Ventanas de Aluminio & Eurovent</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Ventanas corredizas, proyectantes y de guillotina en aluminio de 2" y 3", y Línea Española / Eurovent con doble cristal (Duovent) para aislar ruidos de la calle y regular la temperatura del interior.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Reducción de ruido exterior hasta un 70%</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Cristales tintex, filtrasol, esmerilado o claro</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Mosquiteros corredizos y fijos integrados</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-base font-bold text-slate-900">$1,450 MXN</strong></span>
+            <a href="https://wa.me/5215639638952?text=Hola,%20deseo%20cotizar%20ventanas%20de%20aluminio/Eurovent%20a%20la%20medida." target="_blank" class="text-xs font-bold text-teal-700 hover:text-teal-800 flex items-center gap-1">
+              Cotizar ventana <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3: Barandales de Cristal -->
+        <div id="barandales" class="bg-white rounded-2xl p-6 border border-slate-200 glass-shadow hover-lift flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5">
+              <img src="img/barandales-cristal.jpg" alt="Barandales de cristal templado y acero inoxidable" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Diseño Moderno</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Barandales de Cristal Templado</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Barandales minimalistas para escaleras, pasillos, balcones y roof gardens. Instalación mediante postes de acero inoxidable, botones pasantes (spigots) o empotrados a losa para máxima elegancia.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Cristal templado de seguridad de 9mm y 10mm</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Pasamanos cilíndrico o cuadrado a juego</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Resistencia a la intemperie y salpicaduras</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Metro lineal desde <strong class="text-base font-bold text-slate-900">$1,800 MXN</strong></span>
+            <a href="https://wa.me/5215639638952?text=Hola,%20me%20gustar%C3%ADa%20cotizar%20un%20barandal%20de%20cristal%20templado." target="_blank" class="text-xs font-bold text-teal-700 hover:text-teal-800 flex items-center gap-1">
+              Cotizar barandal <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4: Puertas Corredizas & Divisiones -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 glass-shadow hover-lift flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5">
+              <img src="img/puertas-corredizas.jpg" alt="Puertas corredizas y divisiones de oficina" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-purple-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-purple-700">Espacios & Luz</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Puertas Corredizas & Canceles de Jardín</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Canceles monumentales de 2, 3 y 4 hojas corredizas para conectar salas con terrazas y jardines. Divisiones acústicas de cristal para despachos, consultorios y salas de juntas.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Cierre hermético perimetral</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Cerraduras embutidas de seguridad</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Deslizamiento suave sobre riel reforzado</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-base font-bold text-slate-900">$3,400 MXN</strong></span>
+            <a href="https://wa.me/5215639638952?text=Hola,%20solicito%20cotizaci%C3%B3n%20para%20puertas%20corredizas/divisiones." target="_blank" class="text-xs font-bold text-teal-700 hover:text-teal-800 flex items-center gap-1">
+              Cotizar puerta <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 5: Domos & Techos de Cristal -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 glass-shadow hover-lift flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5 bg-gradient-to-tr from-slate-900 to-slate-800 flex items-center justify-center text-white text-center p-6">
+              <div>
+                <i class="fa-solid fa-sun text-5xl text-teal-400 mb-2"></i>
+                <p class="text-xs font-bold uppercase tracking-wider text-slate-300">Iluminación Natural</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Estructuras</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Domos & Techos de Cristal</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Domos de cristal templado laminado con película de control solar y policarbonato celular montados sobre estructuras de aluminio reforzado o herrería para patios, cocheras y entradas.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Protección contra rayos UV y granizo</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Desagüe pluvial y sellado estructural</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Aprovecha al máximo la luz natural</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-base font-bold text-slate-900">$2,400 MXN</strong></span>
+            <a href="https://wa.me/5215639638952?text=Hola,%20me%20interesa%20un%20domo%20de%20cristal%20o%20policarbonato." target="_blank" class="text-xs font-bold text-teal-700 hover:text-teal-800 flex items-center gap-1">
+              Cotizar domo <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 6: Espejos LED a Medida -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 glass-shadow hover-lift flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-xl overflow-hidden mb-5">
+              <img src="img/espejos-led.jpg" alt="Espejos decorativos con luz LED para baño" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-pink-600"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-pink-700">Diseño & Confort</span>
+            </div>
+            <h3 class="font-display text-xl font-bold text-slate-900 mb-2">Espejos con Luz LED Touch</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+              Espejos flotados de 5mm y 6mm con corte circular, rectangular o formas orgánicas a la medida. Luz LED cálida, fría o neutra con sensor touch y opción de desempañador térmico.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-5">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Espejos libres de plomo y cobre (no se oxidan)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Botón táctil con regulador de intensidad</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Perfecto para tocadores y baños principales</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Desde <strong class="text-base font-bold text-slate-900">$1,250 MXN</strong></span>
+            <a href="https://wa.me/5215639638952?text=Hola,%20deseo%20cotizar%20un%20espejo%20con%20luz%20LED%20a%20la%20medida." target="_blank" class="text-xs font-bold text-teal-700 hover:text-teal-800 flex items-center gap-1">
+              Cotizar espejo <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Project Quote Calculator -->
+  <section id="cotizador" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-teal-700 text-xs font-bold uppercase tracking-wider bg-teal-100 px-3 py-1 rounded-full border border-teal-200">Presupuesto Rápido</span>
+        <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          Cotiza tu Cancelería en Línea
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Selecciona el tipo de trabajo, el acabado de los herrajes y tu alcaldía para estimar tu proyecto al instante.
+        </p>
+      </div>
+
+      <div class="bg-slate-50 rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xl">
+        <form id="calcForm" class="space-y-8" onsubmit="event.preventDefault(); updateAluCalc();">
+          
+          <!-- Step 1: Select Work Type -->
+          <div>
+            <label class="block font-display font-bold text-slate-900 text-sm sm:text-base mb-3">
+              1. Selecciona el tipo de proyecto:
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              
+              <label class="relative flex flex-col p-4 bg-white rounded-xl border-2 border-slate-200 hover:border-teal-600 cursor-pointer transition has-[:checked]:border-teal-600 has-[:checked]:bg-teal-50/40">
+                <input type="radio" name="projectType" value="cancel-corr" data-price="2850" data-label="Cancel de Baño Corredizo en Cristal Templado" checked class="peer sr-only" onchange="updateAluCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <i class="fa-solid fa-shower text-xl text-teal-600"></i>
+                  <span class="text-xs font-bold text-slate-700">$2,850 MXN</span>
+                </div>
+                <span class="text-xs font-bold text-slate-900">Cancel Corredizo Templado</span>
+                <span class="text-[11px] text-slate-500">Sistema Bacalar / Glass Light</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-white rounded-xl border-2 border-slate-200 hover:border-teal-600 cursor-pointer transition has-[:checked]:border-teal-600 has-[:checked]:bg-teal-50/40">
+                <input type="radio" name="projectType" value="cancel-abat" data-price="3200" data-label="Cancel de Baño Abatible con Bisagras de Inox" class="peer sr-only" onchange="updateAluCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <i class="fa-solid fa-door-open text-xl text-teal-600"></i>
+                  <span class="text-xs font-bold text-slate-700">$3,200 MXN</span>
+                </div>
+                <span class="text-xs font-bold text-slate-900">Cancel Abatible (Batiente)</span>
+                <span class="text-[11px] text-slate-500">Cristal 9-10mm con bisagras inox</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-white rounded-xl border-2 border-slate-200 hover:border-teal-600 cursor-pointer transition has-[:checked]:border-teal-600 has-[:checked]:bg-teal-50/40">
+                <input type="radio" name="projectType" value="ventana" data-price="1450" data-label="Ventana de Aluminio Línea Eurovent" class="peer sr-only" onchange="updateAluCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <i class="fa-solid fa-window-maximize text-xl text-teal-600"></i>
+                  <span class="text-xs font-bold text-slate-700">$1,450 MXN</span>
+                </div>
+                <span class="text-xs font-bold text-slate-900">Ventana Eurovent / Acústica</span>
+                <span class="text-[11px] text-slate-500">Aislamiento acústico y térmico</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-white rounded-xl border-2 border-slate-200 hover:border-teal-600 cursor-pointer transition has-[:checked]:border-teal-600 has-[:checked]:bg-teal-50/40">
+                <input type="radio" name="projectType" value="barandal" data-price="1800" data-label="Barandal de Cristal Templado y Acero" class="peer sr-only" onchange="updateAluCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <i class="fa-solid fa-bars text-xl text-teal-600"></i>
+                  <span class="text-xs font-bold text-slate-700">$1,800 MXN/m</span>
+                </div>
+                <span class="text-xs font-bold text-slate-900">Barandal de Cristal Templado</span>
+                <span class="text-[11px] text-slate-500">Postes o spigots de acero 304</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-white rounded-xl border-2 border-slate-200 hover:border-teal-600 cursor-pointer transition has-[:checked]:border-teal-600 has-[:checked]:bg-teal-50/40">
+                <input type="radio" name="projectType" value="domo" data-price="2400" data-label="Domo de Cristal Templado Laminado" class="peer sr-only" onchange="updateAluCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <i class="fa-solid fa-sun text-xl text-teal-600"></i>
+                  <span class="text-xs font-bold text-slate-700">$2,400 MXN</span>
+                </div>
+                <span class="text-xs font-bold text-slate-900">Domo de Cristal / Pérgola</span>
+                <span class="text-[11px] text-slate-500">Control solar y sellado contra lluvia</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-white rounded-xl border-2 border-slate-200 hover:border-teal-600 cursor-pointer transition has-[:checked]:border-teal-600 has-[:checked]:bg-teal-50/40">
+                <input type="radio" name="projectType" value="espejo" data-price="1250" data-label="Espejo con Luz LED Touch a Medida" class="peer sr-only" onchange="updateAluCalc()">
+                <div class="flex items-center justify-between mb-1">
+                  <i class="fa-solid fa-lightbulb text-xl text-teal-600"></i>
+                  <span class="text-xs font-bold text-slate-700">$1,250 MXN</span>
+                </div>
+                <span class="text-xs font-bold text-slate-900">Espejo con Luz LED Touch</span>
+                <span class="text-[11px] text-slate-500">Luz cálida/fría con sensor</span>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Step 2: Finishes and Zone -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block font-display font-bold text-slate-900 text-sm mb-2">
+                2. Acabado de Herrajes y Perfilería:
+              </label>
+              <select id="finishSelect" class="w-full bg-white border-2 border-slate-200 rounded-xl p-3 text-sm text-slate-800 font-medium focus:outline-none focus:border-teal-600" onchange="updateAluCalc()">
+                <option value="0" data-name="Negro Mate Contemporáneo">Negro Mate Contemporáneo (Más Elegido)</option>
+                <option value="0" data-name="Acero Inoxidable Satinado">Acero Inoxidable Satinado 304</option>
+                <option value="0" data-name="Cromo Brillante / Espejo">Cromo Brillante / Espejo</option>
+                <option value="0" data-name="Blanco Pulcro">Blanco Arquitectónico</option>
+                <option value="250" data-name="Oro Cepillado / Champagne">Oro Cepillado / Champagne (+ $250)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block font-display font-bold text-slate-900 text-sm mb-2">
+                3. Alcaldía o Zona en CDMX para Instalación:
+              </label>
+              <select id="zoneSelect" class="w-full bg-white border-2 border-slate-200 rounded-xl p-3 text-sm text-slate-800 font-medium focus:outline-none focus:border-teal-600" onchange="updateAluCalc()">
+                <option value="Cuauhtémoc (Sta. María la Ribera, San Rafael, Roma, Condesa)">Cuauhtémoc (Sta. María la Ribera, San Rafael, Roma, Condesa) &bull; Toma de Medidas Gratis</option>
+                <option value="Benito Juárez (Del Valle, Narvarte, Nápoles, Álamos)">Benito Juárez (Del Valle, Narvarte, Nápoles, Álamos) &bull; Toma de Medidas Gratis</option>
+                <option value="Miguel Hidalgo (Polanco, Anzures, Escandón, Lomas)">Miguel Hidalgo (Polanco, Anzures, Escandón, Lomas) &bull; Toma de Medidas Gratis</option>
+                <option value="Coyoacán / Álvaro Obregón / San Ángel">Coyoacán / Álvaro Obregón / San Ángel &bull; Toma de Medidas Gratis</option>
+                <option value="Sur (Tlalpan, Coapa, Pedregal)">Sur (Tlalpan, Coapa, Pedregal) &bull; Toma de Medidas Gratis</option>
+                <option value="Norte / Oriente (GAM, Azcapotzalco, Iztacalco)">Norte / Oriente (GAM, Azcapotzalco, Iztacalco) &bull; Toma de Medidas Gratis</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Price Display and Callout -->
+          <div class="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-900 text-white rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+            <div class="space-y-2 text-center md:text-left">
+              <span class="inline-block bg-teal-500/20 text-teal-300 border border-teal-500/30 text-xs font-bold px-3 py-1 rounded-full uppercase">
+                Estimado Base con Instalación
+              </span>
+              <p class="text-xs text-slate-300" id="calcSummary">Cancel Corredizo en Negro Mate</p>
+              <div class="flex items-baseline justify-center md:justify-start gap-2">
+                <span class="text-xs text-slate-400">Inversión aproximada:</span>
+                <span class="font-display text-3xl sm:text-4xl font-extrabold text-teal-400" id="calcPriceDisplay">$2,850 MXN</span>
+              </div>
+              <p class="text-[11px] text-slate-400 flex items-center justify-center md:justify-start gap-1.5">
+                <i class="fa-solid fa-circle-check text-emerald-400"></i> Incluye herrajes, cristal templado certificado y garantía contra filtraciones.
+              </p>
+            </div>
+
+            <div class="w-full md:w-auto shrink-0 flex flex-col sm:flex-row gap-3">
+              <a id="calcWhatsAppBtn" href="#" target="_blank" class="w-full sm:w-auto text-center inline-flex justify-center items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-display font-bold text-sm py-3.5 px-6 rounded-xl shadow-lg shadow-emerald-700/40 transition transform hover:-translate-y-0.5">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Confirmar por WhatsApp</span>
+              </a>
+              <a href="tel:+525639638952" class="w-full sm:w-auto text-center inline-flex justify-center items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-display font-bold text-sm py-3.5 px-5 rounded-xl border border-slate-700 transition">
+                <i class="fa-solid fa-phone text-teal-400"></i>
+                <span>Llamar al Taller</span>
+              </a>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Workshop Location and Coverage -->
+  <section id="taller" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-5 space-y-5">
+          <span class="text-teal-700 text-xs font-bold uppercase tracking-wider bg-teal-100 px-3 py-1 rounded-full border border-teal-200">Taller Físico en CDMX</span>
+          <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+            Instalaciones en Santa María la Ribera
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Nuestro taller y centro de corte está ubicado en <strong class="text-slate-900">Calle Sor Juana Inés de la Cruz #202</strong>, a pocas cuadras del Kiosco Morisco y de avenidas principales como Insurgentes Norte, San Cosme y Circuito Interior.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-compass-drafting text-teal-600 text-lg"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900">Visita de Toma de Medidas</h4>
+                  <p class="text-[11px] text-slate-500">Acudimos a tu obra o departamento con muestrarios de herrajes</p>
+                </div>
+              </div>
+              <span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200 shrink-0">Incluida</span>
+            </div>
+
+            <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-truck-ramp-box text-teal-600 text-lg"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900">Transporte Seguro de Cristales</h4>
+                  <p class="text-[11px] text-slate-500">Camioneta equipada con caballetes acolchados para no despostillar</p>
+                </div>
+              </div>
+              <span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200 shrink-0">Garantizado</span>
+            </div>
+
+            <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-file-invoice text-teal-600 text-lg"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900">Facturación & Presupuestos</h4>
+                  <p class="text-[11px] text-slate-500">Emitimos factura fiscal CFDI para arquitectos y constructoras</p>
+                </div>
+              </div>
+              <span class="text-xs font-extrabold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200 shrink-0">Disponible</span>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://wa.me/5215639638952?text=Hola,%20quisiera%20agendar%20una%20visita%20en%20mi%20domicilio%20para%20toma%20de%20medidas." target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-slate-900 hover:text-teal-600 transition">
+              <i class="fa-brands fa-whatsapp text-emerald-500 text-base"></i> Envíanos tus medidas preliminares por WhatsApp al 56 3963 8952
+            </a>
+          </div>
+        </div>
+
+        <!-- Location Box & Map -->
+        <div class="lg:col-span-7">
+          <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 glass-shadow space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+              <div>
+                <span class="text-xs font-bold text-teal-700 uppercase tracking-wider">Taller & Showroom</span>
+                <h3 class="font-display font-bold text-xl text-slate-900">Aluviproyectos Vidrio & Aluminio</h3>
+              </div>
+              <div class="flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                <i class="fa-solid fa-check"></i> Taller Activo
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-700">
+              <div class="p-3 bg-slate-50 rounded-xl space-y-1">
+                <span class="text-slate-400 font-semibold uppercase text-[10px]">Dirección:</span>
+                <p class="font-bold text-slate-900">Sor Juana Inés de la Cruz #202</p>
+                <p class="text-slate-500">Col. Sta. María la Ribera, Cuauhtémoc, CDMX</p>
+              </div>
+
+              <div class="p-3 bg-slate-50 rounded-xl space-y-1">
+                <span class="text-slate-400 font-semibold uppercase text-[10px]">Línea Directa:</span>
+                <p class="font-bold text-slate-900">WhatsApp: +52 56 3963 8952</p>
+                <p class="text-slate-500">aluviproyectos@hotmail.com</p>
+              </div>
+
+              <div class="p-3 bg-slate-50 rounded-xl space-y-1">
+                <span class="text-slate-400 font-semibold uppercase text-[10px]">Horarios de Taller:</span>
+                <p class="font-bold text-slate-900">Lunes a Viernes: 9:00 AM - 6:30 PM</p>
+                <p class="text-slate-500">Sábados: 9:00 AM - 2:30 PM</p>
+              </div>
+
+              <div class="p-3 bg-slate-50 rounded-xl space-y-1">
+                <span class="text-slate-400 font-semibold uppercase text-[10px]">Cobertura de Instalación:</span>
+                <p class="font-bold text-slate-900">Toda la CDMX & Área Metropolitana</p>
+                <p class="text-slate-500">Visitas a obra y domicilios particulares</p>
+              </div>
+            </div>
+
+            <!-- Google Map Embed -->
+            <div class="rounded-xl overflow-hidden border border-slate-200 h-64 bg-slate-100 relative">
+              <iframe 
+                title="Ubicación Aluviproyectos Santa María la Ribera"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.336148671694!2d-99.1612056!3d19.4475471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8d42d3c52e5%3A0x6b80145c26b52e0!2sC.%20Sor%20Juana%20In%C3%A9s%20de%20la%20Cruz%20202%2C%20Sta%20Mar%C3%ADa%20la%20Ribera%2C%20Cuauht%C3%A9moc%2C%2006400%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx" 
+                class="w-full h-full border-0" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Real Customer Reviews -->
+  <section id="opiniones" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-teal-700 text-xs font-bold uppercase tracking-wider bg-teal-100 px-3 py-1 rounded-full border border-teal-200">Testimonios de Clientes</span>
+        <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          La Tranquilidad de un Trabajo Bien Hecho
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-3">
+          Opiniones reales de arquitectos, propietarios y remodeladores en la Ciudad de México.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+              "Mandamos a hacer dos canceles para baño en cristal templado de 10mm con herrajes en negro mate. La instalación fue súper limpia, midieron con láser y quedaron exactamente nivelados. Cero fugas de agua."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-200 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-slate-900 text-teal-400 font-bold flex items-center justify-center text-xs">AR</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Arq. Raúl Mendoza</p>
+              <p class="text-[10px] text-slate-500">Col. San Rafael, Cuauhtémoc</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+              "Cambié las ventanas de mi departamento por línea Eurovent con doble cristal porque vivo sobre avenida y el ruido era insoportable. El cambio fue del cielo a la tierra, ahora no se escucha nada del tráfico."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-200 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center text-xs">CV</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Claudia Villarreal</p>
+              <p class="text-[10px] text-slate-500">Roma Norte, CDMX</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+              "Nos instalaron un barandal de cristal templado en la escalera y un domo en la terraza. El acero inoxidable 304 se nota de primera y vinieron en la fecha prometida. Muy formales para trabajar."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-200 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-slate-700 text-white font-bold flex items-center justify-center text-xs">GO</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Ing. Gerardo Orozco</p>
+              <p class="text-[10px] text-slate-500">Del Valle Sur, Benito Juárez</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+              "Compré un espejo con luz LED y sensor touch para mi baño principal y quedó hermoso. Llegó empacado con mucho cuidado y el precio estuvo mucho mejor que en tiendas departamentales."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-200 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-xs">PP</div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Paola Pineda</p>
+              <p class="text-[10px] text-slate-500">Sta. María la Ribera, CDMX</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Final CTA Callout -->
+  <section class="py-16 bg-slate-900 text-white text-center relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 relative z-10 space-y-6">
+      <span class="inline-block bg-teal-500/20 text-teal-300 border border-teal-500/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+        Asesoría & Toma de Medidas
+      </span>
+      <h2 class="font-display text-2xl sm:text-4xl font-extrabold tracking-tight">
+        Haz Realidad tu Proyecto con los Expertos en Cristal.
+      </h2>
+      <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto">
+        Compártenos las medidas aproximadas de tu espacio por WhatsApp y recibe tu presupuesto formal sin compromiso.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <a href="https://wa.me/5215639638952?text=Hola%20Aluviproyectos,%20les%20comparto%20las%20medidas%20de%20mi%20espacio%20para%20cotizar." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-display font-bold text-base py-4 px-8 rounded-xl shadow-xl transition transform hover:-translate-y-0.5">
+          <i class="fa-brands fa-whatsapp text-2xl"></i>
+          <span>Enviar Medidas por WhatsApp</span>
+        </a>
+        <a href="tel:+525639638952" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-display font-bold text-base py-4 px-8 rounded-xl border border-white/20 backdrop-blur-sm transition">
+          <i class="fa-solid fa-phone text-white"></i>
+          <span>Llamar al 56 3963 8952</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-10 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-teal-400 font-bold">
+          <i class="fa-solid fa-table-cells-large"></i>
+        </div>
+        <div>
+          <p class="font-display font-bold text-slate-900 text-sm">Aluviproyectos Cancelería & Vidrio Templado</p>
+          <p class="text-slate-500">Sor Juana Inés de la Cruz #202, Sta. María la Ribera, Cuauhtémoc, CDMX &bull; Tel: 56 3963 8952</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-5 text-slate-600 font-medium">
+        <a href="#canceles" class="hover:text-teal-600 transition">Canceles de Baño</a>
+        <a href="#ventanas" class="hover:text-teal-600 transition">Ventanas Eurovent</a>
+        <a href="#barandales" class="hover:text-teal-600 transition">Barandales</a>
+        <a href="#cotizador" class="hover:text-teal-600 transition">Cotizador Exprés</a>
+        <a href="https://wa.me/5215639638952" target="_blank" class="hover:text-emerald-600 transition">WhatsApp Directo</a>
+      </div>
+
+      <p class="text-slate-400 text-center md:text-right">
+        &copy; 2026 Aluviproyectos. Todos los derechos reservados.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Quick Action Bar -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 sm:hidden shadow-2xl flex items-center gap-2">
+    <a href="tel:+525639638952" class="flex-1 bg-slate-800 text-white text-center font-display font-bold py-3 px-2 rounded-xl text-xs flex items-center justify-center gap-2 shadow-md">
+      <i class="fa-solid fa-phone"></i> Llamar
+    </a>
+    <a href="https://wa.me/5215639638952?text=Hola,%20me%20gustar%C3%ADa%20cotizar%20canceler%C3%ADa%20a%20la%20medida." target="_blank" class="flex-1 bg-emerald-600 text-white text-center font-display font-bold py-3 px-2 rounded-xl text-xs flex items-center justify-center gap-2 shadow-md">
+      <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
+    </a>
+  </div>
+
+  <!-- Calculator Script -->
+  <script>
+    function updateAluCalc() {
+      const selectedProject = document.querySelector('input[name="projectType"]:checked');
+      const basePrice = parseInt(selectedProject.getAttribute('data-price')) || 2850;
+      const projectName = selectedProject.getAttribute('data-label') || 'Cancel de Baño';
+
+      const finishSelect = document.getElementById('finishSelect');
+      const finishExtra = parseInt(finishSelect.value) || 0;
+      const finishName = finishSelect.options[finishSelect.selectedIndex].getAttribute('data-name');
+
+      const zoneSelect = document.getElementById('zoneSelect');
+      const zoneName = zoneSelect.value.split('&bull;')[0].trim();
+
+      const total = basePrice + finishExtra;
+
+      document.getElementById('calcPriceDisplay').innerText = '$' + total.toLocaleString('es-MX') + ' MXN';
+      document.getElementById('calcSummary').innerText = projectName + ' en acabado ' + finishName;
+
+      let msg = 'Hola Aluviproyectos, coticé en su página web:\n' +
+        '• Proyecto: ' + projectName + '\n' +
+        '• Acabado: ' + finishName + '\n' +
+        '• Ubicación: ' + zoneName + '\n' +
+        '• Presupuesto base aprox: $' + total.toLocaleString('es-MX') + ' MXN\n\n' +
+        '¿Podrían brindarme informes para la toma de medidas en mi domicilio?';
+
+      document.getElementById('calcWhatsAppBtn').href = 'https://wa.me/5215639638952?text=' + encodeURIComponent(msg);
+    }
+
+    // Init
+    document.addEventListener('DOMContentLoaded', updateAluCalc);
+  </script>
+
+</body>
+</html>
